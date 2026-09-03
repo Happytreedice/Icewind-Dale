@@ -1,0 +1,38 @@
+:root { --iwd-ice: #5fa8d3; --iwd-deep: #123a5c; --iwd-frost: #dff3ff; --iwd-gold: #c9a227; }
+.sheet.journal-entry.iwd {
+  --dnd5e-color-gold: var(--iwd-ice);
+  .journal-entry-content { background: linear-gradient(180deg, rgba(223,243,255,.55) 0, rgba(255,255,255,0) 160px); padding-bottom: 20px; }
+  .journal-header input.title { background: none; color: var(--iwd-deep); }
+  .journal-entry-content { h1, h2 { color: var(--iwd-deep); border-bottom: 2px solid var(--iwd-ice); } h3 { color: var(--iwd-deep); } }
+  .journal-entry-content a:is(.content-link, .inline-roll), .journal-entry-content span.roll-link a { text-decoration-color: var(--iwd-ice); i { color: var(--iwd-ice); } }
+  .journal-entry-content a.content-link:hover { text-shadow: 0 0 8px var(--iwd-ice); }
+  .sidebar { --color-warm-2: var(--iwd-ice); a:hover { text-shadow: 0 0 8px var(--iwd-ice); } button:hover, button:focus { box-shadow: 0 0 5px var(--iwd-ice); } }
+  blockquote { border-left: 3px solid var(--iwd-ice); background: rgba(95,168,211,.08); padding: .4rem .8rem; margin: .5rem 0; }
+  .iwd-box { border: 1px solid var(--iwd-ice); border-radius: 6px; padding: .6rem .9rem; margin: .8rem 0; background: rgba(223,243,255,.35); }
+  .iwd-box.warn { border-color: var(--iwd-gold); background: rgba(201,162,39,.10); }
+  .iwd-steps li { margin: .3rem 0; }
+  .iwd-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: .8rem 0; }
+  .iwd-actions a.content-link { font-size: 1.05em; padding: .35rem .7rem; border: 1px solid var(--iwd-ice); border-radius: 6px; background: rgba(95,168,211,.12); }
+  table { border-collapse: collapse; } table td, table th { border: 1px solid rgba(95,168,211,.4); padding: .25rem .5rem; }
+}
+
+/* --- Icewind Dale Initiative / Combat Tracker Styling --- */
+body.iwd-initiative-bg #combat-tracker,
+body.iwd-initiative-bg #combat {
+  background-image: var(--iwd-initiative-bg, url("../assets/ui/initiative.avif"));
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+/* --- Adventure Importer Styles --- */
+.adventure-importer.iwd-adventure .adventure-banner img {
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--iwd-ice);
+}
+.adventure-importer.iwd-adventure .import-controls h2 {
+  color: var(--iwd-ice);
+  border-bottom: 2px solid var(--iwd-ice);
+  margin-top: 1rem;
+}

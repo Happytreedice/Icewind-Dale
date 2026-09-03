@@ -1,0 +1,198 @@
+{
+  "id": "dnd-icewind-dale-pc-game",
+  "title": "Icewind Dale: Enhanced Edition (PC Game)",
+  "description": "Полная кампания Icewind Dale (2000 / EE): все сцены с изометрическим видом, точные стены и двери со звуками, 700+ существ с анимированными токенами, 757 аутентичных предметов, диалоги NPC, таблицы лута/магазинов, музыка и автоимпорт.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14.367"
+  },
+  "authors": [
+    {
+      "name": "Antigravity & Community"
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dnd-icewind-dale-pc-game/assets/ui/icewind-dale-logo.avif",
+      "thumbnail": "modules/dnd-icewind-dale-pc-game/assets/ui/icewind-dale-logo.avif"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/iwd-theme.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "languages/ru.json"
+    }
+  ],
+  "packFolders": [
+    {
+      "color": "#143231",
+      "name": "Icewind Dale: Enhanced Edition (PC Game)",
+      "packs": [
+        "adventures",
+        "maps",
+        "actors",
+        "items",
+        "tables",
+        "journal",
+        "dialogs",
+        "macros",
+        "playlists"
+      ],
+      "sorting": "m"
+    }
+  ],
+  "packs": [
+    {
+      "name": "adventures",
+      "label": "Кампания Icewind Dale",
+      "path": "packs/adventures",
+      "type": "Adventure",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "maps",
+      "label": "Сцены и карты",
+      "path": "packs/maps",
+      "type": "Scene",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "actors",
+      "label": "Существа и NPC",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "items",
+      "label": "Предметы и артефакты",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "journal",
+      "label": "Прохождение и подсказки",
+      "path": "packs/journal",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dialogs",
+      "label": "Диалоги NPC",
+      "path": "packs/dialogs",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Магазины и контейнеры",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Макросы импорта",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "playlists",
+      "label": "Музыкальное сопровождение",
+      "path": "packs/playlists",
+      "type": "Playlist",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0",
+          "verified": "5.3.5"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "token-directional-animation",
+        "type": "module"
+      },
+      {
+        "id": "isometric-perspective",
+        "type": "module"
+      },
+      {
+        "id": "babele",
+        "type": "module"
+      }
+    ]
+  },
+  "quickstart": {
+    "adventures": {
+      "dnd5e": {
+        "uuid": "Compendium.dnd-icewind-dale-pc-game.adventures.iwdAdventure0001"
+      }
+    },
+    "postImport": true,
+    "world": {
+      "background": "modules/dnd-icewind-dale-pc-game/assets/ui/icewind-dale-logo.avif",
+      "cover": "modules/dnd-icewind-dale-pc-game/assets/ui/icewind-dale-logo.avif",
+      "description": "<p>Полная кампания Icewind Dale: Enhanced Edition для D&D 5e: 173 сцены, 717 существ с направленными анимациями, 757 предметов, журналы прохождения, музыка и диалоги.</p>"
+    }
+  }
+}
