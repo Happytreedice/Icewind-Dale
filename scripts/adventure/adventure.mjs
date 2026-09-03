@@ -58,9 +58,11 @@ export const ADVENTURE = {
     },
     isometricMaps: {
       label: "IWD.IMPORT.IsometricMaps",
-      default: () => !!game.modules.get("isometric-perspective")?.active,
+      default: () => Boolean(game.modules.get("isometric-perspective")?.active),
       handler: handlers.configureIsometricMaps,
-      lifecycle: "post"
+      lifecycle: "post",
+      validate: () => game.modules.has("isometric-perspective") || Boolean(game.modules.get("isometric-perspective")),
+      disabledHint: "IWD.IMPORT.IsometricMissing"
     },
     linkPlaylists: {
       label: "IWD.IMPORT.LinkPlaylists",

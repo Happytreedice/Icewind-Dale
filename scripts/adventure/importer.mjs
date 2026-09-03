@@ -41,6 +41,29 @@ function formatOptions({ importOptions={} }={}) {
       label.insertAdjacentElement("afterbegin", input);
     }
     element.querySelector(".form-fields")?.remove();
+
+    // Validate option availability (e.g. check for module presence)
+    const isAvailable = typeof config.validate === "function" ? config.validate() : true;
+    if ( !isAvailable && input && label ) {
+      input.disabled = true;
+      input.checked = false;
+      label.classList.add("disabled");
+      label.style.opacity = "0.55";
+      label.style.cursor = "not-allowed";
+      input.style.cursor = "not-allowed";
+
+      const hintKey = config.disabledHint || "IWD.IMPORT.ModuleMissing";
+      const hintText = game.i18n.localize(hintKey);
+      label.title = hintText;
+      input.title = hintText;
+
+      const hint = document.createElement("p");
+      hint.className = "notes hint";
+      hint.style.cssText = "margin: 2px 0 6px 24px; font-size: 0.82em; color: #e74c3c;";
+      hint.textContent = `(${hintText})`;
+      element.appendChild(hint);
+    }
+
     return element;
   }).filter(Boolean);
 }
@@ -58,7 +81,8 @@ export async function onImport(adventure, formData) {
   if ( adventure.pack !== ADVENTURE.packId ) return;
   const importOptions = {};
   for ( const [name, config] of Object.entries(ADVENTURE.importOptions) ) {
-    const isEnabled = Boolean(formData[name]);
+    const isAvailable = typeof config.validate === "function" ? config.validate() : true;
+    const isEnabled = isAvailable && Boolean(formData[name]);
     importOptions[name] = isEnabled;
     let { handler, lifecycle } = config;
     if ( lifecycle !== "post" ) continue;
@@ -181,8 +205,13 @@ export function applyInitiativeTheme(enabled=true) {
  * @param {object} [formData={}]
  */
 export async function configureIsometricMaps(adventure, config, isEnabled=true, formData={}) {
-  const hasModule = Boolean(game.modules.get("isometric-perspective")?.active);
-  const useIsometric = Boolean(isEnabled && hasModule);
+  const hasModule = game.modules.has("isometric-perspective") || Boolean(game.modules.get("isometric-perspective"));
+  if ( !hasModule ) {
+    console.warn(`${ADVENTURE.moduleName} | Module 'isometric-perspective' is not present. Skipping isometric configuration.`);
+    return;
+  }
+  const isModuleActive = Boolean(game.modules.get("isometric-perspective")?.active);
+  const useIsometric = Boolean(isEnabled && isModuleActive);
 
   console.log(`${ADVENTURE.moduleName} | Configuring maps format: ${useIsometric ? "Isometric Perspective" : "Standard 2D"}`);
 
