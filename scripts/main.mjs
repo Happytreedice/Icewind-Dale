@@ -4,7 +4,9 @@ import {
   renderAdventureImporter,
   onImport,
   openImporter,
-  applyInitiativeTheme
+  applyInitiativeTheme,
+  convertScenePerspective,
+  convertScenesToIsometric
 } from "./adventure/importer.mjs";
 
 /* dnd-icewind-dale-pc-game: Integrated Icewind Dale PC Game module.
@@ -59,6 +61,13 @@ Hooks.once("init", async () => {
     type: String,
     default: `modules/${MODID}/assets/ui/initiative.avif`,
     onChange: value => applyInitiativeTheme(!!value)
+  });
+
+  game.settings.register(MODID, "alreadyImported", {
+    scope: "world",
+    config: false,
+    type: Boolean,
+    default: false
   });
 });
 
@@ -120,8 +129,12 @@ Hooks.once("ready", async () => {
   if ( initBg ) applyInitiativeTheme(true);
 
   // Automatic first-run welcome & import prompt for GM
-  const imported = !!game.settings.get("core", "adventureImports")?.[ADVENTURE.adventureUuid];
-  if ( !imported && game.user.isGM ) {
+  const coreImported = !!game.settings.get("core", "adventureImports")?.[ADVENTURE.adventureUuid];
+  const modImported = !!game.settings.get(MODID, "alreadyImported");
+  const worldHasIwdScenes = game.scenes.some(s => s.flags?.[MODID] || s.flags?.["dnd-icewind-dale-pc-game"] || s.id === "iwdMapWorldMap01" || s.name === "Карта мира" || (s.name && s.name.includes("AR1000")));
+  const alreadyImported = coreImported || modImported || worldHasIwdScenes;
+
+  if ( !alreadyImported && game.user.isGM ) {
     const pack = game.packs.get(ADVENTURE.packId);
     if ( pack ) {
       const adventure = await pack.getDocument(ADVENTURE.adventureId);
@@ -298,6 +311,8 @@ Hooks.once("init", () => {
     importArea,
     importPlaylists,
     openImporter,
-    applyInitiativeTheme
+    applyInitiativeTheme,
+    convertScenePerspective,
+    convertScenesToIsometric
   };
 });
