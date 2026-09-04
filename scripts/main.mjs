@@ -103,12 +103,15 @@ Hooks.on("updateWall", async (wall, change) => {
 // --- Screen-aligned sprite tiles for Isometric Perspective ---
 function alignTile(tile) {
   const doc = tile.document;
-  const f = doc.flags?.[MODID] || doc.flags?.["icewind-dale-maps"];
-  if (!f?.screenAligned || !tile.mesh || !canvas.scene) return;
-  if (!canvas.scene.getFlag(ISO, "isometricEnabled") || !game.settings.get(ISO, "worldIsometricFlag")) {
-    tile.mesh.anchor.set(0, 0);
+  if (!tile.mesh || !canvas.scene) return;
+  const sceneIsIso = canvas.scene.getFlag(ISO, "isometricEnabled") && game.modules.get(ISO)?.active && game.settings.get(ISO, "worldIsometricFlag");
+  if (!sceneIsIso) {
+    // Non-isometric scene: every tile keeps its native texture anchor so no external module can offset it.
+    tile.mesh.anchor.set(doc.texture?.anchorX ?? 0, doc.texture?.anchorY ?? 0);
     return;
   }
+  const f = doc.flags?.[MODID] || doc.flags?.["icewind-dale-maps"];
+  if (!f?.screenAligned) return;
   const t = new PIXI.Transform();
   t.rotation = canvas.app.stage.rotation;
   t.skew.set(canvas.app.stage.skew.x, canvas.app.stage.skew.y);
@@ -127,6 +130,20 @@ Hooks.once("ready", async () => {
   // Initiative theme setup
   const initBg = game.settings.get(MODID, "initiativeBackground");
   if ( initBg ) applyInitiativeTheme(true);
+
+  // Quickstart: auto-convert module scenes to isometric when Isometric Perspective is active.
+  // The World Map (iwdMapWorldMap01) is never converted and always stays 2D.
+  const isoActive = Boolean(game.modules.get(ISO)?.active);
+  if ( isoActive && game.user === game.users.activeGM ) {
+    const needsConversion = game.scenes.some(s => (s.flags?.[MODID] || s.flags?.["icewind-dale-maps"]) && s.id !== "iwdMapWorldMap01" && !s.flags?.[MODID]?.isIsometric);
+    if ( needsConversion ) {
+      try {
+        await convertScenesToIsometric(true);
+      } catch (e) {
+        console.error(`${MODID} | isometric auto-conversion failed:`, e);
+      }
+    }
+  }
 
   // Automatic first-run welcome & import prompt for GM
   const coreImported = !!game.settings.get("core", "adventureImports")?.[ADVENTURE.adventureUuid];

@@ -256,7 +256,7 @@ export async function convertScenePerspective(scene, toIsometric = true) {
   if (!isIwd) return;
 
   // Rule: World Map is ALWAYS pure 2D!
-  if (scene.flags?.[ADVENTURE.moduleName]?.isWorldMap) {
+  if (scene.id === "iwdMapWorldMap01" || scene.flags?.[ADVENTURE.moduleName]?.isWorldMap) {
     if (scene.flags?.["isometric-perspective"]) {
       await scene.update({ "flags.-=isometric-perspective": null });
     }
