@@ -196,7 +196,7 @@ export function applyInitiativeTheme(enabled=true) {
   if ( enabled ) {
     const bg = game.settings.get(ADVENTURE.moduleName, "initiativeBackground")
       || "modules/dnd-icewind-dale-pc-game/assets/ui/initiative.avif";
-    root.style.setProperty("--iwd-initiative-bg", `url("${bg}")`);
+    root.style.setProperty("--iwd-initiative-bg", `url("/${bg.replace(/^\/+/, '')}")`);
   } else {
     root.style.removeProperty("--iwd-initiative-bg");
   }
@@ -489,8 +489,12 @@ export async function ensureSceneTokens(adventure) {
       const actor = actorsByCre.get(cre);
       if ( !actor ) continue;
       const proto = actor.prototypeToken || {};
+      const cleanTokenName = (proto.name || actor.name || "")
+        .replace(/\[.*?\]|\(.*?\)/g, "")
+        .replace(/\s*\d+$/, "")
+        .trim();
       tokenDocs.push({
-        name: spec.name || actor.name,
+        name: cleanTokenName || actor.name,
         actorId: actor.id,
         actorLink: false,
         x: Math.round(spec.x),
