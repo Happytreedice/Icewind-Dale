@@ -146,7 +146,8 @@ Hooks.once("ready", async () => {
   }
 
   // Automatic first-run welcome & import prompt for GM
-  const coreImported = !!game.settings.get("core", "adventureImports")?.[ADVENTURE.adventureUuid];
+  const coreImports = game.settings.get("core", "adventureImports") || {};
+  const coreImported = !!coreImports[ADVENTURE.adventureUuid] || !!coreImports[ADVENTURE.adventureUuid.replace(".Adventure.", ".")];
   const modImported = !!game.settings.get(MODID, "alreadyImported");
   const worldHasIwdScenes = game.scenes.some(s => s.flags?.[MODID] || s.flags?.["dnd-icewind-dale-pc-game"] || s.id === "iwdMapWorldMap01" || s.name === "Карта мира" || (s.name && s.name.includes("AR1000")));
   const alreadyImported = coreImported || modImported || worldHasIwdScenes;
