@@ -79,6 +79,7 @@ function formatOptions({ importOptions={} }={}) {
  */
 export async function onImport(adventure, formData) {
   if ( adventure.pack !== ADVENTURE.packId ) return;
+  globalThis._iwdImportFinished = false;
   const importOptions = {};
   for ( const [name, config] of Object.entries(ADVENTURE.importOptions) ) {
     const isAvailable = typeof config.validate === "function" ? config.validate() : true;
@@ -105,6 +106,7 @@ export async function onImport(adventure, formData) {
     // Ignore if core setting cannot be written directly
   }
   ui.notifications.success(game.i18n.localize("IWD.IMPORT.Finished"));
+  globalThis._iwdImportFinished = true;
 }
 
 /* -------------------------------------------- */
@@ -401,8 +403,11 @@ export async function convertScenePerspective(scene, toIsometric = true) {
  * @param {boolean} [useIsometric=true]
  */
 export async function convertScenesToIsometric(useIsometric = true) {
-  for (const scene of game.scenes) {
-    await convertScenePerspective(scene, useIsometric);
+  const scenes = Array.from(game.scenes);
+  const BATCH_SIZE = 8;
+  for (let i = 0; i < scenes.length; i += BATCH_SIZE) {
+    const chunk = scenes.slice(i, i + BATCH_SIZE);
+    await Promise.all(chunk.map(scene => convertScenePerspective(scene, useIsometric)));
   }
 }
 
