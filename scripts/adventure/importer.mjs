@@ -269,143 +269,149 @@ export async function convertScenePerspective(scene, toIsometric = true) {
   const currentIsIso = Boolean(scene.flags?.[ADVENTURE.moduleName]?.isIsometric || scene.flags?.["isometric-perspective"]?.isometricEnabled);
   if (toIsometric === currentIsIso) return;
 
-  const [W, H] = scene.flags?.[ADVENTURE.moduleName]?.image || [scene.width, scene.height];
-  const mp = new IsoMapper(W, H);
+  const priorConverting = game._iwdConvertingPerspective;
+  game._iwdConvertingPerspective = true;
+  try {
+    const [W, H] = scene.flags?.[ADVENTURE.moduleName]?.image || [scene.width, scene.height];
+    const mp = new IsoMapper(W, H);
 
-  // 1. Scene updates
-  const sceneUpdates = {
-    _id: scene.id,
-    width: toIsometric ? mp.sw : W,
-    height: toIsometric ? mp.sh : H,
-    [`flags.${ADVENTURE.moduleName}.isIsometric`]: toIsometric
-  };
-
-  if (scene.background?.src) {
-    sceneUpdates["background.src"] = null;
-  }
-
-  if (toIsometric) {
-    sceneUpdates["flags.isometric-perspective"] = {
-      isometricEnabled: true,
-      isIsometric: true,
-      isometricBackground: false,
-      screenAlignedBackground: true,
-      projectionType: "Game: Planescape Torment"
+    // 1. Scene updates
+    const sceneUpdates = {
+      _id: scene.id,
+      width: toIsometric ? mp.sw : W,
+      height: toIsometric ? mp.sh : H,
+      [`flags.${ADVENTURE.moduleName}.isIsometric`]: toIsometric
     };
-  } else {
-    sceneUpdates["flags.-=isometric-perspective"] = null;
-  }
-  await scene.update(sceneUpdates);
 
-  // 2. Walls
-  const wallUpdates = [];
-  for (const w of scene.walls) {
-    const [c0, c1] = toIsometric ? mp.toIso(w.c[0], w.c[1]) : mp.to2D(w.c[0], w.c[1]);
-    const [c2, c3] = toIsometric ? mp.toIso(w.c[2], w.c[3]) : mp.to2D(w.c[2], w.c[3]);
-    const upd = { _id: w.id, c: [c0, c1, c2, c3] };
-    if (!toIsometric && w.flags?.["isometric-perspective"]) {
-      upd["flags.-=isometric-perspective"] = null;
+    if (scene._source?.background?.src) {
+      sceneUpdates["background.src"] = null;
     }
-    wallUpdates.push(upd);
-  }
-  if (wallUpdates.length) await scene.updateEmbeddedDocuments("Wall", wallUpdates);
 
-  // 3. Tiles
-  const tileUpdates = [];
-  for (const t of scene.tiles) {
-    const isBg = t.flags?.[ADVENTURE.moduleName]?.isBackground || (t.flags?.[ADVENTURE.moduleName]?.img?.[0] === 0 && t.flags?.[ADVENTURE.moduleName]?.img?.[1] === 0 && t.width === W && t.height === H);
-    const img = t.flags?.[ADVENTURE.moduleName]?.img;
-    const upd = { _id: t.id };
     if (toIsometric) {
-      const srcX = img ? img[0] : (isBg ? 0 : t.x);
-      const srcY = img ? img[1] : (isBg ? 0 : t.y);
-      const [tx, ty] = mp.toIso(srcX, srcY);
-      upd.x = tx;
-      upd.y = ty;
-      upd["flags.isometric-perspective.isoTileDisabled"] = true;
-      upd[`flags.${ADVENTURE.moduleName}.screenAligned`] = true;
+      sceneUpdates["flags.isometric-perspective"] = {
+        isometricEnabled: true,
+        isIsometric: true,
+        isometricBackground: false,
+        screenAlignedBackground: true,
+        projectionType: "Game: Planescape Torment"
+      };
     } else {
-      if (isBg) {
-        upd.x = 0;
-        upd.y = 0;
-        upd.width = W;
-        upd.height = H;
-      } else if (img && img.length === 4) {
-        upd.x = img[0];
-        upd.y = img[1];
-        upd.width = img[2];
-        upd.height = img[3];
-      } else {
-        const [tx, ty] = mp.to2D(t.x, t.y);
+      sceneUpdates["flags.-=isometric-perspective"] = null;
+    }
+    await scene.update(sceneUpdates);
+
+    // 2. Walls
+    const wallUpdates = [];
+    for (const w of scene.walls) {
+      const [c0, c1] = toIsometric ? mp.toIso(w.c[0], w.c[1]) : mp.to2D(w.c[0], w.c[1]);
+      const [c2, c3] = toIsometric ? mp.toIso(w.c[2], w.c[3]) : mp.to2D(w.c[2], w.c[3]);
+      const upd = { _id: w.id, c: [c0, c1, c2, c3] };
+      if (!toIsometric && w.flags?.["isometric-perspective"]) {
+        upd["flags.-=isometric-perspective"] = null;
+      }
+      wallUpdates.push(upd);
+    }
+    if (wallUpdates.length) await scene.updateEmbeddedDocuments("Wall", wallUpdates);
+
+    // 3. Tiles
+    const tileUpdates = [];
+    for (const t of scene.tiles) {
+      const isBg = t.flags?.[ADVENTURE.moduleName]?.isBackground || (t.flags?.[ADVENTURE.moduleName]?.img?.[0] === 0 && t.flags?.[ADVENTURE.moduleName]?.img?.[1] === 0 && t.width === W && t.height === H);
+      const img = t.flags?.[ADVENTURE.moduleName]?.img;
+      const upd = { _id: t.id };
+      if (toIsometric) {
+        const srcX = img ? img[0] : (isBg ? 0 : t.x);
+        const srcY = img ? img[1] : (isBg ? 0 : t.y);
+        const [tx, ty] = mp.toIso(srcX, srcY);
         upd.x = tx;
         upd.y = ty;
-      }
-      upd["flags.-=isometric-perspective"] = null;
-      upd[`flags.${ADVENTURE.moduleName}.screenAligned`] = false;
-    }
-    tileUpdates.push(upd);
-  }
-  if (tileUpdates.length) await scene.updateEmbeddedDocuments("Tile", tileUpdates);
-
-  // 4. Tokens
-  const tokenUpdates = [];
-  for (const token of scene.tokens) {
-    const [tx, ty] = toIsometric ? mp.toIso(token.x, token.y) : mp.to2D(token.x, token.y);
-    const size = token.actor?.system?.traits?.size;
-    const targetScale = (size === "sm") ? 0.5 : (size === "tiny") ? 0.35 : 0.7;
-    const upd = { _id: token.id, x: tx, y: ty };
-    if (toIsometric) {
-      upd["flags.isometric-perspective.scale"] = targetScale;
-    } else {
-      upd["flags.-=isometric-perspective"] = null;
-    }
-    tokenUpdates.push(upd);
-  }
-  if (tokenUpdates.length) await scene.updateEmbeddedDocuments("Token", tokenUpdates);
-
-  // 5. Lights
-  const lightUpdates = [];
-  for (const l of scene.lights) {
-    const [lx, ly] = toIsometric ? mp.toIso(l.x, l.y) : mp.to2D(l.x, l.y);
-    lightUpdates.push({ _id: l.id, x: lx, y: ly });
-  }
-  if (lightUpdates.length) await scene.updateEmbeddedDocuments("AmbientLight", lightUpdates);
-
-  // 6. Sounds
-  const soundUpdates = [];
-  for (const s of scene.sounds) {
-    const [sx, sy] = toIsometric ? mp.toIso(s.x, s.y) : mp.to2D(s.x, s.y);
-    soundUpdates.push({ _id: s.id, x: sx, y: sy });
-  }
-  if (soundUpdates.length) await scene.updateEmbeddedDocuments("AmbientSound", soundUpdates);
-
-  // 7. Notes
-  const noteUpdates = [];
-  for (const n of scene.notes) {
-    const [nx, ny] = toIsometric ? mp.toIso(n.x, n.y) : mp.to2D(n.x, n.y);
-    noteUpdates.push({ _id: n.id, x: nx, y: ny });
-  }
-  if (noteUpdates.length) await scene.updateEmbeddedDocuments("Note", noteUpdates);
-
-  // 8. Regions
-  const regionUpdates = [];
-  for (const r of scene.regions) {
-    const shapes = foundry.utils.deepClone(r.shapes || []);
-    let modified = false;
-    for (const shape of shapes) {
-      if (shape.points && shape.points.length >= 2) {
-        const newPts = [];
-        for (let i = 0; i < shape.points.length; i += 2) {
-          const [px, py] = toIsometric ? mp.toIso(shape.points[i], shape.points[i + 1]) : mp.to2D(shape.points[i], shape.points[i + 1]);
-          newPts.push(px, py);
+        upd["flags.isometric-perspective.isoTileDisabled"] = true;
+        upd[`flags.${ADVENTURE.moduleName}.screenAligned`] = true;
+      } else {
+        if (isBg) {
+          upd.x = 0;
+          upd.y = 0;
+          upd.width = W;
+          upd.height = H;
+        } else if (img && img.length === 4) {
+          upd.x = img[0];
+          upd.y = img[1];
+          upd.width = img[2];
+          upd.height = img[3];
+        } else {
+          const [tx, ty] = mp.to2D(t.x, t.y);
+          upd.x = tx;
+          upd.y = ty;
         }
-        shape.points = newPts;
-        modified = true;
+        upd["flags.-=isometric-perspective"] = null;
+        upd[`flags.${ADVENTURE.moduleName}.screenAligned`] = false;
       }
+      tileUpdates.push(upd);
     }
-    if (modified) regionUpdates.push({ _id: r.id, shapes });
+    if (tileUpdates.length) await scene.updateEmbeddedDocuments("Tile", tileUpdates);
+
+    // 4. Tokens
+    const tokenUpdates = [];
+    for (const token of scene.tokens) {
+      const [tx, ty] = toIsometric ? mp.toIso(token.x, token.y) : mp.to2D(token.x, token.y);
+      const size = token.actor?.system?.traits?.size;
+      const targetScale = (size === "sm") ? 0.5 : (size === "tiny") ? 0.35 : 0.7;
+      const upd = { _id: token.id, x: tx, y: ty };
+      if (toIsometric) {
+        upd["flags.isometric-perspective.scale"] = targetScale;
+      } else {
+        upd["flags.-=isometric-perspective"] = null;
+      }
+      tokenUpdates.push(upd);
+    }
+    if (tokenUpdates.length) await scene.updateEmbeddedDocuments("Token", tokenUpdates, { noHook: true, animate: false });
+
+    // 5. Lights
+    const lightUpdates = [];
+    for (const l of scene.lights) {
+      const [lx, ly] = toIsometric ? mp.toIso(l.x, l.y) : mp.to2D(l.x, l.y);
+      lightUpdates.push({ _id: l.id, x: lx, y: ly });
+    }
+    if (lightUpdates.length) await scene.updateEmbeddedDocuments("AmbientLight", lightUpdates);
+
+    // 6. Sounds
+    const soundUpdates = [];
+    for (const s of scene.sounds) {
+      const [sx, sy] = toIsometric ? mp.toIso(s.x, s.y) : mp.to2D(s.x, s.y);
+      soundUpdates.push({ _id: s.id, x: sx, y: sy });
+    }
+    if (soundUpdates.length) await scene.updateEmbeddedDocuments("AmbientSound", soundUpdates);
+
+    // 7. Notes
+    const noteUpdates = [];
+    for (const n of scene.notes) {
+      const [nx, ny] = toIsometric ? mp.toIso(n.x, n.y) : mp.to2D(n.x, n.y);
+      noteUpdates.push({ _id: n.id, x: nx, y: ny });
+    }
+    if (noteUpdates.length) await scene.updateEmbeddedDocuments("Note", noteUpdates);
+
+    // 8. Regions
+    const regionUpdates = [];
+    for (const r of scene.regions) {
+      const shapes = foundry.utils.deepClone(r.shapes || []);
+      let modified = false;
+      for (const shape of shapes) {
+        if (shape.points && shape.points.length >= 2) {
+          const newPts = [];
+          for (let i = 0; i < shape.points.length; i += 2) {
+            const [px, py] = toIsometric ? mp.toIso(shape.points[i], shape.points[i + 1]) : mp.to2D(shape.points[i], shape.points[i + 1]);
+            newPts.push(px, py);
+          }
+          shape.points = newPts;
+          modified = true;
+        }
+      }
+      if (modified) regionUpdates.push({ _id: r.id, shapes });
+    }
+    if (regionUpdates.length) await scene.updateEmbeddedDocuments("Region", regionUpdates);
+  } finally {
+    game._iwdConvertingPerspective = priorConverting;
   }
-  if (regionUpdates.length) await scene.updateEmbeddedDocuments("Region", regionUpdates);
 }
 
 /**
@@ -413,11 +419,16 @@ export async function convertScenePerspective(scene, toIsometric = true) {
  * @param {boolean} [useIsometric=true]
  */
 export async function convertScenesToIsometric(useIsometric = true) {
-  const scenes = Array.from(game.scenes);
-  const BATCH_SIZE = 8;
-  for (let i = 0; i < scenes.length; i += BATCH_SIZE) {
-    const chunk = scenes.slice(i, i + BATCH_SIZE);
-    await Promise.all(chunk.map(scene => convertScenePerspective(scene, useIsometric)));
+  game._iwdConvertingPerspective = true;
+  try {
+    const scenes = Array.from(game.scenes);
+    const BATCH_SIZE = 8;
+    for (let i = 0; i < scenes.length; i += BATCH_SIZE) {
+      const chunk = scenes.slice(i, i + BATCH_SIZE);
+      await Promise.all(chunk.map(scene => convertScenePerspective(scene, useIsometric)));
+    }
+  } finally {
+    game._iwdConvertingPerspective = false;
   }
 }
 

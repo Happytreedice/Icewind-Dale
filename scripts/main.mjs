@@ -39,11 +39,26 @@ Hooks.once("init", async () => {
   }
 
   // Register Journal Sheet
-  DocumentSheetConfig.registerSheet(JournalEntry, MODID, IwdJournalSheet, {
+  const SheetConfig = foundry.applications?.sheets?.DocumentSheetConfig ?? DocumentSheetConfig;
+  SheetConfig.registerSheet(JournalEntry, MODID, IwdJournalSheet, {
     types: ["base"],
     label: "Icewind Dale — стиль игры",
     makeDefault: false
   });
+
+  // Prevent travel region behaviors from triggering on NPCs/monsters or during perspective conversions
+  if (typeof RegionBehavior !== "undefined" && RegionBehavior.prototype?._handleRegionEvent) {
+    const origHandleRegionEvent = RegionBehavior.prototype._handleRegionEvent;
+    RegionBehavior.prototype._handleRegionEvent = async function(event) {
+      if (game._iwdConvertingPerspective) return;
+      if (this.type === "teleportToken") {
+        const token = event.data?.token;
+        // Only player-owned characters (the party) can transition between areas/scenes
+        if (token && !token.actor?.hasPlayerOwner) return;
+      }
+      return origHandleRegionEvent.call(this, event);
+    };
+  }
 
   // Register Settings
   game.settings.register(MODID, "importOptions", {
