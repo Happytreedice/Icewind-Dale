@@ -280,6 +280,10 @@ export async function convertScenePerspective(scene, toIsometric = true) {
     [`flags.${ADVENTURE.moduleName}.isIsometric`]: toIsometric
   };
 
+  if (scene.background?.src) {
+    sceneUpdates["background.src"] = null;
+  }
+
   if (toIsometric) {
     sceneUpdates["flags.isometric-perspective"] = {
       isometricEnabled: true,
@@ -309,18 +313,24 @@ export async function convertScenePerspective(scene, toIsometric = true) {
   // 3. Tiles
   const tileUpdates = [];
   for (const t of scene.tiles) {
+    const isBg = t.flags?.[ADVENTURE.moduleName]?.isBackground || (t.flags?.[ADVENTURE.moduleName]?.img?.[0] === 0 && t.flags?.[ADVENTURE.moduleName]?.img?.[1] === 0 && t.width === W && t.height === H);
     const img = t.flags?.[ADVENTURE.moduleName]?.img;
     const upd = { _id: t.id };
     if (toIsometric) {
-      const srcX = img ? img[0] : t.x;
-      const srcY = img ? img[1] : t.y;
+      const srcX = img ? img[0] : (isBg ? 0 : t.x);
+      const srcY = img ? img[1] : (isBg ? 0 : t.y);
       const [tx, ty] = mp.toIso(srcX, srcY);
       upd.x = tx;
       upd.y = ty;
       upd["flags.isometric-perspective.isoTileDisabled"] = true;
       upd[`flags.${ADVENTURE.moduleName}.screenAligned`] = true;
     } else {
-      if (img && img.length === 4) {
+      if (isBg) {
+        upd.x = 0;
+        upd.y = 0;
+        upd.width = W;
+        upd.height = H;
+      } else if (img && img.length === 4) {
         upd.x = img[0];
         upd.y = img[1];
         upd.width = img[2];
