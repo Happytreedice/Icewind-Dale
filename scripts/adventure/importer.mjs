@@ -82,7 +82,8 @@ export async function onImport(adventure, formData) {
   const importOptions = {};
   for ( const [name, config] of Object.entries(ADVENTURE.importOptions) ) {
     const isAvailable = typeof config.validate === "function" ? config.validate() : true;
-    const isEnabled = isAvailable && Boolean(formData[name]);
+    const defaultValue = typeof config.default === "function" ? config.default() : Boolean(config.default);
+    const isEnabled = isAvailable && (formData && (name in formData) ? Boolean(formData[name]) : defaultValue);
     importOptions[name] = isEnabled;
     let { handler, lifecycle } = config;
     if ( lifecycle !== "post" ) continue;
@@ -280,6 +281,7 @@ export async function convertScenePerspective(scene, toIsometric = true) {
   if (toIsometric) {
     sceneUpdates["flags.isometric-perspective"] = {
       isometricEnabled: true,
+      isIsometric: true,
       isometricBackground: false,
       screenAlignedBackground: true,
       projectionType: "Game: Planescape Torment"
