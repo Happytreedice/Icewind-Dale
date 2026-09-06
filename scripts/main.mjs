@@ -6,7 +6,8 @@ import {
   openImporter,
   applyInitiativeTheme,
   convertScenePerspective,
-  convertScenesToIsometric
+  convertScenesToIsometric,
+  getWorldSetting
 } from "./adventure/importer.mjs";
 
 /* dnd-icewind-dale-pc-game: Integrated Icewind Dale PC Game module.
@@ -59,31 +60,6 @@ Hooks.once("init", async () => {
       return origHandleRegionEvent.call(this, event);
     };
   }
-
-  // Register Settings
-  game.settings.register(MODID, "importOptions", {
-    scope: "world",
-    config: false,
-    type: Object,
-    default: {}
-  });
-
-  game.settings.register(MODID, "initiativeBackground", {
-    name: "IWD.IMPORT.SetInitiativeBackground",
-    hint: "Подложка трекера инициативы",
-    scope: "world",
-    config: true,
-    type: String,
-    default: `modules/${MODID}/assets/ui/initiative.avif`,
-    onChange: value => applyInitiativeTheme(!!value)
-  });
-
-  game.settings.register(MODID, "alreadyImported", {
-    scope: "world",
-    config: false,
-    type: Boolean,
-    default: false
-  });
 });
 
 // --- Adventure Importer Hooks ---
@@ -143,8 +119,8 @@ Hooks.once("ready", async () => {
   Hooks.on("canvasReady", () => canvas.tiles?.placeables?.forEach(alignTile));
 
   // Initiative theme setup
-  const initBg = game.settings.get(MODID, "initiativeBackground");
-  if ( initBg ) applyInitiativeTheme(true);
+  const initBg = getWorldSetting(`${MODID}.initiativeBackground`);
+  if ( initBg ) applyInitiativeTheme(true, initBg);
 
   // Quickstart: auto-convert module scenes to isometric when Isometric Perspective is active.
   // The World Map (iwdMapWorldMap01) is never converted and always stays 2D.
@@ -163,7 +139,7 @@ Hooks.once("ready", async () => {
   // Automatic first-run welcome & import prompt for GM
   const coreImports = game.settings.get("core", "adventureImports") || {};
   const coreImported = !!coreImports[ADVENTURE.adventureUuid] || !!coreImports[ADVENTURE.adventureUuid.replace(".Adventure.", ".")];
-  const modImported = !!game.settings.get(MODID, "alreadyImported");
+  const modImported = !!getWorldSetting(`${MODID}.alreadyImported`);
   const worldHasIwdScenes = game.scenes.some(s => s.flags?.[MODID] || s.flags?.["dnd-icewind-dale-pc-game"] || s.id === "iwdMapWorldMap01" || s.name === "Карта мира" || (s.name && s.name.includes("AR1000")));
   const alreadyImported = coreImported || modImported || worldHasIwdScenes;
 

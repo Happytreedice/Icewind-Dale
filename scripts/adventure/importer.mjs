@@ -1,6 +1,50 @@
 import { ADVENTURE } from "./adventure.mjs";
 
 /* -------------------------------------------- */
+/*  World Settings (without UI registration)    */
+/* -------------------------------------------- */
+
+/**
+ * Read a world setting from WorldSettings storage without requiring registration.
+ * @param {string} key
+ * @returns {*}
+ */
+export function getWorldSetting(key) {
+  try {
+    const storage = game.settings.storage?.get("world");
+    if ( !storage ) return undefined;
+    if ( typeof storage.getItem === "function" ) {
+      const val = storage.getItem(key);
+      if ( val !== undefined ) return val;
+    }
+    const doc = storage.getSetting?.(key) || storage.find?.(s => s.key === key);
+    return doc?.value;
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Save a world setting directly to WorldSettings collection without registering in Settings UI.
+ * @param {string} key
+ * @param {*} value
+ */
+export async function saveWorldSetting(key, value) {
+  try {
+    const storage = game.settings.storage?.get("world");
+    const existing = storage?.getSetting?.(key) || storage?.find?.(s => s.key === key);
+    if ( existing ) {
+      await existing.update({ value });
+    } else {
+      const SettingCls = getDocumentClass("Setting");
+      await SettingCls.create({ key, value });
+    }
+  } catch (err) {
+    console.warn(`Could not save world setting ${key}:`, err);
+  }
+}
+
+/* -------------------------------------------- */
 /*  Customize Import Form                       */
 /* -------------------------------------------- */
 
@@ -14,7 +58,7 @@ export function renderAdventureImporter(app, html) {
   const controls = html.querySelector(".import-controls");
   if ( !controls ) return;
 
-  const importOptions = game.settings.get(ADVENTURE.moduleName, "importOptions") || {};
+  const importOptions = getWorldSetting(`${ADVENTURE.moduleName}.importOptions`) || {};
   controls.insertAdjacentHTML("beforeend", `<h2>${game.i18n.localize("IWD.IMPORT.Options")}</h2>`);
   controls.append(...formatOptions({ importOptions }));
 }
@@ -97,8 +141,8 @@ export async function onImport(adventure, formData) {
     }
   }
   await ensureSceneTokens(adventure);
-  await game.settings.set(ADVENTURE.moduleName, "importOptions", importOptions);
-  await game.settings.set(ADVENTURE.moduleName, "alreadyImported", true);
+  await saveWorldSetting(`${ADVENTURE.moduleName}.importOptions`, importOptions);
+  await saveWorldSetting(`${ADVENTURE.moduleName}.alreadyImported`, true);
   try {
     const coreImports = game.settings.get("core", "adventureImports") || {};
     await game.settings.set("core", "adventureImports", { ...coreImports, [ADVENTURE.adventureUuid]: true });
@@ -172,8 +216,8 @@ export async function setInitiativeBackground(adventure, { background }={}, isEn
   if ( !isEnabled ) return;
   const bg = background || "modules/dnd-icewind-dale-pc-game/assets/ui/initiative.avif";
 
-  // 1. Save setting
-  await game.settings.set(ADVENTURE.moduleName, "initiativeBackground", bg);
+  // 1. Save setting in world storage
+  await saveWorldSetting(`${ADVENTURE.moduleName}.initiativeBackground`, bg);
 
   // 2. Set Combat Tracker Dock if present
   if ( game.settings.settings.has("combat-tracker-dock.portraitImageBackground") ) {
@@ -186,18 +230,20 @@ export async function setInitiativeBackground(adventure, { background }={}, isEn
   }
 
   // 3. Apply CSS to Core Combat Tracker
-  applyInitiativeTheme(true);
+  applyInitiativeTheme(true, bg);
 }
 
 /**
  * Apply or remove the initiative backdrop theme on DOM.
  * @param {boolean} [enabled=true]
+ * @param {string|null} [customBg=null]
  */
-export function applyInitiativeTheme(enabled=true) {
+export function applyInitiativeTheme(enabled=true, customBg=null) {
   document.body.classList.toggle("iwd-initiative-bg", enabled);
   const root = document.documentElement;
   if ( enabled ) {
-    const bg = game.settings.get(ADVENTURE.moduleName, "initiativeBackground")
+    const bg = customBg
+      || getWorldSetting(`${ADVENTURE.moduleName}.initiativeBackground`)
       || "modules/dnd-icewind-dale-pc-game/assets/ui/initiative.avif";
     root.style.setProperty("--iwd-initiative-bg", `url("/${bg.replace(/^\/+/, '')}")`);
   } else {
