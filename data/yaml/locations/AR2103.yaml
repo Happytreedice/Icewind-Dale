@@ -1,0 +1,72 @@
+code: AR2103
+id: e914c12a345e8723
+name: Кулдахар — кузница Конлана (AR2103)
+chapter: Глава 1
+structure:
+  width: 576
+  height: 448
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 6fc54c79fc259bcf
+  name: 'Фон: Кулдахар — кузница Конлана (AR2103)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR2103.avif
+  x: 0
+  y: 0
+  width: 576
+  height: 448
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: b9ff915cc850fd79
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR2103_fg000.avif
+  x: 36
+  y: 74
+  width: 494
+  height: 351
+  elevation: 10
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 1aff58182828a494
+  name: Conlan (Selling)
+  cre: null
+  x: 193
+  y: 297
+  elevation: 0
+containers:
+- name: Container 1
+  type: chest
+  x: 360
+  y: 137
+  locked: false
+  lock_difficulty: 99
+  trapped: true
+  trap_difficulty: 0
+  items:
+  - code: MISC07
+    name: Золотой
+  - code: ZZA7CH
+    name: Молот Конлана +1, +4 пр. железных големов
+random_loot_tables: []
+regions:
+- name: Переход → AR2100
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 2
+  total_enemies: 1
+  total_containers: 1
+  total_walls: 87
+  total_lights: 0
+  total_sounds: 1

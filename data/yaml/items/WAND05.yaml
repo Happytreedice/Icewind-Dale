@@ -1,0 +1,140 @@
+code: WAND05
+id: 3525298a18d8a5f8
+name:
+  ru: Жезл огня
+  en: Wand of Fire
+  official: Жезл огня
+type: consumable
+subtype: wand
+rarity: veryRare
+price:
+  value: 22000
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: cb38ed50cb44b897
+  name: Огненный шар
+  type: save
+  target:
+    template:
+      count: '1'
+      contiguous: false
+      type: sphere
+      size: '20'
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+    prompt: true
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 753aedcfb24544dd
+  name: Опаляющий луч
+  type: save
+  target:
+    template:
+      count: '1'
+      contiguous: false
+      type: line
+      size: '60'
+      width: '5'
+      units: ft
+    affects:
+      count: ''
+      type: creature
+      choice: false
+      special: ''
+    prompt: true
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Жезл, извергающий огненные шары и струи пламени.
+
+  Огненный шар (1 заряд): Действием и одним зарядом вы выпускаете огненный шар в точку
+  в пределах 150 футов: каждое существо в радиусе 20 футов совершает спасбросок Ловкости
+  [[/save ability=dex dc=15]], получая [[/damage 6d6min2 fire]] при провале или половину
+  при успехе.
+
+  Опаляющий луч (1 заряд): Действием и одним зарядом вы выпускаете столб пламени в
+  существо в пределах 40 футов: спасбросок Ловкости [[/save ability=dex dc=15]], урон
+  [[/damage 6d6 + 6 fire]] при провале или половина при успехе.
+
+  Из жезла вылетает гигантский горящий шар, который устремляется в указанную точку
+  и взрывается в ней, как в заклинании «Огненный шар». Взрыв наносит 6d6 единиц урона,
+  при этом все выпавшие единицы считаются за двойки. При успешном спасброске против
+  жезла пострадавшие получают только половину урона. Есть второй вариант использования
+  жезла, он напоминает действие заклинания «Пекло Аганназара»: в цель бьет огненная
+  струя, которая наносит 6d6+6 урона (половину при успешном спасброске против жезла).'
+ttgclub:
+- name:
+    ru: Волшебная палочка
+    en: Wand
+  url: https://ttg.club/items/wand
+  source: PHB
+- name:
+    ru: Алхимический огонь (фляга)
+    en: Alchemist's Fire (flask)
+  url: https://ttg.club/items/alchemist's_fire_(flask)
+  source: PHB
+- name:
+    ru: Тисовая палочка
+    en: Yew wand
+  url: https://ttg.club/items/yew_wand
+  source: PHB
+- name:
+    ru: Волшебная палочка огненных шаров
+    en: Wand of Fireballs
+  url: https://ttg.club/items/magic/wand_of_fireballs
+  rarity: редкая
+  source: DMG
+- name:
+    ru: Волшебная палочка паралича
+    en: Wand of Paralysis
+  url: https://ttg.club/items/magic/wand_of_paralysis
+  rarity: редкая
+  source: DMG
+uses:
+  max: '5'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

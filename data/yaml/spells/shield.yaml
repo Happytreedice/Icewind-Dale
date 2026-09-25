@@ -1,0 +1,89 @@
+id: 6571b867312fc5f9
+identifier: shield
+name:
+  ru: Щит
+  en: Shield
+level: 1
+school: abj
+activation:
+  type: reaction
+  value: 1
+  condition: когда по вам попали атакой или выбрали вас целью волшебной стрелы
+duration:
+  value: '1'
+  units: round
+  concentration: false
+range:
+  value: null
+  units: ''
+target:
+  affects: self
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/ISHLD02.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+description: Появляется незримый барьер магической силы, который защищает вас. До
+  начала вашего следующего хода у вас бонус +5 к КБ, в том числе против атаки, вызвавшей
+  это @UUID[Compendium.dnd5e.srd-actions.Item.mMwkUE20bEfKeetq]{ответное действие},
+  и вы не получаете урона от заклинаний @UUID[Compendium.laaru-dnd5-hw.spells.Item.FgeTrsMqHnbTEIPl]{Волшебная
+  стрела}.
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

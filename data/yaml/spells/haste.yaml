@@ -1,0 +1,94 @@
+id: 99895ae805863109
+identifier: haste
+name:
+  ru: Ускорение
+  en: Haste
+level: 3
+school: trs
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: true
+range:
+  value: '30'
+  units: ft
+target:
+  affects: creature
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: стружка корня лакрицы
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ALTERAX.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+description: 'Выберите согласное существо, которое видите в пределах дистанции. Пока
+  длится заклинание, скорость цели удваивается, она получает бонус +2 к КБ, преимущество
+  к испытаниям Ловкости и дополнительное действие в каждый свой ход. Это действие
+  можно использовать только для совершения действий @UUID[Compendium.dnd5e.srd-actions.Item.Y0O7jQKh7vGMSTBu]{Атака}
+  (только одна атака оружием), @UUID[Compendium.dnd5e.srd-actions.Item.v1tkJ8DKVJFCNFPM]{Рывок},
+  @UUID[Compendium.dnd5e.srd-actions.Item.NwKMv5Ljen62a44Y]{Отступление}, @UUID[Compendium.dnd5e.srd-actions.Item.H9TgqPZGVRUQY4GF]{Засада}
+  или @UUID[Compendium.dnd5e.srd-actions.Item.ydiv2XUXmVXv5ENI]{Использование объекта}.
+
+  Когда заклинание прекращает действовать, цель не может ни перемещаться, ни совершать
+  действия до конца своего следующего хода - её охватывает слабость.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/ALTERAX.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

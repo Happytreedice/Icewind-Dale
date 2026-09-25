@@ -1,0 +1,172 @@
+code: JHOSWD3
+id: 8b0b04ed8e3890e8
+name:
+  ru: Поющий клинок Айонена +5
+  en: Singing Blade of Aihonen +5
+  official: Поющий клинок Айонена +5
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 21575
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 1d8
+  type: slashing
+activities:
+- id: 6b77a72cf12a4f5d
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 42d1777df6643cae
+  name: Лечение тяжких ран
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 8a1fc00e70573656
+  name: Мощь Айхонена
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Поющий клинок Айхонена +5
+  changes:
+  - key: system.attributes.hp.bonuses.overall
+    mode: 2
+    value: '10'
+  - key: system.traits.dr.value
+    mode: 2
+    value: cold
+  - key: system.traits.dr.value
+    mode: 2
+    value: fire
+description: 'Клинок из груди Икасарахт, черпающий силу из вод Лак Диннешир.
+
+  Сила озера: Вблизи Лак Диннешир (в пределах драконьего перелёта) меч действует в
+  полную силу: +10 к максимуму хитов владельца (учтено эффектом); вдали от озера бонус
+  меча снижается с +5 до +1, а прибавка хитов пропадает (снимите эффект).
+
+  Лечение тяжких ран (3/день): Действием вы касаетесь существа клинком плашмя: оно
+  восстанавливает [[/heal 27]] хитов.
+
+  Мощь Айхонена (1/день): Действием вы взываете к силе клинка: ваша Сила повышается
+  на 3 на 1 час.
+
+  Сопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  холодом.
+
+  Сопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  огнём.
+
+  Этот некогда разбитый клинок принес погибель последнему матриарху белых драконов
+  — Иказарахт. Он принадлежал Айонену, предку рыбака Джонена из Восточной Гавани.
+  Почти сотню лет этот меч пролежал на дне озера, ожидая своего возвращения к продолжателю
+  рода. Клинок, похоже, черпает энергию из самого озера Лек Диннешер. Пока его владелец
+  находится в пределах расстояния полета дракона от озера (а это немало по меркам
+  любой расы), меч является очень серьезным оружием.
+
+  Дворф-кузнец Тиернон «успокоил» клинок — похоже, этот мастер когда-то его и изготовил.
+  В результате пробудились некоторые силы меча, утраченные, когда им убили Иказарахт.'
+ttgclub:
+- name:
+    ru: Клинок удачи
+    en: Luck Blade
+  url: https://ttg.club/items/magic/luck_blade
+  rarity: легендарное
+  source: DMG
+- name:
+    ru: Солнечный клинок
+    en: Sun Blade
+  url: https://ttg.club/items/magic/sun_blade
+  rarity: редкое
+  source: DMG
+- name:
+    ru: Рука-клинок
+    en: Arm Blade
+  url: https://ttg.club/items/magic/arm_blade
+  rarity: обычное
+  source: ERLW
+- name:
+    ru: Клинок Авернуса
+    en: Blade of Avernus
+  url: https://ttg.club/items/magic/blade_of_avernus
+  rarity: артефакт
+  source: BGDIA
+- name:
+    ru: Клинок разума
+    en: Mind Blade
+  url: https://ttg.club/items/magic/mind_blade
+  rarity: редкое
+  source: VGM
+uses:
+  max: '3'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

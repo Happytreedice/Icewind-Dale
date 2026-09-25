@@ -1,0 +1,105 @@
+id: 6f9ed867a1be1012
+identifier: confusion
+name:
+  ru: Замешательство
+  en: Confusion
+level: 4
+school: enc
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: true
+range:
+  value: '90'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: три ореховых скорлупы
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPPR207B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ENCHANX.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M16.ogg
+description: 'Заклинание затуманивает разум существ, вызывая у них бред и провоцируя
+  на неуправляемые действия. Каждое существо в пределах сферы радиусом 10 футов вокруг
+  выбранной вами точки в пределах дистанции должно пройти испытание Мудрости, при
+  провале оно попадает под влияние заклинания.
+
+   Под влиянием заклинания цель не может совершать ответные действия и должна бросать
+  [[/r d10]] в начале каждого своего хода, чтобы определить, как она поведёт себя
+  в этот ход.
+
+  Поведение замешательства[[/r d10]]Поведение 1Цель тратит всю свою скорость на перемещение
+  в случайном направлении. Чтобы определить направление, бросьте [[/r d8]], назначив
+  направление для каждого значения. В этот ход существо не совершает действие. 2-6Цель
+  не перемещается и не совершает действий в этот ход.7-8Цель использует действие,
+  чтобы совершить атаку ближнего боя по случайно выбранному существу в пределах зоны
+  досягаемости. Если в зоне досяга емости нет существ, цель ничего не делает в этот
+  ход 9-10Цель перемещается и действует как обычно.В конце каждого своего хода цель
+  может пройти испытание Мудрости. При успехе заклинание прекращает действовать на
+  неё.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 5-го круга
+  или выше, радиус сферы увеличивается на 5 футов за каждый круг ячейки выше 4-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M16.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/ENCHANX.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

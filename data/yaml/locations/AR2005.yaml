@@ -1,0 +1,136 @@
+code: AR2005
+id: 94b8378b2fd3311b
+name: Кулдахарский перевал — пещера жуков (AR2005)
+chapter: Глава 1
+structure:
+  width: 896
+  height: 448
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 96eb401c021544e2
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR2005_DOOR1.avif
+  x: 768
+  y: 64
+  width: 128
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: a9f466fd3e25df51
+  name: 'Фон: Кулдахарский перевал — пещера жуков (AR2005)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR2005.avif
+  x: 0
+  y: 0
+  width: 896
+  height: 448
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: bc8eeb469eee9dfb
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR2005_fg000.avif
+  x: 28
+  y: 24
+  width: 867
+  height: 420
+  elevation: 10
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 0f382ed9d13aa9b8
+  name: Goblin 5
+  cre: null
+  x: 180
+  y: 300
+  elevation: 0
+- id: 27a74b41dba8ea27
+  name: Jermsy
+  cre: null
+  x: 846
+  y: 127
+  elevation: 0
+- id: 2c0619de7106b6a1
+  name: Goblin 2
+  cre: null
+  x: 430
+  y: 200
+  elevation: 0
+- id: 4267aa395abb57ea
+  name: Goblin 1
+  cre: null
+  x: 570
+  y: 230
+  elevation: 0
+- id: 8b9789ccfacd2317
+  name: Goblin 3
+  cre: null
+  x: 360
+  y: 345
+  elevation: 0
+- id: c3f90e4beac8901d
+  name: Goblin 4
+  cre: null
+  x: 385
+  y: 390
+  elevation: 0
+containers:
+- name: Barrel 1
+  type: barrel
+  x: 387
+  y: 153
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC07
+    name: Золотой
+- name: Barrel 2
+  type: barrel
+  x: 315
+  y: 190
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC18
+    name: Солнечный камень
+- name: Crate 1
+  type: crate
+  x: 531
+  y: 253
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: AX1H04
+    name: Метательный топор
+random_loot_tables: []
+regions:
+- name: Переход → AR2004
+  teleport_destination: null
+  shapes_count: 1
+- name: Переход → AR2006
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 3
+  total_enemies: 6
+  total_containers: 3
+  total_walls: 136
+  total_lights: 0
+  total_sounds: 1

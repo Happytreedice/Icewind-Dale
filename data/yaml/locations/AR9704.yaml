@@ -1,0 +1,113 @@
+code: AR9704
+id: ebc61d5e64410266
+name: Замок Малавура — подземелье пыток (AR9704)
+chapter: Испытания Мастера Приманок
+structure:
+  width: 1152
+  height: 960
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 2ded596ec4730a98
+  name: 'Фон: Замок Малавура — подземелье пыток (AR9704)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR9704.avif
+  x: 0
+  y: 0
+  width: 1152
+  height: 960
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 467f1325bb174996
+  name: Дверь SWITCH1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9704_SWITCH1.avif
+  x: 576
+  y: 256
+  width: 64
+  height: 64
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: ba62e3abd52ffcdc
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9704_fg000.avif
+  x: 69
+  y: 195
+  width: 999
+  height: 741
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: e3b655bdc1b6a2f2
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9704_DOOR1.avif
+  x: 192
+  y: 384
+  width: 256
+  height: 192
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 020f0372f71fb6dc
+  name: Dead Fighter
+  cre: null
+  x: 802
+  y: 470
+  elevation: 0
+- id: 36645efe5f1ff061
+  name: Harald
+  cre: null
+  x: 463
+  y: 294
+  elevation: 0
+- id: 49753c6e87533ff9
+  name: Dead Priest
+  cre: null
+  x: 411
+  y: 473
+  elevation: 0
+- id: 876434b01f8004fe
+  name: Dead Thief
+  cre: null
+  x: 697
+  y: 585
+  elevation: 0
+containers:
+- name: Holy Symbol
+  type: pile
+  x: 436
+  y: 448
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: SYMHELM
+    name: SYMHELM
+random_loot_tables: []
+regions:
+- name: Переход → AR9709
+  teleport_destination: null
+  shapes_count: 1
+- name: Переход → AR9703
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 4
+  total_enemies: 4
+  total_containers: 1
+  total_walls: 213
+  total_lights: 0
+  total_sounds: 1

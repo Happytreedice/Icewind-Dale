@@ -1,0 +1,75 @@
+code: AR2115
+id: 5696951929a2eb99
+name: Кулдахар — гостиница «Вечерняя прохлада», 2 этаж (AR2115)
+chapter: Глава 1
+structure:
+  width: 512
+  height: 512
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 9cb3790d9fdae272
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR2115_fg000.avif
+  x: 0
+  y: 78
+  width: 472
+  height: 387
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: c97efd205efb49ab
+  name: 'Фон: Кулдахар — гостиница «Вечерняя прохлада», 2 этаж (AR2115)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR2115.avif
+  x: 0
+  y: 0
+  width: 512
+  height: 512
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies: []
+containers:
+- name: Locked Crate
+  type: crate
+  x: 240
+  y: 246
+  locked: false
+  lock_difficulty: 0
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: AMUL04
+    name: Колье с зиосами
+- name: Drawer
+  type: drawer
+  x: 328
+  y: 310
+  locked: false
+  lock_difficulty: 40
+  trapped: true
+  trap_difficulty: 0
+  items:
+  - code: EIDANRNG
+    name: Кольцо с заветом Эйдана
+random_loot_tables: []
+regions:
+- name: Переход → AR2114
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 2
+  total_enemies: 0
+  total_containers: 2
+  total_walls: 128
+  total_lights: 0
+  total_sounds: 1

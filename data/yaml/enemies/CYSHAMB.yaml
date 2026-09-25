@@ -1,0 +1,79 @@
+code: CYSHAMB
+id: 8e222399a4d2c9bf
+name:
+  ru: Шаркун
+  en: Shambler
+type: npc
+cr: 14
+xp: 11500
+attributes:
+  str: 18
+  dex: 9
+  con: 18
+  int: 5
+  wis: 5
+  cha: 9
+hp:
+  value: 260
+  max: 260
+  formula: 26d10 + 78
+ac: 20
+speed_ft: 30
+saving_throws:
+- DEX
+- CON
+- WIS
+damage_resistances:
+- cold
+- bludgeoning
+- piercing
+- slashing
+damage_immunities:
+- fire
+- lightning
+damage_vulnerabilities: []
+condition_immunities:
+- paralyzed
+languages: []
+actions:
+- name: Мультиатака
+  type: feat
+  description: 'Существо совершает две атаки: одну Укусом и одну Когтями.'
+- name: Укус
+  type: weapon
+  description: 'Природная атака: Укус.'
+- name: Иммунитет к урону
+  type: feat
+  description: 'Существо не получает урон следующих видов: огонь, электричество.'
+- name: Сопротивление урону
+  type: feat
+  description: 'Существо получает лишь половину урона следующих видов: холод, дробящий,
+    колющий, рубящий (от немагических атак).'
+- name: Когти
+  type: weapon
+  description: 'Природная атака: Когти.'
+- name: Иммунитет к состояниям
+  type: feat
+  description: 'Существо иммунно к состояниям: Парализованный.'
+- name: Призыв подкрепления
+  type: feat
+  description: Действием существо призывает на помощь союзников (в оригинале — жезл
+    призыва монстров). Мастер выбирает 1d3 существ того же вида с показателем опасности
+    не выше половины показателя призывателя; они появляются в свободных пространствах
+    в 30 футах и действуют на своём ходу. Используется 1 раз в день.
+spells: []
+inventory:
+- code: REGEN
+  name: Кольцо переливания ауры [Ring of Aura Transfusion]
+  quantity: 1
+  equipped: true
+- code: FREEACT
+  name: Кольцо свободы действий [Ring of Free Action]
+  quantity: 1
+  equipped: true
+loot:
+  currency: {}
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MEAEG1/anim/S.webm
+  bam: MEAEG1

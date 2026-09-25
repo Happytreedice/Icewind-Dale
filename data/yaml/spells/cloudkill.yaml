@@ -1,0 +1,100 @@
+id: 65074c8af44a8be3
+identifier: cloudkill
+name:
+  ru: Смертельное облако
+  en: Cloudkill
+level: 5
+school: con
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '10'
+  units: minute
+  concentration: true
+range:
+  value: '120'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/MRAGEX.webm
+  sound: ''
+description: 'Вы создаёте сферу ядовитого жёлто-зелёного тумана радиусом 20 футов
+  вокруг выбранной вами точки в пределах дистанции. Туман распространяется и за углы.
+  Он существует, пока длится заклинание или пока его не развеет сильный ветер. В его
+  области &reference[heavilyobscured]{видимость крайне затруднена}.
+
+  Когда существо впервые за ход входит в область заклинания или начинает в ней свой
+  ход, оно должно пройти испытание Выносливости. Существо получает [[/r 5d8]] урона
+  ядом при провале или половину этого урона при успехе. Яд влияет на существ, даже
+  если они задерживают дыхание или в принципе не дышат.
+
+  В начале каждого вашего хода область тумана перемещается от вас на 10 футов, двигаясь
+  вдоль поверхности земли. Поскольку пары тяжелее воздуха, они спускаются в любые
+  расселины в земле и просачиваются вниз в отверстия.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 6-го круга
+  или выше, урон увеличивается на [[/r 1d8]] за каждый круг ячейки выше 5-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/MRAGEX.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

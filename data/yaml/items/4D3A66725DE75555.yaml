@@ -1,0 +1,93 @@
+code: 4D3A66725DE75555
+id: 4d3a66725de75555
+name:
+  ru: Зелье сопротивления электричеству
+  en: Potion of Lightning Resistance
+  official: Зелье сопротивления электричеству
+type: consumable
+subtype: potion
+rarity: uncommon
+price:
+  value: 300
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 463bfc314d19759b
+  name: Выпить
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Сопротивление электричеству
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: lightning
+description: 'В склянке потрескивает голубая жидкость, по которой пробегают крошечные
+  разряды.
+
+  Сопротивление: Выпив зелье действием, вы на 1 час получаете сопротивление урону
+  электричеством.
+
+  Это зелье наделяет выпившего стойкостью к молниям и разрядам. Действие длится один
+  час или пока не будет развеяно.'
+ttgclub:
+- name:
+    ru: Зелье сопротивления звуку
+    en: Potion of Resistance (thunder)
+  url: https://ttg.club/items/magic/potion_of_resistance_(thunder)
+  rarity: необычное
+  source: DMG
+- name:
+    ru: Зелье сопротивления излучению
+    en: Potion of Resistance (Radiant)
+  url: https://ttg.club/items/magic/potion_of_resistance_(radiant)
+  rarity: необычное
+  source: DMG
+- name:
+    ru: Зелье сопротивления огню
+    en: Potion of Resistance (fire)
+  url: https://ttg.club/items/magic/potion_of_resistance_(fire)
+  rarity: необычное
+  source: DMG
+- name:
+    ru: Зелье сопротивления кислоте
+    en: Potion of Resistance (acid)
+  url: https://ttg.club/items/magic/potion_of_resistance_(acid)
+  rarity: необычное
+  source: DMG
+- name:
+    ru: Зелье сопротивления некротической энергии
+    en: Potion of Resistance (necrotic)
+  url: https://ttg.club/items/magic/potion_of_resistance_(necrotic)
+  rarity: необычное
+  source: DMG

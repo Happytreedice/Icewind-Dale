@@ -1,0 +1,86 @@
+code: LYSANBAR
+id: 75e4359d7ece60f0
+name:
+  ru: Лизан
+  en: Lysan
+type: npc
+cr: 7
+xp: 2900
+attributes:
+  str: 12
+  dex: 14
+  con: 12
+  int: 12
+  wis: 18
+  cha: 10
+hp:
+  value: 130
+  max: 130
+  formula: 13d10 + 13
+ac: 17
+speed_ft: 30
+saving_throws:
+- CON
+damage_resistances:
+- bludgeoning
+- piercing
+- slashing
+damage_immunities:
+- cold
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+actions:
+- name: Мультиатака
+  type: feat
+  description: Существо совершает две атаки Ударом.
+- name: Врождённые заклинания (псионика)
+  type: feat
+  description: 'Заклинательная характеристика [[lookup @name capitalize]] — Интеллект
+    (СЛ испытаний против заклинаний 13, [[/r 1d20+5]] (+5) к броску атаки заклинанием).
+    У него есть следующие врождённые заклинания, ему не требуются для них никакие
+    компоненты:
+
+    Неограниченно:
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.bv1jcEHUx0G3I976]{Магическая рука}
+    (рука невидима);
+
+    3 в день каждое:
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.pu6riAdb2LChGsD3]{Необнаружимость}(только
+    на себя),
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.zateDc7zDCKnqjiE]{Полиглот},
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.V5VnbpElqrpvDzpM]{Прыжок},
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.DulrpjBUeVVgrrNA]{Туманный шаг};
+
+    1 в день каждое:
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.gxAncMbwLb3QJayh]{Планарный переход},
+
+    @UUID[Compendium.laaru-dnd5-hw.spells.Item.MDvLGhwXCJnaTmwt]{Телекинез}.'
+- name: Иммунитет к урону
+  type: feat
+  description: 'Существо не получает урон следующих видов: холод.'
+- name: Сопротивление урону
+  type: feat
+  description: 'Существо получает лишь половину урона следующих видов: дробящий, колющий,
+    рубящий (от немагических атак).'
+- name: Удар
+  type: weapon
+  description: 'Природная атака: Удар.'
+- name: Невосприимчивость к немагическому оружию
+  type: feat
+  description: Существо не получает урон от немагических атак.
+spells: []
+inventory: []
+loot:
+  currency: {}
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/NSIWHG1_c1e25390c171c00/anim/S.webm
+  bam: NSIWHG1

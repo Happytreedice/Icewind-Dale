@@ -1,0 +1,71 @@
+code: WINWOLFP
+id: 270b0ef02e35bc85
+name:
+  ru: Полярный волк
+  en: Winter Wolf
+type: npc
+cr: 12
+xp: 8400
+attributes:
+  str: 18
+  dex: 13
+  con: 17
+  int: 7
+  wis: 12
+  cha: 8
+hp:
+  value: 215
+  max: 215
+  formula: 21d10 + 42
+ac: 19
+speed_ft: 50
+saving_throws: []
+damage_resistances: []
+damage_immunities:
+- cold
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- Общий
+- Великаний
+- язык Полярных волков
+actions:
+- name: Острый слух и тонкий нюх
+  type: feat
+  description: Волк совершает с преимуществом проверки Мудрости (Внимательность),
+    полагающиеся на слух и обоняние.
+- name: Снежный камуфляж
+  type: feat
+  description: Волк совершает с преимуществом проверки Ловкости (Скрытность), когда
+    пытается спрятаться на заснеженной местности.
+- name: Тактика Стаи [Pack Tactics]
+  type: feat
+  description: Полярный Волк совершает с преимуществом броски атаки по существу, если
+    в пределах 5 футов от этого существа находится как минимум один не недееспособный
+    союзник Полярного Волка.
+- name: Укус [Bite]
+  type: weapon
+  description: 'Рукопашная атака оружием: +6 к попаданию, досягаемость 5 фт., одна
+    цель. Попадание: 11 (2d6 + 4) колющего урона. Если цель — существо, она должна
+    преуспеть в спасброске Силы со Сл 14, иначе будет сбита с ног.'
+- name: Холодное дыхание (перезарядка 5–6)
+  type: weapon
+  description: Волк выдыхает ледяной ветер 15-футовым конусом. Все существа в этой
+    области должны совершить спасбросок Ловкости со Сл 12, получая 18 (4d8) урона
+    холодом при провале, или половину этого урона при успехе.
+spells: []
+inventory:
+- code: MISC01
+  name: Шкура зимнего волка [Winter Wolf Pelt]
+  quantity: 1
+  equipped: false
+loot:
+  currency: {}
+  items:
+  - code: MISC01
+    name: Шкура зимнего волка [Winter Wolf Pelt]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MWLFG1/anim/S.webm
+  bam: MWLFG1

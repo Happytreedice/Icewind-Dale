@@ -1,0 +1,129 @@
+code: RAKSHINV
+id: 53606274e0bbee99
+name:
+  ru: Ракшас
+  en: Rakshasa
+type: npc
+cr: 14
+xp: 11500
+attributes:
+  str: 14
+  dex: 21
+  con: 18
+  int: 13
+  wis: 16
+  cha: 20
+hp:
+  value: 260
+  max: 260
+  formula: 26d10 + 104
+ac: 20
+speed_ft: 40
+saving_throws: []
+damage_resistances: []
+damage_immunities:
+- дробящий, колющий и рубящий урон от немагических атак
+damage_vulnerabilities:
+- колющий от магического оружия, используемого добрыми существами
+condition_immunities: []
+languages:
+- Инфернальный
+- Общий
+actions:
+- name: Ограниченный иммунитет к магии
+  type: feat
+  description: 'На ракшаса не действуют заклинания 6 уровня или ниже, и они же не
+    могут его обнаружить, если только он сам не желает, чтобы они на него подействовали.
+
+    Он совершает с преимуществом спасброски от всех остальных заклинаний и магических
+    эффектов.'
+- name: Врождённое колдовство [Innate Spellcasting]
+  type: feat
+  description: 'Базовой характеристикой ракшаса является Харизма (Сл спасброска от
+    заклинания 18, +10 к попаданию атаками заклинаниями). Ракшас может накладывать
+    следующие заклинания, не нуждаясь в материальных компонентах:
+
+    Неограниченно: волшебная рука [mage hand], малая иллюзия [minor illusion], маскировка
+    [disguise self], обнаружение мыслей [detect thoughts]
+
+    3/день каждое: внушение [suggestion], невидимость [invisibility], обнаружение
+    магии [detect magic], образ [major image], очарование личности [charm person]
+
+    1/день каждое: истинное зрение [true seeing], подчинение личности [dominate person],
+    полёт [fly], уход в иной мир [plane shift]'
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: Ракшас совершает две атаки Когтём.
+- name: Коготь [Claw]
+  type: weapon
+  description: 'Рукопашная атака оружием: +7 к попаданию, досягаемость 5 фт., одна
+    цель. Попадание: 9 (2d6 + 2) рубящего урона, и если цель — существо, она становится
+    проклятой.
+
+    Магическое проклятье вступает в действие каждый раз, когда существо совершает
+    короткий или продолжительный отдых, наполняя мысли цели ужасными образами и грёзами.
+    Проклятая цель не получает преимуществ от окончания короткого и продолжительного
+    отдыха.
+
+    Проклятье длится до тех пор, пока не будет снято заклинанием снятие проклятья
+    [remove curse] или подобной магией.'
+spells:
+- name: Vitriolic Sphere
+  level: 4
+  school: evo
+- name: Удар молнии
+  level: 3
+  school: evo
+- name: Ледяная буря
+  level: 4
+  school: evo
+- name: Опутывание
+  level: 1
+  school: con
+- name: Пылающие руки
+  level: 1
+  school: evo
+- name: Рассеивание магии
+  level: 3
+  school: abj
+- name: Зеркальное отражение
+  level: 2
+  school: ill
+- name: Волшебная стрела
+  level: 1
+  school: evo
+- name: Chromatic Orb
+  level: 1
+  school: evo
+- name: Смрадное облако
+  level: 3
+  school: con
+- name: Замедление
+  level: 3
+  school: trs
+- name: Огненный шар
+  level: 3
+  school: evo
+inventory:
+- code: CLCK06
+  name: Накидка Необнаружения [Cloak of Non-Detection]
+  quantity: 1
+  equipped: true
+- code: CIRAKSH1
+  name: Кольцо невидимости [Ring of Invisibility]
+  quantity: 1
+  equipped: true
+- code: CIRAKSH
+  name: Сломанный щит [Broken Shield]
+  quantity: 1
+  equipped: false
+loot:
+  currency: {}
+  items:
+  - code: CIRAKSH
+    name: Сломанный щит [Broken Shield]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MRAKG1/anim/S.webm
+  bam: MRAKG1

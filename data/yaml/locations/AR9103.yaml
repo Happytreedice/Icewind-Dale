@@ -1,0 +1,142 @@
+code: AR9103
+id: 0f34d5422cc169e0
+name: Лонливуд — хижина охотника (AR9103)
+chapter: Сердце Зимы
+structure:
+  width: 1152
+  height: 896
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 0838ca0248c8f0cc
+  name: Передний план 3
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9103_fg003.avif
+  x: 382
+  y: 226
+  width: 566
+  height: 469
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 290e61847b9b3093
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9103_DOOR1.avif
+  x: 320
+  y: 320
+  width: 256
+  height: 256
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 3c168d82ccc8ab75
+  name: Дверь DOOR2 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9103_DOOR2.avif
+  x: 576
+  y: 256
+  width: 192
+  height: 256
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 617364ff1b3968d5
+  name: Передний план 1
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9103_fg001.avif
+  x: 239
+  y: 500
+  width: 64
+  height: 58
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 63096fc2ff86ecaf
+  name: Передний план 2
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9103_fg002.avif
+  x: 840
+  y: 241
+  width: 51
+  height: 56
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: c5592a0ba5a7c0fb
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9103_fg000.avif
+  x: 257
+  y: 576
+  width: 114
+  height: 118
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: d9c30e723342e2fb
+  name: Дверь SECRET1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9103_SECRET1.avif
+  x: 704
+  y: 128
+  width: 128
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: faa9092c08f56f9a
+  name: 'Фон: Лонливуд — хижина охотника (AR9103)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR9103.avif
+  x: 0
+  y: 0
+  width: 1152
+  height: 896
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 25e03adefd7df0a3
+  name: Quinn Silverfinger
+  cre: null
+  x: 329
+  y: 473
+  elevation: 0
+containers:
+- name: Container 1
+  type: chest
+  x: 790
+  y: 235
+  locked: false
+  lock_difficulty: 50
+  trapped: true
+  trap_difficulty: 75
+  items:
+  - code: MISC07
+    name: Золотой
+  - code: MISC42
+    name: Бриллиант
+  - code: MISC43
+    name: Изумруд
+  - code: QUINN
+    name: Красивая праща Куинна +3
+random_loot_tables: []
+regions:
+- name: Переход → AR9100
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 8
+  total_enemies: 1
+  total_containers: 1
+  total_walls: 180
+  total_lights: 0
+  total_sounds: 3

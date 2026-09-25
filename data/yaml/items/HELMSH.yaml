@@ -1,0 +1,104 @@
+code: HELMSH
+id: 2461f209133edb86
+name:
+  ru: Шлем крика
+  en: Helm of Shouting
+  official: Шлем крика
+type: equipment
+subtype: trinket
+rarity: veryRare
+price:
+  value: 11300
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 23e49d3a507762fe
+  name: Крик
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Шлем крика
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '1'
+description: 'Гладкий полированный шлем, дарующий громовой голос.
+
+  Защита: +1 к КД, пока шлем надет.
+
+  Крик (1/день): Действием вы издаёте оглушительный крик конусом 15 футов: каждое
+  существо в области должно совершить спасбросок Телосложения [[/save ability=con
+  dc=15]]. При провале оно получает [[/damage 4d6 thunder]] и Глохнет на 1 минуту,
+  при успехе — половину урона без глухоты.
+
+  Печально известный эксцентричный искатель приключений по имени Улли Шумный очень
+  любил свой красивый шлем и всегда тщательно полировал его. Улли был номинальным
+  главой Бронзовых вепрей, огромного отряда наемников. Подчиненные его были невнимательны,
+  непочтительны и крикливы, и Улли, чтобы с ними управляться, заказал себе этот шлем.
+  Громкие крики Улли досаждали многим, и в конце концов раздражительный жрец Милила
+  вызвал его на смертельный поединок. Жрец забрал себе шлем убитого противника, но
+  несколько лет спустя группа воров похитила артефакт у него из храма.'
+ttgclub:
+- name:
+    ru: Шлем блеска
+    en: Helm of Brilliance
+  url: https://ttg.club/items/magic/helm_of_brilliance
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Шлем телепатии
+    en: Helm of Telepathy
+  url: https://ttg.club/items/magic/helm_of_telepathy
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Шлем телепортации
+    en: Helm of Teleportation
+  url: https://ttg.club/items/magic/helm_of_teleportation
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Шлем ужаса
+    en: Dread Helm
+  url: https://ttg.club/items/magic/dread_helm
+  rarity: обычный
+  source: XGE
+- name:
+    ru: Шлем бдительности
+    en: Watchful Helm
+  url: https://ttg.club/items/magic/watchful_helm
+  rarity: очень редкий
+  source: CM
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

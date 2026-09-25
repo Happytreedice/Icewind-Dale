@@ -1,0 +1,163 @@
+code: MANTLEHF
+id: tgxuqM0DjtwcCpX6
+name:
+  ru: Мантия адской печи
+  en: Mantle of Hell's Furnace
+  official: Мантия адской печи
+type: equipment
+subtype: clothing
+rarity: veryRare
+price:
+  value: 11300
+  denomination: gp
+weight_lbs: 4
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties: []
+activities:
+- id: 986475cf67c3e3c9
+  name: cast
+  type: cast
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+    override: false
+    prompt: true
+  activation:
+    type: action
+    value: null
+    override: false
+  consumption:
+    scaling:
+      allowed: false
+    spellSlot: false
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+      scaling:
+        mode: ''
+        formula: ''
+- id: 2434729cd4b6488f
+  name: Опаляющий луч Аганназара
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: b6ab17648df4ba32
+  name: Очарование родни огня
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Мантия адского горнила [Mantle of Hell's Furnace]
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: fire
+description: 'Необычайно яркое одеяние, Мантия Адского Горнила соткана из бород огненных
+  азеров. Пятнадцать лет её носил верховный жрец Коссута по имени Уллабем, пока не
+  пал в бою с жрицей Истишии. Когда жрица попыталась уничтожить мантию, союзники-ифриты
+  Уллабема выследили и убили её. Один из ифритов хранил плащ, пока его не потребовал
+  хитрый вор, вызвавший джинна из зачарованного бруска сандала. Считается, что плащ
+  хранит свои силы лишь определённое число применений; когда предел достигнут, плащ
+  призывается обратно на Элементальный План Огня.
+
+  Использование: Действием и одним зарядом сотворяет @UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{«Пылающие
+  руки»}. 3 заряда, восстанавливаются на рассвете.
+
+  Опаляющий луч Аганназара: Действием, потратив 1 заряд, вы выпускаете из ладони струю
+  пламени линией 60 футов: каждое существо на линии получает [[/damage 3d6 fire]]
+  урона огнём, а при успешном спасброске Ловкости [[/save ability=dex]] — вдвое меньше.
+
+  Очарование родни огня: Действием, потратив 1 заряд, вы пытаетесь очаровать существо
+  из родни элементалей огня (саламандру, огненного мефита и подобных): при провале
+  спасброска Мудрости [[/save ability=wis]] цель очарована вами на 10 минут.
+
+  Яркая мантия адской печи была изготовлена из бород пламенных азеров. Верховный жрец
+  Коссута по имени Уллабем носил ее в течение пятнадцати лет, пока не погиб в схватке
+  с жрицей Ишитии. Когда она попыталась уничтожить мантию, ифриты, состоявшие в союзе
+  с Уллабемом, выследили ее и убили. Один из ифритов сохранил артефакт. Затем его
+  получил один хитроумный вор, вызвав джинна из магического куска сандалового дерева.
+  Говорят, что мантию можно использовать лишь определенное число раз. После этого
+  она возвратится на стихийный план огня.'
+ttgclub:
+- name:
+    ru: Покров выживания
+    en: Survival Mantle
+  url: https://ttg.club/items/survival_mantle
+  source: VGM
+- name:
+    ru: Мантия сопротивления заклинаниям
+    en: Mantle of Spell Resistance
+  url: https://ttg.club/items/magic/mantle_of_spell_resistance
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Мантия природы
+    en: Nature's Mantle
+  url: https://ttg.club/items/magic/nature's_mantle
+  rarity: необычный
+  source: TCE
+- name:
+    ru: Плащ адского пса
+    en: Hell Hound Cloak
+  url: https://ttg.club/items/magic/hell_hound_cloak
+  rarity: редкий
+  source: TftYP
+- name:
+    ru: Мантия Мистраль
+    en: Mistral Mantle
+  url: https://ttg.club/items/magic/mistral_mantle
+  rarity: очень редкий
+  source: BGG
+uses:
+  max: '10'
+  spent: 0
+  recovery:
+  - period: dawn
+    type: recoverAll

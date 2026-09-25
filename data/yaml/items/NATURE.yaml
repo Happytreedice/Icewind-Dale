@@ -1,0 +1,151 @@
+code: NATURE
+id: vRzYLiXrgWpMiqGO
+name:
+  ru: Посох гнева природы +1
+  en: Staff of Nature's Wrath +1
+  official: Посох гнева природы +1
+type: weapon
+subtype: simpleM
+rarity: veryRare
+price:
+  value: 6750
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 1d6
+  type: bludgeoning
+activities:
+- id: u6kG1Sepck2SuPYT
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 6578624d5cc5a620
+  name: Опутывание
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 6e14f773d539e675
+  name: Огненный удар
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Особенно воинственная группа друидов-сильванитов создала этот окованный
+  железом посох, чтобы вершить кару природы над теми, кто оскверняет леса и выказывает
+  неуважение друидическим орденам. Обычно сильваниты пускали посох в ход против жрецов
+  Малара и прочих Богов Ярости.
+
+  Точность: Оружие ближнего боя, бонус +1 к атаке и урону.
+
+  Опутывание (1/день): Действием вы указываете на точку на земле в пределах видимости:
+  растения в радиусе 12 футов оживают на 1 минуту. Каждое существо в области в начале
+  своего хода должно преуспеть в спасброске Силы [[/save ability=str]], иначе оно
+  Опутано до начала своего следующего хода.
+
+  Огненный удар (1/день): Действием вы обрушиваете столп пламени на точку в пределах
+  видимости: каждое существо в радиусе 5 футов должно совершить спасбросок Ловкости
+  [[/save ability=dex]], получая [[/damage 6d8 fire]] урона огнём при провале или
+  половину этого урона при успехе.
+
+  Воинствующая группа друидов-сильванитов создала этот посох, укрепленный железом,
+  дабы карать тех, кто причиняет вред лесу и оскорбляет друидов. Сильваниты обычно
+  использовали этот посох против жрецов Малара и других Богов Ярости.'
+ttgclub:
+- name:
+    ru: Посох
+    en: Staff
+  url: https://ttg.club/items/staff
+  source: PHB
+- name:
+    ru: Деревянный посох
+    en: Wooden staff
+  url: https://ttg.club/items/wooden_staff
+  source: PHB
+- name:
+    ru: Посох гадюки
+    en: Staff of Adder
+  url: https://ttg.club/items/magic/staff_of_adder
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Посох иссушения
+    en: Staff of Withering
+  url: https://ttg.club/items/magic/staff_of_withering
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Посох леса
+    en: Staff of the Woodlands
+  url: https://ttg.club/items/magic/staff_of_the_woodlands
+  rarity: редкий
+  source: DMG
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

@@ -1,0 +1,118 @@
+code: SKELBLAH
+id: 8109ae31b32a54f3
+name:
+  ru: Пылающий скелет
+  en: Burning Skeleton
+type: npc
+cr: 6
+xp: 2300
+attributes:
+  str: 15
+  dex: 9
+  con: 12
+  int: 9
+  wis: 9
+  cha: 9
+hp:
+  value: 105
+  max: 105
+  formula: 10d10 + 10
+ac: 16
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities:
+- poison
+- fire
+- cold
+damage_vulnerabilities: []
+condition_immunities:
+- charmed
+- poisoned
+- paralyzed
+- unconscious
+- exhaustion
+languages: []
+actions:
+- name: Поджог
+  type: feat
+  description: Скелет бросается на существо крупного или меньшего @UUID[Compendium.dnd5e.srd-actions.Item.sDPntYBdmN7jMZc6]{размера}
+    в радиусе 5 футов от него. Цель должна преуспеть в испытании Ловкости СЛ 12 или
+    будет захвачена (СЛ освобождения 12). При провале цель также получает 3 ([[/r
+    1d6]]) урона огнем в начале каждого из своих ходов, даже после окончания захвата.
+    Если цель или существо в радиусе 5 футов от нее использует действие, чтобы потушить
+    пламя, или если какой-либо другой эффект гасит пламя (например, цель погружается
+    в воду), эффект заканчивается.
+- name: Свечение
+  type: feat
+  description: Скелет излучает @UUID[Compendium.dnd5e.srd-actions.Item.EvGCMCVp1VpUtCbI]{яркий
+    свет} в радиусе 10 футов и @UUID[Compendium.dnd5e.srd-actions.Item.BbWvc4m610EHv070]{тусклый
+    } еще на 10 футов.
+- name: Мультиатака
+  type: feat
+  description: Существо совершает две атаки Ударом.
+- name: Иммунитет к урону
+  type: feat
+  description: 'Существо не получает урон следующих видов: яд, огонь, холод.'
+- name: Удар
+  type: weapon
+  description: 'Природная атака: Удар.'
+- name: Раскалённое оружие
+  type: feat
+  description: Когда скелет попадает металлическим оружием ближнего боя, это оружие
+    наносит дополнительно 3 ([[/r 1d6]]) урона огнем (включено в атаку).
+- name: Иммунитет к состояниям
+  type: feat
+  description: 'Существо иммунно к состояниям: Очарованный, Отравленный, Парализованный,
+    Бессознательный, Истощение.'
+- name: Иммунитет к заклинаниям
+  type: feat
+  description: 'На существо не действуют заклинания: Облако-убийца (Cloudkill), Ядовитое
+    облако (Poison Fog).'
+- name: Безмозглость
+  type: feat
+  description: 'Существо лишено разума: оно иммунно к состояниям Очарованный и Испуганный,
+    а также к эффектам, читающим мысли или влияющим на разум (Смятение, Удержание
+    личности, Сон, Устрашение).'
+spells:
+- name: Огненный шар
+  level: 3
+  school: evo
+inventory: []
+loot:
+  currency: {}
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MLICSD/anim/S.webm
+  bam: MLICSD
+ttgclub:
+- name:
+    ru: Скелет
+    en: Skeleton
+  url: https://ttg.club/bestiary/skeleton
+  cr: 1/4
+  source: MM
+- name:
+    ru: Скелет боевого коня
+    en: Warhorse Skeleton
+  url: https://ttg.club/bestiary/warhorse_skeleton
+  cr: 1/2
+  source: MM
+- name:
+    ru: Скелет минотавра
+    en: Minotaur Skeleton
+  url: https://ttg.club/bestiary/minotaur_skeleton
+  cr: '2'
+  source: MM
+- name:
+    ru: Скелет динозавра
+    en: Dinosaur Skeleton
+  url: https://ttg.club/bestiary/dinosaur_skeleton
+  cr: '2'
+  source: JttRC
+- name:
+    ru: Скелет громового зверя
+    en: Thunderbeast Skeleton
+  url: https://ttg.club/bestiary/thunderbeast_skeleton
+  cr: '3'
+  source: SKT

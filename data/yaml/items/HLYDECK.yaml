@@ -1,0 +1,101 @@
+code: HLYDECK
+id: d920b56e931bc366
+name:
+  ru: Колода «Хаос господний!»
+  en: Holy Chaos! Deck
+  official: Колода «Хаос господний!»
+type: consumable
+subtype: trinket
+rarity: rare
+price:
+  value: 3100
+  denomination: gp
+weight_lbs: 0
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: a0563df8a398e40c
+  name: Вытянуть карту
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Колода карт четырёх мастей: Улыбчивые Дамы, Чёрные Бесси, Королевы Бурь
+  и Несущие Радость.
+
+  Вытянуть карту (заряд): Действием вы вытягиваете карту и бросаете [[/r 1d3]]. 1
+  — @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Благословение} на вашу
+  группу на 1 минуту. 2 — Молитва: вы и союзники в пределах 30 футов получаете +1
+  к броскам атаки и спасброскам, а враги в той же области — штраф −1, на 3 раунда.
+  3 — Речитатив: как Молитва, но бонус и штраф равны 2, длительность 5 раундов. Молитва
+  и Речитатив — заклинания AD&D, отсутствующие в D&D 5e; они перенесены как есть.
+  В колоде 13 зарядов; вытянув последнюю карту, колода исчезает.
+
+  «Хаос господний!» — малоизвестная карточная игра, популярная у жрецов хаотичных
+  богов. Жрецы Тиморы и Амберли особенно любят ее. Карты в колоде четырех мастей:
+  Смеющиеся Дамы, Черные Черти, Королевы Урагана и Несущие Радость. Крайне сложные
+  «правила» игры ежегодно уточняются и изменяются эдиктом церкви Бешабы. Победители
+  ежегодного турнира получают в подарок магические копии колоды, вроде этой. Последователи
+  Тира и Хельма презирают подобные артефакты.'
+ttgclub:
+- name:
+    ru: Святая вода
+    en: Holy Water
+  url: https://ttg.club/items/holy_water
+  source: PHB
+- name:
+    ru: Колода иллюзий
+    en: Deck of Illusions
+  url: https://ttg.club/items/magic/deck_of_illusions
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Колода многих вещей
+    en: Deck of Many Things
+  url: https://ttg.club/items/magic/deck_of_many_things
+  rarity: легендарный
+  source: DMG
+- name:
+    ru: Святой мститель
+    en: Holy Avenger
+  url: https://ttg.club/items/magic/holy_avenger
+  rarity: легендарное
+  source: DMG
+- name:
+    ru: Святой символ Равенкинд
+    en: Holy Symbol of Ravenkind
+  url: https://ttg.club/items/magic/holy_symbol_of_ravenkind
+  rarity: легендарный
+  source: COS
+uses:
+  max: '5'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

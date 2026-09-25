@@ -1,0 +1,92 @@
+code: AR9105
+id: fc0599a721131d5c
+name: Лонливуд — хижина Амбер Данн (AR9105)
+chapter: Сердце Зимы
+structure:
+  width: 960
+  height: 640
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 60f969ec26bd21fe
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9105_DOOR1.avif
+  x: 384
+  y: 192
+  width: 128
+  height: 192
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 70011436a396447c
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9105_fg000.avif
+  x: 52
+  y: 155
+  width: 822
+  height: 422
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: b9413dfa929740b0
+  name: 'Фон: Лонливуд — хижина Амбер Данн (AR9105)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR9105.avif
+  x: 0
+  y: 0
+  width: 960
+  height: 640
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: d5986e2822132b3f
+  name: Дверь DOOR2 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9105_DOOR2.avif
+  x: 576
+  y: 384
+  width: 128
+  height: 192
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies:
+- id: d74e32d813e1c83c
+  name: Tybald Dunn
+  cre: null
+  x: 328
+  y: 229
+  elevation: 0
+containers:
+- name: Container 1
+  type: chest
+  x: 744
+  y: 292
+  locked: false
+  lock_difficulty: 70
+  trapped: true
+  trap_difficulty: 0
+  items:
+  - code: BOOT03
+    name: Северные сапоги
+random_loot_tables: []
+regions:
+- name: Переход → AR9100
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 4
+  total_enemies: 1
+  total_containers: 1
+  total_walls: 166
+  total_lights: 1
+  total_sounds: 2

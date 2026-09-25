@@ -1,0 +1,102 @@
+code: TONGGF
+id: cc4859e091c3b621
+name:
+  ru: Язык Ледника Мрака +4
+  en: Tongue of the Gloomfrost +4
+  official: Язык Ледника Мрака +4
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 27000
+  denomination: gp
+weight_lbs: 6
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- hvy
+- ree
+- two
+- mgc
+damage:
+- formula: 1d10
+  type: piercing
+activities:
+- id: 98c4067e28f4b17f
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Язык Мрачноморозья +4
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: cold
+  - key: system.traits.dr.value
+    mode: 2
+    value: fire
+description: 'Алебарда, выкованная из нетающего льда ледника Мрачноморозье.
+
+  Дыхание ледника: удар высвобождает конус стужи: цель получает [[/damage 10d4 + 10
+  cold]], спасбросок Телосложения [[/save ability=con dc=15]] — половина.
+
+  Сопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  холодом.
+
+  Сопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  огнём.
+
+  Это оружие вы изготовили собственными руками под руководством дворфа Тиернона. Сделанный
+  изо льда со стены Ледника Мрака, этот мощный клинок несет в себе частицу энергии
+  ледника и вашей силы. Хоть оружие и состоит изо льда, оно лишь немного прохладное
+  на ощупь и не тает даже рядом с самым жарким пламенем.'
+ttgclub:
+- name:
+    ru: Том молчаливого языка
+    en: Tome of the Stilled Tongue
+  url: https://ttg.club/items/magic/tome_of_the_stilled_tongue
+  rarity: легендарный
+  source: DMG
+- name:
+    ru: Кинжал, на запястье
+    en: Dagger, on the wrist
+  url: https://ttg.club/items/dagger,_on_the_wrist
+  source: EEW
+- name:
+    ru: Амулет планов
+    en: Amulet of the Planes
+  url: https://ttg.club/items/magic/amulet_of_the_planes
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Заполярные сапоги
+    en: Boots of the Winterlands
+  url: https://ttg.club/items/magic/boots_of_the_winterlands
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Кольцо тарана
+    en: Ring of The Ram
+  url: https://ttg.club/items/magic/ring_of_the_ram
+  rarity: редкое
+  source: DMG

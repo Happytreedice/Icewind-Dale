@@ -1,0 +1,77 @@
+code: CONE
+id: 9157471dc413ad5a
+name:
+  ru: Циклоконус
+  en: Cyclocone
+  official: Циклоконус
+type: equipment
+subtype: ''
+rarity: veryRare
+price:
+  value: 5200
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 25f466ad8c5198ff
+  name: Вихрь
+  type: save
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: 'Циклокон: защита'
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '+1'
+description: 'Остроконечная волшебная шляпа, гудящая от заключённого в ней ветра.
+
+  Защита: Пока Циклокон надет, вы получаете +1 к КД.
+
+  Вихрь (1/день): Действием вы выпускаете вихрь в точку в пределах 100 футов. Каждое
+  существо на его пути совершает спасбросок [[/save ability=dex dc=15]], получая при
+  провале [[/damage 2d8 bludgeoning & 2d8 slashing]] и состояние Ошеломлённый до конца
+  своего следующего хода, а при успехе — половину урона без ошеломления. Существа
+  с 2 и менее Костями Хитов, провалившие спасбросок, погибают; элементали и Огромные
+  существа не подвержены вихрю.
+
+  Этот артефакт потрясающей силы — не столько шлем, сколько шляпа. Такие остроконечные
+  головные уборы очень ценил волшебник Бембан из Иммерси, и за их магические свойства,
+  и за форму. О Циклоконусах мечтали многие маги, но характерный внешний вид этих
+  шляп стал поводом для бесчисленных шуток искателей приключений. Под конец жизни
+  Бембан ослабел разумом и телом и завещал почти всё свое состояние независимым магам,
+  надеясь, что они продолжат изготавливать его любимые волшебные шляпы.'
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

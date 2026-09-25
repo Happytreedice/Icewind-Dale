@@ -1,0 +1,98 @@
+id: a47e4caeeed2182b
+identifier: color-spray
+name:
+  ru: Цветные брызги
+  en: Color Spray
+level: 1
+school: ill
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: round
+  concentration: false
+range:
+  value: null
+  units: ''
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: щепотка порошка или песка красного, жёлтого и синего цветов
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI112B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ALTERH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+description: 'Ошеломляющее множество мерцающих разноцветных лучей срывается с вашей
+  руки. Бросьте [[/r 6d10]]; результат укажет, на существ с каким суммарным количеством
+  ПЗ влияет это заклинание. Существа в пределах 15-футового конуса, исходящего от
+  вас, подвергаются воздействию в порядке возрастания текущих ПЗ (не считая существ
+  &reference[unconscious]{без сознания} и существ, которые не видят).
+
+   Начиная с существа с наименьшими текущими ПЗ, каждое существо, подвергшееся влиянию
+  заклинания, &reference[blinded]{слепнет} до конца вашего следующего хода. Вычитайте
+  ПЗ каждого существа из результата броска, прежде чем перейти к следующему. Количество
+  ПЗ существа должно быть равно или меньше остатка результата, чтобы заклинание подействовало
+  на это существо.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 2-го круга
+  или выше, бросьте дополнительно  [[/r 2d10]] за каждый круг ячейки выше 1-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/ALTERH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

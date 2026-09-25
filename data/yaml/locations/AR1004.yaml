@@ -1,0 +1,127 @@
+code: AR1004
+id: 7130fc89a305d21c
+name: Восточная Гавань — дом Хротгара (AR1004)
+chapter: Пролог — Восточная Гавань
+structure:
+  width: 1280
+  height: 960
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 0cfe4f6132271b55
+  name: Дверь DOOR2 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR1004_DOOR2.avif
+  x: 320
+  y: 512
+  width: 128
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 148c308b598e40a4
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR1004_DOOR1.avif
+  x: 256
+  y: 384
+  width: 128
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 1cb01ae11263660a
+  name: 'Фон: Восточная Гавань — дом Хротгара (AR1004)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR1004.avif
+  x: 0
+  y: 0
+  width: 1280
+  height: 960
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 2b5be7e676bde7c9
+  name: Передний план 2
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1004_fg002.avif
+  x: 262
+  y: 238
+  width: 773
+  height: 545
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 6a1b2e62b0ac1640
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1004_fg000.avif
+  x: 584
+  y: 580
+  width: 10
+  height: 40
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 99a8a196948c0d72
+  name: Передний план 1
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1004_fg001.avif
+  x: 187
+  y: 378
+  width: 76
+  height: 169
+  elevation: 10
+  locked: true
+  screen_aligned: false
+enemies:
+- id: d2e097484c7ce3e6
+  name: Hrothgar
+  cre: null
+  x: 777
+  y: 300
+  elevation: 0
+containers:
+- name: Container 1
+  type: chest
+  x: 394
+  y: 551
+  locked: false
+  lock_difficulty: 0
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: SCRNOTE
+    name: Нацарапанная записка
+- name: Container 2
+  type: shelf
+  x: 340
+  y: 481
+  locked: false
+  lock_difficulty: 0
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: BOW05
+    name: BOW05
+  - code: AROW01
+    name: AROW01
+random_loot_tables: []
+regions:
+- name: Переход → AR1000
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 6
+  total_enemies: 1
+  total_containers: 2
+  total_walls: 164
+  total_lights: 1
+  total_sounds: 2

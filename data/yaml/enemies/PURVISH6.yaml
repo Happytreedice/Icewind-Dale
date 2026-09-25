@@ -1,0 +1,89 @@
+code: PURVISH6
+id: 34800e62d5ba81a2
+name:
+  ru: Первис
+  en: Purvis
+type: npc
+cr: 12
+xp: 8400
+attributes:
+  str: 16
+  dex: 18
+  con: 17
+  int: 17
+  wis: 14
+  cha: 12
+hp:
+  value: 215
+  max: 215
+  formula: 21d10 + 42
+ac: 19
+speed_ft: 30
+saving_throws:
+- CON
+- WIS
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities:
+- paralyzed
+languages:
+- common
+actions:
+- name: Мультиатака
+  type: feat
+  description: Существо совершает две атаки Коротким мечом для удара в спину.
+- name: Иммунитет к состояниям
+  type: feat
+  description: 'Существо иммунно к состояниям: Парализованный.'
+- name: Короткий меч для удара в спину [Short Sword of Backstabbing]
+  type: weapon
+  description: 'Идеальное орудие убийцы; владеют им обычно недолго.
+
+    Предательский удар: Атакуя с преимуществом, вы наносите этим мечом дополнительно
+    [[/damage 1d6 piercing]] (суммируется со «Скрытой атакой»).
+
+    Короткий меч для удара в спину: Клинок тени
+
+    Клинок тени — идеальное оружие убийцы, для этого он и был создан. Этот меч пользуется
+    славой среди тех, кто сводит счеты с помощью клинка, многие стремятся завладеть
+    им, но обычно он не задерживается долго в одних руках.'
+spells: []
+inventory:
+- code: CLCK06
+  name: Накидка Необнаружения [Cloak of Non-Detection]
+  quantity: 1
+  equipped: true
+- code: POTN14
+  name: Масло скорости [Oil of Speed]
+  quantity: 1
+  equipped: false
+- code: BOOT02
+  name: Сапоги скрытности [Boots of Stealth]
+  quantity: 1
+  equipped: true
+- code: RING09
+  name: Кольцо свободы действий [Ring of Free Action]
+  quantity: 1
+  equipped: true
+- code: EXTHEAL
+  name: Зелье интенсивного лечения [Potion of Extra Healing]
+  quantity: 1
+  equipped: false
+loot:
+  currency:
+    gp: 75
+    sp: 11
+    cp: 16
+  items:
+  - code: POTN14
+    name: Масло скорости [Oil of Speed]
+    quantity: 1
+    equipped: false
+  - code: EXTHEAL
+    name: Зелье интенсивного лечения [Potion of Extra Healing]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/CHMT1G1_c1e42420c171c00/anim/S.webm
+  bam: CHMT1G1

@@ -1,0 +1,95 @@
+id: 33f6a53d56b740be
+identifier: disintegrate
+name:
+  ru: Дезинтеграция
+  en: Disintegrate
+level: 6
+school: trs
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: ''
+  units: inst
+  concentration: false
+range:
+  value: '60'
+  units: ft
+target:
+  affects: creature
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: кусок магнетита и щепотка пыли
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/IBCLAW.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/OFSPHET.webm
+  sound: ''
+description: 'Тонкий зелёный луч срывается с вашего указательного пальца и поражает
+  цель, которую вы видите в пределах дистанции. Целью может быть существо, объект
+  или творение магической силы вроде стены, созданной заклинанием силовая стена.
+
+  Существо, ставшее целью этого заклинания, должно пройти испытание Ловкости. При
+  провале цель получает [[/r 10d6 + 40]] урона силой. Если этот урон оставляет цель
+  с 0 ПЗ, она дезинтегрирована.
+
+  Дезинтегрированное существо и всё, что оно носит или держит, кроме магических предметов,
+  превращается в кучку мелкой серой пыли. Существо можно вернуть к жизни только заклинаниями
+  @UUID[Compendium.laaru-dnd5-hw.spells.Item.a6jbQhAxlZcgQ2Qb]{Истинное воскрешение}
+  или @UUID[Compendium.laaru-dnd5-hw.spells.Item.3DmrqW87SyWdaa8T]{Желание} 
+
+  Заклинание автоматически дезинтегрирует любой немагический объект или творение магической
+  силы, если они крупного @UUID[Compendium.dnd5e.srd-actions.Item.sDPntYBdmN7jMZc6]{размера}
+  или меньше. Если цель огромного размера или более, заклинание дезинтегрирует только
+  её часть объёмом с 10-футовый куб. На магические предметы заклинание не действует.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 7-го круга
+  или выше, урон увеличивается на [[/r 3d6]] за каждый круг ячейки выше 6-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: range
+  primary:
+    options:
+      delay: 0
+      elevation: 1000
+      isReturning: false
+      isWait: false
+      onlyX: false
+      opacity: 1
+      repeat: 1
+      repeatDelay: 0
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: range
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/OFSPHET.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

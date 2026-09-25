@@ -1,0 +1,97 @@
+id: ea049985d9232b1b
+identifier: chill-touch
+name:
+  ru: Ледяное прикосновение
+  en: Chill Touch
+level: 0
+school: nec
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: round
+  concentration: false
+range:
+  value: '120'
+  units: ft
+target:
+  affects: creature
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPPR313B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/NECROH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M07.ogg
+description: 'Вы создаёте призрачную ладонь скелета в пространстве, занимаемом существом
+  в пределах дистанции. Совершите дистанционную атаку заклинанием по существу, чтобы
+  обдать его холодом могилы. При попадании цель получает [[/r 1d8]] некротического
+  урона и не может восстанавливать ПЗ до начала вашего следующего хода. Все это время
+  ладонь цепляется за цель.
+
+
+  Если вы попали этой атакой по нежити, она также получает помеху к броскам атаки
+  по вам до конца вашего следующего хода.
+
+
+  Урон заклинания увеличивается на [[/r 1d8]], когда вы достигаете 5-го ([[/r 2d8]]),
+  11-го ([[/r 3d8]]) и 17-го уровня ([[/r 4d8]]).'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M07.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/NECROH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

@@ -1,0 +1,76 @@
+code: 5DD81179B4E7DB6C
+id: 5dd81179b4e7db6c
+name:
+  ru: Свиток защиты от Удержания
+  en: Scroll of Protection From Paralyzation
+  official: Свиток защиты от Удержания
+type: consumable
+subtype: scroll
+rarity: uncommon
+price:
+  value: 150
+  denomination: gp
+weight_lbs: 0
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: bbf411c4e77c4fe0
+  name: Прочитать свиток
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Защита от Удержания
+  changes:
+  - key: system.traits.ci.value
+    mode: 2
+    value: paralyzed
+description: 'Зелёный защитный свиток, ограждающий чтеца от сковывающей магии.
+
+  Защита от Удержания: Действием вы зачитываете свиток (он рассыпается в прах): на
+  10 минут вы получаете иммунитет к состоянию Парализованный, в том числе от заклинаний
+  @UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Удержание личности} и @UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Удержание
+  чудовища}.
+
+  Защитные свитки — древнее наследие магов Побережья Мечей: письмена на них не требуют
+  владения магией и оберегают любого, кто произнесёт их вслух.'
+ttgclub:
+- name:
+    ru: Свиток защиты
+    en: Scroll of Protection
+  url: https://ttg.club/items/magic/scroll_of_protection
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Амулет защиты от превращения
+    en: Amulet of Protection from Turning
+  url: https://ttg.club/items/magic/amulet_of_protection_from_turning
+  rarity: редкий
+  source: TftYP

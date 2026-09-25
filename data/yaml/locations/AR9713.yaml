@@ -1,0 +1,117 @@
+code: AR9713
+id: 80e691359cc827cb
+name: Замок Малавура — древний склеп (AR9713)
+chapter: Испытания Мастера Приманок
+structure:
+  width: 896
+  height: 640
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 64f37da830d55d1c
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR9713_DOOR1.avif
+  x: 512
+  y: 192
+  width: 128
+  height: 192
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 7a869dbea1f0f065
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9713_fg000.avif
+  x: 115
+  y: 215
+  width: 636
+  height: 350
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: b3dff0459df4265f
+  name: 'Фон: Замок Малавура — древний склеп (AR9713)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR9713.avif
+  x: 0
+  y: 0
+  width: 896
+  height: 640
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 23a13e7d3bc161c6
+  name: Sword Spider
+  cre: null
+  x: 700
+  y: 394
+  elevation: 0
+- id: 53f3387781871830
+  name: Phase Spider 2
+  cre: null
+  x: 330
+  y: 323
+  elevation: 0
+- id: 7796ce15d531e8d4
+  name: Sword Spider 1
+  cre: null
+  x: 336
+  y: 521
+  elevation: 0
+- id: 7a518f81239e1c45
+  name: Phase Spider 3
+  cre: null
+  x: 543
+  y: 446
+  elevation: 0
+- id: c24876ce9bc1b190
+  name: Phase Spider 1
+  cre: null
+  x: 524
+  y: 244
+  elevation: 0
+containers:
+- name: Offering Bowl
+  type: altar
+  x: 645
+  y: 236
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items: []
+- name: Books
+  type: spellbook
+  x: 657
+  y: 256
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MANUSCR
+    name: Рукопись Верховного смотрителя
+random_loot_tables: []
+regions:
+- name: Переход → AR9700
+  teleport_destination: null
+  shapes_count: 1
+- name: Переход → AR9714
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 3
+  total_enemies: 5
+  total_containers: 2
+  total_walls: 139
+  total_lights: 0
+  total_sounds: 2

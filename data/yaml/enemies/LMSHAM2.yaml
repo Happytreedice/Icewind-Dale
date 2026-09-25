@@ -1,0 +1,79 @@
+code: LMSHAM2
+id: f931e8c5a114a2ef
+name:
+  ru: Шаман людей-ящеров
+  en: Lizard Man Shaman
+type: npc
+cr: 4
+xp: 1100
+attributes:
+  str: 15
+  dex: 12
+  con: 14
+  int: 10
+  wis: 16
+  cha: 8
+hp:
+  value: 75
+  max: 75
+  formula: 10d8 + 20
+ac: 15
+speed_ft: 30
+saving_throws:
+- WIS
+- CON
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+- draconic
+actions:
+- name: Ножны-в-спине +1 [Spinesheath +1]
+  type: weapon
+  description: 'Точность: Оружие ближнего боя, бонус +1 к атаке и урону. Меткость: Благодаря качеству изготовления это оружие даёт бонус +4 к броскам атаки.'
+- name: Мультиатака
+  type: feat
+  description: Шаман людей-ящеров совершает две атаки: одну клинком Ножны-в-спине +1 или укусом, и одну когтями.
+- name: Укус
+  type: weapon
+  description: 'Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 5 (1d6 + 2) колющего урона.'
+- name: Когти
+  type: weapon
+  description: 'Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 4 (1d4 + 2) рубящего урона.'
+spells:
+- name: Опутывание
+  level: 1
+  school: con
+- name: Благословение
+  level: 1
+  school: enc
+- name: Паралич гуманоида
+  level: 2
+  school: enc
+inventory:
+- code: POTN28
+  name: Зелье силы духа [Potion of Fortitude]
+  quantity: 1
+  equipped: false
+loot:
+  currency:
+    gp: 71
+    sp: 13
+    cp: 14
+  items:
+  - code: POTN28
+    name: Зелье силы духа [Potion of Fortitude]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MLIZSD/anim/S.webm
+  bam: MLIZSD
+ttgclub:
+- name:
+    ru: Людоящер шаман
+    en: Lizardfolk Shaman
+  url: https://ttg.club/bestiary/lizardfolk_shaman
+  cr: '2'
+  source: MM

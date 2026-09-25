@@ -1,0 +1,98 @@
+id: 8395399faaf33e05
+identifier: slow
+name:
+  ru: Замедление
+  en: Slow
+level: 3
+school: trs
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: true
+range:
+  value: '120'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: капля патоки
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ENCHANX.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+description: Вы меняете ход времени для не более чем шести выбранных вами существ
+  в 40-футовом кубе в пределах дистанции. Каждая цель должна пройти испытание Мудрости.
+  При провале она попадает под влияние заклинания, пока оно длится. Скорость цели
+  под влиянием заклинания снижается вдвое. Цель получает штраф –2 к КБ и испытаниям
+  Ловкости и не может совершать ответные действия. В свой ход она может использовать
+  либо действие, либо бонусное действие, но не оба. Вне зависимости от способностей
+  и магических предметов, существо не может совершить более одной атаки (дистанционной
+  или ближнего боя) в свой ход. Если существо попытается сотворить заклинание, время
+  сотворения которого составляет 1 действие, бросьте [[/r d20]]. Если выпало 11 или
+  больше, заклинание не начнёт действовать до следующего хода существа, и существо
+  должно потратить действие в следующий ход, чтобы завершить заклинание. Если оно
+  не сможет этого сделать, заклинание потрачено зря. Существо, попавшее под влияние
+  заклинания, снова проходит испытание Мудрости в конце каждого своего хода. При успехе
+  заклинание прекращает действовать на него.
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M08.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/ENCHANX.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

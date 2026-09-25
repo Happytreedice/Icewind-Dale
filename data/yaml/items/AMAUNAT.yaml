@@ -1,0 +1,102 @@
+code: AMAUNAT
+id: d229b95e60326897
+name:
+  ru: Наследие Амонатора +3
+  en: Amaunator's Legacy +3
+  official: Наследие Амонатора +3
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 32000
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+- slayer
+damage:
+- formula: 1d8
+  type: slashing
+activities:
+- id: fa3d8feeabb1e36c
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 82c81db2957ded18
+  name: Солнечный луч
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Древний полуторный меч из сияющей латуни, откликающийся пламенем на
+  нежить.
+
+  Солнечный луч (1/день): Действием вы высвобождаете сноп солнечного света: каждое
+  существо в области радиусом 10 футов в пределах 100 футов должно преуспеть в спасброске
+  Телосложения [[/save ability=con dc=15]], иначе оно Ослеплено до конца вашего следующего
+  хода. Нежить в области получает [[/damage 8d6 fire]] (при успешном спасброске —
+  половину).
+
+  Пламя против нежити: При попадании по нежити меч наносит дополнительно [[/damage
+  2d4 + 3 fire]] урона огнём.
+
+  Пылающая кровь Белтина: При провале спасброска СЛ 14 при попадании кровь цели вспыхивает,
+  как от заклинания «Пылающая кровь Белтина»: цель получает [[/damage 1d8 fire]] урона
+  огнём в начале каждого своего хода, пока рана не будет перевязана или исцелена магией.
+
+  Этот блестящий бронзовый меч необычайно стар: он появился на свет больше трех тысяч
+  лет назад до начала Летоисчисления Долин. Нетерильский архимаг Пулдинус изготовил
+  его в подарок другу-воину. Этот воин по имени Каламнин свято чтил Амонатора, сурового
+  и безжалостного бога, сегодня почти позабытого мудрецами. Амонатор был покровителем
+  закона и солнца. От своих последователей он требовал беспрекословного исполнения
+  его воли. Всеми силами Каламнин в своих странствиях соблюдал законы Амонатора. Меч
+  был утерян, когда воин погиб, побежденный десятками никадемонов. Волшебник, призвавший
+  этих существ, забрал меч себе; в его семье он и хранился до самого падения Нетерила.'
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

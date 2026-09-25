@@ -1,0 +1,75 @@
+code: AR1013
+id: 0858d749339c393a
+name: Восточная Гавань — заброшенный дом (AR1013)
+chapter: Пролог — Восточная Гавань
+structure:
+  width: 640
+  height: 448
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 33c6fb257287c55b
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1013_fg000.avif
+  x: 76
+  y: 161
+  width: 458
+  height: 236
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 3ecc188fef275b1e
+  name: 'Фон: Восточная Гавань — заброшенный дом (AR1013)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR1013.avif
+  x: 0
+  y: 0
+  width: 640
+  height: 448
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: e5c5d130f64cc5e2
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR1013_DOOR1.avif
+  x: 320
+  y: 64
+  width: 128
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies: []
+containers:
+- name: Container 1
+  type: chest
+  x: 405
+  y: 205
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC01
+    name: MISC01
+random_loot_tables: []
+regions:
+- name: Переход → AR1000
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 3
+  total_enemies: 0
+  total_containers: 1
+  total_walls: 69
+  total_lights: 1
+  total_sounds: 2

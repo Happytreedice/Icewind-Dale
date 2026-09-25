@@ -1,0 +1,128 @@
+code: WANDFRE
+id: aTlmc8SEjG5rCwxM
+name:
+  ru: Жезл морозной смерти
+  en: Wand of Freezing Death
+  official: Жезл морозной смерти
+type: consumable
+subtype: wand
+rarity: veryRare
+price:
+  value: 12110
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: 9822c5262f948bf4
+  name: cast
+  type: cast
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+    override: false
+    prompt: true
+  activation:
+    type: action
+    value: null
+    override: false
+  consumption:
+    scaling:
+      allowed: false
+    spellSlot: false
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+      scaling:
+        mode: ''
+        formula: ''
+- id: fd97d9baab4b94b3
+  name: Ледяное копьё
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Этот смертоносный жезл создал волшебник Хегтен для защиты от огненных
+  приспешников своего соперника. Хегтен часто пускал жезл в ход в затяжной войне с
+  врагом. После десяти лет преследований Хегтен решил перенести войну к порогу соперника
+  и одолел его в одной из самых зрелищных магических дуэлей в истории Сюзейла. По
+  условиям победы Хегтен потребовал магически стереть имя врага из памяти всех, кто
+  его знал. Враг согласился — а позже стал Пламенем-под-Плащом, опасным террористом,
+  которого в 1212 году ЛД убили кормирские Пурпурные Драконы и Боевые Волшебники.
+
+  Использование: Действием и одним зарядом сотворяет заклинание @UUID[Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA]{«Конус
+  холода»}.
+
+  Ледяное копьё: Действием и одним зарядом вы мечете ледяное копьё в существо в пределах
+  100 футов: цель получает [[/damage 5d6 cold]] и должна преуспеть в спасброске Телосложения
+  [[/save ability=con]], иначе она Ошеломлена на 3 раунда.
+
+  Волшебник Хегтен создал этот смертоносный жезл, чтобы защититься от огненных прислужников
+  своего конкурента. В долгой борьбе с этим соперником Хегтен не раз прибегал к помощи
+  жезла. В конце концов после десяти лет травли он дал врагу решающее сражение и взял
+  над ним верх в одной из самых зрелищных магических дуэлей в истории Сузейла. Одним
+  из условий, выдвинутых победителем, было магическим образом стереть имя своего соперника
+  из памяти всех, кто его знал. Противник Хегтена принял это условие и впоследствии
+  прославился как Огонь-в-плаще, опаснейший террорист, сраженный в 1212 л.д. кормирскими
+  Пурпурными драконами и Боевыми волшебниками.'
+ttgclub:
+- name:
+    ru: Волшебная палочка
+    en: Wand
+  url: https://ttg.club/items/wand
+  source: PHB
+- name:
+    ru: Тисовая палочка
+    en: Yew wand
+  url: https://ttg.club/items/yew_wand
+  source: PHB
+- name:
+    ru: Волшебная палочка молний
+    en: Wand of Lightning Bolts
+  url: https://ttg.club/items/magic/wand_of_lightning_bolts
+  rarity: редкая
+  source: DMG
+- name:
+    ru: Волшебная палочка обнаружения врагов
+    en: Wand of Enemy Detection
+  url: https://ttg.club/items/magic/wand_of_enemy_detection
+  rarity: редкая
+  source: DMG
+- name:
+    ru: Волшебная палочка обнаружения магии
+    en: Wand of Magic Detection
+  url: https://ttg.club/items/magic/wand_of_magic_detection
+  rarity: необычная
+  source: DMG
+uses:
+  max: '10'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

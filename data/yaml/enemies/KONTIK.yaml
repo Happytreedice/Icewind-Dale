@@ -1,0 +1,96 @@
+code: KONTIK
+id: f8bb839f0b9dafb4
+name:
+  ru: Контик
+  en: Kontik
+type: npc
+cr: 16
+xp: 15000
+attributes:
+  str: 10
+  dex: 18
+  con: 10
+  int: 20
+  wis: 12
+  cha: 7
+hp:
+  value: 330
+  max: 330
+  formula: 33d10 + 0
+ac: 21
+speed_ft: 30
+saving_throws:
+- DEX
+- CON
+- WIS
+damage_resistances: []
+damage_immunities:
+- cold
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+actions:
+- name: Дыхание Аурил +3 [Breath of Auril +3]
+  type: weapon
+  description: 'Клинком владел Контик, слуга Аурил, богини холода.
+
+    Точность: Оружие ближнего боя, бонус +3 к атаке и урону.
+
+    Дополнительный урон: Наносит дополнительно [[/damage 1d6 cold]] при каждом попадании.
+
+    Сопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону
+    холодом.
+
+    Уязвимость к огню: Пока это оружие у вас в руках, вы имеете уязвимость к урону
+    огнём.
+
+    Разум и облик: Пока вы владеете клинком, ваш Интеллект увеличивается на 1, а Харизма
+    снижается на 1.
+
+    Проклятие: Клинок проклят. Взяв его в руки, вы не можете расстаться с ним по своей
+    воле, пока на вас не сотворят заклинание снятие проклятия.
+
+    Конус холода: (2/день) Действием вы сотворяете заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]
+    без траты ячейки.
+
+    Раньше это оружие принадлежало Контик, служительнице Аурил. На него наложены некоторые
+    полезные чары.'
+- name: Иммунитет к урону
+  type: feat
+  description: 'Существо не получает урон следующих видов: холод.'
+- name: Легендарное сопротивление (3/день)
+  type: feat
+  description: Если существо проваливает спасбросок, оно может вместо этого сделать
+    спасбросок успешным.
+- name: Легендарные действия (3/раунд)
+  type: feat
+  description: 'Существо может совершить 3 легендарных действия на выбор в конце хода
+    другого существа: Атака (1 действие), Перемещение без провокации атак (1 действие),
+    Мощное заклинание/Всплеск (2 действия).'
+spells:
+- name: Паралич гуманоида
+  level: 2
+  school: enc
+inventory:
+- code: RING07
+  name: Кольцо покровительства +2 [Ring of Protection +2]
+  quantity: 1
+  equipped: true
+- code: CLCK17
+  name: Мантия злого архимага [Robe of the Evil Archmagi]
+  quantity: 1
+  equipped: true
+- code: RINGKON
+  name: Кольцо колдовства Контик [Kontik's Ring of Wizardry]
+  quantity: 1
+  equipped: true
+loot:
+  currency:
+    gp: 443
+    sp: 10
+    cp: 14
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/CEFW2G1_c1e253c08171c05/anim/S.webm
+  bam: CEFW2G1

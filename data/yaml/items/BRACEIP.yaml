@@ -1,0 +1,176 @@
+code: BRACEIP
+id: ad24235ec06006ec
+name:
+  ru: Наручи ледяной жемчужины
+  en: Bracers of Icelandic Pearl
+  official: Наручи ледяной жемчужины
+type: equipment
+subtype: trinket
+rarity: rare
+price:
+  value: 5000
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 113818316aececa6
+  name: Призыв водяного элементаля
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 730fd355cf52a569
+  name: Конус холода
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: e9290cbd6b728919
+  name: Иссушающий мор Аби-Далзима
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Наручи ледовой жемчужины
+  changes:
+  - key: system.attributes.ac.calc
+    mode: 5
+    value: custom
+  - key: system.attributes.ac.formula
+    mode: 5
+    value: '16'
+  - key: system.abilities.dex.value
+    mode: 2
+    value: '-2'
+description: 'Морозные наручи отрекателя Прашнака, повелевающие водой и стужей.
+
+  Ледовый панцирь: Ваш базовый КД равен 16, но Ловкость снижена на 2, пока наручи
+  надеты.
+
+  Призыв водяного элементаля (1/день): Действием вы призываете водяного элементаля
+  в свободное пространство в пределах 20 футов; он дружественен вам, подчиняется устным
+  командам и исчезает через 1 час.
+
+  Конус холода (1/день): Сотворяет заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]
+  без траты ячейки.
+
+  Иссушающий мор Аби-Далзима (1/день): Действием вы иссушаете живое в радиусе 30 футов
+  в пределах 100 футов: каждое существо в области должно совершить спасбросок Телосложения
+  [[/save ability=con dc=17]], получая [[/damage 12d8 necrotic]] при провале или половину
+  при успехе; растения и водные существа проходят спасбросок с помехой.
+
+  Говорят, эти замечательные наручи были созданы в горах Хребта Мира, притом совсем
+  недавно. На берегу Моря Движущихся Льдов жил Прашнак, маг-оградитель, и довольно
+  упрямый. Серьезной проблемой для него были постоянные нашествия троллей, которых,
+  без сомнения, привлекало исключительно удобное убежище волшебника. Прашнак отгонял
+  троллей кислотным дождем. Однако нападения начали его утомлять, а тролли всё больше
+  наглели.
+
+  Потратив несколько месяцев на изучение действия иссушающей магии, призывания элементалей
+  и волшебных методов заморозки, Прашнак осуществил свой эксперимент. Призвав водного
+  элементаля, он испарил из тела несчастного существа часть жидкости и заморозил его.
+  Таким образом он возвел в окрестностях своего жилища множество ужасных ледяных скульптур.
+  Глуповатые тролли ужасно испугались этих тотемов и, по слухам, вообще сбежали из
+  тех краев. Увидев, что эксперимент увенчался успехом, Прашнак с новой силой взялся
+  за свои жестокие изыскания и ведет их по сей день. Какому вору удалось стащить эти
+  наручи, неизвестно, но пропали они несколько лет назад.'
+ttgclub:
+- name:
+    ru: Жемчужина силы
+    en: Pearl of Power
+  url: https://ttg.club/items/magic/pearl_of_power
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Наручи защиты
+    en: Bracers of Defense
+  url: https://ttg.club/items/magic/bracers_of_defense
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Наручи стрельбы из лука
+    en: Bracers of Archery
+  url: https://ttg.club/items/magic/bracers_of_archery
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Наручи иллюзиониста
+    en: Illusionist's Bracers
+  url: https://ttg.club/items/magic/illusionist's_bracers
+  rarity: очень редкий
+  source: GGR
+- name:
+    ru: Жемчужина обнаружения нежити
+    en: Pearl of Undead Detection
+  url: https://ttg.club/items/magic/pearl_of_undead_detection
+  rarity: редкость не определена
+  source: WDMM
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

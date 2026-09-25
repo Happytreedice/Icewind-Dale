@@ -1,0 +1,99 @@
+code: HOLDING
+id: 1cVILIbFwIrvmIiZ
+name:
+  ru: Бездонная сумка шута
+  en: Jester's Bag of Holding
+  official: Бездонная сумка шута
+type: equipment
+subtype: trinket
+rarity: common
+price:
+  value: 0
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 29a5c5a22ef07516
+  name: Встряска
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Сумка хранения — обычная с виду сумка, зачарованная так, что её нутро
+  открывается в надпространство, значительно превышающее размеры самой сумки: владелец
+  может складывать и доставать вещи, не сгибаясь под их тяжестью. Такие сумки редки
+  и, по понятным причинам, особенно полезны приключенцам. Увы, чары этой сумки угасают:
+  положить в неё что-либо не удаётся. Зато если её сильно встряхнуть, из неё вываливаются
+  самые разные предметы.
+
+  Встряска (1/день): Действием вы встряхиваете сумку — из неё вываливаются случайные
+  предметы, оказываясь у ваших ног или в вашем инвентаре.
+
+  Бездонная сумка — это обычная сумка, зачарованная таким образом, что внутри нее
+  открывается вход в пространство без измерений. Это пространство гораздо больше самой
+  сумки, и туда можно складывать разнообразные предметы, чтобы не перегружать свое
+  снаряжение. Такие сумки чрезвычайно редки и для искателей приключений весьма полезны
+  по ряду очевидных причин. К сожалению, чары на этой сумке начинают отказывать, и
+  любая попытка положить туда предмет заканчивается неудачей. Но вот если ее сильно
+  потрясти, оттуда что-нибудь да выпадает.'
+ttgclub:
+- name:
+    ru: Сумка хранения
+    en: Bag of Holding
+  url: https://ttg.club/items/magic/bag_of_holding
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Сумка пожирания
+    en: Bag of Devouring
+  url: https://ttg.club/items/magic/bag_of_devouring
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Сумка с бобами
+    en: Bag of Beans
+  url: https://ttg.club/items/magic/bag_of_beans
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Серая сумка фокусов
+    en: Gray Bag of Tricks
+  url: https://ttg.club/items/magic/gray_bag_of_tricks
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Рыжая сумка фокусов
+    en: Rust Bag of Tricks
+  url: https://ttg.club/items/magic/rust_bag_of_tricks
+  rarity: необычный
+  source: DMG
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

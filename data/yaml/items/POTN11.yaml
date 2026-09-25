@@ -1,0 +1,65 @@
+code: POTN11
+id: KjvhWfSIaR3rgiRd
+name:
+  ru: Зелье неуязвимости
+  en: Potion of Invulnerability
+  official: Зелье неуязвимости
+type: consumable
+subtype: potion
+rarity: rare
+price:
+  value: 1200
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: b89d5908e1cdebdb
+  name: utility
+  type: utility
+  target:
+    affects:
+      count: '1'
+      type: creature
+      choice: false
+    prompt: true
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Зелье неуязвимости [Potion of Invulnerability]
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '+4'
+  - key: system.traits.dr.value
+    mode: 2
+    value: bludgeoning
+  - key: system.traits.dr.value
+    mode: 2
+    value: piercing
+  - key: system.traits.dr.value
+    mode: 2
+    value: slashing
+  - key: system.bonuses.abilities.save
+    mode: 2
+    value: '2'
+description: 'В течение 1 минуты после того, как вы выпили это зелье, вы обладаете
+  сопротивлением ко всем видам урона.
+
+  Это зелье густое, как сироп и выглядит как расплавленное железо.'

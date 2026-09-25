@@ -1,0 +1,126 @@
+code: CDXBOWBM
+id: 7WPiSECOxwGrnhgP
+name:
+  ru: Арбалет Брена Мюллера
+  en: Bren Muller's Crossbow
+  official: Арбалет Брена Мюллера
+type: weapon
+subtype: martialR
+rarity: veryRare
+price:
+  value: 9100
+  denomination: gp
+weight_lbs: 7
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- amm
+- hvy
+- lod
+- two
+damage:
+- formula: 1d10
+  type: piercing
+activities:
+- id: dL0rLjtXeRhDvFiK
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+- id: actMullerAcc001
+  name: Меткость (1/день)
+  type: utility
+  activation:
+    type: bonus
+    value: 1
+    condition: 1 раз в день
+    override: false
+  duration:
+    value: '2'
+    units: round
+    special: ''
+    override: false
+  uses:
+    spent: 0
+    max: '1'
+    recovery:
+    - period: day
+      type: recoverAll
+  effects:
+  - id: VIk4AniOqM87rgRD
+    name: Меткость Брена Мюллера (+5)
+    duration:
+      rounds: 2
+    changes:
+    - key: system.bonuses.rwak.attack
+      value: '+5'
+      mode: 2
+      priority: 20
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll
+description: 'О владельце известно мало; мудрецы полагают, что оружие происходит из
+  иного мира под названием «Эйбранча».
+
+  Оружие дальнего боя.
+
+  Меткость (1 раз в день): Бонусным действием вы можете на 2 раунда получить бонус +5 к броскам атаки дистанционным оружием.
+
+  Об этом оружии и его владельце известно немного. Мудрецы считают, что оно происходит
+  из другого мира под названием Эйбранха. Волшебники, путешествующие по другим планам,
+  побывав в Эйбранхе, отзывались о ней как о редкостно неинтересном месте. Жизнь там
+  обыденна и скучна, герои встречаются редко, а население большей частью совершенно
+  ординарное. Вероятно, потому об этом мире нет практически никаких сведений. О владельце
+  оружия известно лишь, что это был образованный человек. Фиолетовое дерево, из которого
+  изготовлено ложе арбалета, вероятно, произрастает исключительно в Эйбранхе.
+
+  Получив с другого плана сведения о Брене Мюллере, вы узнали о новой особенности
+  этого оружия. Раз в день, оно может значительно повышать свою точность на два раунда.'
+ttgclub:
+- name:
+    ru: Арбалетные болты
+    en: Crossbow Bolt
+  url: https://ttg.club/items/crossbow_bolt
+  source: PHB
+- name:
+    ru: Контейнер для арбалетных болтов
+    en: Case, Crossbow Bolt
+  url: https://ttg.club/items/case,_crossbow_bolt
+  source: PHB
+- name:
+    ru: Арбалет, лёгкий
+    en: Crossbow, light
+  url: https://ttg.club/items/crossbow,_light
+  source: PHB
+- name:
+    ru: Арбалет, ручной
+    en: Crossbow, hand
+  url: https://ttg.club/items/crossbow,_hand
+  source: PHB
+- name:
+    ru: Арбалет, тяжёлый
+    en: Crossbow, heavy
+  url: https://ttg.club/items/crossbow,_heavy
+  source: PHB

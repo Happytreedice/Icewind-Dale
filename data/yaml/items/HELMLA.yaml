@@ -1,0 +1,167 @@
+code: HELMLA
+id: Esd2kUfQafqYX2SV
+name:
+  ru: Благословенный шлем Латандера
+  en: Blessed Helm of Lathander
+  official: Благословенный шлем Латандера
+type: equipment
+subtype: trinket
+rarity: veryRare
+price:
+  value: 11400
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: 7acecf5464b020c6
+  name: Умеренное исцеление ран
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 578fd58b81b340b6
+  name: Нейтрализация яда
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 2afebb15bd81add1
+  name: Снятие паралича
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Благословлённый шлем Латандера
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '+2'
+description: 'У этого искусно сработанного шлема короткая история. Жрица Латандера
+  Ираэни из Сюзейла заказала его для защитника своей церкви, воина Бэлдана Миллера.
+  Шлем служил Бэлдану часто: на Ираэни то и дело нападали приспешники Миркула. Прослужив
+  Латандеру двадцать лет, Ираэни сложила сан, а следом и Бэлдан; вскоре они поженились.
+  Шлем Бэлдан отдал странствующему паладину Латандера, который, как считается, погиб
+  в бою с личом близ Битвы Костей.
+
+  Использование: Благословлённый шлем Латандера даёт +2 к КД и позволяет несколько
+  раз в день сотворять восстанавливающие заклинания.
+
+  Защита от критических попаданий: Пока шлем надет, любое критическое попадание по
+  вам становится обычным попаданием.
+
+  Умеренное исцеление ран: (1/день) Действием вы касаетесь одного существа и восстанавливаете
+  ему [[/heal 11]] хитов.
+
+  Нейтрализация яда: (1/день) Действием вы касаетесь одного существа: с него снимается
+  состояние Отравлен, действующие на него яды нейтрализуются, и оно восстанавливает
+  [[/heal 10]] хитов.
+
+  Снятие паралича: (1/день) Действием вы снимаете паралич со всех союзников в пределах
+  15 футов от выбранной точки в поле вашего зрения.
+
+  История этого искусно сделанного шлема не так уж длинна. Его изготовили по заказу
+  Ираэни из Сузейла, жрицы Латандера, а предназначался он для защитника этой церкви,
+  воина Белдана Миллера. Шлем нередко находил себе применение, так как Ираэни постоянно
+  докучали последователи Миркула. Двадцать лет прослужив Латандеру, Ираэни решила
+  удалиться на покой. Так же поступил и Белдан. Через некоторое время они поженились.
+  Белдан подарил шлем странствующему паладину Латандера, который, вероятно, пал в
+  сражении с личем неподалеку от места Битвы Костей.'
+ttgclub:
+- name:
+    ru: Шлем блеска
+    en: Helm of Brilliance
+  url: https://ttg.club/items/magic/helm_of_brilliance
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Шлем понимания языков
+    en: Helm of Comprehending Languages
+  url: https://ttg.club/items/magic/helm_of_comprehending_languages
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Шлем телепатии
+    en: Helm of Telepathy
+  url: https://ttg.club/items/magic/helm_of_telepathy
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Шлем телепортации
+    en: Helm of Teleportation
+  url: https://ttg.club/items/magic/helm_of_teleportation
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Шлем ужаса
+    en: Dread Helm
+  url: https://ttg.club/items/magic/dread_helm
+  rarity: обычный
+  source: XGE
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

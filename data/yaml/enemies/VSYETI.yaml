@@ -1,0 +1,78 @@
+code: VSYETI
+id: ed2fecf5d1f8376e
+name:
+  ru: Йети
+  en: Yeti
+type: npc
+cr: 9
+xp: 5000
+attributes:
+  str: 18
+  dex: 13
+  con: 16
+  int: 8
+  wis: 12
+  cha: 7
+hp:
+  value: 165
+  max: 165
+  formula: 16d10 + 48
+ac: 18
+speed_ft: 40
+saving_throws: []
+damage_resistances: []
+damage_immunities:
+- cold
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- язык Йети
+actions:
+- name: Боязнь огня [Aversion to Fire]
+  type: feat
+  description: Если йети получает урон огнём, он до конца своего следующего хода совершает
+    с помехой броски атаки и проверки характеристик.
+- name: Тонкий нюх
+  type: feat
+  description: Йети совершает с преимуществом проверки Мудрости (Внимательность),
+    полагающиеся на обоняние.
+- name: Снежный камуфляж
+  type: feat
+  description: Йети совершает с преимуществом проверки Ловкости (Скрытность), когда
+    пытается спрятаться на снежной местности.
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: Йети может использовать Леденящий взгляд и совершает две атаки Когтём.
+- name: Коготь [Claw]
+  type: weapon
+  description: 'Рукопашная атака оружием: +6 к попаданию, досягаемость 5 фт., одна
+    цель. Попадание: 7 (1d6 + 4) рубящего урона плюс 3 (1d6) урона холодом.'
+- name: Леденящий взгляд
+  type: weapon
+  description: Йети нацеливается на одно существо, которое видит в пределах 30 футов
+    от себя. Если цель видит йети, она должна преуспеть в спасброске Телосложения
+    со Сл 13 от этой магии, иначе получит 10 (3d6) урона холодом и станет парализованной
+    на 1 минуту, если только не обладает иммунитетом к урону холодом. Цель может повторять
+    этот спасбросок в конце каждого своего хода, оканчивая эффект на себе при успехе.
+    Если спасбросок цели был успешным, или эффект на ней закончился, цель получает
+    иммунитет к Леденящему взгляду всех йети (но не отвратительных йети [abominable
+    yeti]) на 1 час.
+spells: []
+inventory:
+- code: YETI
+  name: Шкура йети [Yeti Pelt]
+  quantity: 1
+  equipped: false
+loot:
+  currency:
+    gp: 8
+    sp: 15
+    cp: 8
+  items:
+  - code: YETI
+    name: Шкура йети [Yeti Pelt]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MYETSD/anim/S.webm
+  bam: MYETSD

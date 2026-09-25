@@ -1,0 +1,118 @@
+code: AR1008
+id: ec38dfa824e072f7
+name: Восточная Гавань — гостиница «Снежный сугроб» (AR1008)
+chapter: Пролог — Восточная Гавань
+structure:
+  width: 1280
+  height: 960
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 10a46d85c53b7a5e
+  name: 'Фон: Восточная Гавань — гостиница «Снежный сугроб» (AR1008)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR1008.avif
+  x: 0
+  y: 0
+  width: 1280
+  height: 960
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 326f9b024f677fc7
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1008_fg000.avif
+  x: 998
+  y: 490
+  width: 45
+  height: 21
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 743f93a60e617868
+  name: Передний план 2
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1008_fg002.avif
+  x: 195
+  y: 158
+  width: 951
+  height: 699
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: eb3a00723e23c468
+  name: Передний план 1
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR1008_fg001.avif
+  x: 712
+  y: 195
+  width: 33
+  height: 38
+  elevation: 10
+  locked: true
+  screen_aligned: false
+enemies:
+- id: a1941ce3778f3490
+  name: Erevain Blacksheaf
+  cre: null
+  x: 558
+  y: 230
+  elevation: 0
+- id: d0f85264955b986e
+  name: Innkeeper
+  cre: null
+  x: 556
+  y: 639
+  elevation: 0
+containers:
+- name: Container 1
+  type: drawer
+  x: 701
+  y: 241
+  locked: false
+  lock_difficulty: 35
+  trapped: true
+  trap_difficulty: 0
+  items:
+  - code: MISC21
+    name: Небесная капля
+- name: Container 2
+  type: drawer
+  x: 1014
+  y: 491
+  locked: false
+  lock_difficulty: 25
+  trapped: true
+  trap_difficulty: 0
+  items:
+  - code: MISC07
+    name: Золотой
+- name: Container 3
+  type: drawer
+  x: 767
+  y: 565
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items: []
+random_loot_tables: []
+regions:
+- name: Переход → AR1000
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 4
+  total_enemies: 2
+  total_containers: 3
+  total_walls: 438
+  total_lights: 1
+  total_sounds: 3

@@ -1,0 +1,98 @@
+code: WANDTRP
+id: Wtc2EiJEaq5tyOG7
+name:
+  ru: Жезл обнаружения ловушек
+  en: Wand of Trap Detection
+  official: Жезл обнаружения ловушек
+type: consumable
+subtype: wand
+rarity: veryRare
+price:
+  value: 5100
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: wIfjbBMIOhCk4oHG
+  name: Обнаружить ловушки
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Некогда жезл принадлежал полуэльфу-плуту и магу Иллепу Бдительному из
+  Míth Drannor, что находил им ловушки и западни.
+
+  Использование: Жезл, выявляющий ближайшие ловушки. Использование тратит действие
+  и один заряд. Проверка обнаружения — [[/check ability=int skill=inv]] или [[/check
+  ability=wis skill=prc]].
+
+  Воровская сноровка: Вы совершаете с преимуществом проверки на поиск и обезвреживание
+  ловушек.
+
+  Этот жезл когда-то принадлежал полуэльфу Иллепу Наблюдательному, магу и вору. Иллеп,
+  уроженец Мит Драннора, пользовался тонким жезлом из черного дерева, чтобы обнаруживать
+  различные ловушки, которые нередко встречались ему во время ограблений. Иллеп многим
+  нравился, но однажды в таверне его нахальное поведение оскорбило воина-человека
+  по имени Браммель. Несмотря на умение Иллепа обращаться с кинжалами, ловкий вор
+  немногое мог противопоставить секире Браммеля и получил рану, рассекшую ему грудь
+  и шею. Браммель был арестован, а жезл должен был возвратиться в Мит Драннор, к семье
+  Иллепа. Но маленький караван, который перевозил жезл, разграбили разбойники-люди,
+  и артефакт надолго затерялся.'
+ttgclub:
+- name:
+    ru: Волшебная палочка
+    en: Wand
+  url: https://ttg.club/items/wand
+  source: PHB
+- name:
+    ru: Волшебная палочка обнаружения врагов
+    en: Wand of Enemy Detection
+  url: https://ttg.club/items/magic/wand_of_enemy_detection
+  rarity: редкая
+  source: DMG
+- name:
+    ru: Волшебная палочка обнаружения магии
+    en: Wand of Magic Detection
+  url: https://ttg.club/items/magic/wand_of_magic_detection
+  rarity: необычная
+  source: DMG
+- name:
+    ru: Охотничий капкан
+    en: Hunting Trap
+  url: https://ttg.club/items/hunting_trap
+  source: PHB
+- name:
+    ru: Тисовая палочка
+    en: Yew wand
+  url: https://ttg.club/items/yew_wand
+  source: PHB
+uses:
+  max: '7'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

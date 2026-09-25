@@ -1,0 +1,95 @@
+code: U2HAM5A
+id: cjei3bab6mBijf9q
+name:
+  ru: Дыхание Демона +3
+  en: Demon's Breath +3
+  official: Дыхание Демона +3
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 10000
+  denomination: gp
+weight_lbs: 8
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 1d8
+  type: bludgeoning
+activities:
+- id: SYteObA9dewp24sQ
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Дыхание демона +3
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: fire
+description: 'Как и другие боевые молоты, этот целиком сделан из стали: крушащий кости
+  боёк насажен на восемнадцатидюймовую рукоять. Вдобавок он наделён несколькими магическими
+  свойствами, делающими его более действенным в бою.
+
+  Точность: Оружие ближнего боя, бонус +3 к атаке и урону.
+
+  Сопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  огнём.
+
+  Дополнительный урон: Наносит дополнительно [[/damage 2d3 fire]] при каждом попадании.
+
+  Огненный шар: при попадании молот исторгает огненный шар: каждое существо в пределах
+  30 футов от цели должно преуспеть в спасброске Ловкости [[/save ability=dex]], иначе
+  получает [[/damage 6d6 fire]] урона огнём, а при успехе — половину этого урона.
+
+  Боевые молоты обыкновенно изготавливают целиком из стали; этот молот — не исключение.
+  На 18-дюймовой рукояти укреплен боек, которым можно дробить кости. Волшебные свойства
+  этого молота весьма полезны в бою.'
+ttgclub:
+- name:
+    ru: Демонический доспех
+    en: Demon Armor
+  url: https://ttg.club/items/magic/demon_armor
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Бутилированное дыхание
+    en: Bottled Breath
+  url: https://ttg.club/items/magic/bottled_breath
+  rarity: необычное
+  source: PotA
+- name:
+    ru: Демоническая кожа
+    en: Demon Skin
+  url: https://ttg.club/items/magic/demon_skin
+  rarity: редкий
+  source: DitLCoT
+- name:
+    ru: Зелье огненного дыхания
+    en: Potion of Fire Breath
+  url: https://ttg.club/items/magic/potion_of_fire_breath
+  rarity: необычное
+  source: DMG

@@ -1,0 +1,64 @@
+code: PEST
+id: b6c86263d7291d68
+name:
+  ru: Смертоносная Заря +4
+  en: Pestilent Dawn +4
+  official: Смертоносная Заря +4
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 32300
+  denomination: gp
+weight_lbs: 8
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+damage:
+- formula: 1d8
+  type: bludgeoning
+activities:
+- id: 72f687dfb5d8b403
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Чумной рассвет +4
+  changes:
+  - key: system.traits.ci.value
+    mode: 2
+    value: diseased
+description: 'Ржавый моргенштерн жреца Талоны с зубами бешеных медведей вместо шипов.
+
+  Чумной удар: Поражённая цель должна преуспеть в спасброске Телосложения [[/save
+  ability=con dc=15]], иначе заболевает: в начале каждого её хода она получает [[/damage
+  1d4 poison]], пока болезнь не исцелена.
+
+  Невосприимчивость: Владелец иммунен к болезням.
+
+  Смертоносную Зарю, малопривлекательное оружие, запачканное и разъеденное ржавчиной,
+  создал жрец Талоны по имени Тамберлин. Этот моргенштерн состоит из ручки, оплетенной
+  человеческими волосами, прочного дубового древка и ржавой железной головки, усеянной
+  вместо шипов зубами бешеных медведей. Обыкновенно только жрецы Талоны берут в руки
+  это оружие, потому что один его вид уже пугает простых людей.'

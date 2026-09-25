@@ -1,0 +1,81 @@
+code: WANDMIS
+id: 018pQU6BAYDvXWT9
+name:
+  ru: Жезл множества снарядов Пемби
+  en: Pemby's Wand of Many Missiles
+  official: Жезл множества снарядов Пемби
+type: consumable
+subtype: wand
+rarity: veryRare
+price:
+  value: 10300
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: f90b6f842edb0f6f
+  name: cast
+  type: cast
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+    override: false
+    prompt: true
+  activation:
+    type: action
+    value: null
+    override: false
+  consumption:
+    scaling:
+      allowed: false
+    spellSlot: false
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+      scaling:
+        mode: ''
+        formula: ''
+description: 'Полуэльфийка-чародейка Пемби Облачный Шёлк создала на своём веку множество
+  жезлов и посохов; этот она хранила для собственной защиты.
+
+  Использование: Действием и одним зарядом сотворяет заклинание @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{«Волшебная
+  стрела»}.
+
+  Пемби Облачный Шелк, полуэльфийская чародейка, известная своей беззаботностью и
+  неразборчивостью в связях, за время своей жизни в Фаэруне изготовила множество жезлов
+  и посохов. Этот жезл она держала при себе для самозащиты. Когда в 1103 л.д. Пемби
+  убил ревнивый любовник, жезл унаследовал один из прочих ее многочисленных поклонников,
+  вор Тэмлок из Уотердипа. Через несколько лет Тэмлок отомстил убийце полуэльфийки,
+  поразив его на дуэли незаметно отравленным клинком.'
+ttgclub:
+- name:
+    ru: Волшебная палочка
+    en: Wand
+  url: https://ttg.club/items/wand
+  source: PHB
+- name:
+    ru: Волшебная палочка снарядов
+    en: Wand of Magic Missiles
+  url: https://ttg.club/items/magic/wand_of_magic_missiles
+  rarity: необычная
+  source: DMG
+- name:
+    ru: Обгоревшая волшебная палочка снарядов
+    en: Charred Wand of Magic Missiles
+  url: https://ttg.club/items/magic/charred_wand_of_magic_missiles
+  rarity: необычная
+  source: WDH
+uses:
+  max: '10'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

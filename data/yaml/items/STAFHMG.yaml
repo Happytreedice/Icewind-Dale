@@ -1,0 +1,133 @@
+code: STAFHMG
+id: 5103d4409cc13eed
+name:
+  ru: Посох радости повешенных +1
+  en: Staff of the Hanged Man's Glee +1
+  official: Посох радости повешенных +1
+type: weapon
+subtype: simpleM
+rarity: veryRare
+price:
+  value: 10000
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 1d6
+  type: bludgeoning
+activities:
+- id: 14e62a724a817a57
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: a882dc7a0d58197e
+  name: Восстание мёртвых
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Посох ликования висельника +1
+  changes:
+  - key: system.abilities.cha.value
+    mode: 2
+    value: '-2'
+description: 'Мрачный посох из древесины Древа Мертвеца, помнящий лица казнённых.
+
+  Мрачная слава: Харизма −2, пока посох у вас (лица в древесине пугают собеседников).
+
+  Восстание мёртвых (3/день): Сотворяет заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplAnimateDea]
+  без траты ячейки.
+
+  Этот жутковатый посох, пользующийся дурной славой, изготовлен из Дерева Мертвеца,
+  древней черной ивы, растущей на границе забытой деревушки на Муншейских островах.
+  На ней вешали преступников, и на ее ветвях качалось множество разбойников, убийц,
+  насильников и прочих нарушителей закона, к вящей радости могильщика Мордигана. Дело
+  в том, что Мордиган тайно изучал некромантию и не мог упустить подобную возможность
+  для совершенствования своих талантов. Останки злодеев он зарывал под самым деревом
+  и затем творил мерзостный ритуал, призывая на черную иву темные силы с Негативного
+  Плана. В результате дерево стало отчасти разумным и научилось питаться останками
+  тех, кто недавно еще свисал с ее ветвей. Черные корни пробивали разлагающуюся плоть,
+  и жутким образом на узловатом стволе ивы начали проступать лица казненных, изуродованные
+  гримасой страдания. Иву было решено сжечь, но Мордиган успел вырезать из нее посох,
+  и, к удивлению жителей деревни, он в самом деле обладал мощными магическими свойствами,
+  которые и погубили всю деревню. Так совершилась месть висельников с Дерева Мертвеца.'
+ttgclub:
+- name:
+    ru: Посох
+    en: Staff
+  url: https://ttg.club/items/staff
+  source: PHB
+- name:
+    ru: Посох леса
+    en: Staff of the Woodlands
+  url: https://ttg.club/items/magic/staff_of_the_woodlands
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Посох магов
+    en: Staff of the Magi
+  url: https://ttg.club/items/magic/staff_of_the_magi
+  rarity: легендарный
+  source: DMG
+- name:
+    ru: Посох питона
+    en: Staff of the Python
+  url: https://ttg.club/items/magic/staff_of_the_python
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Посох Забытого
+    en: Staff of the Forgotten One
+  url: https://ttg.club/items/magic/staff_of_the_forgotten_one
+  rarity: артефакт
+  source: TOA
+uses:
+  max: '3'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

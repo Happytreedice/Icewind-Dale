@@ -1,0 +1,121 @@
+id: 029ffe8ca77e12c9
+identifier: insect-plague
+name:
+  ru: Рой саранчи
+  en: Insect Plague
+level: 5
+school: con
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '10'
+  units: minute
+  concentration: true
+range:
+  value: '300'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: несколько крупиц сахара, несколько зёрнышек и мазок жира
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/SSSWARR.webm
+  sound: ''
+description: 'Рой кусающейся саранчи заполняет сферу радиусом 20 футов вокруг выбранной
+  вами точки в пределах дистанции. Сфера распространяется и за углы. Сфера существует,
+  пока длится заклинание, видимость в ней слегка &reference[lightlyobscured]{затруднена},
+  а её область - &reference[difficultterrain]{пересечённая местность}.
+
+  Когда сфера появляется, каждое существо в ней должно пройти испытание Выносливости.
+  Существо получает [[/r 4d10]] колющего урона при провале или половину этого урона
+  при успехе. Существо также должно пройти это испытание, когда впервые за ход входит
+  в область заклинания или заканчивает в ней свой ход.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 6-го круга
+  или выше, урон увеличивается на [[/r 1d10]] за каждый круг ячейки выше 5-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: range
+  primary:
+    options:
+      delay: 0
+      elevation: 1000
+      isReturning: false
+      isWait: false
+      onlyX: false
+      opacity: 1
+      repeat: 1
+      repeatDelay: 0
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: range
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/SSSWARR.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: true
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/SSSWARX.webm

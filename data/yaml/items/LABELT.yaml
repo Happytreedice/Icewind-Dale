@@ -1,0 +1,78 @@
+code: LABELT
+id: eRYJ7jRRUgCq1JUR
+name:
+  ru: Ремень Лабеласа
+  en: Girdle of Labelas
+  official: Ремень Лабеласа
+type: equipment
+subtype: ''
+rarity: veryRare
+price:
+  value: 16000
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: d59939e7ae3310a5
+  name: Ускорение
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Пояс Лабеласа
+  changes:
+  - key: system.traits.ci.value
+    mode: 2
+    value: restrained
+  - key: system.traits.ci.value
+    mode: 2
+    value: paralyzed
+description: 'Реликвия святого святилища Звёздного Мавзолея в Миф Глаураке, этот пояс
+  благословил аватар Лабеласа Энорета, эльфийского бога времени и долголетия. Верховный
+  жрец Лабеласа носил его и в повседневных делах, и в бою. Сплетённый из чередующихся
+  полос бронзы и золота, изящный пояс был сокровищем и без магических свойств. Когда
+  орки разорили Миф Глаурак, этот пояс стал одной из самых заметных потерь.
+
+  Иммунитет: Пояс Лабеласа даёт постоянную свободу перемещения (иммунитет к состояниям
+  «опутан» и «парализован»); раз в день позволяет ускорить носителя.
+
+  Ускорение: Раз в день вы можете действием наложить на себя эффект заклинания @UUID[Compendium.dnd5e.spells.Item.Szvk5FEVQW3uhJi5]{«Ускорение»}
+  на 1 минуту (концентрация не требуется). Способность восстанавливается после Длинного
+  отдыха.
+
+  Этот ремень — один из немногих сохранившихся артефактов Мавзолея Звезд, святилища
+  в Мит Глаураке. Его благословила аватара Лабеласа Энорета, эльфийского бога времени
+  и долголетия. Верховный жрец Лабеласа надевал этот ремень и в обычные дни, и перед
+  сражением. Он состоит из чередующихся полос бронзы и золота и весьма ценен даже
+  без учета его магических свойств. Чудесный ремень был одним из самых драгоценных
+  предметов, похищенных орками при разграблении Мит Глаурака.'
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

@@ -1,0 +1,88 @@
+id: 6122c66e830ef09b
+identifier: blur
+name:
+  ru: Расплывчатость
+  en: Blur
+level: 2
+school: ill
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: true
+range:
+  value: null
+  units: self
+target:
+  affects: self
+  template: ''
+components:
+  vocal: true
+  somatic: false
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI305B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ILLUSH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_E02.ogg
+description: Для всех, кто видит, ваше тело кажется размытым, мелькающим и колеблющимся.
+  Пока длится заклинание, у всех существ есть помеха к броскам атаки против вас. Атакующий
+  невосприимчив к этому эффекту, если он не полагается на зрение (как при &reference[blindsight]{слепозрении})
+  или способен видеть сквозь иллюзии (&reference[truesight]{истинное зрение}).
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 0
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_E02.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: generic
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: false
+      customPath: ''
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

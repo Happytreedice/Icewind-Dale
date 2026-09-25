@@ -1,0 +1,86 @@
+code: AR9109
+id: 18c49142f2b75ac5
+name: Лонливуд — дом плотника (AR9109)
+chapter: Сердце Зимы
+structure:
+  width: 768
+  height: 640
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 0bba105ea044fe2d
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR9109_fg000.avif
+  x: 60
+  y: 147
+  width: 638
+  height: 430
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 329c2261d3c8fe66
+  name: 'Фон: Лонливуд — дом плотника (AR9109)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR9109.avif
+  x: 0
+  y: 0
+  width: 768
+  height: 640
+  elevation: 0
+  locked: true
+  screen_aligned: false
+enemies:
+- id: f16c006821b57116
+  name: Thom Farold
+  cre: null
+  x: 491
+  y: 349
+  elevation: 0
+containers:
+- name: Container 1
+  type: chest
+  x: 476
+  y: 207
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC36
+    name: Жемчуг
+  - code: RNDTRE88
+    name: RNDTRE88
+  - code: BOLT06
+    name: Болт +2
+- name: Container 2
+  type: chest
+  x: 414
+  y: 292
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC61
+    name: Бутылка вина
+random_loot_tables:
+- RNDTRE88
+regions:
+- name: Переход → AR9100
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 2
+  total_enemies: 1
+  total_containers: 2
+  total_walls: 140
+  total_lights: 0
+  total_sounds: 1

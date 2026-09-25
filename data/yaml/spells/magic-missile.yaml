@@ -1,0 +1,92 @@
+id: 21e1aef7e1f8ff04
+identifier: magic-missile
+name:
+  ru: Волшебная стрела
+  en: Magic missile
+level: 1
+school: evo
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: ''
+  units: inst
+  concentration: false
+range:
+  value: '120'
+  units: ft
+target:
+  affects: creature
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/IAROW02.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+description: 'Вы создаёте три светящихся стрелы из магической силы. Каждая стрела
+  поражает выбранное вами существо в пределах дистанции, которое вы видите. Каждая
+  стрела наносит цели [[/r 1d4 + 1]] урона силой. Все три стрелы поражают цели одновременно,
+  вы можете направить их как в одно существо, так и в несколько разных. 
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 2-го круга
+  или выше, заклинание создаёт по дополнительной стреле за каждый круг ячейки выше
+  1-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

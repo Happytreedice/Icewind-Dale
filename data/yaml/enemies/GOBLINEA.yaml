@@ -1,0 +1,70 @@
+code: GOBLINEA
+id: 3ceba8384a63aec3
+name:
+  ru: Маршал гоблинов-лучников
+  en: Goblin Archer Marshal
+type: npc
+cr: 1
+xp: 200
+attributes:
+  str: 10
+  dex: 14
+  con: 10
+  int: 10
+  wis: 8
+  cha: 10
+hp:
+  value: 21
+  max: 21
+  formula: 6d6
+ac: 15
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+- goblin
+skills:
+  ste: 2
+senses:
+  darkvision: 60
+actions:
+- name: Мультиатака
+  type: feat
+  description: Маршал гоблинов-лучников совершает две атаки коротким луком или две атаки кинжалом.
+- name: Короткий лук
+  type: weapon
+  description: 'Дальнобойная атака оружием: +4 к попаданию, дистанция 80/320 фт., одна цель. Попадание: 5 (1d6 + 2) колющего урона.'
+- name: Кинжал
+  type: weapon
+  description: 'Рукопашная или дальнобойная атака оружием: +4 к попаданию, досягаемость 5 фт. или дистанция 20/60 фт., одна цель. Попадание: 4 (1d4 + 2) колющего урона.'
+- name: Проворное бегство
+  type: feat
+  description: Гоблин может в каждом своём ходу бонусным действием совершать действие Засада или Отход.
+- name: Перенаправление атаки
+  type: feat
+  description: Если видимое гоблином существо нацеливается атакой на него, гоблин выбирает другого гоблина в пределах 5 фт. от себя. Два гоблина меняются местами, и целью атаки становится выбранный гоблин.
+spells: []
+inventory:
+- code: ILEAT02
+  name: Проклёпанный кожаный доспех [Studded Leather Armor]
+  quantity: 1
+  equipped: true
+- code: IBOW05
+  name: Короткий лук [Shortbow]
+  quantity: 1
+  equipped: true
+- code: IDAGG01
+  name: Кинжал [Dagger]
+  quantity: 1
+  equipped: true
+- code: AROW01
+  name: Стрела [Arrow]
+  quantity: 20
+  equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MGO5SD/anim/S.webm
+  bam: MGO5SD

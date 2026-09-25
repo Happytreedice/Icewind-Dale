@@ -1,0 +1,117 @@
+id: 3d30792f50c182d2
+identifier: grease
+name:
+  ru: Масло
+  en: Grease
+level: 1
+school: con
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: false
+range:
+  value: '60'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: свиная шкварка или кусок сливочного масла
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/CLOUDKA.webm
+  sound: ''
+description: 'Скользкое масло покрывает землю в 10-футовом квадрате с центром в точке
+  в пределах дистанции.
+
+  Пока длится заклинание, эта область — &reference[difficultterrain]{пересечённая
+  местность}. Когда появляется масло, каждое существо, стоящее в области действия,
+  должно пройти испытание Ловкости. При провале существо &reference[prone]{распластывается}.
+  Существо, которое входит в область или заканчивает в ней свой ход, тоже должно пройти
+  испытание Ловкости, чтобы не распластаться.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: range
+  primary:
+    options:
+      delay: 0
+      elevation: 1000
+      isReturning: false
+      isWait: false
+      onlyX: false
+      opacity: 1
+      repeat: 1
+      repeatDelay: 0
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: range
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/CLOUDKA.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: true
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/CLOUDKR.webm

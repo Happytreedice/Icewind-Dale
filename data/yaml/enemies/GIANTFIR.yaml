@@ -1,0 +1,59 @@
+code: GIANTFIR
+id: a4b99732708606aa
+name:
+  ru: Огненный великан
+  en: Fire Giant
+type: npc
+cr: 12
+xp: 8400
+attributes:
+  str: 25
+  dex: 9
+  con: 23
+  int: 10
+  wis: 14
+  cha: 13
+hp:
+  value: 235
+  max: 235
+  formula: 23d10 + 138
+ac: 20
+speed_ft: 30
+saving_throws:
+- CHA
+- CON
+- DEX
+damage_resistances: []
+damage_immunities:
+- fire
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- Великаний
+actions:
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: Великан совершает две атаки Двуручным мечом.
+- name: Двуручный меч [Greatsword]
+  type: weapon
+  description: 'Рукопашная атака оружием: +11 к попаданию, досягаемость 10 фт., одна
+    цель. Попадание: 28 (6d6 + 7) рубящего урона.'
+- name: Камень [Rock]
+  type: weapon
+  description: 'Дальнобойная атака оружием: +11 к попаданию, дистанция 60/240 фт.,
+    одна цель. Попадание: 29 (4d10 + 7) дробящего урона.'
+spells: []
+inventory:
+- code: HELM01
+  name: Шлем [Helmet]
+  quantity: 1
+  equipped: true
+loot:
+  currency:
+    gp: 358
+    sp: 13
+    cp: 1
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MGFISD/anim/S.webm
+  bam: MGFISD

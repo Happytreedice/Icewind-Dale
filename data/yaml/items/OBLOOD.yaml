@@ -1,0 +1,93 @@
+code: OBLOOD
+id: ca79a295c91dc526
+name:
+  ru: Ремень крови огра
+  en: Girdle of Ogre Blood
+  official: Ремень крови огра
+type: equipment
+subtype: ''
+rarity: veryRare
+price:
+  value: 25000
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: f3c506acdbbf4268
+  name: Призыв огров
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Широкий пояс из дублёной огрской шкуры с пятью склянками чёрной крови
+  огров.
+
+  Регенерация: В начале каждого своего хода вы восстанавливаете 1 хит (если у вас
+  не 0 хитов).
+
+  Призыв огров (1/день): Действием вы призываете 5 огров, послушных вам, на 17 раундов.
+  Огры появляются в свободном пространстве в пределах 20 футов.
+
+  Волшебник Калдинар Коварный славился своим хитроумием и подозрительностью. Он изготовил
+  несколько защитных артефактов, которыми в случае угрозы можно было быстро воспользоваться.
+  На этом широком ремне из дубленой огровой кожи закреплены пять стеклянных флаконов
+  с черной кровью огра. Он нередко приходил на помощь Калдинару в его приключениях.
+  Когда волшебник умер, его практичные друзья продали ремень с аукциона.'
+ttgclub:
+- name:
+    ru: Кроваво-красное облачение
+    en: Blood-red vestments
+  url: https://ttg.club/items/blood-red_vestments
+  source: PHB
+- name:
+    ru: Кровь ассасина
+    en: Assassin's Blood
+  url: https://ttg.club/items/assassin's_blood
+  source: DMG
+- name:
+    ru: Кровь дракона
+    en: Dragon's Blood
+  url: https://ttg.club/items/dragon's_blood
+  source: ERLW
+- name:
+    ru: Рукавицы силы огра
+    en: Gauntlets of Ogre Power
+  url: https://ttg.club/items/magic/gauntlets_of_ogre_power
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Кровавое копьё
+    en: Blood Spear
+  url: https://ttg.club/items/magic/blood_spear
+  rarity: необычное
+  source: COS
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

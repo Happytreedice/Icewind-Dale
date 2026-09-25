@@ -1,0 +1,87 @@
+code: GOBLINE
+id: 6bf8982f4bd54226
+name:
+  ru: Маршал гоблинов
+  en: Goblin Marshal
+type: npc
+cr: 1
+xp: 200
+attributes:
+  str: 10
+  dex: 14
+  con: 10
+  int: 10
+  wis: 8
+  cha: 10
+hp:
+  value: 21
+  max: 21
+  formula: 6d6
+ac: 17
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+- goblin
+skills:
+  ste: 2
+senses:
+  darkvision: 60
+actions:
+- name: Мультиатака
+  type: feat
+  description: Босс гоблинов совершает две атаки скимитаром. Вместо одной атаки скимитаром он может совершить одну дистанционную атаку пилумом.
+- name: Скимитар
+  type: weapon
+  description: 'Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 5 (1d6 + 2) рубящего урона.'
+- name: Пилум
+  type: weapon
+  description: 'Рукопашная или дальнобойная атака оружием: +4 к попаданию, досягаемость 5 фт. или дистанция 30/120 фт., одна цель. Попадание: 5 (1d6 + 2) колющего урона.'
+- name: Проворное бегство
+  type: feat
+  description: Гоблин может в каждом своём ходу бонусным действием совершать действие Засада или Отход.
+- name: Перенаправление атаки
+  type: feat
+  description: Если видимое гоблином существо нацеливается атакой на него, гоблин выбирает другого гоблина в пределах 5 фт. от себя. Два гоблина меняются местами, и целью атаки становится выбранный гоблин.
+spells: []
+inventory:
+- code: ICHAN01
+  name: Кольчужная рубаха [Chain Shirt]
+  quantity: 1
+  equipped: true
+- code: ISHLD02
+  name: Щит [Shield]
+  quantity: 1
+  equipped: true
+- code: ISCIMITA
+  name: Скимитар [Scimitar]
+  quantity: 1
+  equipped: true
+- code: ISPER01
+  name: Пилум [Javelin]
+  quantity: 2
+  equipped: true
+loot:
+  currency:
+    gp: 1
+    sp: 1
+    cp: 12
+  items:
+  - code: ISHLD02
+    name: Щит [Shield]
+    quantity: 1
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MGO5SD/anim/S.webm
+  bam: MGO5SD
+ttgclub:
+- name:
+    ru: Босс гоблинов
+    en: Goblin Boss
+  url: https://ttg.club/bestiary/goblin_boss
+  cr: '1'
+  source: MM

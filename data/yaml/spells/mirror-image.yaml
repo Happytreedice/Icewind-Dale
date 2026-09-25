@@ -1,0 +1,104 @@
+id: 4248b7a0ee4c1f3b
+identifier: mirror-image
+name:
+  ru: Зеркальное отражение
+  en: Mirror Image
+level: 2
+school: ill
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: false
+range:
+  value: null
+  units: self
+target:
+  affects: self
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: false
+  ritual: false
+materials:
+  value: ''
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/ILLUSH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M34.ogg
+description: 'Три ваших иллюзорных двойника появляются в занимаемом вами пространстве.
+  Пока длится заклинание, двойники перемещаются вместе с вами, повторяя ваши действия
+  и меняясь местами, так что невозможно уследить, кто из вас реален. Вы можете использовать
+  действие, чтобы рассеять иллюзорных двойников.
+
+  Пока длится заклинание, каждый раз, когда существо выбирает вас целью атаки, бросьте
+  [[/r d20]], чтобы определить, будет ли атака нацелена на вас или на ваших двойников.
+
+  Если у вас три двойника, то двойник станет целью атаки при результате 6 и более.
+  Если двойников двое, надо получить 8 или более. Если двойник один 11 или более.
+
+  КБ двойника равен 10 + ваш модификатор Ловкости. Если атака попадает в двойника,
+  он уничтожается. Двойника можно уничтожить только попавшей по нему атакой. Он невосприимчив
+  к любому другому урону и эффектам. Заклинание прекращает действовать, когда уничтожены
+  все три двойника.
+
+  Заклинание не действует на существо, которое не может видеть или полагается на другие
+  способы восприятия, например обладает @UUID[Compendium.dnd5e.srd-actions.Item.x7Ty7ddxZGFudOeO]{слепозрением},
+  или если оно способно распознавать иллюзии, например обладает &reference[truesight]{истинным
+  зрением}.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M34.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/ILLUSH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

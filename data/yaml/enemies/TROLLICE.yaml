@@ -1,0 +1,57 @@
+code: TROLLICE
+id: 1975ca9f89084712
+name:
+  ru: Ледяной тролль
+  en: Ice Troll
+type: npc
+cr: 14
+xp: 11500
+attributes:
+  str: 18
+  dex: 8
+  con: 22
+  int: 7
+  wis: 9
+  cha: 7
+hp:
+  value: 260
+  max: 260
+  formula: 26d10 + 156
+ac: 20
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- Великаний
+actions:
+- name: Аура холода
+  type: feat
+  description: Пока тролль жив, его окутывает аура сильного холода, заполняющая область
+    в пределах 10 футов от него. В начале хода тролля все немагические источники огня
+    в пределах действия ауры тухнут. Любое существо, начинающее свой ход в в пределах
+    10 футов от тролля, получает 10 (3d6) урона холодом.
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: 'Тролль совершает три атаки: одну Укусом и две Когтями.'
+- name: Укус
+  type: weapon
+  description: 'Рукопашная атака оружием: +7 к попаданию, досягаемость 5 фт., одна
+    цель. Попадание: 7 (1d6 + 4) колющего урона плюс 9 (2d8) урона холодом.'
+- name: Коготь [Claw]
+  type: weapon
+  description: 'Рукопашная атака оружием: +7 к попаданию, досягаемость 5 фт., одна
+    цель. Попадание: 11 (2d6 + 4) рубящего урона плюс 9 (2d8) урона холодом. Если
+    цель получает любое количество урона холодом, то она должна преуспеть в спасброске
+    Телосложения со Сл 15, иначе будет совершать с помехой все броски атаки до конца
+    её следующего хода.'
+spells: []
+inventory: []
+loot:
+  currency: {}
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MTICSD/anim/S.webm
+  bam: MTICSD

@@ -1,0 +1,148 @@
+code: ZZ36DGD
+id: 19088717e4fdc4a9
+name:
+  ru: Сны Мертвого Бога +4, +6 пр. добрых
+  en: Dead God's Dreaming +4, +6 vs. good
+  official: Сны Мертвого Бога +4, +6 пр. добрых
+type: weapon
+subtype: martialM
+rarity: legendary
+price:
+  value: 65000
+  denomination: gp
+weight_lbs: 4
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 2d4
+  type: slashing
+activities:
+- id: f8af1e552cee3129
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: d9633da4db3140d9
+  name: Против добрых
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 43a15a2c1cd3c4b8
+  name: 'Эмоция: страх'
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: c8a845bc4e44994c
+  name: Символ боли
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Клинок из руды астрального острова — сгустка убитой божественности.
+
+  Против добрых: Против существ добрых убеждений бонус меча возрастает с +4 до +6
+  (примените +2 к атаке и урону вручную; для урона — активность «Против добрых»).
+
+  Эмоция: страх (3/день): Действием вы источаете отчаяние в радиусе 10 футов в пределах
+  50 футов: каждое существо в области должно преуспеть в спасброске Мудрости [[/save
+  ability=wis dc=15]], иначе Испугано на 5 раундов.
+
+  Символ боли (1/день): Действием вы чертите пылающий знак: каждое существо по вашему
+  выбору в радиусе 15 футов в пределах 35 футов должно преуспеть в спасброске Телосложения
+  [[/save ability=con dc=15]], иначе на 1 минуту его пронзает боль: помеха на броски
+  атаки и проверки характеристик.
+
+  Легенда о том, как Бэйн, Баал и Миркул стали богами распри, убийства и смерти, хорошо
+  известна образованным жителям Фаэруна. Однако большинство теологов до сих пор не
+  знает, что произошло с незадачливым умирающим божеством, которого зловещая троица
+  поглотила до встречи с Джергалом. Известно лишь, что малая часть его сущности попала
+  на Астральный План, где из нее возник крохотный островок поверженной божественности.
+  Сотни лет спустя этим кусочком земли завладел маг-чародей по имени Медрос и нашел
+  там странную руду. Его слуги-дуэргары выковали из необычного металла клинок для
+  самого одного воина, сильнейшего из соратников Медроса. Те, кто пользовался этим
+  мечом, говорили, что чувствуют, держа его в руках, как по нему текут последние воспоминания
+  мертвого бога.'
+uses:
+  max: '3'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

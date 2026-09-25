@@ -1,0 +1,64 @@
+code: WTSALF2
+id: 76e91bcb818d95f2
+name:
+  ru: Морозная саламандра
+  en: Frost Salamander
+type: npc
+cr: 12
+xp: 8400
+attributes:
+  str: 20
+  dex: 12
+  con: 18
+  int: 7
+  wis: 11
+  cha: 7
+hp:
+  value: 215
+  max: 215
+  formula: 21d10 + 84
+ac: 19
+speed_ft: 60
+saving_throws:
+- CON
+- WIS
+damage_resistances: []
+damage_immunities:
+- cold
+damage_vulnerabilities:
+- fire
+condition_immunities: []
+languages:
+- Первичный
+actions:
+- name: Полыхающая ярость [Burning Fury]
+  type: feat
+  description: Когда саламандра получает урон огнём, её Замораживающее дыхание автоматически
+    перезаряжается.
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: 'Саламандра совершает пять атак: четыре Когтями и одну Укусом.'
+- name: Когти [Claw]
+  type: weapon
+  description: 'Рукопашная атака оружием: +9 к попаданию, досягаемость 10 фт., одна
+    цель. Попадание: 8 (1d6 + 5) колющего урона.'
+- name: Укус [Bite]
+  type: weapon
+  description: 'Рукопашная атака оружием: +9 к попаданию, досягаемость 15 фт., одна
+    цель. Попадание: 9 (1d8 + 5) колющего урона и 5 (1d10) урона холодом.'
+- name: Замораживающее дыхание (перезарядка 6) [Freezing Breath]
+  type: weapon
+  description: Саламандра выдыхает ледяной ветер конусом в 60 фт. Каждое существо
+    в этой области должно пройти спасбросок Телосложения со Сл 17, получая 44 (8d10)
+    урона холодом при провали и половину этого урона в случае успеха.
+spells: []
+inventory: []
+loot:
+  currency:
+    gp: 156
+    sp: 17
+    cp: 3
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MSA2SD/anim/S.webm
+  bam: MSA2SD

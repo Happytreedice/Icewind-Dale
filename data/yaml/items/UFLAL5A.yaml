@@ -1,0 +1,91 @@
+code: UFLAL5A
+id: a30fae069ba41a53
+name:
+  ru: Цеп шока +4
+  en: Shocking Flail +4
+  official: Цеп шока +4
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 7500
+  denomination: gp
+weight_lbs: 15
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+damage:
+- formula: 1d8
+  type: bludgeoning
+activities:
+- id: 93039a48d5dfffe0
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Разрядный цеп +4
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '1'
+description: 'Цеп со светящимися рунами, бьющий молнией при ударе.
+
+  Защитные руны: +1 к КД, пока цеп в руке.
+
+  Разряд: При провале спасброска СЛ 14 поражённая цель Ошеломлена до конца своего
+  следующего хода.
+
+  Цеп — это железный прут, деревянный брус с шипами или металлический шипованный шар,
+  прикрепленный к массивной деревянной рукояти с помощью цепи или петли. Первоначально
+  цеп был орудием для молотьбы зерна. Этот цеп зачарован. По всей его поверхности
+  поблескивают руны.'
+ttgclub:
+- name:
+    ru: Цеп
+    en: Flail
+  url: https://ttg.club/items/flail
+  source: PHB
+- name:
+    ru: Цеп
+    en: Flail
+  url: https://ttg.club/weapons/flail
+  source: PHB
+- name:
+    ru: Цеп Тиамат
+    en: Flail of Tiamat
+  url: https://ttg.club/items/magic/flail_of_tiamat
+  rarity: легендарное
+  source: FTD
+- name:
+    ru: Цеп силы
+    en: Flail of Force
+  url: https://ttg.club/items/magic/flail_of_force
+  rarity: легендарное
+  source: LPZAE
+- name:
+    ru: Разрушающий цеп
+    en: Ruinous Flail
+  url: https://ttg.club/items/magic/ruinous_flail
+  rarity: редкое
+  source: BMT

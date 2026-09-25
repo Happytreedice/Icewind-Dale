@@ -1,0 +1,92 @@
+code: WAND11
+id: RUAqkJwzrSuWpA7H
+name:
+  ru: Жезл Небес
+  en: Wand of the Heavens
+  official: Жезл Небес
+type: consumable
+subtype: wand
+rarity: veryRare
+price:
+  value: 15000
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: 5cc80fc313862656
+  name: cast
+  type: cast
+  target:
+    template:
+      contiguous: false
+      units: ft
+    affects:
+      choice: false
+    override: false
+    prompt: true
+  activation:
+    type: action
+    value: null
+    override: false
+  consumption:
+    scaling:
+      allowed: false
+    spellSlot: false
+    targets:
+    - type: itemUses
+      value: '1'
+      target: ''
+      scaling:
+        mode: ''
+        formula: ''
+description: 'Использование: Этот жезл обрушивает с неба столп пламени на выбранную
+  цель. Пламя наносит цели [[/damage 6d8min2 fire]]{6d8 урона огнём} (единицы считаются
+  двойками); при успешном спасброске от жезлов — половину. Заряды жезла ограничены;
+  когда они кончатся, жезл рассыплется.
+
+  Использование: Действием и одним зарядом сотворяет заклинание «Указующая стрела»,
+  обрушивая на цель луч небесного света.
+
+  Этот жезл призывает на цель столб огня с небес. Огонь наносит 6d8 урона (выпавшие
+  единицы принимаются за двойки), но если цель делает успешный спасбросок против жезла,
+  то получит только половину урона. В жезле ограниченное число зарядов; когда они
+  кончатся, жезл самоуничтожится.'
+ttgclub:
+- name:
+    ru: Волшебная палочка
+    en: Wand
+  url: https://ttg.club/items/wand
+  source: PHB
+- name:
+    ru: Волшебная палочка боевого мага +1
+    en: Wand of the War Mage +1
+  url: https://ttg.club/items/magic/wand_of_the_war_mage_+1
+  rarity: необычная
+  source: DMG
+- name:
+    ru: Волшебная палочка боевого мага +2
+    en: Wand of the War Mage +2
+  url: https://ttg.club/items/magic/wand_of_the_war_mage_+2
+  rarity: редкая
+  source: DMG
+- name:
+    ru: Волшебная палочка боевого мага +3
+    en: Wand of the War Mage +3
+  url: https://ttg.club/items/magic/wand_of_the_war_mage_+3
+  rarity: очень редкая
+  source: DMG
+- name:
+    ru: Тисовая палочка
+    en: Yew wand
+  url: https://ttg.club/items/yew_wand
+  source: PHB
+uses:
+  max: '10'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

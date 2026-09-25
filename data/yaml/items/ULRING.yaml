@@ -1,0 +1,163 @@
+code: ULRING
+id: 4854dc00b09c2f04
+name:
+  ru: Кольцо академии Улькастера
+  en: Ulcaster Academy Ring
+  official: Кольцо академии Улькастера
+type: equipment
+subtype: ring
+rarity: veryRare
+price:
+  value: 25000
+  denomination: gp
+weight_lbs: 0
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 979e29233e499e43
+  name: Малое вытягивание Ларлоха
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 0775254da778155b
+  name: Ужас
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: b22e034eb8810594
+  name: Вампирское прикосновение
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Кольцо академии Улькастера
+  changes:
+  - key: system.bonuses.abilities.save
+    mode: 2
+    value: '1'
+description: 'Золотое кольцо с чёрным опалом и нетерильской надписью о вечных жизни
+  и смерти.
+
+  Выучка академии: +1 к спасброскам от заклинаний.
+
+  Малое вытягивание Ларлоха (3/день): Действием вы тянете жизнь из существа в пределах
+  50 футов: цель получает [[/damage 1d4 necrotic]], а вы восстанавливаете столько
+  же хитов.
+
+  Ужас (3/день): Действием вы сеете ужас в радиусе 15 футов в пределах 40 футов: каждое
+  существо в области должно преуспеть в спасброске Мудрости [[/save ability=wis dc=15]],
+  иначе Испугано на 1 минуту (повторяет спасбросок в конце каждого своего хода).
+
+  Вампирское прикосновение (3/день): Сотворяет заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplVampiricTo]
+  без траты ячейки.
+
+  На массивном золотом кольце с черным опалом выгравирована надпись на нетерильском:
+  «ГОТТА И ЭТАН МЕДР — ЭТАКК» («ЖИЗНЬ И СМЕРТЬ НАВЕК — НЕКРОМАНТИЯ»). Сбоку стоит
+  дата, «1072 л.д.».
+
+  Академия Улькастера находилась неподалеку от города Берегост на Побережье Меча.
+  Там волшебники изучали и практиковали магию. Со временем эта школа обрела огромную
+  власть, и тогда группа магов напала на академию и оставила от нее лишь развалины.
+  Большую часть учеников и преподавателей перебили, а что случилось с самим Улькастером,
+  неизвестно до сих пор. Немногочисленные учителя, которым удалось сбежать, стали
+  давать частные уроки и дарили волшебные кольца своим ученикам, сохраняя традицию
+  академии.'
+ttgclub:
+- name:
+    ru: Кольцо-печатка
+    en: Signet Ring
+  url: https://ttg.club/items/signet_ring
+  source: PHB
+- name:
+    ru: Кольчатый (колечный) доспех
+    en: Ring Mail Armor
+  url: https://ttg.club/items/ring_mail_armor
+  source: PHB
+- name:
+    ru: Кольцо влияния на животных
+    en: Ring of Animal Influence
+  url: https://ttg.club/items/magic/ring_of_animal_influence
+  rarity: редкое
+  source: DMG
+- name:
+    ru: Кольцо защиты
+    en: Ring of Protection
+  url: https://ttg.club/items/magic/ring_of_protection
+  rarity: редкое
+  source: DMG
+- name:
+    ru: Кольцо защиты разума
+    en: Ring of Mind Shielding
+  url: https://ttg.club/items/magic/ring_of_mind_shielding
+  rarity: необычное
+  source: DMG
+uses:
+  max: '3'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

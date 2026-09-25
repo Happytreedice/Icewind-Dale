@@ -1,0 +1,127 @@
+code: LUCKY
+id: P1AekFcWAcg1vONC
+name:
+  ru: Скимитар удачи +2
+  en: The Lucky Scimitar +2
+  official: Скимитар удачи +2
+type: weapon
+subtype: martialM
+rarity: rare
+price:
+  value: 3900
+  denomination: gp
+weight_lbs: 4
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- fin
+- lgt
+- mgc
+damage:
+- formula: 1d6
+  type: slashing
+activities:
+- id: 3LHIDpFMTQFHshIH
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 1b2ab4a1a2d54196
+  name: Благословение удачи
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Клинок закхарского игрока Кадана ибн-Кадура, помогавший ему выигрывать
+  безнадёжные пари.
+
+  Точность: Оружие ближнего боя, бонус +2 к атаке и урону.
+
+  Везение: Пока скимитар у вас в руках, вам сопутствует лёгкая удача: Ведущий может
+  позволить вам перебросить один особенно неудачный бросок d20.
+
+  Благословение удачи (1/день): Действием вы даруете удачу одному существу в пределах
+  15 футов: на 3 раунда оно получает +1 к броскам атаки, проверкам характеристик и
+  спасброскам.
+
+  Это оружие Кадана ибн-Кадура, знаменитого игрока из Захары. Говорят, именно благодаря
+  этому клинку Кадану удалось выиграть множество глупых пари. Однако Кадан лишился
+  скимитара, когда встретился в западном Фаэруне с печально известным Нидо Охита Инадзумой.
+  Инадзума, сын кормирского рыцаря и аристократки из Кара-Тура, говорил, что его мать,
+  пока она его вынашивала, дважды ударила молния. В первый раз это якобы случилось,
+  когда она узнала, что забеременела, а во второй — сразу перед началом родов. По
+  легенде, когда Инадзума появился на свет, то Монета Судьбы — волшебный предмет,
+  с помощью которого Тимора и Бешаба определяют удачливость новорожденного, — встала
+  на ребро. Мудрецы утверждают, что поэтому он и был неподвластен ни везению, ни неудачам.
+  Встретившись с Инадзумой, Кадан вскоре проиграл ему и скимитар, и собственную жизнь.'
+ttgclub:
+- name:
+    ru: Скимитар
+    en: Scimitar
+  url: https://ttg.club/items/scimitar
+  source: PHB
+- name:
+    ru: Скимитар
+    en: Scimitar
+  url: https://ttg.club/weapons/scimitar
+  source: PHB
+- name:
+    ru: Кинжал, на запястье
+    en: Dagger, on the wrist
+  url: https://ttg.club/items/dagger,_on_the_wrist
+  source: EEW
+- name:
+    ru: Скимитар с двумя лезвиями
+    en: Double-Bladed Scimitar
+  url: https://ttg.club/items/double-bladed_scimitar
+  source: ERLW
+- name:
+    ru: Амулет планов
+    en: Amulet of the Planes
+  url: https://ttg.club/items/magic/amulet_of_the_planes
+  rarity: очень редкий
+  source: DMG
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

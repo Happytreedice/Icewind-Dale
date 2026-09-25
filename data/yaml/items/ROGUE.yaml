@@ -1,0 +1,111 @@
+code: ROGUE
+id: 8xH3tQcBlseV8qpw
+name:
+  ru: Капюшон Плута
+  en: Rogue's Cowl
+  official: Капюшон Плута
+type: equipment
+subtype: ''
+rarity: veryRare
+price:
+  value: 12150
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: c92481fab4f5f817
+  name: Слепота
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: c76485138e6917e1
+  name: Разноцветные брызги
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Капюшон плута
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '2'
+description: 'Тёмно-бурый капюшон, созданный гномом-вором и иллюзионистом Брейном
+  Каштаном.
+
+  Капюшон плута. Пока он надет, носителя нельзя поразить критическим попаданием —
+  тень капюшона скрадывает уязвимые места.
+
+  Воровская сноровка: Вы совершаете с преимуществом проверки Ловкости (Скрытность).
+
+  Защита: Пока капюшон надет, вы получаете бонус +2 к КД.
+
+  Слепота: Раз в день вы можете Действием выбрать существо, которое видите: оно должно
+  преуспеть в спасброске Телосложения [[/save ability=con]], иначе становится Ослеплённым
+  на 8 часов или пока эффект не будет снят магией.
+
+  Разноцветные брызги: Раз в день вы можете Действием выпустить из капюшона сноп мерцающих
+  красок конусом 15 футов. Каждое существо в области должно преуспеть в спасброске
+  Телосложения [[/save ability=con]], иначе оно Ослеплено до конца вашего следующего
+  хода; особенно могучие существа стряхивают эффект почти мгновенно.
+
+  Этот темно-коричневый головной убор закрывает голову и плечи, как капюшон. Его изготовил
+  гном Брин Каштан, вор и иллюзионист. Капюшон несколько лет сопровождал его в приключениях,
+  пока давняя спутница жизни не убедила Брина осесть. Тогда он подарил головной убор
+  своему племяннику Чирчету, который отдал артефакт в обмен на большой земельный участок.'
+ttgclub:
+- name:
+    ru: Мантия плута
+    en: Rogue's Mantle
+  url: https://ttg.club/items/magic/rogue's_mantle
+  rarity: редкий
+  source: BMT
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

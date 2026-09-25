@@ -1,0 +1,113 @@
+code: AMULBRA
+id: 5dbd3e61e9b6ca6c
+name:
+  ru: Значок храбреца
+  en: Badge of the Brave
+  official: Значок храбреца
+type: equipment
+subtype: ''
+rarity: rare
+price:
+  value: 2150
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: bd72bd54a17e5809
+  name: Отвага
+  type: heal
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll
+magical_effects:
+- name: Отвага
+  changes:
+  - key: system.bonuses.mwak.attack
+    mode: 2
+    value: '1'
+  - key: system.bonuses.rwak.attack
+    mode: 2
+    value: '1'
+  - key: system.bonuses.mwak.damage
+    mode: 2
+    value: '3'
+  - key: system.bonuses.rwak.damage
+    mode: 2
+    value: '3'
+  - key: system.traits.ci.value
+    mode: 2
+    value: frightened
+description: 'Простой стальной амулет, освящённый жрецами Темпуса.
+
+  Отвага (1/день): Действием вы взываете к амулету. На 1 час вы и союзники в пределах
+  10 футов от вас получаете +1 к броскам атаки, +3 к броскам урона, [[/heal 5 temp]]
+  временных хитов и иммунитет к состоянию Испуганный.
+
+  Жрецы Темпуса благословили этот простой стальной амулет для воина по имени Телн
+  Грэм. Этот могучий воин в крупных сражениях легко поддавался панике. Благодаря этому
+  значку, который он носил у сердца, Телн справлялся со своими приступами паники в
+  важных битвах. Однако жрецы Темпуса отобрали у воина амулет, когда сочли, что Телн
+  — неисправимый трус. Говорят, после этого он бросил поиски приключений и стал фермером.'
+ttgclub:
+- name:
+    ru: Жетон дозора
+    en: Badge of the Watch
+  url: https://ttg.club/items/magic/badge_of_the_watch
+  rarity: редкий
+  source: WDH
+- name:
+    ru: Кинжал, на запястье
+    en: Dagger, on the wrist
+  url: https://ttg.club/items/dagger,_on_the_wrist
+  source: EEW
+- name:
+    ru: Амулет планов
+    en: Amulet of the Planes
+  url: https://ttg.club/items/magic/amulet_of_the_planes
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Заполярные сапоги
+    en: Boots of the Winterlands
+  url: https://ttg.club/items/magic/boots_of_the_winterlands
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Кольцо тарана
+    en: Ring of The Ram
+  url: https://ttg.club/items/magic/ring_of_the_ram
+  rarity: редкое
+  source: DMG

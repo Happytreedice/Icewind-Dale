@@ -1,0 +1,119 @@
+code: STORM
+id: 59f02866bf3160a8
+name:
+  ru: Лук бури +2
+  en: Storm Bow +2
+  official: Лук бури +2
+type: weapon
+subtype: simpleR
+rarity: veryRare
+price:
+  value: 27325
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- amm
+- two
+- mgc
+damage:
+- formula: 1d6
+  type: piercing
+activities:
+- id: 0113b2b44d48be7a
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 3565a182d782bd9f
+  name: Штормовой панцирь
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Составной лук воинов Талоса, гудящий как далёкий гром.
+
+  Штормовой панцирь (1/день): Действием вы окружаете себя штормовой оболочкой на 10
+  минут: вы получаете сопротивление урону огнём, холодом и электричеством.
+
+  Это священное оружие воинов, служащих Талосу, богу бурь и разрушения, состоит из
+  нескольких слоев разных пород дерева. Десятилетиями этот короткий лук мастерски
+  применяли против многочисленных врагов церкви Талоса. Последним его владельцем был
+  Калассан Бреверед, рыцарь бури, погибший после того, как уничтожил огромное число
+  следопытов и друидов на Муншейских островах.'
+ttgclub:
+- name:
+    ru: Грозовой бумеранг
+    en: Storm Boomerang
+  url: https://ttg.club/items/magic/storm_boomerang
+  rarity: необычное
+  source: PotA
+- name:
+    ru: Лук заземления
+    en: Bow of Grounding
+  url: https://ttg.club/items/magic/bow_of_grounding
+  rarity: редкое
+  source: LPZAE
+- name:
+    ru: Лук воспламенения
+    en: Bow of Conflagration
+  url: https://ttg.club/items/magic/bow_of_conflagration
+  rarity: редкое
+  source: BMT
+- name:
+    ru: Лук мелодий
+    en: Bow of Melodies
+  url: https://ttg.club/items/magic/bow_of_melodies
+  rarity: очень редкое
+  source: BMT
+- name:
+    ru: Лук скрещенных звезд
+    en: Starcrossed Bow
+  url: https://ttg.club/items/magic/starcrossed_bow
+  rarity: редкое
+  source: DoDk
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

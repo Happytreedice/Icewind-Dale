@@ -1,0 +1,94 @@
+code: BOOTMAN
+id: c54b99cbc932db82
+name:
+  ru: Сапоги множества путей
+  en: Boots of the Many Paths
+  official: Сапоги множества путей
+type: equipment
+subtype: ''
+rarity: rare
+price:
+  value: 1630
+  denomination: gp
+weight_lbs: 4
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 73b34861686c887f
+  name: Размытие
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll
+magical_effects:
+- name: Размытие путей
+  changes:
+  - key: system.attributes.ac.bonus
+    mode: 2
+    value: '+3'
+  - key: system.bonuses.abilities.save
+    mode: 2
+    value: '+1'
+description: 'Сапоги, сотканные иллюзией: их носитель словно идёт сразу несколькими
+  дорогами.
+
+  Размытие (1/день): Действием вы активируете сапоги и на 7 раундов расплываетесь,
+  как под действием заклинания @UUID[Compendium.dnd5e.spells24.Item.phbsplBlur000000]{Размытие}:
+  вы получаете +3 к КД и +1 ко всем спасброскам.
+
+  Созданные гномом-иллюзионистом в 931 л.д. сапоги множества путей носил не один искатель
+  приключений. Много лет они переходили от владельца к владельцу. Уэлди Бейкер, их
+  создатель, утверждал, что сила сапог основывается не только на магии иллюзии, но
+  и на «потенциале разрыва временной ткани и макроскопическом эффекте микроскопических
+  изменений малых объектов окружающей среды».'
+ttgclub:
+- name:
+    ru: Заполярные сапоги
+    en: Boots of the Winterlands
+  url: https://ttg.club/items/magic/boots_of_the_winterlands
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Сапоги извилистого пути
+    en: Boots of the Winding Path
+  url: https://ttg.club/items/magic/boots_of_the_winding_path
+  rarity: редкий
+  source: TCE
+- name:
+    ru: Сапоги бдительности
+    en: Boots of the Vigilant
+  url: https://ttg.club/items/magic/boots_of_the_vigilant
+  rarity: необычный
+  source: TDCS

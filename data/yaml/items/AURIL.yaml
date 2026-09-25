@@ -1,0 +1,123 @@
+code: AURIL
+id: Jc8WD7dvsYI2nmXF
+name:
+  ru: Дыхание Аурил +3
+  en: Breath of Auril +3
+  official: Дыхание Аурил +3
+type: weapon
+subtype: simpleM
+rarity: veryRare
+price:
+  value: 15000
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- fin
+- lgt
+- thr
+- mgc
+damage:
+- formula: 1d4
+  type: piercing
+activities:
+- id: gnv58ZAbC8Gkql34
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: fee039ee77fcbd0e
+  name: Конус холода
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Дыхание Аурил +3
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: cold
+  - key: system.traits.dv.value
+    mode: 2
+    value: fire
+description: 'Клинком владел Контик, слуга Аурил, богини холода.
+
+  Точность: Оружие ближнего боя, бонус +3 к атаке и урону.
+
+  Дополнительный урон: Наносит дополнительно [[/damage 1d6 cold]] при каждом попадании.
+
+  Сопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  холодом.
+
+  Уязвимость к огню: Пока это оружие у вас в руках, вы имеете уязвимость к урону огнём.
+
+  Разум и облик: Пока вы владеете клинком, ваш Интеллект увеличивается на 1, а Харизма
+  снижается на 1.
+
+  Проклятие: Клинок проклят. Взяв его в руки, вы не можете расстаться с ним по своей
+  воле, пока на вас не сотворят заклинание снятие проклятия.
+
+  Конус холода: (2/день) Действием вы сотворяете заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]
+  без траты ячейки.
+
+  Раньше это оружие принадлежало Контик, служительнице Аурил. На него наложены некоторые
+  полезные чары.'
+ttgclub:
+- name:
+    ru: Бутилированное дыхание
+    en: Bottled Breath
+  url: https://ttg.club/items/magic/bottled_breath
+  rarity: необычное
+  source: PotA
+- name:
+    ru: Зелье огненного дыхания
+    en: Potion of Fire Breath
+  url: https://ttg.club/items/magic/potion_of_fire_breath
+  rarity: необычное
+  source: DMG
+uses:
+  max: '2'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

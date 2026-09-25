@@ -1,0 +1,91 @@
+id: 05d01498b2a76fb4
+identifier: chromatic-orb
+name:
+  ru: Хроматический шар
+  en: Chromatic Orb
+level: 1
+school: evo
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: ''
+  units: inst
+  concentration: false
+range:
+  value: '90'
+  units: ft
+target:
+  affects: ''
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: алмаз стоимостью не менее 50 зм
+  consumed: false
+  cost: 50
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+description: 'Вы бросаете сферу энергии диаметром 4 дюйма в существо, которое видите
+  в пределах дистанции. Выберите тип урона: гром, кислота, молния, огонь, холод или
+  яд, а затем совершите дистанционную атаку заклинанием по цели. При попадании существо
+  получает [[/r 3d8]] урона выбранного типа.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 2-го круга
+  или выше, урон увеличивается на [[/r 1d8]] за каждый круг ячейки выше 1-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_M06.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/INVOCH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

@@ -1,0 +1,135 @@
+code: DNTSHD2
+id: d68a53e301d4fd9a
+name:
+  ru: Разбитый щит Тиернона +2
+  en: Sundered Shield of Tiernon +2
+  official: Разбитый щит Тиернона +2
+type: equipment
+subtype: shield
+rarity: rare
+price:
+  value: 2750
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+armor_class:
+  value: 2
+  type: null
+activities:
+- id: b81e0784546632ea
+  name: Оплот
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: f492fc31ccd118cd
+  name: Неослабная стойкость
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Расколотый щит Тирнона +2
+  changes:
+  - key: system.traits.dr.value
+    mode: 2
+    value: bludgeoning
+  - key: system.traits.dr.value
+    mode: 2
+    value: piercing
+  - key: system.traits.dr.value
+    mode: 2
+    value: slashing
+description: 'Пробуждённый Тирноном щит, тихо гудящий в руке.
+
+  Оплот (1/день): Бонусным действием вы укрепляете щит на 17 раундов: +2 к КД сверх
+  обычного бонуса щита.
+
+  Неослабная стойкость (1/день): Действием вы касаетесь существа: с него снимается
+  истощение первой степени и усталость.
+
+  Физическая стойкость: Пока щит у вас в руках, вы получаете сопротивление дробящему,
+  колющему и рубящему урону.
+
+  Похоже, Тиернон восстановил чары на этом щите, которые «впали в спячку» (вероятно,
+  когда по нему ударил кулак великана). Мастер обвел руны по краям и заново нарисовал
+  в центре символ Мятого Шлема. Теперь щит сверкает ярче, чем прежде, меньше весит
+  и немного подрагивает в руке, будто что-нибудь напевает про себя.'
+ttgclub:
+- name:
+    ru: Щит
+    en: Shield
+  url: https://ttg.club/items/shield
+  source: PHB
+- name:
+    ru: Щит +1
+    en: Shield +1
+  url: https://ttg.club/items/magic/shield_+1
+  rarity: необычный
+  source: DMG
+- name:
+    ru: Щит +2
+    en: Shield +2
+  url: https://ttg.club/items/magic/shield_+2
+  rarity: редкий
+  source: DMG
+- name:
+    ru: Щит +3
+    en: Shield +3
+  url: https://ttg.club/items/magic/shield_+3
+  rarity: очень редкий
+  source: DMG
+- name:
+    ru: Щит
+    en: Shield
+  url: https://ttg.club/armors/shield
+  source: PHB
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

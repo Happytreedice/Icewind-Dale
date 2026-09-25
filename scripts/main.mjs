@@ -40,8 +40,10 @@ Hooks.once("init", async () => {
   }
 
   // Register Journal Sheet
-  const SheetConfig = foundry.applications?.sheets?.DocumentSheetConfig ?? DocumentSheetConfig;
-  SheetConfig.registerSheet(JournalEntry, MODID, IwdJournalSheet, {
+  const SheetConfig = foundry.applications?.apps?.DocumentSheetConfig
+    ?? foundry.applications?.sheets?.DocumentSheetConfig
+    ?? (typeof DocumentSheetConfig !== "undefined" ? DocumentSheetConfig : undefined);
+  SheetConfig?.registerSheet(JournalEntry, MODID, IwdJournalSheet, {
     types: ["base"],
     label: "Icewind Dale — стиль игры",
     makeDefault: false

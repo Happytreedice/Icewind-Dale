@@ -1,0 +1,90 @@
+code: SBOWEBU
+id: 3882e284023a6d8a
+name:
+  ru: Короткий лук кипения +3
+  en: Shortbow of Ebullience +3
+  official: Короткий лук кипения +3
+type: weapon
+subtype: simpleR
+rarity: veryRare
+price:
+  value: 10000
+  denomination: gp
+weight_lbs: 3
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- amm
+- two
+- mgc
+damage:
+- formula: 1d6
+  type: piercing
+activities:
+- id: 1dcec00316d34dbe
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Короткий лук кипучести +3
+  changes:
+  - key: system.abilities.con.value
+    mode: 2
+    value: '-2'
+  - key: system.traits.dr.value
+    mode: 2
+    value: cold
+  - key: system.traits.dv.value
+    mode: 2
+    value: fire
+description: 'Лук, пышущий жаром, но ледяной на ощупь — он пьёт тепло стрелка.
+
+  Кипучесть: Лук пьёт тепло стрелка: Телосложение −2, пока лук у вас в руках.
+
+  Сопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону
+  холодом.
+
+  Уязвимость к огню: Пока это оружие у вас в руках, вы имеете уязвимость к урону огнём.
+
+  Быстрое: Когда вы совершаете дополнительную атаку, можете совершить её не Бонусным
+  действием, а частью действия Атака. Вы можете совершить эту дополнительную атаку
+  только один раз за ход.
+
+  От этого изящного лука исходит сильное тепло, но сам он холодный на ощупь, как будто
+  вытягивает энергию из тела владельца. Его создал и зачаровал стареющий некромант
+  из Брин Шандера, когда верховный жрец Аурил убил его любимца-спутника, лавового
+  мефита. Затем некромант отдал лук наемному убийце по имени Теравен Досен, который
+  за три года отправил на тот свет множество служителей Морозной Девы. Но он встретил
+  достойного противника, напав на гнома-путешественника, у которого был при себе жезл
+  огненных шаров. В страшном пламени уцелел только лук.'
+ttgclub:
+- name:
+    ru: Короткий лук
+    en: Shortbow
+  url: https://ttg.club/items/shortbow
+  source: PHB
+- name:
+    ru: Короткий лук
+    en: Shortbow
+  url: https://ttg.club/weapons/shortbow
+  source: PHB

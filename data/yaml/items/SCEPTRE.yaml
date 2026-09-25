@@ -1,0 +1,143 @@
+code: SCEPTRE
+id: 525b2d1ebd76b5e8
+name:
+  ru: Скипетр тирании +4
+  en: Scepter of Tyranny +4
+  official: Скипетр тирании +4
+type: weapon
+subtype: simpleM
+rarity: legendary
+price:
+  value: 52000
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- lgt
+- mgc
+damage:
+- formula: 1d4
+  type: bludgeoning
+activities:
+- id: 44e0c18f641dca53
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 5beb779e4913a5e9
+  name: Плащ ужаса
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 88a4282de4619410
+  name: Подчинение
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+magical_effects:
+- name: Скипетр тирании +4
+  changes:
+  - key: system.abilities.cha.value
+    mode: 2
+    value: '1'
+  - key: system.traits.ci.value
+    mode: 2
+    value: frightened
+description: 'Чёрно-красный скипетр банитского жреца, вселяющий ужас и покорность.
+
+  Тирания: Харизма +1; вы иммунны к состоянию Испуган.
+
+  Плащ ужаса (1/день): Действием вы источаете волну ужаса радиусом 10 футов на 3 раунда:
+  не-нежить, начинающая ход в области, должна преуспеть в спасброске Мудрости [[/save
+  ability=wis dc=15]], иначе в панике бежит от вас 2d8 раундов.
+
+  Подчинение (1/день): Действием вы подчиняете существо в пределах 40 футов: спасбросок
+  Мудрости [[/save ability=wis dc=17]], при провале цель Очарована и выполняет ваши
+  приказы 15 раундов (повторяет спасбросок при получении урона).
+
+  Этот скипетр, зачарованный образцовым жрецом Бэйна, повидал вместе с хозяином немало
+  ужасных сражений. Аркендрос, служитель Бэйна, был коварен и зол, но обладал выдающимися
+  умственными и физическими способностями. Нередко он собирал под своим началом отряды
+  из молодых воинов, легко поддающихся внушению, плутов и разнообразных бандитов и
+  нагонял страх на весь Вотердип. Встречая отпор, Аркендрос обращался к силам красно-черного
+  скипетра, и его подручные бросались в бой. Харизматичного жреца в конце концов прикончил
+  в сражении жрец Торма и его товарищи-паладины.'
+ttgclub:
+- name:
+    ru: Скипетр Королнора
+    en: Korolnor Scepter
+  url: https://ttg.club/items/magic/korolnor_scepter
+  rarity: легендарный
+  source: SKT
+- name:
+    ru: Скипетр взрыва
+    en: Blast Scepter
+  url: https://ttg.club/items/magic/blast_scepter
+  rarity: очень редкий
+  source: WDMM
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

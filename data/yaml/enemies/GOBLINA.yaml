@@ -1,0 +1,81 @@
+code: GOBLINA
+id: eb834471535e3de9
+name:
+  ru: Гоблин-лучник
+  en: Goblin Archer
+type: npc
+cr: 0.25
+xp: 50
+attributes:
+  str: 8
+  dex: 14
+  con: 10
+  int: 10
+  wis: 8
+  cha: 8
+hp:
+  value: 7
+  max: 7
+  formula: 2d6
+ac: 13
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities: []
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- common
+- goblin
+skills:
+  ste: 2
+senses:
+  darkvision: 60
+actions:
+- name: Короткий лук
+  type: weapon
+  description: 'Дальнобойная атака оружием: +4 к попаданию, дистанция 80/320 фт., одна цель. Попадание: 5 (1d6 + 2) колющего урона.'
+- name: Кинжал
+  type: weapon
+  description: 'Рукопашная или дальнобойная атака оружием: +4 к попаданию, досягаемость 5 фт. или дистанция 20/60 фт., одна цель. Попадание: 4 (1d4 + 2) колющего урона.'
+- name: Проворное бегство
+  type: feat
+  description: Гоблин может в каждом своём ходу бонусным действием совершать действие Засада или Отход.
+spells: []
+inventory:
+- code: ILEAT01
+  name: Кожаный доспех [Leather Armor]
+  quantity: 1
+  equipped: true
+- code: IBOW05
+  name: Короткий лук [Shortbow]
+  quantity: 1
+  equipped: true
+- code: IDAGG01
+  name: Кинжал [Dagger]
+  quantity: 1
+  equipped: true
+- code: AROW01
+  name: Стрела [Arrow]
+  quantity: 20
+  equipped: false
+loot:
+  currency:
+    gp: 6
+    sp: 1
+    cp: 14
+  items:
+  - code: AROW01
+    name: Стрела [Arrow]
+    quantity: 20
+    equipped: false
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MGO2SD/anim/S.webm
+  bam: MGO2SD
+ttgclub:
+- name:
+    ru: Гоблин
+    en: Goblin
+  url: https://ttg.club/bestiary/goblin
+  cr: 1/4
+  source: MM

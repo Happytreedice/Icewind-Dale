@@ -1,0 +1,85 @@
+code: SHAWM
+id: Oy84s5OSVBnqeocK
+name:
+  ru: Колыбельная Овейна
+  en: Owain's Lullabye
+  official: Колыбельная Овейна
+type: equipment
+subtype: trinket
+rarity: veryRare
+price:
+  value: 27500
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: 7c138afa83e6d575
+  name: Конус холода (1/день)
+  type: save
+  target:
+    template:
+      contiguous: false
+      type: cone
+      size: '60'
+      units: ft
+    affects:
+      choice: false
+      type: creature
+    prompt: true
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: 1 раз в день
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+  save:
+    ability:
+    - con
+    dc:
+      calculation: cha
+  damage:
+    parts:
+    - formula: 8d8
+      types:
+      - cold
+    onSave: half
+  uses:
+    spent: 0
+    max: '1'
+    recovery:
+    - period: day
+      type: recoverAll
+uses:
+  max: '1'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll
+description: 'Создана душевнобольным бардом Оуэйном Пайпером, почитателем Аурил.
+
+  Конус холода: Раз в день действием, протрубив в рог, владелец сотворяет @UUID[Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA]{«Конус
+  холода»}: каждое существо в 60-футовом конусе должно совершить спасбросок Телосложения
+  [[/save ability=con]], получая [[/damage 8d8 cold]] урона холодом при провале или
+  вдвое меньше при успехе.
+
+  Колыбельную Овейна сделал бард Овейн Дудочник, последователь Аурил. Он родился в
+  Серебристой Луне и страстно любил холод своих родных краев. В долгих путешествиях
+  по Лунному морю Овейн повстречал мага по имени Пелэм Болотный. Они подружились и
+  общались более десяти лет. За небольшое вознаграждение Пелэм наложил чары на инструмент
+  барда. Овейн редко пользовался этим гобоем в сражениях. Обычно он начинал играть
+  на нём, увидев на каком-нибудь озере поздних перелетных гусей. Звуки Колыбельной
+  Овейна казались птицам голосом их сородичей, летящих зимовать на юг. Гуси снимались
+  с места, и бард своей замораживал их в полете, оставляя умирать.'

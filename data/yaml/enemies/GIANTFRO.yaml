@@ -1,0 +1,59 @@
+code: GIANTFRO
+id: b7aed6af29c55a34
+name:
+  ru: Ледяной великан
+  en: Frost Giant
+type: npc
+cr: 15
+xp: 13000
+attributes:
+  str: 23
+  dex: 9
+  con: 21
+  int: 9
+  wis: 10
+  cha: 12
+hp:
+  value: 310
+  max: 310
+  formula: 31d10 + 155
+ac: 21
+speed_ft: 40
+saving_throws:
+- CHA
+- CON
+- WIS
+damage_resistances: []
+damage_immunities:
+- cold
+damage_vulnerabilities: []
+condition_immunities: []
+languages:
+- Великаний
+actions:
+- name: Мультиатака [Multiattack]
+  type: feat
+  description: Великан совершает две атаки Секирой.
+- name: Секира
+  type: weapon
+  description: 'Рукопашная атака оружием: +9 к попаданию, досягаемость 10 фт., одна
+    цель. Попадание: 25 (3d12 + 6) рубящего урона.'
+- name: Камень [Rock]
+  type: weapon
+  description: 'Дальнобойная атака оружием: +9 к попаданию, дистанция 60/240 фт.,
+    одна цель. Попадание: 28 (4d10 + 6) дробящего урона.'
+spells: []
+inventory:
+- code: HELM01
+  name: Шлем [Helmet]
+  quantity: 1
+  equipped: true
+loot:
+  currency:
+    gp: 415
+    sp: 5
+    cp: 8
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MGFRSD/anim/S.webm
+  bam: MGFRSD

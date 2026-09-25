@@ -1,0 +1,96 @@
+code: AR2109
+id: 6c7ee06bb176c5b6
+name: Кулдахар — дом Хьолдера (AR2109)
+chapter: Глава 1
+structure:
+  width: 512
+  height: 384
+  grid:
+    size: 50
+    distance: 5
+    units: ft
+  environment:
+    darkness: 0.35
+    global_light: true
+    weather: null
+    isometric: false
+tiles:
+- id: 137ada34a70ec8ce
+  name: Передний план 1
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR2109_fg001.avif
+  x: 91
+  y: 94
+  width: 316
+  height: 223
+  elevation: 10
+  locked: true
+  screen_aligned: false
+- id: 5a23d50d3d40a2c7
+  name: 'Фон: Кулдахар — дом Хьолдера (AR2109)'
+  type: background
+  texture: modules/dnd-icewind-dale-pc-game/assets/maps/AR2109.avif
+  x: 0
+  y: 0
+  width: 512
+  height: 384
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 6190c60b021173d5
+  name: Дверь DOOR1 (закрыта)
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/doors/AR2109_DOOR1.avif
+  x: 256
+  y: 64
+  width: 64
+  height: 128
+  elevation: 0
+  locked: true
+  screen_aligned: false
+- id: 783cb2d7f57e5027
+  name: Передний план 0
+  type: foreground_or_roof
+  texture: modules/dnd-icewind-dale-pc-game/assets/fg/AR2109_fg000.avif
+  x: 295
+  y: 37
+  width: 63
+  height: 113
+  elevation: 10
+  locked: true
+  screen_aligned: false
+enemies:
+- id: 4de3cdb1d287c8e6
+  name: Hjollder
+  cre: null
+  x: 272
+  y: 147
+  elevation: 0
+containers:
+- name: Container 1
+  type: shelf
+  x: 287
+  y: 142
+  locked: false
+  lock_difficulty: 100
+  trapped: false
+  trap_difficulty: 0
+  items:
+  - code: MISC07
+    name: Золотой
+  - code: SLNG02
+    name: Праща +1
+  - code: BULL01
+    name: BULL01
+random_loot_tables: []
+regions:
+- name: Переход → AR2100
+  teleport_destination: null
+  shapes_count: 1
+summary:
+  total_tiles: 4
+  total_enemies: 1
+  total_containers: 1
+  total_walls: 40
+  total_lights: 1
+  total_sounds: 2

@@ -1,0 +1,73 @@
+code: FAMDUST
+id: 3df7551b68b1b155
+name:
+  ru: Пылевой мефит
+  en: Dust Mephit
+type: npc
+cr: 2
+xp: 450
+attributes:
+  str: 5
+  dex: 14
+  con: 10
+  int: 9
+  wis: 11
+  cha: 10
+hp:
+  value: 45
+  max: 45
+  formula: 4d10 + 0
+ac: 14
+speed_ft: 30
+saving_throws: []
+damage_resistances: []
+damage_immunities:
+- poison
+damage_vulnerabilities:
+- fire
+condition_immunities:
+- poisoned
+languages:
+- Ауран
+- Терран
+actions:
+- name: Предсмертная вспышка
+  type: feat
+  description: Когда мефит умирает, он разлетается во все стороны пылью. Все существа
+    в пределах 5 футов от него должны преуспеть в спасброске Телосложения со Сл 10,
+    иначе станут ослеплёнными на 1 минуту. Ослеплённое существо может повторять спасбросок
+    в каждом своём ходу, оканчивая эффект на себе при успехе.
+- name: Врождённое колдовство [Innate Spellcasting]
+  type: feat
+  description: 'Мефит может накладывать заклинания, не нуждаясь в материальных компонентах.
+    Его базовой характеристикой является Харизма.
+
+    1/день: усыпление [sleep]'
+- name: Когти [Claws]
+  type: weapon
+  description: 'Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одно
+    существо. Попадание: 4 (1d4 + 2) рубящего урона.'
+- name: Ослепляющее дыхание (перезарядка 6)
+  type: feat
+  description: 'Мефит выдыхает ослепляющую пыль 15-футовым конусом.
+
+    Все существа в этой области должны преуспеть в спасброске Ловкости со Сл 10, иначе
+    станут ослеплёнными на 1 минуту.
+
+    Существо может повторять этот спасбросок в конце каждого своего хода, оканчивая
+    эффект на себе при успехе.'
+spells: []
+inventory:
+- code: FAMMY
+  name: Кольцо песчаного вора [Sandthief's Ring]
+  quantity: 1
+  equipped: true
+loot:
+  currency:
+    gp: 3
+    sp: 1
+    cp: 2
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/MIMPG1/anim/S.webm
+  bam: MIMPG1

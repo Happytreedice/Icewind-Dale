@@ -1,0 +1,78 @@
+code: SDELFCL
+id: a1008d21de413446
+name:
+  ru: Теневой эльф-клирик
+  en: Shadowed Elven Cleric
+type: npc
+cr: 6
+xp: 2300
+attributes:
+  str: 9
+  dex: 9
+  con: 12
+  int: 9
+  wis: 9
+  cha: 9
+hp:
+  value: 105
+  max: 105
+  formula: 10d10 + 10
+ac: 16
+speed_ft: 30
+saving_throws:
+- CON
+damage_resistances: []
+damage_immunities:
+- cold
+- poison
+damage_vulnerabilities: []
+condition_immunities:
+- charmed
+- poisoned
+- paralyzed
+- unconscious
+- exhaustion
+languages: []
+actions:
+- name: Удар
+  type: weapon
+  description: 'Природная атака: Удар (оригинальный предмет движка SHMACE2).'
+- name: Безмозглость
+  type: feat
+  description: 'Существо лишено разума: оно иммунно к состояниям Очарованный и Испуганный,
+    а также к эффектам, читающим мысли или влияющим на разум (Смятение, Удержание
+    личности, Сон, Устрашение).'
+- name: Иммунитет к заклинаниям
+  type: feat
+  description: 'На существо не действуют заклинания: Облако-убийца (Cloudkill), Ядовитое
+    облако (Poison Fog).'
+- name: Сюжетная неуязвимость
+  type: feat
+  description: Пока не выполнено условие сценария (диалог, событие или квест), хиты
+    существа не могут опуститься ниже 1, и оно не может быть убито. После выполнения
+    условия Мастер снимает эту особенность.
+- name: Иммунитет к состояниям
+  type: feat
+  description: 'Существо иммунно к состояниям: Очарованный, Отравленный, Парализованный,
+    Бессознательный, Истощение.'
+- name: Иммунитет к урону
+  type: feat
+  description: 'Существо не получает урон следующих видов: холод, яд.'
+spells:
+- name: Опутывание
+  level: 1
+  school: con
+- name: Паралич гуманоида
+  level: 2
+  school: enc
+inventory:
+- code: CHAN99
+  name: Пластинчатый доспех [Splint Mail]
+  quantity: 1
+  equipped: true
+loot:
+  currency: {}
+  items: []
+visual:
+  token_image: modules/dnd-icewind-dale-pc-game/assets/CEFB2G1_c1e414169171c01/anim/S.webm
+  bam: CEFB2G1

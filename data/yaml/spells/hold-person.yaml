@@ -1,0 +1,93 @@
+id: c3fc98972f2eb10c
+identifier: hold-person
+name:
+  ru: Паралич гуманоида
+  en: Hold person
+level: 2
+school: enc
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: '1'
+  units: minute
+  concentration: true
+range:
+  value: '60'
+  units: ft
+target:
+  affects: creature
+  template: ''
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: прямой кусочек железа
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI305B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/PARALH.webm
+  sound: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_P04.ogg
+description: 'Выберите гуманоида, которого видите в пределах дистанции. Цель должна
+  пройти испытание Мудрости, при провале она &reference[paralyzed]{парализована},
+  пока длится заклинание. В конце каждого своего хода цель может пройти еще одно испытание
+  Мудрости. При успехе заклинание прекращает действовать на цель.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 3-го круга
+  или выше, то можете выбрать целью одного дополнительного гуманоида за каждый круг
+  ячейки выше 2-го. Эти гуманоиды должны быть в пределах 30 футов друг от друга в
+  момент сотворения.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: ontoken
+  primary:
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      playOn: target
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: true
+      file: modules/dnd-icewind-dale-pc-game/assets/sounds/fx/_EFF_P04.ogg
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 0.8
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/PARALH.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

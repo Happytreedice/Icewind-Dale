@@ -1,0 +1,65 @@
+code: ADISEASE
+id: 5bb29f20a236047c
+name:
+  ru: Отвар мумии
+  en: Mummy's Tea
+  official: Отвар мумии
+type: consumable
+subtype: potion
+rarity: rare
+price:
+  value: 550
+  denomination: gp
+weight_lbs: 1
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties: []
+activities:
+- id: db3053cd7f40f80e
+  name: Выпить
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+description: 'Зловонный лечебный отвар. Выпив его, вы избавляетесь от слепоты, глухоты
+  и всех болезней, как если бы на каждое из этих состояний подействовало заклинание
+  @UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Малое восстановление}.
+
+  Аналог: Действует так же, как @UUID[Compendium.dnd-icewind-dale-pc-game.items.Item.035c50ff08f2819c]{Эликсир
+  очищения}.
+
+  Это полезное зелье впервые создали жрецы Хоруса-Ре в далеком Малхоранде. Мерзкий,
+  гнилостный вкус и аромат достигаются вывариванием бинтов от мумии вместе с высохшими
+  естественным образом останками животных. Полученный отвар избавляет от болезней
+  и недугов употребившего его.'
+ttgclub:
+- name:
+    ru: Противоядие пыли мумии
+    en: Mummy Rot Antidote
+  url: https://ttg.club/items/magic/mummy_rot_antidote
+  rarity: необычное
+  source: IMR

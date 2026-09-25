@@ -1,0 +1,86 @@
+code: GVALOR1
+id: e8feb04ddeacf8d5
+name:
+  ru: Перчатка храбрости
+  en: Gauntlet of Valor
+  official: Перчатка храбрости
+type: equipment
+subtype: ''
+rarity: veryRare
+price:
+  value: 25500
+  denomination: gp
+weight_lbs: 2
+quantity: 1
+attunement: ''
+equipped: false
+identified: true
+properties:
+- mgc
+activities:
+- id: c13c5e7c19d7c9c5
+  name: Кулак доблести
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: bonus
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: activityUses
+      target: ''
+      value: '1'
+      scaling:
+        mode: ''
+        formula: ''
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: true
+magical_effects:
+- name: Рукавица доблести
+  changes:
+  - key: system.traits.ci.value
+    mode: 2
+    value: charmed
+  - key: system.traits.ci.value
+    mode: 2
+    value: paralyzed
+  - key: system.traits.ci.value
+    mode: 2
+    value: restrained
+  - key: system.traits.ci.value
+    mode: 2
+    value: unconscious
+description: 'Вечно сияющая рукавица — часть Оружья Мощи архимагов Миф Драннора.
+
+  Доблесть: Вы иммунны к состояниям Очарован, Парализован, Опутан и к магическому
+  сну.
+
+  Кулак доблести: Трижды в день вы можете 1 минуту наносить рукавицей безоружные удары
+  как магическим оружием: [[/damage 1d4 + 1 bludgeoning]], а при критическом попадании
+  цель дополнительно получает [[/damage 3d6 bludgeoning]] и Ошеломлена до конца своего
+  следующего хода.
+
+  Перчатка храбрости — сама по себе ценный артефакт, но это еще и одна из трех уцелевших
+  Рук Силы, созданных эльфами-архимагами из Мит Драннора. Такие предметы предназначались
+  для воинов, оборонявших древний эльфийский город в случае опасности (что бывало
+  крайне редко). Эта вечно сияющая латная перчатка — вершина мастерства эльфийских
+  ремесленников и магов. По всем Королевствам искатели приключений и тщеславные злодеи
+  разыскивают оставшиеся Руки Силы.'
+ttgclub:
+- name:
+    ru: Боевой рог доблести
+    en: War Horn of Valor
+  url: https://ttg.club/items/magic/war_horn_of_valor
+  rarity: редкий
+  source: BGG

@@ -1,0 +1,84 @@
+id: ed7b5b411d22c4cc
+identifier: ice-storm
+name:
+  ru: Ледяная буря
+  en: Ice storm
+level: 4
+school: evo
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: ''
+  units: inst
+  concentration: false
+range:
+  value: '300'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: щепотка пыли и несколько капель воды
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI113B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/GREASEA.webm
+  sound: ''
+description: 'Ледяной град обрушивается на землю в цилиндре высотой 40 футов и радиусом
+  20 футов с центром в точке в пределах дистанции. Каждое существо в пределах цилиндра
+  должно пройти испытание Ловкости. При провале существо получает [[/r 2d8]] дробящего
+  урона и [[/r 4d6]] урона холодом или половину этого урона при успехе. Градины превращают
+  область действия бури в пересечённую местность до конца вашего следующего хода.
+
+  На высоких кругах. Если вы сотворяете это заклинание, используя ячейку 5-го круга
+  или выше, дробящий урон увеличивается на [[/r 1d8]]  за каждый круг ячейки выше
+  4-го.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: range
+  primary:
+    options:
+      delay: 0
+      elevation: 1000
+      isReturning: false
+      isWait: false
+      onlyX: false
+      opacity: 1
+      repeat: 1
+      repeatDelay: 0
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: range
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/GREASEA.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: false

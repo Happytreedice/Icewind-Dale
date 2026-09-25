@@ -1,0 +1,129 @@
+code: CDGLOOM
+id: 549d887f6286549b
+name:
+  ru: Острослов +4
+  en: Gloom +4
+  official: Острослов +4
+type: weapon
+subtype: martialM
+rarity: veryRare
+price:
+  value: 35250
+  denomination: gp
+weight_lbs: 4
+quantity: 1
+attunement: required
+equipped: false
+identified: true
+properties:
+- ver
+- mgc
+damage:
+- formula: 2d4
+  type: slashing
+activities:
+- id: f60fb31eb1c3d186
+  name: attack
+  type: attack
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets: []
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 47ef1e29c4adfb0e
+  name: Поиск ловушек
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+- id: 754cb1ee0c2b3497
+  name: Открывание
+  type: utility
+  target:
+    template:
+      contiguous: false
+      units: ''
+    affects:
+      choice: false
+    prompt: false
+    override: false
+  activation:
+    type: action
+    value: 1
+    condition: ''
+    override: false
+  consumption:
+    targets:
+    - type: itemUses
+      value: '1'
+      scaling: {}
+    scaling:
+      allowed: false
+      max: ''
+    spellSlot: false
+description: 'Мрачный длинный меч-близнец «Цинизма», усмирённый чарами надежды.
+
+  Поиск ловушек (2/день): Действием клинок раскрывает владельцу все ловушки в пределах
+  30 футов, как если бы их нашёл опытный вор (длится до конца следующего хода).
+
+  Открывание (2/день): Сотворяет заклинание @UUID[Compendium.dnd5e.spells24.Item.phbsplKnock00000]
+  без траты ячейки.
+
+  Воровская сноровка: Вы совершаете с преимуществом проверки на поиск и обезвреживание
+  ловушек.
+
+  В 834 л.д. волшебник Легедейн Мудрый поймал знаменитого вора, который пытался забраться
+  к нему в башню. Это был циничный взломщик по имени Ильфейн Черное Перо. Легедейн
+  старел, телесная слабость начинала его удручать. И вот он сотворил заклинание «Волшебный
+  сосуд» и заточил дух Ильфейна в драгоценный камень. Затем Легедейн переместил свою
+  душу в молодое эльфийское тело и положил камень на полку. Через сто лет маг решил
+  найти ему какое-нибудь применение. Он создал для своего надменного телохранителя
+  Гундака волшебный меч, в который переместил из камня дух Ильфейна. Вор и при жизни
+  любил покритиковать окружающих, и теперь взялся телепатическим образом регулярно
+  сообщать Гундаку свое мнение о его боевых навыках. Спустя две недели Гундак не выдержал
+  и бросил прямо на улице донимавший его меч. Многие воины с тех пор подбирали его
+  и вскоре так же от него избавлялись. Со временем оружие просто стало известно под
+  нынешним названием.
+
+  Киеран Най сумел наложить на оружие заклинание «Эмоция: Надежда». И хотя меч до
+  сих пор не умолкает, он больше не критикует своего владельца, а его воровские способности
+  можно использовать чаще.'
+uses:
+  max: '2'
+  spent: 0
+  recovery:
+  - period: day
+    type: recoverAll

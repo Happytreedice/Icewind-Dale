@@ -1,0 +1,121 @@
+id: abfa62d7e6abbc33
+identifier: vitriolic-sphere
+name:
+  ru: Едкий шар
+  en: Vitriolic Sphere
+level: 4
+school: evo
+activation:
+  type: action
+  value: 1
+  condition: ''
+duration:
+  value: ''
+  units: inst
+  concentration: false
+range:
+  value: '150'
+  units: ft
+target:
+  affects: ''
+  template: ft
+components:
+  vocal: true
+  somatic: true
+  material: true
+  ritual: false
+materials:
+  value: капля желчи гигантского слизня
+  consumed: false
+  cost: 0
+visual:
+  icon: modules/dnd-icewind-dale-pc-game/assets/icons/SPWI215B.avif
+  animation: modules/dnd-icewind-dale-pc-game/assets/fx/SUFFOCA.webm
+  sound: ''
+description: 'В указанной вами точке в пределах дистанции заклинания появляется сияющий
+  шар изумрудно-зелёной кислоты диаметром 1 фут, взрывающийся сферой с радиусом 20
+  футов.
+
+  Все существа в этой области должны пройти испытание Ловкости. При провале существо
+  получает урон кислотой [[/r 10d4]] и ещё [[/r 5d4]] урона кислотой в конце своего
+  следующего хода. В случае успешного испытания существо получает половину первичного
+  урона и не получает урона в конце своего следующего хода.
+
+  На высоких кругах.  Если вы сотворяете это заклинание, используя ячейку 5 круга
+  или выше, то первичный урон увеличивается на [[/r 2d4]] за каждый круг ячейки выше
+  4.'
+autoanimations:
+  version: 5
+  isEnabled: true
+  isCustomized: true
+  fromAmmo: false
+  macro:
+    enable: false
+  menu: range
+  primary:
+    options:
+      delay: 0
+      elevation: 1000
+      isReturning: false
+      isWait: false
+      onlyX: false
+      opacity: 1
+      repeat: 1
+      repeatDelay: 0
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: range
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/SUFFOCA.webm
+  secondary:
+    enable: false
+  source:
+    enable: false
+  target:
+    enable: true
+    options:
+      addTokenWidth: false
+      anchor: '0.5'
+      delay: 0
+      elevation: 1000
+      fadeIn: 250
+      fadeOut: 500
+      isMasked: false
+      isRadius: false
+      isWait: false
+      opacity: 1
+      persistent: false
+      repeat: 1
+      repeatDelay: 0
+      size: 1.5
+      unbindAlpha: false
+      unbindVisibility: false
+      zIndex: 1
+    sound:
+      enable: false
+      file: ''
+      delay: 0
+      startTime: 0
+      repeat: 1
+      repeatDelay: 250
+      volume: 1
+    video:
+      dbSection: static
+      menuType: spell
+      animation: ''
+      variant: ''
+      color: ''
+      enableCustom: true
+      customPath: modules/dnd-icewind-dale-pc-game/assets/fx/SUFFOCA.webm
