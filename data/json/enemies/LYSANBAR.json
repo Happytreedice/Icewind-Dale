@@ -6,39 +6,95 @@
  "system": {
   "abilities": {
    "str": {
-    "value": 14,
-    "proficient": 0,
-    "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    }
-   },
-   "dex": {
     "value": 12,
     "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    }
+   },
+   "dex": {
+    "value": 13,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "con": {
-    "value": 14,
+    "value": 16,
     "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "int": {
-    "value": 11,
-    "proficient": 0,
+    "value": 10,
+    "proficient": 1,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "wis": {
@@ -48,30 +104,58 @@
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "cha": {
-    "value": 13,
-    "proficient": 1,
+    "value": 9,
+    "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    }
   },
   "attributes": {
    "ac": {
-    "flat": 15,
-    "calc": "natural",
-    "formula": ""
+    "calc": "custom",
+    "flat": 16,
+    "formula": "16 + @attributes.ac.shield"
    },
    "hp": {
-    "value": 58,
-    "max": 58,
-    "temp": 0,
-    "tempmax": 0,
-    "formula": "9d8 + 18"
+    "value": 67,
+    "max": 67,
+    "temp": null,
+    "tempmax": null,
+    "formula": "9d8 + 27"
    },
    "init": {
     "ability": "",
@@ -83,184 +167,51 @@
     }
    },
    "movement": {
-    "burrow": 0,
-    "climb": 0,
-    "fly": 0,
-    "swim": 0,
-    "walk": 30,
-    "units": "ft",
-    "hover": false
-   },
-   "attunement": {
-    "max": 3
+    "units": null,
+    "hover": false,
+    "walk": "40",
+    "burrow": "5",
+    "climb": "30",
+    "fly": "60",
+    "special": "wolf form only; burrow fox form only; climb goat form only; fly owl form only"
    },
    "senses": {
-    "ranges": {},
+    "ranges": {
+     "darkvision": 60
+    },
     "units": "ft",
-    "special": ""
+    "special": "Darkvision (beast form only)"
    },
-   "spellcasting": "",
-   "exhaustion": 0,
-   "concentration": {
-    "ability": "",
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    },
-    "bonuses": {
-     "save": ""
-    },
-    "limit": 1
-   },
-   "death": {
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    },
-    "success": 0,
-    "failure": 0
-   },
-   "hd": {
-    "spent": 0
-   },
+   "spellcasting": "wis",
    "spell": {
-    "level": 0
+    "level": 9
    }
   },
   "details": {
    "biography": {
-    "value": "<p><strong>Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.de17d15750f13bd8]{Лизан — разговор}</p><div class='iwd-actor-bio'><div class='iwd-bio-dialog' style='border-left: 4px solid; padding: 8px 12px; margin-bottom: 12px; border-radius: 4px'><strong> Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.de17d15750f13bd8]{Лизан — диалог}</div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Лизан</strong> (англ. <em>Lysan</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>LYSANBAR</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>500 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 2</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 14</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>42 HP (HD 8)</td><td style='padding: 4px 8px; border: 1px solid'><strong>49 HP</strong> (9d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 16, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+4 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>7 / 11 / 10 / 13 / 12</td><td style='padding: 4px 8px; border: 1px solid'>CON</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>IMMUNE1</strong> (<em>IMMUNE1</em>) — <code>IMMUNE1</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Иммунитет к урону:</strong> cold.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Кулдахар — таверна «Погребок-у-корней» (AR2111) — Глава 2 — Кулдахар.</p></div></div>",
+    "value": "<p><strong>Характеристики и способности:</strong> официальный статблок «Frost Druid» (без Change Shape; естественная броня КД 16 + щит) (Icewind Dale: Rime of the Frostmaiden, стр. 288); существо Icewind Dale (2000), код CRE <code>LYSANBAR</code>.</p><p><strong>Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.de17d15750f13bd8]{Лизан — разговор}</p><div class='iwd-actor-bio'><div class='iwd-bio-dialog' style='border-left: 4px solid; padding: 8px 12px; margin-bottom: 12px; border-radius: 4px'><strong> Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.de17d15750f13bd8]{Лизан — диалог}</div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Лизан</strong> (англ. <em>Lysan</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>LYSANBAR</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>500 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 2</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 14</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>42 HP (HD 8)</td><td style='padding: 4px 8px; border: 1px solid'><strong>49 HP</strong> (9d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 16, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+4 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>7 / 11 / 10 / 13 / 12</td><td style='padding: 4px 8px; border: 1px solid'>CON</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>IMMUNE1</strong> (<em>IMMUNE1</em>) — <code>IMMUNE1</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Иммунитет к урону:</strong> cold.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Кулдахар — таверна «Погребок-у-корней» (AR2111) — Глава 2 — Кулдахар.</p></div></div>",
     "public": ""
    },
-   "alignment": "нейтрально-злой",
+   "alignment": "Any Alignment",
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
    "race": null,
    "type": {
     "value": "humanoid",
-    "subtype": "",
+    "subtype": "Human",
     "swarm": "",
     "custom": ""
    },
-   "cr": 4.0,
-   "ideal": "",
-   "bond": "",
-   "flaw": ""
-  },
-  "traits": {
-   "size": "med",
-   "di": {
-    "value": [
-     "cold"
-    ],
-    "bypasses": [],
-    "custom": ""
-   },
-   "dr": {
-    "value": [],
-    "bypasses": [],
-    "custom": ""
-   },
-   "dv": {
-    "value": [],
-    "bypasses": [],
-    "custom": ""
-   },
-   "ci": {
+   "cr": 5,
+   "habitat": {
     "value": [],
     "custom": ""
    },
-   "languages": {
-    "value": [
-     "common",
-     "giant"
-    ],
-    "custom": "",
-    "communication": {}
-   },
-   "dm": {
-    "amount": {},
-    "bypasses": []
-   },
-   "important": false
-  },
-  "currency": {
-   "pp": 0,
-   "gp": 0,
-   "ep": 0,
-   "sp": 0,
-   "cp": 0
-  },
-  "skills": {
-   "dec": {
-    "value": 2,
-    "ability": "cha",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "prc": {
-    "value": 1,
-    "ability": "wis",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "rel": {
-    "value": 1,
-    "ability": "int",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "ste": {
-    "value": 1,
-    "ability": "dex",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "sur": {
-    "value": 1,
-    "ability": "wis",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
+   "treasure": {
+    "value": []
    }
   },
-  "tools": {},
-  "spells": {},
-  "bonuses": {},
   "resources": {
    "legact": {
     "max": 0,
@@ -276,13 +227,335 @@
     "inside": false
    }
   },
+  "skills": {
+   "acr": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ani": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "arc": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ath": {
+    "ability": "str",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "dec": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "his": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ins": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "itm": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "inv": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "med": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "nat": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "prc": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "prf": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "per": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "rel": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "slt": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ste": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "sur": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   }
+  },
   "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "IWD",
-   "page": "",
+   "custom": "Icewind Dale: Rime of the Frostmaiden; Icewind Dale (2000)",
+   "book": "IDRotF",
+   "page": "288",
    "license": "",
    "revision": 1,
    "rules": "2014"
+  },
+  "traits": {
+   "size": "med",
+   "di": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [
+     "cold"
+    ],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "ci": {
+    "value": [],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "common",
+     "druidic"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "important": false
+  },
+  "spells": {
+   "spell1": {
+    "value": 4,
+    "override": 4
+   },
+   "spell2": {
+    "value": 3,
+    "override": 3
+   },
+   "spell3": {
+    "value": 3,
+    "override": 3
+   },
+   "spell4": {
+    "value": 3,
+    "override": 3
+   },
+   "spell5": {
+    "value": 1,
+    "override": 1
+   },
+   "spell6": {
+    "value": 0,
+    "override": 0
+   },
+   "spell7": {
+    "value": 0,
+    "override": 0
+   },
+   "spell8": {
+    "value": 0,
+    "override": 0
+   },
+   "spell9": {
+    "value": 0,
+    "override": 0
+   },
+   "pact": {
+    "value": 0,
+    "override": null
+   }
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 0,
+   "ep": 0,
+   "sp": 0,
+   "cp": 0
   }
  },
  "prototypeToken": {
@@ -392,175 +665,28 @@
  },
  "items": [
   {
-   "effects": [],
-   "folder": null,
-   "sort": 100000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "Lj6n6JEskM02mx2T",
-   "name": "Тайное служение Морозной Деве [Covert Priestess of Auril]",
+   "_id": "43Inio3YYhB98zEB",
+   "name": "Multiattack",
    "type": "feat",
-   "img": "icons/magic/earth/explosion-lava-stone-green.webp",
+   "img": "icons/skills/melee/strike-weapons-orange.webp",
    "system": {
-    "description": {
-     "value": "<p>Лизан скрывается под видом скромной постоялицы в таверне «Вечерняя тень» в Кулдахаре. Она совершает проверки Харизмы (Обман) с преимуществом, чтобы скрыть свою истинную преданность культу Аурил.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
     "type": {
      "value": "monster",
      "subtype": ""
     },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "kDBnBfJkF9wXMBQ3",
-   "name": "Благословение Морозной Девы [Blessing of the Frostmaiden]",
-   "type": "feat",
-   "img": "icons/magic/life/heart-area-circle-red-green.webp",
-   "system": {
     "description": {
-     "value": "<p>Лизан полностью иммунна к урону холодом и эффектам экстремального холода.</p>",
+     "value": "<p>The druid makes two melee attacks.</p>",
      "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 300000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "Fi62pXKtSNZNXrQx",
-   "name": "Мультиатака [Multiattack]",
-   "type": "feat",
-   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
-   "system": {
-    "description": {
-     "value": "<p>Лизан совершает две атаки Моргенштерном хлада или сотворяет одно заклинание и совершает одну атаку Моргенштерном.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
     },
     "activities": {
-     "4BbKt73YMfsSXkQr": {
-      "_id": "4BbKt73YMfsSXkQr",
+     "44HL9A4jzmNXj9m9": {
+      "_id": "44HL9A4jzmNXj9m9",
       "type": "utility",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
        "type": "action",
-       "value": 1,
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -577,6 +703,7 @@
       },
       "duration": {
        "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -584,6 +711,13 @@
        "override": false
       },
       "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
        "override": false,
        "prompt": true
       },
@@ -600,62 +734,71 @@
       }
      }
     },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "properties": [],
+    "identifier": "multiattack",
+    "source": {
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "requirements": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.43Inio3YYhB98zEB",
+    "duplicateSource": null,
+    "exportSource": null
    }
   },
   {
-   "_id": "Tqn8Yf0S3JTxMvNM",
-   "name": "Моргенштерн хлада +1 [Morning Star of Frost +1]",
+   "_id": "U27eSMytVqEiGBYf",
+   "name": "Ice Sickle (Humanoid Form Only)",
    "type": "weapon",
-   "img": "icons/weapons/maces/mace-cube-spiked-steel.webp",
+   "img": "icons/skills/melee/blood-slash-foam-red.webp",
    "system": {
-    "description": {
-     "value": "<p>Рукопашная атака оружием: +5 к попаданию, досягаемость 5 фт., одна цель. Попадание: 7 (1d8 + 3) колющего урона плюс 3 (1d6) урона холодом.</p>",
-     "chat": ""
+    "type": {
+     "value": "natural",
+     "baseItem": ""
     },
+    "properties": [],
+    "proficient": null,
+    "identifier": "ice-sickle-humanoid-form-only",
     "source": {
-     "custom": "",
-     "book": "",
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
     "quantity": 1,
-    "weight": {
-     "value": 4,
-     "units": "lb"
-    },
-    "price": {
-     "value": 15,
-     "denomination": "gp"
-    },
-    "attunement": "",
-    "equipped": true,
-    "rarity": "",
-    "identified": true,
-    "cover": null,
-    "range": {
-     "value": null,
-     "long": null,
-     "units": "ft",
-     "reach": null
-    },
-    "uses": {
-     "max": "",
-     "recovery": [],
-     "spent": 0
-    },
     "damage": {
      "base": {
       "number": 1,
-      "denomination": 8,
+      "denomination": 4,
       "bonus": "",
       "types": [
-       "piercing"
+       "slashing"
       ],
       "custom": {
        "enabled": false,
@@ -669,11 +812,9 @@
      },
      "versatile": {
       "number": null,
-      "denomination": 0,
+      "denomination": null,
       "bonus": "",
-      "types": [
-       "piercing"
-      ],
+      "types": [],
       "custom": {
        "enabled": false,
        "formula": ""
@@ -685,38 +826,21 @@
       }
      }
     },
-    "armor": {
-     "value": 10
+    "range": {
+     "value": null,
+     "long": null,
+     "reach": 5,
+     "units": "ft"
     },
-    "hp": {
-     "value": 0,
-     "max": 0,
-     "dt": null,
-     "conditions": ""
-    },
-    "properties": [
-     "mgc"
-    ],
-    "proficient": 1,
-    "type": {
-     "value": "martialM",
-     "baseItem": "morningstar"
-    },
-    "unidentified": {
-     "description": ""
-    },
-    "container": null,
-    "magicalBonus": 1,
     "activities": {
-     "VIRT6mL7G7iYDWe5": {
-      "_id": "VIRT6mL7G7iYDWe5",
+     "6vRrRws4Vf6mc5Pq": {
+      "_id": "6vRrRws4Vf6mc5Pq",
       "type": "attack",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
        "type": "action",
-       "value": 1,
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -733,6 +857,7 @@
       },
       "duration": {
        "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -740,6 +865,13 @@
        "override": false
       },
       "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
        "override": false,
        "prompt": true
       },
@@ -749,26 +881,26 @@
        "recovery": []
       },
       "attack": {
-       "ability": "",
-       "bonus": "5",
+       "ability": "str",
+       "bonus": "",
        "critical": {
         "threshold": null
        },
-       "flat": true,
+       "flat": false,
        "type": {
         "value": "melee",
         "classification": "weapon"
        }
       },
       "damage": {
-       "includeBase": true,
        "critical": {
         "bonus": ""
        },
+       "includeBase": true,
        "parts": [
         {
-         "number": 1,
-         "denomination": 6,
+         "number": 2,
+         "denomination": 4,
          "bonus": "",
          "types": [
           "cold"
@@ -787,10 +919,1176 @@
       }
      }
     },
-    "attuned": false,
-    "ammunition": {},
-    "identifier": "morningstar",
+    "description": {
+     "value": "<p><em>Melee Weapon Attack:</em> [[/attack +4]]{+4} to hit, reach 5 ft., one target. <em>Hit:</em> 3 ([[/damage 1d4+1 type=slashing]]{1d4 + 1}) slashing damage plus 5 ([[/damage 2d4 type=cold]]{2d4}) cold damage.</p>",
+     "chat": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "equipped": true,
     "mastery": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.U27eSMytVqEiGBYf",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "Y5NKzRm5mjFwAumw",
+   "name": "Spellcasting (Humanoid Form Only)",
+   "type": "feat",
+   "img": "icons/magic/symbols/circled-gem-pink.webp",
+   "system": {
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "description": {
+     "value": "<p>The druid is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14; [[/attack +6]]{+6} to hit with spell attacks). It has the following druid spells prepared:</p><p>Cantrips (at will): @UUID[Compendium.dnd5e.spells.Item.SbSvZKkJASyk8jKo]{druidcraft}, @UUID[Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY]{guidance}, @UUID[Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4]{resistance}</p><p>1st level (4 slots): @UUID[Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B]{animal friendship}, @UUID[Compendium.dnd5e.spells.Item.IBJmWjzbQGu7M4UX]{fog cloud}, @UUID[Compendium.dnd5e.spells.Item.aL1F8fvYLtNzUbKu]{speak with animals}</p><p>2nd level (3 slots): @UUID[Compendium.dnd5e.spells.Item.X8w9EzYLGc4vQ1H2]{animal messenger}, @UUID[Compendium.dnd5e.spells.Item.bV3yun6MIuFj71Er]{moonbeam}, @UUID[Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj]{pass without trace}</p><p>3rd level (3 slots): @UUID[Compendium.dnd5e.spells.Item.1Drt0SHxbEAHxprN]{conjure animals}, @UUID[Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd]{sleet storm}, @UUID[Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW]{wind wall}</p><p>4th level (3 slots): @UUID[Compendium.dnd5e.spells.Item.sTIkQK7KuQNOyY0C]{hallucinatory terrain}, @UUID[Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH]{ice storm}</p><p>5th level (1 slot): @UUID[Compendium.dnd5e.spells.Item.MCEpGpvovcXagwQS]{awaken}</p>",
+     "chat": ""
+    },
+    "activities": {
+     "PKCxlHDGQ9DxYFP6": {
+      "_id": "PKCxlHDGQ9DxYFP6",
+      "type": "cast",
+      "name": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.SbSvZKkJASyk8jKo",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "VW7HS74IpY1Y81pR": {
+      "_id": "VW7HS74IpY1Y81pR",
+      "type": "cast",
+      "name": "",
+      "sort": 100000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "UL0B15G7e35kBTwY": {
+      "_id": "UL0B15G7e35kBTwY",
+      "type": "cast",
+      "name": "",
+      "sort": 200000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "YLOBZtCnp65ZZLWi": {
+      "_id": "YLOBZtCnp65ZZLWi",
+      "type": "cast",
+      "name": "",
+      "sort": 300000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "UtRJs6SQp3dWMyVW": {
+      "_id": "UtRJs6SQp3dWMyVW",
+      "type": "cast",
+      "name": "",
+      "sort": 400000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.IBJmWjzbQGu7M4UX",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "1iF3cCTSacje7NV8": {
+      "_id": "1iF3cCTSacje7NV8",
+      "type": "cast",
+      "name": "",
+      "sort": 500000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.aL1F8fvYLtNzUbKu",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "2ETJE2aJCP2O2Ob3": {
+      "_id": "2ETJE2aJCP2O2Ob3",
+      "type": "cast",
+      "name": "",
+      "sort": 600000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.X8w9EzYLGc4vQ1H2",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "2agogZHs6jSF8RB8": {
+      "_id": "2agogZHs6jSF8RB8",
+      "type": "cast",
+      "name": "",
+      "sort": 700000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.bV3yun6MIuFj71Er",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "aNrzdV52Yt3UK0AG": {
+      "_id": "aNrzdV52Yt3UK0AG",
+      "type": "cast",
+      "name": "",
+      "sort": 800000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "7uOkMtvq42O88Ntm": {
+      "_id": "7uOkMtvq42O88Ntm",
+      "type": "cast",
+      "name": "",
+      "sort": 900000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.1Drt0SHxbEAHxprN",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "YfVM04NQSz9190B6": {
+      "_id": "YfVM04NQSz9190B6",
+      "type": "cast",
+      "name": "",
+      "sort": 1000000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "XHo9Ss2pF06KYjke": {
+      "_id": "XHo9Ss2pF06KYjke",
+      "type": "cast",
+      "name": "",
+      "sort": 1100000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "BxE3KC2z1ZPIaB3y": {
+      "_id": "BxE3KC2z1ZPIaB3y",
+      "type": "cast",
+      "name": "",
+      "sort": 1200000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "4",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.sTIkQK7KuQNOyY0C",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "5ALedU3Seor3GA5l": {
+      "_id": "5ALedU3Seor3GA5l",
+      "type": "cast",
+      "name": "",
+      "sort": 1300000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "4",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "SrW1P9RvEkTA2EnQ": {
+      "_id": "SrW1P9RvEkTA2EnQ",
+      "type": "cast",
+      "name": "",
+      "sort": 1400000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "5",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.MCEpGpvovcXagwQS",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     }
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "properties": [
+     "trait"
+    ],
+    "identifier": "spellcasting-humanoid-form-only",
+    "source": {
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "requirements": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.Y5NKzRm5mjFwAumw",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "SmvcYcN07M5TBcpR",
+   "name": "Щит [Shield]",
+   "type": "equipment",
+   "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 2,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "shield",
+     "baseItem": "shield"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "shield"
    },
    "effects": [],
    "folder": null,
@@ -807,10 +2105,10 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.items.Item.dX8AxCh9o0A9CkT3",
+    "compendiumSource": "Compendium.dnd5e.items.Item.sSs3hSzkKBMNBgTs",
     "duplicateSource": null,
     "exportSource": null
    }
@@ -912,7 +2210,14 @@
     "wiki": "https://icewinddale.fandom.com/wiki/Lysan",
     "notes": "Каноничная конверсия Лизан под прикрытием (LYSANBAR) из Кулдахара под CR 4 в D&D 5e.",
     "code": "LYSANBAR",
-    "bam": "NSIWHG1"
+    "bam": "NSIWHG1",
+    "officialStatblock": {
+     "source": "h5e",
+     "book": "IDRotF",
+     "label": "Icewind Dale: Rime of the Frostmaiden",
+     "id": "ShrHIOwiH2vSnQgy",
+     "name": "Frost Druid"
+    }
    }
   }
  },
@@ -920,8 +2225,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791672765329,
-  "modifiedTime": 1791672765329,
+  "createdTime": 1791675701656,
+  "modifiedTime": 1791675701656,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

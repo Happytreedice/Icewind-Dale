@@ -358,8 +358,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
     "duplicateSource": null,
@@ -650,8 +650,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.I0WocDSuNpGJayPb",
     "duplicateSource": null,
@@ -670,8 +670,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -808,8 +808,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -946,8 +946,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
     "duplicateSource": null,
@@ -959,7 +959,7 @@
    "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>Заклинатель 7-го уровня, базовая характеристика — Интеллект (ячейки по данным игры).</p><ul><li><strong>2-й уровень (1 ячеек):</strong> Снегопад Сниллока [Snilloc's Snowball Swarm]</li></ul>",
+     "value": "<p>Заклинатель 7-го уровня, базовая характеристика — Интеллект (ячейки по данным игры).</p><ul><li><strong>2-й уровень (1 ячеек):</strong> Snilloc's Snowball Swarm</li></ul>",
      "chat": ""
     },
     "source": {
@@ -1055,26 +1055,26 @@
   },
   {
    "_id": "Rvrcs78DaXFYGmgv",
-   "name": "Снегопад Сниллока [Snilloc's Snowball Swarm]",
+   "name": "Snilloc's Snowball Swarm",
    "type": "spell",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI204B.avif",
+   "img": "icons/magic/light/beam-rays-orange.webp",
    "system": {
     "description": {
-     "value": "<p>Шквал плотных снежков вырывается из точки по вашему выбору в пределах дистанции. Каждое существо в 5-футовой сфере с центром в этой точке должно совершить спасбросок Ловкости. При провале цель получает 3к6 урона холодом, или половину этого урона при успехе.</p><p><em>Взрывается градом снежков в сфере радиусом 5 футов, нанося 3к6 урона холодом.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 2-го.</p>",
+     "value": "<p>A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes [[/damage 3d6 type=cold]]{3d6} cold damage on a failed save, or half as much damage on a successful one.</p><p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by [[/damage 1d6]]{1d6} for each slot level above 2nd.</p>",
      "chat": ""
     },
+    "identifier": "snilloc-s-snowball-swarm",
     "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
+     "custom": "XGE",
+     "book": "XGE",
      "page": "",
      "license": "",
      "revision": 1,
      "rules": "2014"
     },
-    "identifier": "snillocs-snowball-swarm",
     "activation": {
      "type": "action",
-     "value": 1,
+     "value": null,
      "condition": ""
     },
     "duration": {
@@ -1084,15 +1084,14 @@
     },
     "target": {
      "affects": {
-      "count": "",
-      "type": "",
       "choice": false,
+      "count": "",
+      "type": "creature",
       "special": ""
      },
      "template": {
-      "count": "1",
+      "count": "",
       "contiguous": false,
-      "stationary": false,
       "type": "sphere",
       "size": "5",
       "width": "",
@@ -1112,27 +1111,29 @@
     },
     "level": 2,
     "school": "evo",
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
     "materials": {
-     "value": "кусочек льда или снежок",
+     "value": "a piece of ice or a small white rock chip",
      "consumed": false,
      "cost": 0,
      "supply": 0
     },
     "method": "spell",
     "prepared": 1,
-    "properties": [
-     "vocal",
-     "somatic",
-     "material"
-    ],
+    "ability": "",
+    "sourceItem": "",
     "activities": {
-     "vtgyR3JQflpMVGHD": {
-      "_id": "vtgyR3JQflpMVGHD",
+     "1Aom9x75mDhGzDDI": {
+      "_id": "1Aom9x75mDhGzDDI",
+      "type": "save",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
-       "type": "",
+       "type": "action",
        "value": null,
        "condition": "",
        "override": false
@@ -1149,6 +1150,8 @@
        "chatFlavor": ""
       },
       "duration": {
+       "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -1156,6 +1159,13 @@
        "override": false
       },
       "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
        "override": false,
        "prompt": true
       },
@@ -1164,7 +1174,6 @@
        "max": "",
        "recovery": []
       },
-      "type": "save",
       "save": {
        "ability": [
         "dex"
@@ -1197,10 +1206,8 @@
        ]
       }
      }
-    },
-    "sourceItem": null
+    }
    },
-   "effects": [],
    "folder": null,
    "sort": 600000,
    "ownership": {
@@ -1208,21 +1215,7 @@
    },
    "flags": {
     "world": {
-     "iwdConversion": {
-      "ref": "SPWI204",
-      "refs": [
-       "SPWI204"
-      ],
-      "type2e": "wizard",
-      "level2e": 2,
-      "source2e": "2 круг, школа воплощения (evocation), дальность в пределах видимости, длительность мгновенная, шквал снежков наносит урон холодом в радиусе 15 фт.",
-      "classes": [
-       "sorcerer",
-       "wizard"
-      ],
-      "wiki": "https://icewinddale.fandom.com/wiki/Snilloc's_Snowball_Swarm",
-      "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-     },
+     "iwdSource": "XGE",
      "iwdSpl": "SPWI204"
     }
    },
@@ -1230,13 +1223,14 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.spells.Item.a8KBkeZafRreafci",
     "duplicateSource": null,
     "exportSource": null
-   }
+   },
+   "effects": []
   }
  ],
  "effects": [],
@@ -1343,8 +1337,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791672765329,
-  "modifiedTime": 1791672765329,
+  "createdTime": 1791675701656,
+  "modifiedTime": 1791675701656,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

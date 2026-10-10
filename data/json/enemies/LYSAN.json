@@ -6,39 +6,95 @@
  "system": {
   "abilities": {
    "str": {
-    "value": 14,
-    "proficient": 0,
-    "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    }
-   },
-   "dex": {
     "value": 12,
     "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    }
+   },
+   "dex": {
+    "value": 13,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "con": {
-    "value": 14,
+    "value": 16,
     "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "int": {
-    "value": 11,
-    "proficient": 0,
+    "value": 10,
+    "proficient": 1,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "wis": {
@@ -48,30 +104,58 @@
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "cha": {
-    "value": 13,
-    "proficient": 1,
+    "value": 9,
+    "proficient": 0,
     "max": null,
     "bonuses": {
      "check": "",
      "save": ""
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    }
   },
   "attributes": {
    "ac": {
-    "flat": 15,
-    "calc": "natural",
-    "formula": ""
+    "calc": "custom",
+    "flat": 16,
+    "formula": "16 + @attributes.ac.shield"
    },
    "hp": {
-    "value": 58,
-    "max": 58,
-    "temp": 0,
-    "tempmax": 0,
-    "formula": "9d8 + 18"
+    "value": 67,
+    "max": 67,
+    "temp": null,
+    "tempmax": null,
+    "formula": "9d8 + 27"
    },
    "init": {
     "ability": "",
@@ -83,188 +167,51 @@
     }
    },
    "movement": {
-    "burrow": 0,
-    "climb": 0,
-    "fly": 0,
-    "swim": 0,
-    "walk": 30,
-    "units": "ft",
-    "hover": false
-   },
-   "attunement": {
-    "max": 3
+    "units": null,
+    "hover": false,
+    "walk": "40",
+    "burrow": "5",
+    "climb": "30",
+    "fly": "60",
+    "special": "wolf form only; burrow fox form only; climb goat form only; fly owl form only"
    },
    "senses": {
-    "ranges": {},
+    "ranges": {
+     "darkvision": 60
+    },
     "units": "ft",
-    "special": ""
+    "special": "Darkvision (beast form only)"
    },
    "spellcasting": "wis",
-   "exhaustion": 0,
-   "concentration": {
-    "ability": "",
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    },
-    "bonuses": {
-     "save": ""
-    },
-    "limit": 1
-   },
-   "death": {
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    },
-    "success": 0,
-    "failure": 0
-   },
-   "hd": {
-    "spent": 0
-   },
    "spell": {
-    "level": 7
+    "level": 9
    }
   },
   "details": {
    "biography": {
-    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Лизан</strong> (англ. <em>Lysan</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>LYSAN</code>.</p><p >⭐ <strong>Ключевой босс локации:</strong> кастомизированный профиль 5e на базе архетипа <em>Лизан / Lysan</em> с оригинальными способностями и артефактами.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>700 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 5</strong> (БМ +3)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 2</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 16</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>67 HP (HD 8)</td><td style='padding: 4px 8px; border: 1px solid'><strong>78 HP</strong> (11d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+3)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 16, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+5 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+3) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>7 / 11 / 10 / 13 / 12</td><td style='padding: 4px 8px; border: 1px solid'>WIS, CON</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Моргенштерн +1</strong> (<em>Morning Star +1</em>) — <code>BLUN07</code></li><li><strong>IMMUNE1</strong> (<em>IMMUNE1</em>) — <code>IMMUNE1</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Благословение Девы Зимы:</strong> Заклинания холода наносят дополнительно +4 урона.</li><li><strong>Призыв йети:</strong> Действием может призвать 1 Снежного йети на помощь.</li><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Иммунитет к урону:</strong> cold.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li><li><strong>Мультиатака:</strong> Лизан совершает две атаки Моргенштерном или сотворяет заклинание.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'> Заклинания</h3><ul><li><strong>Благословение</strong> (spell)</li><li><strong>Опутать</strong> (spell)</li><li><strong>Удержать персону</strong> (spell)</li><li><strong>Вызвать молнию</strong> (spell)</li></ul></div></div>",
+    "value": "<p><strong>Характеристики и способности:</strong> официальный статблок «Frost Druid» (без Change Shape; естественная броня КД 16 + щит) (Icewind Dale: Rime of the Frostmaiden, стр. 288); существо Icewind Dale (2000), код CRE <code>LYSAN</code>.</p><div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Лизан</strong> (англ. <em>Lysan</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>LYSAN</code>.</p><p >⭐ <strong>Ключевой босс локации:</strong> кастомизированный профиль 5e на базе архетипа <em>Лизан / Lysan</em> с оригинальными способностями и артефактами.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>700 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 5</strong> (БМ +3)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 2</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 16</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>67 HP (HD 8)</td><td style='padding: 4px 8px; border: 1px solid'><strong>78 HP</strong> (11d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+3)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 16, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+5 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+3) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>7 / 11 / 10 / 13 / 12</td><td style='padding: 4px 8px; border: 1px solid'>WIS, CON</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Моргенштерн +1</strong> (<em>Morning Star +1</em>) — <code>BLUN07</code></li><li><strong>IMMUNE1</strong> (<em>IMMUNE1</em>) — <code>IMMUNE1</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Благословение Девы Зимы:</strong> Заклинания холода наносят дополнительно +4 урона.</li><li><strong>Призыв йети:</strong> Действием может призвать 1 Снежного йети на помощь.</li><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Иммунитет к урону:</strong> cold.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li><li><strong>Мультиатака:</strong> Лизан совершает две атаки Моргенштерном или сотворяет заклинание.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'> Заклинания</h3><ul><li><strong>Благословение</strong> (spell)</li><li><strong>Опутать</strong> (spell)</li><li><strong>Удержать персону</strong> (spell)</li><li><strong>Вызвать молнию</strong> (spell)</li></ul></div></div>",
     "public": ""
    },
-   "alignment": "нейтрально-злой",
+   "alignment": "Any Alignment",
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
    "race": null,
    "type": {
     "value": "humanoid",
-    "subtype": "",
+    "subtype": "Human",
     "swarm": "",
     "custom": ""
    },
-   "cr": 4.0,
-   "ideal": "",
-   "bond": "",
-   "flaw": ""
-  },
-  "traits": {
-   "size": "med",
-   "di": {
-    "value": [
-     "cold"
-    ],
-    "bypasses": [],
-    "custom": ""
-   },
-   "dr": {
-    "value": [],
-    "bypasses": [],
-    "custom": ""
-   },
-   "dv": {
-    "value": [],
-    "bypasses": [],
-    "custom": ""
-   },
-   "ci": {
+   "cr": 5,
+   "habitat": {
     "value": [],
     "custom": ""
    },
-   "languages": {
-    "value": [
-     "common",
-     "giant"
-    ],
-    "custom": "",
-    "communication": {}
-   },
-   "dm": {
-    "amount": {},
-    "bypasses": []
-   },
-   "important": false
-  },
-  "currency": {
-   "pp": 0,
-   "gp": 134,
-   "ep": 0,
-   "sp": 15,
-   "cp": 8
-  },
-  "skills": {
-   "prc": {
-    "value": 1,
-    "ability": "wis",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "rel": {
-    "value": 1,
-    "ability": "int",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "ste": {
-    "value": 1,
-    "ability": "dex",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
-   },
-   "sur": {
-    "value": 1,
-    "ability": "wis",
-    "bonuses": {
-     "check": "",
-     "passive": ""
-    },
-    "roll": {
-     "min": null,
-     "max": null,
-     "mode": 0
-    }
+   "treasure": {
+    "value": []
    }
   },
-  "tools": {},
-  "spells": {
-   "spell1": {
-    "value": 4,
-    "override": 4
-   },
-   "spell2": {
-    "value": 3,
-    "override": 3
-   },
-   "spell3": {
-    "value": 2,
-    "override": 2
-   },
-   "spell4": {
-    "value": 1,
-    "override": 1
-   }
-  },
-  "bonuses": {},
   "resources": {
    "legact": {
     "max": 0,
@@ -280,13 +227,335 @@
     "inside": false
    }
   },
+  "skills": {
+   "acr": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ani": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "arc": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ath": {
+    "ability": "str",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "dec": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "his": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ins": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "itm": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "inv": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "med": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "nat": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "prc": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "prf": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "per": {
+    "ability": "cha",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "rel": {
+    "ability": "int",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "slt": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "ste": {
+    "ability": "dex",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 0,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   },
+   "sur": {
+    "ability": "wis",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "value": 1,
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    }
+   }
+  },
   "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "IWD",
-   "page": "",
+   "custom": "Icewind Dale: Rime of the Frostmaiden; Icewind Dale (2000)",
+   "book": "IDRotF",
+   "page": "288",
    "license": "",
    "revision": 1,
    "rules": "2014"
+  },
+  "traits": {
+   "size": "med",
+   "di": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [
+     "cold"
+    ],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "ci": {
+    "value": [],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "common",
+     "druidic"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "important": false
+  },
+  "spells": {
+   "spell1": {
+    "value": 4,
+    "override": 4
+   },
+   "spell2": {
+    "value": 3,
+    "override": 3
+   },
+   "spell3": {
+    "value": 3,
+    "override": 3
+   },
+   "spell4": {
+    "value": 3,
+    "override": 3
+   },
+   "spell5": {
+    "value": 1,
+    "override": 1
+   },
+   "spell6": {
+    "value": 0,
+    "override": 0
+   },
+   "spell7": {
+    "value": 0,
+    "override": 0
+   },
+   "spell8": {
+    "value": 0,
+    "override": 0
+   },
+   "spell9": {
+    "value": 0,
+    "override": 0
+   },
+   "pact": {
+    "value": 0,
+    "override": null
+   }
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 134,
+   "ep": 0,
+   "sp": 15,
+   "cp": 8
   }
  },
  "prototypeToken": {
@@ -326,180 +595,28 @@
  },
  "items": [
   {
-   "effects": [],
-   "folder": null,
-   "sort": 100000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "v3312vAZgekGeLxn",
-   "name": "Благословение Морозной Девы [Blessing of the Frostmaiden]",
+   "_id": "43Inio3YYhB98zEB",
+   "name": "Multiattack",
    "type": "feat",
-   "img": "icons/magic/life/heart-area-circle-red-green.webp",
+   "img": "icons/skills/melee/strike-weapons-orange.webp",
    "system": {
-    "description": {
-     "value": "<p>Лизан полностью иммунна к урону холодом и эффектам экстремального холода. Земля в радиусе 10 футов вокруг неё покрывается скользким льдом (сложная местность для других существ).</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
     "type": {
      "value": "monster",
      "subtype": ""
     },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "6f59kX3fVgy7YW7N",
-   "name": "Призыв тундрового йети (1/день) [Call Tundra Yeti (1/day)]",
-   "type": "feat",
-   "img": "systems/dnd5e/icons/svg/items/feature.svg",
-   "system": {
     "description": {
-     "value": "<p>Лизан издает пронзительный зов к Морозной Деве. В незанятых пространствах в пределах 30 футов от неё появляются 1d2 тундровых йети, подчинённые её воле и действующие сразу после неё в порядке инициативы.</p>",
+     "value": "<p>The druid makes two melee attacks.</p>",
      "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 300000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "JnvYJ2gz9x490EZP",
-   "name": "Мультиатака [Multiattack]",
-   "type": "feat",
-   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
-   "system": {
-    "description": {
-     "value": "<p>Лизан совершает две атаки Моргенштерном хлада или сотворяет одно заклинание и совершает одну атаку Моргенштерном.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
     },
     "activities": {
-     "2iXRvB22KrZd1i8C": {
-      "_id": "2iXRvB22KrZd1i8C",
+     "44HL9A4jzmNXj9m9": {
+      "_id": "44HL9A4jzmNXj9m9",
       "type": "utility",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
        "type": "action",
-       "value": 1,
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -516,6 +633,7 @@
       },
       "duration": {
        "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -523,6 +641,13 @@
        "override": false
       },
       "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
        "override": false,
        "prompt": true
       },
@@ -539,62 +664,71 @@
       }
      }
     },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "properties": [],
+    "identifier": "multiattack",
+    "source": {
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "requirements": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.43Inio3YYhB98zEB",
+    "duplicateSource": null,
+    "exportSource": null
    }
   },
   {
-   "_id": "nzKuzdLTESA0w0Sr",
-   "name": "Моргенштерн хлада +1 [Morning Star of Frost +1]",
+   "_id": "U27eSMytVqEiGBYf",
+   "name": "Ice Sickle (Humanoid Form Only)",
    "type": "weapon",
-   "img": "icons/weapons/maces/mace-cube-spiked-steel.webp",
+   "img": "icons/skills/melee/blood-slash-foam-red.webp",
    "system": {
-    "description": {
-     "value": "<p>Рукопашная атака оружием: +5 к попаданию, досягаемость 5 фт., одна цель. Попадание: 7 (1d8 + 3) колющего урона плюс 3 (1d6) урона холодом.</p>",
-     "chat": ""
+    "type": {
+     "value": "natural",
+     "baseItem": ""
     },
+    "properties": [],
+    "proficient": null,
+    "identifier": "ice-sickle-humanoid-form-only",
     "source": {
-     "custom": "",
-     "book": "",
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
     "quantity": 1,
-    "weight": {
-     "value": 4,
-     "units": "lb"
-    },
-    "price": {
-     "value": 15,
-     "denomination": "gp"
-    },
-    "attunement": "",
-    "equipped": true,
-    "rarity": "",
-    "identified": true,
-    "cover": null,
-    "range": {
-     "value": null,
-     "long": null,
-     "units": "ft",
-     "reach": null
-    },
-    "uses": {
-     "max": "",
-     "recovery": [],
-     "spent": 0
-    },
     "damage": {
      "base": {
       "number": 1,
-      "denomination": 8,
+      "denomination": 4,
       "bonus": "",
       "types": [
-       "piercing"
+       "slashing"
       ],
       "custom": {
        "enabled": false,
@@ -608,11 +742,9 @@
      },
      "versatile": {
       "number": null,
-      "denomination": 0,
+      "denomination": null,
       "bonus": "",
-      "types": [
-       "piercing"
-      ],
+      "types": [],
       "custom": {
        "enabled": false,
        "formula": ""
@@ -624,38 +756,21 @@
       }
      }
     },
-    "armor": {
-     "value": 10
+    "range": {
+     "value": null,
+     "long": null,
+     "reach": 5,
+     "units": "ft"
     },
-    "hp": {
-     "value": 0,
-     "max": 0,
-     "dt": null,
-     "conditions": ""
-    },
-    "properties": [
-     "mgc"
-    ],
-    "proficient": 1,
-    "type": {
-     "value": "martialM",
-     "baseItem": "morningstar"
-    },
-    "unidentified": {
-     "description": ""
-    },
-    "container": null,
-    "magicalBonus": 1,
     "activities": {
-     "Vr3JBqzA2BWGbJme": {
-      "_id": "Vr3JBqzA2BWGbJme",
+     "6vRrRws4Vf6mc5Pq": {
+      "_id": "6vRrRws4Vf6mc5Pq",
       "type": "attack",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
        "type": "action",
-       "value": 1,
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -672,6 +787,7 @@
       },
       "duration": {
        "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -679,6 +795,13 @@
        "override": false
       },
       "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
        "override": false,
        "prompt": true
       },
@@ -688,26 +811,26 @@
        "recovery": []
       },
       "attack": {
-       "ability": "",
-       "bonus": "5",
+       "ability": "str",
+       "bonus": "",
        "critical": {
         "threshold": null
        },
-       "flat": true,
+       "flat": false,
        "type": {
         "value": "melee",
         "classification": "weapon"
        }
       },
       "damage": {
-       "includeBase": true,
        "critical": {
         "bonus": ""
        },
+       "includeBase": true,
        "parts": [
         {
-         "number": 1,
-         "denomination": 6,
+         "number": 2,
+         "denomination": 4,
          "bonus": "",
          "types": [
           "cold"
@@ -726,38 +849,21 @@
       }
      }
     },
-    "attuned": false,
-    "ammunition": {},
-    "identifier": "morningstar",
+    "description": {
+     "value": "<p><em>Melee Weapon Attack:</em> [[/attack +4]]{+4} to hit, reach 5 ft., one target. <em>Hit:</em> 3 ([[/damage 1d4+1 type=slashing]]{1d4 + 1}) slashing damage plus 5 ([[/damage 2d4 type=cold]]{2d4}) cold damage.</p>",
+     "chat": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "equipped": true,
     "mastery": ""
    },
    "effects": [],
    "folder": null,
-   "sort": 400000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.items.Item.dX8AxCh9o0A9CkT3",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 500000,
+   "sort": 200000,
    "ownership": {
     "default": 0
    },
@@ -766,52 +872,37 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.U27eSMytVqEiGBYf",
     "duplicateSource": null,
     "exportSource": null
-   },
-   "_id": "LRPpNOfi5cCEdZq9",
-   "name": "Использование заклинаний [Spellcasting]",
+   }
+  },
+  {
+   "_id": "Y5NKzRm5mjFwAumw",
+   "name": "Spellcasting (Humanoid Form Only)",
    "type": "feat",
-   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "img": "icons/magic/symbols/circled-gem-pink.webp",
    "system": {
-    "description": {
-     "value": "<p>Заклинатель 7-го уровня, базовая характеристика — Мудрость (ячейки по данным игры).</p><ul><li><strong>1-й уровень (4 ячеек):</strong> Благословение [Bless], Лечение ран [Cure Wounds], Опутывание [Entangle], Защита от зла и добра [Protection from Evil and Good]</li><li><strong>2-й уровень (3 ячеек):</strong> Приворот гуманоида [Charm Person], Паралич гуманоида [Hold Person], Тишина [Silence]</li><li><strong>3-й уровень (2 ячеек):</strong> Вызов молний [Call Lightning], Благословение [Bless]</li><li><strong>4-й уровень (1 ячеек):</strong> Лечение ран [Cure Wounds]</li></ul>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
     "type": {
      "value": "monster",
      "subtype": ""
     },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+    "description": {
+     "value": "<p>The druid is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14; [[/attack +6]]{+6} to hit with spell attacks). It has the following druid spells prepared:</p><p>Cantrips (at will): @UUID[Compendium.dnd5e.spells.Item.SbSvZKkJASyk8jKo]{druidcraft}, @UUID[Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY]{guidance}, @UUID[Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4]{resistance}</p><p>1st level (4 slots): @UUID[Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B]{animal friendship}, @UUID[Compendium.dnd5e.spells.Item.IBJmWjzbQGu7M4UX]{fog cloud}, @UUID[Compendium.dnd5e.spells.Item.aL1F8fvYLtNzUbKu]{speak with animals}</p><p>2nd level (3 slots): @UUID[Compendium.dnd5e.spells.Item.X8w9EzYLGc4vQ1H2]{animal messenger}, @UUID[Compendium.dnd5e.spells.Item.bV3yun6MIuFj71Er]{moonbeam}, @UUID[Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj]{pass without trace}</p><p>3rd level (3 slots): @UUID[Compendium.dnd5e.spells.Item.1Drt0SHxbEAHxprN]{conjure animals}, @UUID[Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd]{sleet storm}, @UUID[Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW]{wind wall}</p><p>4th level (3 slots): @UUID[Compendium.dnd5e.spells.Item.sTIkQK7KuQNOyY0C]{hallucinatory terrain}, @UUID[Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH]{ice storm}</p><p>5th level (1 slot): @UUID[Compendium.dnd5e.spells.Item.MCEpGpvovcXagwQS]{awaken}</p>",
+     "chat": ""
     },
     "activities": {
-     "HsgFZgrZZkYT9bOm": {
-      "_id": "HsgFZgrZZkYT9bOm",
-      "type": "utility",
+     "PKCxlHDGQ9DxYFP6": {
+      "_id": "PKCxlHDGQ9DxYFP6",
+      "type": "cast",
       "name": "",
-      "img": "",
       "sort": 0,
       "activation": {
        "type": "action",
-       "value": 1,
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -828,6 +919,7 @@
       },
       "duration": {
        "units": "inst",
+       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -836,595 +928,51 @@
       },
       "target": {
        "template": {
-        "count": "",
         "contiguous": false,
-        "type": "",
-        "size": "",
-        "width": "",
-        "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
-        "count": "",
-        "type": "creature",
-        "choice": false,
-        "special": ""
+        "choice": false
        },
-       "prompt": true,
-       "override": false
+       "override": false,
+       "prompt": true
       },
       "uses": {
        "spent": 0,
        "max": "",
        "recovery": []
       },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      }
-     }
-    },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    }
-   }
-  },
-  {
-   "_id": "7Fs7hXRQ1obk6xhm",
-   "name": "Благословение [Bless]",
-   "type": "spell",
-   "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
-   "system": {
-    "description": {
-     "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>\n<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "@item.level + 2",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "enc",
-    "materials": {
-     "value": "A sprinkling of holy water",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "8rP3gwmXVTgZqYZE",
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "bless",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "effects": [
-    {
-     "_id": "8rP3gwmXVTgZqYZE",
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.SbSvZKkJASyk8jKo",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
        }
       }
      },
-     "disabled": true,
-     "duration": {
-      "value": 60,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "origin": "Item.kZZAZ6kp9YzgPQEe",
-     "tint": "#ffffff",
-     "transfer": false,
-     "name": "Bless",
-     "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>",
-     "statuses": [],
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": null,
-      "modifiedTime": 1772827553614,
-      "lastModifiedBy": "dnd5ebuilder0000",
-      "exportSource": null
-     },
-     "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
-     "type": "base",
-     "system": {
-      "changes": [
-       {
-        "key": "system.bonuses.abilities.save",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.mwak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.msak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.rsak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.rwak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       }
-      ]
-     },
-     "sort": 0,
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "sort": 600000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR101"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.8dzaICjGy6mTUaUr",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "fQm0VVhQh1rtxFGj",
-   "name": "Лечение ран [Cure Wounds]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "units": "touch",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "heal",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "healing": {
-       "number": 1,
-       "denomination": 8,
-       "bonus": "@mod",
-       "types": [
-        "healing"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "cure-wounds",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 700000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR103"
-    }
-   },
-   "img": "icons/magic/life/cross-explosion-burst-green.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "name": "Опутывание [Entangle]",
-   "type": "spell",
-   "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
-   "system": {
-    "description": {
-     "value": "<p>Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the Duration, these Plants turn the ground in the area into &amp;reference[difficult terrain].</p><p>A creature in the area when you cast the spell must succeed on a Strength saving throw or be &amp;Reference[Restrained] by the entangling Plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p><p>When the spell ends, the conjured Plants wilt away.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false,
-      "type": ""
-     },
-     "template": {
-      "units": "ft",
-      "type": "square",
-      "size": "20",
-      "contiguous": false,
-      "count": ""
-     }
-    },
-    "range": {
-     "value": "90",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "con",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "fO14IutGR3Hrepun",
-        "onSave": false,
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": []
-      },
-      "save": {
-       "ability": "str",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
+     "VW7HS74IpY1Y81pR": {
+      "_id": "VW7HS74IpY1Y81pR",
+      "type": "cast",
+      "name": "",
       "sort": 100000,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     },
-     "rh7ciGbrgpnnZ3B2": {
-      "type": "check",
-      "name": "Escape Plants Check",
-      "_id": "rh7ciGbrgpnnZ3B2",
-      "img": "",
-      "sort": 0,
       "activation": {
-       "type": "",
-       "override": true,
-       "condition": ""
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
       },
       "consumption": {
+       "targets": [],
        "scaling": {
-        "allowed": false
+        "allowed": false,
+        "max": ""
        },
-       "spellSlot": false,
-       "targets": []
+       "spellSlot": true
       },
       "description": {
        "chatFlavor": ""
@@ -1432,806 +980,50 @@
       "duration": {
        "units": "inst",
        "concentration": false,
-       "override": true
+       "override": false
       },
       "effects": [],
-      "flags": {},
       "range": {
-       "units": "spec",
-       "override": true,
-       "special": ""
+       "override": false
       },
       "target": {
        "template": {
         "contiguous": false,
-        "stationary": false,
-        "units": "ft",
-        "type": ""
+        "units": "ft"
        },
        "affects": {
-        "choice": false,
-        "type": "creature",
-        "count": "1",
-        "special": ""
+        "choice": false
        },
-       "override": true,
+       "override": false,
        "prompt": true
       },
       "uses": {
        "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       },
-       "requireAttunement": false,
-       "requireIdentification": false,
-       "requireMagic": false
-      },
-      "check": {
-       "associated": [],
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       },
-       "ability": "str"
-      }
-     }
-    },
-    "identifier": "entangle",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "effects": [
-    {
-     "name": "Entangle",
-     "origin": "Compendium.dnd5e.spells.Item.gMrWeG8fMDPRFiVe",
-     "duration": {
-      "value": 60,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "disabled": true,
-     "_id": "fO14IutGR3Hrepun",
-     "description": "<p>You are &amp;reference[Restrained apply=false] by the entangling Plants until the spell ends. While restrained by the plants, you can use your action to make a [[/check str]] against the caster's spell save DC. On a success, you free yourself.</p>",
-     "transfer": false,
-     "statuses": [
-      "restrained"
-     ],
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "tint": "#ffffff",
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": null,
-      "modifiedTime": 1772827930363,
-      "lastModifiedBy": "dnd5ebuilder0000",
-      "exportSource": null
-     },
-     "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "sort": 0,
-     "showIcon": 2,
-     "start": null,
-     "folder": null
-    }
-   ],
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR105"
-    }
-   },
-   "_id": "iXZL6bTZHYnQk6f8",
-   "folder": null,
-   "sort": 800000,
-   "ownership": {
-    "default": 0
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.gMrWeG8fMDPRFiVe",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "KIE444kj0s6tIDCm",
-   "name": "Защита от зла и добра [Protection from Evil and Good]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be &amp;reference[charmed apply=false], &amp;reference[frightened apply=false], or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "units": "touch",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "abj",
-    "materials": {
-     "value": "Holy water or powdered silver and iron, which the spell consumes",
-     "consumed": true,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "6AM7tNmtE61BDJpv"
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "protection-from-evil-and-good",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 900000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR107"
-    }
-   },
-   "img": "icons/magic/light/orb-container-orange.webp",
-   "effects": [
-    {
-     "name": "Protection from Evil and Good",
-     "img": "icons/magic/light/orb-container-orange.webp",
-     "origin": "Compendium.dnd5e.spells.Item.xmDBqZhRVrtLP8h2",
-     "transfer": false,
-     "_id": "6AM7tNmtE61BDJpv",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 600,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>Until the spell ends, you are protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against you. You also can't be &amp;reference[charmed apply=false], &amp;reference[frightened apply=false], or possessed by them. If you are already charmed, frightened, or possessed by such a creature, you have advantage on any new saving throw against the relevant effect.</p>",
-     "tint": "#ffffff",
-     "statuses": [],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772823574800,
-      "modifiedTime": 1772823629154,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.xmDBqZhRVrtLP8h2",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "srFW0PYGU2Bf39Vr",
-   "name": "Приворот гуманоида [Charm Person]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is &amp;Reference[charmed] by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "enc",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "1QhUB3231btaCO0b",
-        "onSave": false,
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "none",
-       "parts": []
-      },
-      "save": {
-       "ability": "wis",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "charm-person",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 1000000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR204"
-    }
-   },
-   "img": "icons/magic/life/heart-shadow-red.webp",
-   "effects": [
-    {
-     "name": "Charm Person",
-     "origin": "Compendium.dnd5e.spells.Item.eS7XnnApoxRxYXPs",
-     "duration": {
-      "value": 3600,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "disabled": true,
-     "_id": "1QhUB3231btaCO0b",
-     "description": "<p>You are &amp;reference[Charmed apply=false] by the caster until the spell ends. You regard the caster as a friendly acquaintance. When the spell ends, you know you were charmed.</p>",
-     "transfer": false,
-     "statuses": [
-      "charmed"
-     ],
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "tint": "#ffffff",
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": null,
-      "modifiedTime": 1772827317961,
-      "lastModifiedBy": "dnd5ebuilder0000",
-      "exportSource": null
-     },
-     "img": "icons/magic/life/heart-shadow-red.webp",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "sort": 0,
-     "showIcon": 2,
-     "start": null,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.eS7XnnApoxRxYXPs",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "4A7LVT1T5gXB7CXD",
-   "name": "Паралич гуманоида [Hold Person]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "60",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 2,
-    "school": "enc",
-    "materials": {
-     "value": "A small, straight piece of iron",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "HH5YVjzxkwXpDZS0",
-        "onSave": false
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": []
-      },
-      "save": {
-       "ability": "wis",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
+       "max": "",
        "recovery": []
       },
-      "sort": 0
-     }
-    },
-    "identifier": "hold-person",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 1100000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR208"
-    }
-   },
-   "img": "icons/magic/control/debuff-chains-ropes-purple.webp",
-   "effects": [
-    {
-     "name": "Hold Person",
-     "origin": "Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4",
-     "duration": {
-      "value": 60,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
      },
-     "disabled": true,
-     "_id": "HH5YVjzxkwXpDZS0",
-     "description": "<p>The target is Paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>",
-     "transfer": false,
-     "statuses": [
-      "paralyzed",
-      "incapacitated"
-     ],
-     "flags": {},
-     "tint": "#ffffff",
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "4.0.0",
-      "createdTime": null,
-      "modifiedTime": null,
-      "lastModifiedBy": null,
-      "exportSource": null
-     },
-     "img": "icons/magic/control/debuff-chains-ropes-purple.webp",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "sort": 0,
-     "showIcon": 2,
-     "start": null,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "P3yTAemsHvdhN4iD",
-   "name": "Тишина [Silence]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>For the Duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are Deafened while entirely inside it. Casting a Spell that includes a verbal component is impossible there.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false
-     },
-     "template": {
-      "units": "ft",
-      "type": "sphere",
-      "size": "20",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "120",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 2,
-    "school": "ill",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "ritual",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
+     "UL0B15G7e35kBTwY": {
+      "_id": "UL0B15G7e35kBTwY",
+      "type": "cast",
+      "name": "",
+      "sort": 200000,
       "activation": {
        "type": "action",
        "value": null,
+       "condition": "",
        "override": false
       },
       "consumption": {
@@ -2255,7 +1047,6 @@
        "override": false
       },
       "target": {
-       "prompt": true,
        "template": {
         "contiguous": false,
         "units": "ft"
@@ -2263,683 +1054,890 @@
        "affects": {
         "choice": false
        },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
+       "override": false,
+       "prompt": true
       },
       "uses": {
        "spent": 0,
+       "max": "",
        "recovery": []
       },
-      "sort": 0
-     }
-    },
-    "identifier": "silence",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 1200000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR211"
-    }
-   },
-   "img": "icons/magic/symbols/runes-triangle-magenta.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.5VhqFROQYjr1P9lp",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "39K8SejmMWiCqjDX",
-   "name": "Вызов молний [Call Lightning]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).</p><p>When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.</p><p>If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
      },
-     "template": {
-      "units": "ft",
-      "type": "cylinder",
-      "size": "60",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "120",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 3,
-    "school": "con",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
+     "YLOBZtCnp65ZZLWi": {
+      "_id": "YLOBZtCnp65ZZLWi",
+      "type": "cast",
+      "name": "",
+      "sort": 300000,
       "activation": {
        "type": "action",
        "value": null,
+       "condition": "",
        "override": false
       },
       "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": [
+       "targets": [
         {
-         "number": 3,
-         "denomination": 10,
-         "bonus": "",
-         "types": [
-          "lightning"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
          "scaling": {
-          "mode": "whole",
-          "number": 1,
+          "mode": "level",
           "formula": ""
          }
         }
-       ]
-      },
-      "save": {
-       "ability": "dex",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     },
-     "dnd5eactivity200": {
-      "_id": "dnd5eactivity200",
-      "type": "damage",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "critical": {
-        "allow": false,
-        "bonus": ""
-       },
-       "parts": [
-        {
-         "number": 4,
-         "denomination": 10,
-         "bonus": "",
-         "types": [],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "call-lightning",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 1300000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR302"
-    }
-   },
-   "img": "icons/magic/lightning/bolt-forked-large-blue-yellow.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.ehvmg9U9fcMEhE4z",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "ymw6DU3scuv8mbuU",
-   "name": "Благословение [Bless]",
-   "type": "spell",
-   "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
-   "system": {
-    "description": {
-     "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>\n<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "@item.level + 2",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "enc",
-    "materials": {
-     "value": "A sprinkling of holy water",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "8rP3gwmXVTgZqYZE",
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "bless",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "effects": [
-    {
-     "_id": "8rP3gwmXVTgZqYZE",
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "disabled": true,
-     "duration": {
-      "value": 60,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "origin": "Item.kZZAZ6kp9YzgPQEe",
-     "tint": "#ffffff",
-     "transfer": false,
-     "name": "Bless",
-     "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>",
-     "statuses": [],
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": null,
-      "modifiedTime": 1772827553614,
-      "lastModifiedBy": "dnd5ebuilder0000",
-      "exportSource": null
-     },
-     "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
-     "type": "base",
-     "system": {
-      "changes": [
-       {
-        "key": "system.bonuses.abilities.save",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.mwak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.msak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.rsak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       },
-       {
-        "key": "system.bonuses.rwak.attack",
-        "value": "1d4",
-        "priority": null,
-        "type": "add"
-       }
-      ]
-     },
-     "sort": 0,
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "sort": 1400000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR316"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.8dzaICjGy6mTUaUr",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "cODTmtC4w3TF15yL",
-   "name": "Лечение ран [Cure Wounds]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "units": "touch",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "heal",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "healing": {
-       "number": 1,
-       "denomination": 8,
-       "bonus": "@mod",
-       "types": [
-        "healing"
        ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
        "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
       },
       "uses": {
        "spent": 0,
-       "recovery": [],
-       "max": ""
+       "max": "",
+       "recovery": []
       },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "UtRJs6SQp3dWMyVW": {
+      "_id": "UtRJs6SQp3dWMyVW",
+      "type": "cast",
+      "name": "",
+      "sort": 400000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.IBJmWjzbQGu7M4UX",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "1iF3cCTSacje7NV8": {
+      "_id": "1iF3cCTSacje7NV8",
+      "type": "cast",
+      "name": "",
+      "sort": 500000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "1",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.aL1F8fvYLtNzUbKu",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "2ETJE2aJCP2O2Ob3": {
+      "_id": "2ETJE2aJCP2O2Ob3",
+      "type": "cast",
+      "name": "",
+      "sort": 600000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.X8w9EzYLGc4vQ1H2",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "2agogZHs6jSF8RB8": {
+      "_id": "2agogZHs6jSF8RB8",
+      "type": "cast",
+      "name": "",
+      "sort": 700000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.bV3yun6MIuFj71Er",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "aNrzdV52Yt3UK0AG": {
+      "_id": "aNrzdV52Yt3UK0AG",
+      "type": "cast",
+      "name": "",
+      "sort": 800000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "2",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "7uOkMtvq42O88Ntm": {
+      "_id": "7uOkMtvq42O88Ntm",
+      "type": "cast",
+      "name": "",
+      "sort": 900000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.1Drt0SHxbEAHxprN",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "YfVM04NQSz9190B6": {
+      "_id": "YfVM04NQSz9190B6",
+      "type": "cast",
+      "name": "",
+      "sort": 1000000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "XHo9Ss2pF06KYjke": {
+      "_id": "XHo9Ss2pF06KYjke",
+      "type": "cast",
+      "name": "",
+      "sort": 1100000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "3",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "BxE3KC2z1ZPIaB3y": {
+      "_id": "BxE3KC2z1ZPIaB3y",
+      "type": "cast",
+      "name": "",
+      "sort": 1200000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "4",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.sTIkQK7KuQNOyY0C",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "5ALedU3Seor3GA5l": {
+      "_id": "5ALedU3Seor3GA5l",
+      "type": "cast",
+      "name": "",
+      "sort": 1300000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "4",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
+       }
+      }
+     },
+     "SrW1P9RvEkTA2EnQ": {
+      "_id": "SrW1P9RvEkTA2EnQ",
+      "type": "cast",
+      "name": "",
+      "sort": 1400000,
+      "activation": {
+       "type": "action",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [
+        {
+         "type": "spellSlots",
+         "value": "1",
+         "target": "5",
+         "scaling": {
+          "mode": "level",
+          "formula": ""
+         }
+        }
+       ],
+       "scaling": {
+        "allowed": true,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "spell": {
+       "uuid": "Compendium.dnd5e.spells.Item.MCEpGpvovcXagwQS",
+       "level": null,
+       "properties": [],
+       "spellbook": true,
+       "ability": "",
+       "challenge": {
+        "attack": null,
+        "save": null,
+        "override": false
        }
       }
      }
     },
-    "identifier": "cure-wounds",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "properties": [
+     "trait"
+    ],
+    "identifier": "spellcasting-humanoid-form-only",
+    "source": {
+     "custom": "Icewind Dale: Rime of the Frostmaiden",
+     "book": "IDRotF",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "requirements": ""
    },
-   "sort": 1500000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1",
-     "iwdSpl": "SPPR401"
-    }
-   },
-   "img": "icons/magic/life/cross-explosion-burst-green.webp",
    "effects": [],
    "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 1600000,
+   "sort": 300000,
    "ownership": {
     "default": 0
    },
@@ -2948,8 +1946,117 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.happytreedice-5etools.creatures.Actor.ShrHIOwiH2vSnQgy.Item.Y5NKzRm5mjFwAumw",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "WzRCkv74PGwJMkBc",
+   "name": "Щит [Shield]",
+   "type": "equipment",
+   "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 2,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "shield",
+     "baseItem": "shield"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "shield"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.items.Item.sSs3hSzkKBMNBgTs",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -3126,7 +2233,7 @@
   {
    "effects": [],
    "folder": null,
-   "sort": 1700000,
+   "sort": 600000,
    "ownership": {
     "default": 0
    },
@@ -3135,8 +2242,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791672765329,
-    "modifiedTime": 1791672765329,
+    "createdTime": 1791675701656,
+    "modifiedTime": 1791675701656,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -3237,7 +2344,14 @@
     "wiki": "https://icewinddale.fandom.com/wiki/Lysan",
     "notes": "Каноничная конверсия жрицы Аурил Лизан (LYSAN) из Долины Теней под CR 4 в D&D 5e.",
     "code": "LYSAN",
-    "bam": "CHFB1G1_c1e25390c171c00"
+    "bam": "CHFB1G1_c1e25390c171c00",
+    "officialStatblock": {
+     "source": "h5e",
+     "book": "IDRotF",
+     "label": "Icewind Dale: Rime of the Frostmaiden",
+     "id": "ShrHIOwiH2vSnQgy",
+     "name": "Frost Druid"
+    }
    }
   }
  },
@@ -3245,8 +2359,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791672765329,
-  "modifiedTime": 1791672765329,
+  "createdTime": 1791675701656,
+  "modifiedTime": 1791675701656,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,
