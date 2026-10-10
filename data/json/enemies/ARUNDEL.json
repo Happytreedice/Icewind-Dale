@@ -367,8 +367,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
     "duplicateSource": null,
@@ -659,8 +659,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.g2dWN7PQiMRYWzyk",
     "duplicateSource": null,
@@ -840,8 +840,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.eCPQuQkIabFKTl9u",
     "duplicateSource": null,
@@ -1086,14 +1086,83 @@
     }
    },
    "img": "icons/commodities/wood/kindling-stick-brown.webp",
-   "effects": [],
+   "effects": [
+    {
+     "type": "enchantment",
+     "name": "Shillelagh",
+     "img": "icons/commodities/wood/kindling-stick-brown.webp",
+     "disabled": false,
+     "_id": "QPsqj6jfS0iXSrTs",
+     "system": {
+      "changes": [
+       {
+        "key": "name",
+        "value": ", Shillelagh",
+        "priority": null,
+        "type": "add"
+       },
+       {
+        "key": "system.damage.base.number",
+        "value": 1,
+        "priority": null,
+        "type": "override"
+       },
+       {
+        "key": "system.damage.base.denomination",
+        "value": 8,
+        "priority": null,
+        "type": "override"
+       },
+       {
+        "key": "system.properties",
+        "value": "mgc",
+        "priority": null,
+        "type": "add"
+       }
+      ]
+     },
+     "duration": {
+      "value": 60,
+      "units": "seconds",
+      "expiry": "turnStart",
+      "expired": false
+     },
+     "description": "<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p>",
+     "origin": null,
+     "tint": "#ffffff",
+     "transfer": false,
+     "statuses": [],
+     "sort": 0,
+     "flags": {
+      "dnd5e": {
+       "riders": {
+        "statuses": []
+       }
+      }
+     },
+     "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.0",
+      "createdTime": 1725554262842,
+      "modifiedTime": 1772662100321,
+      "lastModifiedBy": "dnd5ebuilder0000",
+      "exportSource": null
+     },
+     "start": null,
+     "showIcon": 1,
+     "folder": null
+    }
+   ],
    "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.VzgFzcmocr1X1cp4",
     "duplicateSource": null,
@@ -1279,8 +1348,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -1428,8 +1497,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.SbSvZKkJASyk8jKo",
     "duplicateSource": null,
@@ -1650,7 +1719,53 @@
     "prepared": 1,
     "sourceItem": null
    },
-   "effects": [],
+   "effects": [
+    {
+     "name": "Entangle",
+     "origin": "Compendium.dnd5e.spells.Item.gMrWeG8fMDPRFiVe",
+     "duration": {
+      "value": 60,
+      "units": "seconds",
+      "expiry": "turnStart",
+      "expired": false
+     },
+     "disabled": true,
+     "_id": "fO14IutGR3Hrepun",
+     "description": "<p>You are &amp;reference[Restrained apply=false] by the entangling Plants until the spell ends. While restrained by the plants, you can use your action to make a [[/check str]] against the caster's spell save DC. On a success, you free yourself.</p>",
+     "transfer": false,
+     "statuses": [
+      "restrained"
+     ],
+     "flags": {
+      "dnd5e": {
+       "riders": {
+        "statuses": []
+       }
+      }
+     },
+     "tint": "#ffffff",
+     "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.0",
+      "createdTime": null,
+      "modifiedTime": 1772827930363,
+      "lastModifiedBy": "dnd5ebuilder0000",
+      "exportSource": null
+     },
+     "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
+     "type": "base",
+     "system": {
+      "changes": []
+     },
+     "sort": 0,
+     "showIcon": 2,
+     "start": null,
+     "folder": null
+    }
+   ],
    "flags": {
     "world": {
      "iwdSource": "SRD 5.1"
@@ -1666,8 +1781,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.gMrWeG8fMDPRFiVe",
     "duplicateSource": null,
@@ -1827,8 +1942,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
     "duplicateSource": null,
@@ -2000,8 +2115,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.WTbOQBsarsL1LuXJ",
     "duplicateSource": null,
@@ -2154,14 +2269,65 @@
     }
    },
    "img": "icons/magic/light/orbs-smoke-pink.webp",
-   "effects": [],
+   "effects": [
+    {
+     "name": "Faerie Fire",
+     "img": "icons/magic/light/orbs-smoke-pink.webp",
+     "origin": "Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU",
+     "transfer": false,
+     "_id": "4A91A48gBwBPPRwO",
+     "type": "base",
+     "system": {
+      "changes": [
+       {
+        "key": "system.traits.ci.value",
+        "value": "invisible",
+        "priority": null,
+        "type": "add"
+       }
+      ]
+     },
+     "disabled": false,
+     "duration": {
+      "value": 60,
+      "units": "seconds",
+      "expiry": "turnStart",
+      "expired": false
+     },
+     "description": "<p>You are outlined in light, shedding &amp;reference[dim light] in a 10-foot radius.</p><p>Any attack roll against you has advantage if the attacker can see you, and you can't benefit from being &amp;reference[invisible apply=false].</p>",
+     "tint": "#ffffff",
+     "statuses": [],
+     "sort": 0,
+     "flags": {
+      "dnd5e": {
+       "riders": {
+        "statuses": []
+       }
+      }
+     },
+     "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null,
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.0",
+      "createdTime": 1772822415961,
+      "modifiedTime": 1772822480845,
+      "lastModifiedBy": "dnd5ebuilder0000"
+     },
+     "start": null,
+     "showIcon": 1,
+     "folder": null
+    }
+   ],
    "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU",
     "duplicateSource": null,
@@ -2292,7 +2458,52 @@
     "prepared": 1,
     "sourceItem": null
    },
-   "effects": [],
+   "effects": [
+    {
+     "_id": "uM6rgctYpcbCVSkn",
+     "flags": {},
+     "disabled": false,
+     "duration": {
+      "value": 3600,
+      "units": "seconds",
+      "expiry": "turnStart",
+      "expired": false
+     },
+     "origin": "Item.VQMKMnQDw5rzL0zp",
+     "tint": "#ffffff",
+     "transfer": false,
+     "name": "Barkskin",
+     "description": "",
+     "statuses": [],
+     "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "4.0.0",
+      "createdTime": null,
+      "modifiedTime": 1725313057364,
+      "lastModifiedBy": "dnd5ebuilder0000",
+      "exportSource": null
+     },
+     "img": "icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp",
+     "type": "base",
+     "system": {
+      "changes": [
+       {
+        "key": "system.attributes.ac.min",
+        "value": 16,
+        "priority": null,
+        "type": "override"
+       }
+      ]
+     },
+     "sort": 0,
+     "start": null,
+     "showIcon": 1,
+     "folder": null
+    }
+   ],
    "folder": null,
    "sort": 1100000,
    "ownership": {
@@ -2307,8 +2518,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.JPwIEfgUPVebr5AH",
     "duplicateSource": null,
@@ -2457,8 +2668,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.FSMy6VAjDnXY9vWz",
     "duplicateSource": null,
@@ -2617,8 +2828,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.9gYGkrL6qFTsE6fw",
     "duplicateSource": null,
@@ -2848,8 +3059,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.ehvmg9U9fcMEhE4z",
     "duplicateSource": null,
@@ -2987,8 +3198,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8",
     "duplicateSource": null,
@@ -3151,8 +3362,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW",
     "duplicateSource": null,
@@ -3331,8 +3542,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH",
     "duplicateSource": null,
@@ -3471,14 +3682,77 @@
     }
    },
    "img": "icons/skills/melee/strike-blade-knife-white-red.webp",
-   "effects": [],
+   "effects": [
+    {
+     "name": "Freedom of Movement",
+     "origin": "Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT",
+     "duration": {
+      "value": null,
+      "units": "seconds",
+      "expiry": null,
+      "expired": false
+     },
+     "disabled": true,
+     "_id": "OnWa3f4IQ3pneB5T",
+     "description": "<p>The target's Movement is unaffected by difficult terrain, and Spells and other magical Effects can neither reduce the target's speed nor cause the target to be Paralyzed or Restrained.</p>",
+     "transfer": false,
+     "statuses": [],
+     "flags": {
+      "dnd5e": {
+       "riders": {
+        "statuses": []
+       }
+      }
+     },
+     "tint": "#ffffff",
+     "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.1.3",
+      "createdTime": null,
+      "modifiedTime": 1755806855234,
+      "lastModifiedBy": "dnd5ebuilder0000",
+      "exportSource": null
+     },
+     "img": "icons/skills/melee/strike-blade-knife-white-red.webp",
+     "type": "base",
+     "system": {
+      "changes": [
+       {
+        "key": "system.traits.di.value",
+        "value": "paralyzed",
+        "priority": null,
+        "type": "add"
+       },
+       {
+        "key": "system.traits.di.value",
+        "value": "restrained",
+        "priority": null,
+        "type": "add"
+       },
+       {
+        "key": "system.attributes.movement.ignoredDifficultTerrain",
+        "value": "all",
+        "priority": null,
+        "type": "add"
+       }
+      ]
+     },
+     "sort": 0,
+     "start": null,
+     "showIcon": 1,
+     "folder": null
+    }
+   ],
    "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT",
     "duplicateSource": null,
@@ -3616,8 +3890,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk",
     "duplicateSource": null,
@@ -3754,8 +4028,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.dp6xny4v8PDoIGjh",
     "duplicateSource": null,
@@ -3918,8 +4192,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.AQsBc94ES7W7s7iG",
     "duplicateSource": null,
@@ -4009,8 +4283,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791661522718,
-    "modifiedTime": 1791661522718,
+    "createdTime": 1791663431525,
+    "modifiedTime": 1791663431525,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.WwdpHLXGX5r8uZu5",
     "duplicateSource": null,
@@ -4122,8 +4396,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791661522718,
-  "modifiedTime": 1791661522718,
+  "createdTime": 1791663431525,
+  "modifiedTime": 1791663431525,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,
