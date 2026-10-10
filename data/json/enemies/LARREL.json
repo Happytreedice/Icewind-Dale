@@ -1,0 +1,3904 @@
+{
+ "_id": "8c4c00872f9a0695",
+ "name": "Ларрель [Larrel]",
+ "type": "npc",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/sprites/token.avif",
+ "system": {
+  "abilities": {
+   "str": {
+    "value": 11,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "dex": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "con": {
+    "value": 16,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "int": {
+    "value": 20,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "wis": {
+    "value": 16,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "cha": {
+    "value": 16,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   }
+  },
+  "attributes": {
+   "ac": {
+    "flat": 17,
+    "calc": "natural",
+    "formula": ""
+   },
+   "hp": {
+    "value": 135,
+    "max": 135,
+    "temp": 0,
+    "tempmax": 0,
+    "formula": "18d8 + 54"
+   },
+   "init": {
+    "ability": "",
+    "bonus": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "movement": {
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0,
+    "walk": 30,
+    "units": "ft",
+    "hover": false
+   },
+   "attunement": {
+    "max": 3
+   },
+   "senses": {
+    "darkvision": 60,
+    "blindsight": 0,
+    "tremorsense": 0,
+    "truesight": 0,
+    "units": "ft",
+    "special": ""
+   },
+   "spellcasting": "",
+   "exhaustion": 0,
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "bonuses": {
+     "save": ""
+    },
+    "limit": 1
+   },
+   "death": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
+   },
+   "hd": {
+    "spent": 0
+   }
+  },
+  "details": {
+   "biography": {
+    "value": "<p><strong>Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.73679c73b33e3a18]{Ларрель — разговор}</p><div class='iwd-actor-bio'><div class='iwd-bio-dialog' style='border-left: 4px solid; padding: 8px 12px; margin-bottom: 12px; border-radius: 4px'><strong> Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.73679c73b33e3a18]{Ларрель — диалог}</div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Ларрель</strong> (англ. <em>Larrel</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>LARREL</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>0 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 0</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC -3</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 23</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>100 HP (HD 10)</td><td style='padding: 4px 8px; border: 1px solid'><strong>100 HP</strong> (11d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 14, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+1 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>10 / 5 / 7 / 9 / 6</td><td style='padding: 4px 8px; border: 1px solid'>CON, WIS, DEX</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Кольцо</strong> (<em>Ring</em>) — <code>RING95</code></li><li><strong>MIN2HP</strong> (<em>MIN2HP</em>) — <code>MIN2HP</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Иммунитет к заклинанию:</strong> Облако-убийца (Cloudkill).</li><li><strong>Иммунитет к заклинанию:</strong> Ядовитое облако (Poison Fog).</li><li><strong>Иммунитет к урону:</strong> cold, poison.</li><li><strong>Иммунитет к состояниям:</strong> charmed, poisoned, paralyzed, unconscious, exhaustion.</li><li><strong>Сопротивление магии (100% в 2e):</strong> Совершает с преимуществом спасброски от заклинаний и магических эффектов.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'> Заклинания</h3><ul><li><strong>Сфера неуязвимости</strong> (spell)</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Башня Лабеласа — этаж 4 (AR5103) — Глава 3 — Отрубленная Рука.</p></div></div>",
+    "public": ""
+   },
+   "alignment": "хаотично-добрый",
+   "race": null,
+   "type": {
+    "value": "undead",
+    "subtype": "",
+    "swarm": "",
+    "custom": ""
+   },
+   "environment": "",
+   "cr": 18.0,
+   "spellLevel": 0,
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
+   "source": {
+    "custom": "Icewind Dale (2000)",
+    "rules": "2014",
+    "book": "IWD",
+    "page": "",
+    "license": "",
+    "revision": 1
+   },
+   "xp": {
+    "value": 20000
+   }
+  },
+  "traits": {
+   "size": "med",
+   "di": {
+    "value": [
+     "necrotic",
+     "poison"
+    ],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [
+     "bludgeoning",
+     "cold",
+     "lightning",
+     "piercing",
+     "slashing"
+    ],
+    "bypasses": [
+     "mgc"
+    ],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "ci": {
+    "value": [
+     "charmed",
+     "exhaustion",
+     "frightened",
+     "paralyzed",
+     "poisoned"
+    ],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "common",
+     "draconic",
+     "elvish"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "important": false
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 0,
+   "ep": 0,
+   "sp": 0,
+   "cp": 0
+  },
+  "skills": {
+   "arc": {
+    "value": 1,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "his": {
+    "value": 1,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ins": {
+    "value": 1,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "prc": {
+    "value": 1,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "tools": {},
+  "spells": {},
+  "bonuses": {},
+  "resources": {
+   "legact": {
+    "value": 0,
+    "max": 0
+   },
+   "legres": {
+    "value": 0,
+    "max": 0
+   },
+   "lair": {
+    "value": false,
+    "initiative": null
+   }
+  }
+ },
+ "prototypeToken": {
+  "name": "Ларрель",
+  "displayName": 20,
+  "actorLink": false,
+  "width": 1,
+  "height": 1,
+  "flags": {
+   "isometric-perspective": {
+    "scale": 0.7
+   },
+   "dnd-icewind-dale-pc-game": {
+    "anim": {
+     "folder": "MLERSD",
+     "bam": "MLERSD",
+     "static": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/sprites/token.avif",
+     "dirs": {
+      "S": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/S.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "SW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/SW.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "W": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/W.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "NW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/NW.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "N": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/N.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "SE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/SE.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "E": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/E.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "NE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/NE.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      }
+     }
+    }
+   }
+  },
+  "texture": {
+   "src": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/S.webm",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "offsetX": 0,
+   "offsetY": 0,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "rotation": 0,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "disposition": 0,
+  "bar1": {
+   "attribute": "attributes.hp"
+  },
+  "sight": {
+   "enabled": false
+  }
+ },
+ "items": [
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "LgGdfFvjTrn7ccZj",
+   "name": "Сущность эльфийского баэльнорна [Baelnorn Essence]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Ларрель — священный хранитель эльфийского народа (баэльнорн). Ему не требуется филактерия для существования; его дух неразрывно связан с волшебным древом и Астролябией Отрезанной Руки. Он сохраняет преимущество на спасброски против очарования, а магический сон не может его усыпить.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "2XHMI1LjuISlQfT5",
+   "name": "Сопротивление магии и изгнанию [Magic and Turn Resistance]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Ларрель совершает с преимущество спасброски от заклинаний и других магических эффектов, а также спасброски против эффектов изгнания нежити.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "NggPHr5XzBKTSBTQ",
+   "name": "Использование заклинаний (Эльфийский архимаг 18-го уровня) [Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Ларрель является заклинателем 18-го уровня. Его базовой характеристикой является Интеллект (Сл спасброска от заклинаний 19, +11 к попаданию атаками заклинаниями). Подготовлены следующие заклинания волшебника:</p><p>Заговоры (неограниченно): луч холода [ray of frost], леденящее прикосновение [chill touch], волшебная рука [mage hand], малая иллюзия [minor illusion], фокусы [prestidigitation];</p><p>1-й уровень (4 ячейки): щит [shield], волшебная стрела [magic missile], обнаружение магии [detect magic], опознание [identify];</p><p>2-й уровень (3 ячейки): туманный шаг [misty step], зеркальный образ [mirror image], расплывчатость [blur];</p><p>3-й уровень (3 ячейки): контрзаклинание [counterspell], молния [lightning bolt], огненный шар [fireball];</p><p>4-й уровень (3 ячейки): ледяной шторм [ice storm], высшая невидимость [greater invisibility], превращение [polymorph];</p><p>5-й уровень (3 ячейки): конус холода [cone of cold], стена силы [wall of force], сотворение [creation];</p><p>6-й уровень (1 ячейка): цепная молния [chain lightning], истинное зрение [true seeing];</p><p>7-й уровень (1 ячейка): перст смерти [finger of death], телепортация [teleport];</p><p>8-й уровень (1 ячейка): солнечный всплеск [sunburst], слово силы: оглушение [power word stun];</p><p>9-й уровень (1 ячейка): остановка времени [time stop].</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.terEuqr148hQBkIq",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "rUyq0IJhQfIeY1XJ",
+   "name": "Легендарные действия (3/раунд) [Legendary Actions]",
+   "type": "feat",
+   "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+   "system": {
+    "description": {
+     "value": "<p>Ларрель может совершить 3 легендарных действия, выбирая из представленных ниже вариантов. За один раз можно использовать только одно легендарное действие, и только в конце хода другого существа. Ларрель восстанавливает использованные действия в начале своего хода:</p><p>- Заговор: Ларрель сотворяет один заговор.</p><p>- Парализующее прикосновение (стоит 2 действия): Ларрель совершает одну атаку Парализующим прикосновением.</p><p>- Вспышка магии баэльнорна (стоит 2 действия): Ларрель высвобождает волну эльфийской силы. Каждое существо в пределах 20 футов от него должно совершить спасбросок Ловкости Сл 19, получая 14 (4d6) урона силовым полем при провале или половину при успехе.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/magic/water/water-hand.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака заклинанием: +11 к попаданию, досягаемость 5 фт., одна цель. Попадание: 10 (3d6) урона холодом. Цель должна успешно совершить спасбросок Телосложения Сл 19, иначе станет парализованной на 1 минуту. Цель может повторять этот спасбросок в конце каждого своего хода, оканчивая эффект на себе при успехе.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 3,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "cold"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "cold"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "aA6aNp0Z6rdrwJy5": {
+      "_id": "aA6aNp0Z6rdrwJy5",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "11",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     },
+     "Zpse7hdfHn7Fe0X7": {
+      "_id": "Zpse7hdfHn7Fe0X7",
+      "type": "save",
+      "name": "Спасбросок",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "special",
+       "value": null,
+       "condition": "при попадании",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "con"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "19"
+       }
+      },
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "Thy6AhcF0sBb1RZ6",
+   "name": "Парализующее прикосновение [Paralyzing Touch]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +8 к попаданию, досягаемость 5 фт., одна цель. Попадание: 6 (1d8 + 2) рубящего урона или 7 (1d10 + 2) рубящего урона при использовании двумя руками плюс 9 (2d8) урона излучением.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "2",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "OtpOPuowLvFbcBvQ": {
+      "_id": "OtpOPuowLvFbcBvQ",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "8",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": [
+        {
+         "number": 1,
+         "denomination": 10,
+         "bonus": "2",
+         "types": [
+          "slashing"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        },
+        {
+         "number": 2,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "radiant"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "_id": "6JzMOr8eHCJe2COD",
+   "name": "Длинный меч Эвермита [Evermeet Longsword]"
+  },
+  {
+   "_id": "I2hAJTvfWiuWtfio",
+   "name": "Луч холода [Ray of Frost]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p><p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "units": "",
+      "contiguous": false,
+      "type": ""
+     }
+    },
+    "range": {
+     "value": "60",
+     "units": "ft",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 0,
+    "school": "evo",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [
+       {
+        "_id": "ZlBjKmRbz1cyezIt",
+        "level": {
+         "min": null,
+         "max": null
+        }
+       }
+      ],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": ""
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": [
+        {
+         "number": 1,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "cold"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": [],
+       "max": ""
+      },
+      "sort": 0,
+      "name": "Cast",
+      "img": "",
+      "visibility": {
+       "level": {
+        "min": null,
+        "max": null
+       }
+      }
+     }
+    },
+    "identifier": "ray-of-frost",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 700000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/water/projectile-icecicle-glowing.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.ctW81uiX56xZR2c5",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "RDuheadOCTp93YlB",
+   "name": "Леденящее прикосновение [Chill Touch]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 Necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "1",
+     "units": "round"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "units": "",
+      "contiguous": false,
+      "type": ""
+     }
+    },
+    "range": {
+     "value": "120",
+     "units": "ft",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 0,
+    "school": "nec",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [
+       {
+        "_id": "6Hdp1jf98UcJrEkD",
+        "level": {
+         "min": null,
+         "max": null
+        }
+       }
+      ],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": ""
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": [
+        {
+         "number": 1,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "necrotic"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": [],
+       "max": ""
+      },
+      "sort": 0,
+      "name": "Cast",
+      "img": "",
+      "visibility": {
+       "level": {
+        "min": null,
+        "max": null
+       }
+      }
+     }
+    },
+    "identifier": "chill-touch",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 800000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.vrN18tbTw7io5MWd",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "6xSG3VgwBMyhznWV",
+   "name": "Щит [Shield]",
+   "type": "spell",
+   "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{magic missile}.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "reaction",
+     "condition": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+     "value": 1
+    },
+    "duration": {
+     "value": "1",
+     "units": "round"
+    },
+    "target": {
+     "affects": {
+      "type": "self",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "units": "",
+      "contiguous": false,
+      "type": ""
+     }
+    },
+    "range": {
+     "units": "self",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 1,
+    "school": "abj",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [
+       {
+        "_id": "6pbotGIvqQkraPva",
+        "level": {
+         "min": null,
+         "max": null
+        }
+       }
+      ],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": [],
+       "max": ""
+      },
+      "sort": 0,
+      "name": "Cast",
+      "img": "",
+      "visibility": {
+       "level": {
+        "min": null,
+        "max": null
+       }
+      }
+     }
+    },
+    "identifier": "shield",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 900000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.z1mx84ONwkXKUZd7",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "16Q59gE6XLnaUZIV",
+   "name": "Волшебная стрела [Magic Missile]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "units": "",
+      "contiguous": false,
+      "type": ""
+     }
+    },
+    "range": {
+     "value": "120",
+     "units": "ft",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 1,
+    "school": "evo",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "rttaq2XQZpjYRPc8": {
+      "type": "damage",
+      "name": "Cast",
+      "_id": "rttaq2XQZpjYRPc8",
+      "img": "",
+      "sort": 200000,
+      "activation": {
+       "type": "action",
+       "override": false
+      },
+      "consumption": {
+       "scaling": {
+        "allowed": false
+       },
+       "spellSlot": true,
+       "targets": []
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "flags": {},
+      "range": {
+       "units": "self",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": [],
+       "max": ""
+      },
+      "visibility": {
+       "level": {
+        "min": null,
+        "max": null
+       },
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      },
+      "damage": {
+       "critical": {
+        "allow": false
+       },
+       "parts": [
+        {
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "number": 1,
+         "denomination": 4,
+         "bonus": "1",
+         "types": [
+          "force"
+         ],
+         "scaling": {
+          "mode": ""
+         }
+        }
+       ]
+      }
+     }
+    },
+    "identifier": "magic-missile",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1000000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/lightning/projectiles-tendril-salvo-pink.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "BS08tWjkc9U64qZt",
+   "name": "Туманный шаг [Misty Step]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "bonus",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "space",
+      "count": "30",
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 2,
+    "school": "con",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "misty-step",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1100000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/control/debuff-energy-snare-brown.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.wqfAVANuQonNBgnL",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "3fPXsRt3q3CsAQ5L",
+   "name": "Зеркальный образ [Mirror Image]",
+   "type": "spell",
+   "img": "icons/magic/control/debuff-energy-hold-levitate-pink.webp",
+   "system": {
+    "description": {
+     "value": "<p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.</p>\n<p>Each time a creature targets you with an attack during the spell's duration, roll a [[/r 1d20 # Mirror Image Check]] to determine whether the attack instead targets one of your duplicates.</p>\n<p>If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.</p>\n<p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.</p>\n<p>A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "1",
+     "units": "minute"
+    },
+    "target": {
+     "affects": {
+      "type": "self",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 2,
+    "school": "ill",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "1d20",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "mirror-image",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 1200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.X4c8xCkmF8U9HUMz",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "wTodZdSTnp6lI4PX",
+   "name": "Контрзаклинание [Counterspell]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "reaction",
+     "condition": "which you take when you see a creature within 60 feet of you casting a spell",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "60",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 3,
+    "school": "abj",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "1d20 + @mod",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "counterspell",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1300000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/skills/melee/strike-blade-hooked-orange-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.Ek45cBpVXvJdv1Qy",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "zv7vjmQJc3asTcwe",
+   "name": "Молния [Lightning Bolt]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.</p><p>The lightning ignites flammable objects in the area that aren't being worn or carried.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "line",
+      "size": "100",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 3,
+    "school": "evo",
+    "materials": {
+     "value": "A bit of fur and a rod of amber, crystal, or glass",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 8,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "lightning"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "dex",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "lightning-bolt",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1400000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/lightning/bolt-forked-large-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.IyikgTEOTv701jgQ",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "sqnArdZn6iqSadSf",
+   "name": "Огненный шар [Fireball]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p><p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "sphere",
+      "size": "20",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "150",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 3,
+    "school": "evo",
+    "materials": {
+     "value": "A tiny ball of bat guano and sulfur",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 8,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "fire"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "dex",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "fireball",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1500000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/fire/projectile-fireball-smoke-large-orange.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "CRl6nVBn9hCbZQ2T",
+   "name": "Ледяной шторм [Ice Storm]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high Cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.</p><p>Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "cylinder",
+      "size": "20",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "300",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 4,
+    "school": "evo",
+    "materials": {
+     "value": "A pinch of dust and a few drops of water",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 2,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "bludgeoning"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        },
+        {
+         "number": 4,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "cold"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": null,
+          "formula": "1d8"
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "dex",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "ice-storm",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1600000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/water/projectiles-ice-faceted-shard-salvo-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "lf46MzKj8RPPZjYy",
+   "name": "Высшая невидимость [Greater Invisibility]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You or a creature you touch becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "1",
+     "units": "minute"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "touch"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 4,
+    "school": "ill",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "concentration"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [
+       {
+        "_id": "lhYVl4DD9jyS5gcn"
+       }
+      ],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "greater-invisibility",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1700000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/air/fog-gas-smoke-swirling-gray.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "To0kxcdHhozYQU5S",
+   "name": "Конус холода [Cone of Cold]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "cone",
+      "size": "60",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 5,
+    "school": "evo",
+    "materials": {
+     "value": "A small crystal or glass cone",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 8,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "cold"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "con",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "cone-of-cold",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1800000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/water/projectiles-ice-faceted-shard-salvo-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "DjkCC99QSaQDl6cf",
+   "name": "Стена силы [Wall of Force]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the Duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).</p><p>Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by Dispel Magic. A Disintegrate spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "10",
+     "units": "minute"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "wall",
+      "size": "100",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "120",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 5,
+    "school": "evo",
+    "materials": {
+     "value": "A pinch of powder made by crushing clear gemstone",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material",
+     "concentration"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "wall-of-force",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 1900000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/light/beam-rays-magenta-large.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.o9ZCvuD2B1OTcubb",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "eEIuhaeHSMV0u64p",
+   "name": "Цепная молния [Chain Lightning]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.</p><p>A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "150",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 6,
+    "school": "evo",
+    "materials": {
+     "value": "A bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 10,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "lightning"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "dex",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "chain-lightning",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 2000000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/lightning/bolt-forked-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.QbTxN5dWIbYZ4jLU",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "bxl7Q69vqq0KJyRx",
+   "name": "Перст смерти [Finger of Death]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.</p><p>A humanoid killed by this spell rises at the start of your next turn as a Zombie that is permanently under your command, following your verbal orders to the best of its ability.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "60",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 7,
+    "school": "nec",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 7,
+         "denomination": 8,
+         "bonus": "30",
+         "types": [
+          "necrotic"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "con",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "finger-of-death",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 2100000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/unholy/strike-beam-blood-large-red-purple.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "YzZyXfuxAW3iLhcv",
+   "name": "Солнечный всплеск [Sunburst]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is Blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.</p><p>A creature Blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.</p><p>This spell dispels any Darkness in its area that was created by a spell.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "choice": false
+     },
+     "template": {
+      "units": "ft",
+      "type": "radius",
+      "size": "60",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "value": "150",
+     "units": "ft"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 8,
+    "school": "evo",
+    "materials": {
+     "value": "Fire and a piece of sunstone",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "material"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 12,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "radiant"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "save": {
+       "ability": "con",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "sunburst",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 2200000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/fire/explosion-fireball-large-purple-orange.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.hzK7FQya0BDjSmLE",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "wJMpsoS2rrVoELLM",
+   "name": "Остановка времени [Time Stop]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use Actions and move as normal.</p><p>This spell ends if one of the Actions you use during this period, or any Effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "activation": {
+     "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "",
+     "units": "inst"
+    },
+    "target": {
+     "affects": {
+      "type": "self",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 9,
+    "school": "trs",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "roll": {
+       "formula": "1d4+1",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "time-stop",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 2300000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.JYuRBwxpoFhXduvD",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "e685d02d48e930af",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "dnd-icewind-dale-pc-game": {
+   "cre": "LARREL",
+   "areas": {
+    "AR5103": 1
+   },
+   "source": "generated",
+   "xp2e": 0,
+   "hp2e": 100,
+   "ac2e": -3,
+   "thac0": 14,
+   "sprite": "MLERSD",
+   "anim": {
+    "folder": "MLERSD",
+    "bam": "MLERSD",
+    "static": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/sprites/token.avif",
+    "dirs": {
+     "S": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/S.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "SW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/SW.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "W": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/W.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "NW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/NW.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "N": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/N.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "SE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/SE.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "E": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/E.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "NE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MLERSD/anim/NE.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     }
+    }
+   }
+  },
+  "world": {
+   "iwdConversion": {
+    "source2e": "HD 16, AC 0, THAC0 11, Baelnorn Archmage, Time Stop, Meteor Swarm, MR 50%, Evermeet High Magic",
+    "wiki": "https://icewinddale.fandom.com/wiki/Severed_Hand",
+    "notes": "Каноничная конверсия эльфийского архимага-баэльнорна Ларреля (LARREL) из Отрезанной Руки под CR 18 в D&D 5e.",
+    "code": "LARREL",
+    "bam": "MLERSD"
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659815802,
+  "modifiedTime": 1791659815802,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

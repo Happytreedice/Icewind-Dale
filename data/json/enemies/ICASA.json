@@ -1,0 +1,2140 @@
+{
+ "_id": "c7a932621ac2207b",
+ "name": "Иказарахт [Icasaracht]",
+ "type": "npc",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/sprites/token.avif",
+ "system": {
+  "abilities": {
+   "str": {
+    "value": 26,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "dex": {
+    "value": 10,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "con": {
+    "value": 24,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "int": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "wis": {
+    "value": 14,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "cha": {
+    "value": 18,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   }
+  },
+  "attributes": {
+   "ac": {
+    "flat": 20,
+    "calc": "natural",
+    "formula": ""
+   },
+   "hp": {
+    "value": 297,
+    "max": 297,
+    "temp": 0,
+    "tempmax": 0,
+    "formula": "17d20 + 119"
+   },
+   "init": {
+    "ability": "",
+    "bonus": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "movement": {
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0,
+    "walk": 40,
+    "units": "ft",
+    "hover": false
+   },
+   "attunement": {
+    "max": 3
+   },
+   "senses": {
+    "darkvision": 120,
+    "blindsight": 60,
+    "tremorsense": 0,
+    "truesight": 0,
+    "units": "ft",
+    "special": ""
+   },
+   "spellcasting": "",
+   "exhaustion": 0,
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "bonuses": {
+     "save": ""
+    },
+    "limit": 1
+   },
+   "death": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
+   },
+   "hd": {
+    "spent": 0
+   }
+  },
+  "details": {
+   "biography": {
+    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Иказарахт</strong> (англ. <em>Icasaracht</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>ICASA</code>.</p><p >⭐ <strong>Ключевой босс локации:</strong> кастомизированный профиль 5e на базе архетипа <em>Иказарахт / Icasaracht</em> с оригинальными способностями и артефактами.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>50000 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 21</strong> (БМ +7)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC -6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 20</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>400 HP (HD 16)</td><td style='padding: 4px 8px; border: 1px solid'><strong>380 HP</strong> (22d20)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Gargantuan (кость d20) + CON мод (+8)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 4, 3 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+16 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+7) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>4 / 6 / 5 / 4 / 7</td><td style='padding: 4px 8px; border: 1px solid'>DEX, CON, WIS, CHA</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>MINHP1</strong> (<em>MINHP1</em>) — <code>MINHP1</code></li><li><strong>Кольцо</strong> (<em>Ring</em>) — <code>RING90</code></li><li><strong>Атака</strong> (<em>Attack</em>) — <code>ICASA</code></li><li><strong>Чешуйки белого дракона</strong> (<em>White Dragon Scales</em>) — <code>CDSCALES</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Ледяное дыхание (Перезарядка 5–6):</strong> Выдыхает конус холода на 90 футов. Существа совершают спасбросок Телосложения Сл 22, получая 72 (16d8) урона холодом при провале.</li><li><strong>Легендарное сопротивление (3/день):</strong> Если проваливает спасбросок, может вместо этого сделать его успешным.</li><li><strong>Камень Души (Soul Gem):</strong> Пока Камень Души Иказарахт цел, ее дух не может быть окончательно уничтожен.</li><li><strong>Иммунитет к заклинанию:</strong> Облако-убийца (Cloudkill).</li><li><strong>Иммунитет к заклинанию:</strong> Ядовитое облако (Poison Fog).</li><li><strong>Иммунитет к урону:</strong> cold, poison.</li><li><strong>Сопротивление к урону:</strong> slashing, piercing, bludgeoning.</li><li><strong>Иммунитет к состояниям:</strong> charmed, poisoned, paralyzed, unconscious.</li><li><strong>Сопротивление магии (25% в 2e):</strong> Совершает с преимуществом спасброски от заклинаний и магических эффектов.</li><li><strong>Мультиатака:</strong> Иказарахт может использовать Ужасающее присутствие, затем совершает три атаки: одну укусом и две когтями.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>AR9604 (AR9604) — Испытания Мастера Приманок.</p></div></div>",
+    "public": ""
+   },
+   "alignment": "хаотично-злой",
+   "race": null,
+   "type": {
+    "value": "undead",
+    "subtype": "",
+    "swarm": "",
+    "custom": ""
+   },
+   "environment": "",
+   "cr": 17.0,
+   "spellLevel": 0,
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
+   "source": {
+    "custom": "Icewind Dale (2000)",
+    "rules": "2014",
+    "book": "IWD",
+    "page": "",
+    "license": "",
+    "revision": 1
+   },
+   "xp": {
+    "value": 18000
+   }
+  },
+  "traits": {
+   "size": "grg",
+   "di": {
+    "value": [
+     "cold",
+     "poison"
+    ],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [
+     "bludgeoning",
+     "piercing",
+     "slashing"
+    ],
+    "bypasses": [
+     "mgc"
+    ],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "ci": {
+    "value": [
+     "charmed",
+     "exhaustion",
+     "frightened",
+     "paralyzed",
+     "poisoned"
+    ],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "common",
+     "draconic"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "important": false
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 0,
+   "ep": 0,
+   "sp": 0,
+   "cp": 0
+  },
+  "skills": {
+   "prc": {
+    "value": 2,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 1,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "tools": {},
+  "spells": {},
+  "bonuses": {},
+  "resources": {
+   "legact": {
+    "value": 3,
+    "max": 3
+   },
+   "legres": {
+    "value": 0,
+    "max": 0
+   },
+   "lair": {
+    "value": false,
+    "initiative": null
+   }
+  }
+ },
+ "prototypeToken": {
+  "name": "Иказарахт",
+  "displayName": 20,
+  "actorLink": false,
+  "width": 4,
+  "height": 4,
+  "flags": {
+   "isometric-perspective": {
+    "scale": 0.7
+   },
+   "dnd-icewind-dale-pc-game": {
+    "anim": {
+     "folder": "MWDRG11",
+     "bam": "MWDRG11",
+     "static": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/sprites/token.avif",
+     "dirs": {
+      "S": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/S.webm",
+       "frames": 18,
+       "size": [
+        248,
+        390
+       ]
+      },
+      "SW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/SW.webm",
+       "frames": 18,
+       "size": [
+        340,
+        391
+       ]
+      },
+      "W": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/W.webm",
+       "frames": 18,
+       "size": [
+        365,
+        396
+       ]
+      },
+      "NW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/NW.webm",
+       "frames": 18,
+       "size": [
+        340,
+        504
+       ]
+      },
+      "N": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/N.webm",
+       "frames": 18,
+       "size": [
+        248,
+        516
+       ]
+      },
+      "NE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/NE.webm",
+       "frames": 18,
+       "size": [
+        340,
+        504
+       ]
+      },
+      "E": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/E.webm",
+       "frames": 18,
+       "size": [
+        365,
+        396
+       ]
+      },
+      "SE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/SE.webm",
+       "frames": 18,
+       "size": [
+        340,
+        391
+       ]
+      }
+     }
+    }
+   }
+  },
+  "texture": {
+   "src": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/S.webm",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "offsetX": 0,
+   "offsetY": 0,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "rotation": 0,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "disposition": 0,
+  "bar1": {
+   "attribute": "attributes.hp"
+  },
+  "sight": {
+   "enabled": false
+  }
+ },
+ "items": [
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Hc6MqLQhPTI1KOvm",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "agqea7DYhyK6IWHd",
+   "name": "Сопротивление магии [Magic Resistance]",
+   "type": "feat",
+   "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт совершает с преимуществом спасброски от заклинаний и прочих магических эффектов.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.J1NxNTJ2qi05iAFF",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "iIoSCE8UtULlo79l",
+   "name": "Легендарное сопротивление (3/день) [Legendary Resistance]",
+   "type": "feat",
+   "img": "icons/equipment/shield/kite-wooden-oak-glow.webp",
+   "system": {
+    "description": {
+     "value": "<p>Если Икасарахт проваливает спасбросок, она может вместо этого сделать его успешным.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "3",
+     "recovery": [
+      {
+       "period": "day",
+       "type": "recoverAll"
+      }
+     ]
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.YKC7pwYkJSKn1vuw",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "WYjSm9NiTecQwxNO",
+   "name": "Хождение по льду [Ice Walk]",
+   "type": "feat",
+   "img": "icons/magic/water/water-iceberg-bubbles.webp",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт может перемещаться по ледяным поверхностям и лазать по ним без необходимости совершать проверки характеристик. Труднопроходимая местность изо льда или снега не требует дополнительных затрат перемещения.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "H88PDSwPcustJnVk",
+   "name": "Камень Души [Soul Gem Tether]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Душа Икасарахт заключена в Камень Души (Soul Gem). Если физическое тело драконицы уничтожено, её дух не умирает, а возвращается в Камень Души. Икасарахт окончательно погибает только тогда, когда сам Камень Души будет разрушен (КД 18, 50 HP, иммунитет к холоду и яду).</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "a0ot3fZs6Jub5RgA",
+   "name": "Мультиатака [Multiattack]",
+   "type": "feat",
+   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт использует Ужасающее присутствие. Затем она совершает три атаки: одну Укусом и две Когтями.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "WglhSKenw0acPiKx": {
+      "_id": "WglhSKenw0acPiKx",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.nb6zOmwIIJBLz4iT",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "TPbeR2K656JaGH3d",
+   "name": "Ужасающее присутствие [Frightful Presence]",
+   "type": "feat",
+   "img": "icons/creatures/unholy/demons-horned-glowing-pink.webp",
+   "system": {
+    "description": {
+     "value": "<p>Каждое существо по выбору Икасарахт в пределах 120 футов, знающее о её присутствии, должно успешно пройти спасбросок Мудрости Сл 18 или станет испуганным на 1 минуту. Цель может повторять спасбросок в конце каждого своего хода, заканчивая эффект на себе при успехе.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "wrsqNy9GZAjSZ8TH": {
+      "_id": "wrsqNy9GZAjSZ8TH",
+      "type": "save",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "wis"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "18"
+       }
+      },
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 700000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +14 к попаданию, досягаемость 10 фт., одна цель. Попадание: 19 (2d10 + 8) колющего урона плюс 9 (2d8) урона холодом.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 2,
+      "denomination": 10,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": 10
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+     "rch"
+    ],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "TzlPxZeq1ikwggNi": {
+      "_id": "TzlPxZeq1ikwggNi",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "14",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": [
+        {
+         "number": 2,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "cold"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "_id": "uGpmtPKAGDTmdYWu",
+   "name": "Укус [Bite]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 800000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/creatures/claws/claw-curved-jagged-gray.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +14 к попаданию, досягаемость 5 фт., одна цель. Попадание: 15 (2d6 + 8) рубящего урона.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 2,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "fueUa7JfgQHynHo7": {
+      "_id": "fueUa7JfgQHynHo7",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "14",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "JmMPlXfkU0tzKqE8",
+   "name": "Когти [Claws]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 900000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/creatures/abilities/tail-swipe-green.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +14 к попаданию, досягаемость 15 фт., одна цель. Попадание: 17 (2d8 + 8) дробящего урона.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 2,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": 15
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+     "rch"
+    ],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "Y9GhnOEq8PjgwMMK": {
+      "_id": "Y9GhnOEq8PjgwMMK",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "14",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "e5nLI3liRplDIDNk",
+   "name": "Хвост [Tail]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 1000000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.iHOaiOqwUWIfCljJ",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "cod55JoQ44ioS6M1",
+   "name": "Ледяное дыхание (Перезарядка 5–6) [Cold Breath]",
+   "type": "feat",
+   "img": "icons/creatures/abilities/dragon-ice-breath-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт выдыхает поток губительного мороза конусом 90 футов. Каждое существо в этой области должно совершить спасбросок Телосложения Сл 21, получая 63 (14d8) урона холодом при провале или половину этого урона при успехе.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "1",
+     "recovery": [
+      {
+       "period": "recharge",
+       "formula": "5"
+      }
+     ]
+    },
+    "activities": {
+     "za6CVAxZytJXySyx": {
+      "_id": "za6CVAxZytJXySyx",
+      "type": "save",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "1",
+        "contiguous": false,
+        "type": "cone",
+        "size": "90",
+        "width": "",
+        "height": "",
+        "units": "ft"
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "con"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "21"
+       }
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 14,
+         "denomination": 8,
+         "bonus": "",
+         "types": [
+          "cold"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 1100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "UYBvKx8hy6kPtiHW",
+   "name": "Обнаружение [Detect]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт совершает проверку Мудрости (Внимательность).</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "bTnEgEIShiIzvc7a": {
+      "_id": "bTnEgEIShiIzvc7a",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "legendary",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 1200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "SnAcTAunjpA2KA0B",
+   "name": "Атака хвостом [Tail Attack]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт совершает одну атаку Хвостом.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "wxUBYuBvDjdK2YAU": {
+      "_id": "wxUBYuBvDjdK2YAU",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "legendary",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 1300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "L9uWeUwJTcacytGJ",
+   "name": "Атака крыльями (Стоит 2 действия) [Wing Attack]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Икасарахт взмахивает крыльями. Каждое существо в пределах 15 футов должно успешно пройти спасбросок Ловкости Сл 22 или получить 15 (2d6 + 8) дробящего урона и быть сбитым с ног. Затем Икасарахт может пролететь на расстояние до половины своей скорости полёта.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "NZmkJ1zfcQyaar4Y": {
+      "_id": "NZmkJ1zfcQyaar4Y",
+      "type": "save",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "legendary",
+       "value": 2,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "dex"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "22"
+       }
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": [
+        {
+         "number": 2,
+         "denomination": 6,
+         "bonus": "8",
+         "types": [
+          "bludgeoning"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 1400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "0eUWEA07WM22KWhJ",
+   "name": "Чешуйки белого дракона [White Dragon Scales]",
+   "type": "loot",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/CDSCALES.avif",
+   "system": {
+    "description": {
+     "value": "<p>Заиндевелая чешуя с трупа Икасарахт — материал для могучего доспеха.</p><p>Это множество чешуек, покрытых инеем, собранных с трупа Иказарахт. По легенде из них можно выковать крепкий магический доспех.</p><p><em>Код ресурса IWD: CDSCALES</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 15.0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2000,
+     "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "junk",
+     "subtype": ""
+    },
+    "properties": []
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "fc756a6eeabfbc24",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "dnd-icewind-dale-pc-game": {
+   "cre": "ICASA",
+   "areas": {
+    "AR9604": 1
+   },
+   "source": "generated",
+   "xp2e": 50000,
+   "hp2e": 400,
+   "ac2e": -6,
+   "thac0": 4,
+   "sprite": "MWDRG11",
+   "anim": {
+    "folder": "MWDRG11",
+    "bam": "MWDRG11",
+    "static": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/sprites/token.avif",
+    "dirs": {
+     "S": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/S.webm",
+      "frames": 18,
+      "size": [
+       248,
+       390
+      ]
+     },
+     "SW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/SW.webm",
+      "frames": 18,
+      "size": [
+       340,
+       391
+      ]
+     },
+     "W": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/W.webm",
+      "frames": 18,
+      "size": [
+       365,
+       396
+      ]
+     },
+     "NW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/NW.webm",
+      "frames": 18,
+      "size": [
+       340,
+       504
+      ]
+     },
+     "N": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/N.webm",
+      "frames": 18,
+      "size": [
+       248,
+       516
+      ]
+     },
+     "NE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/NE.webm",
+      "frames": 18,
+      "size": [
+       340,
+       504
+      ]
+     },
+     "E": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/E.webm",
+      "frames": 18,
+      "size": [
+       365,
+       396
+      ]
+     },
+     "SE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MWDRG11/anim/SE.webm",
+      "frames": 18,
+      "size": [
+       340,
+       391
+      ]
+     }
+    }
+   }
+  },
+  "world": {
+   "iwdConversion": {
+    "source2e": "HD 16, AC -8, THAC0 5, 3 attacks (2 claws 1d10+8, bite 2d12+8), Frost Breath (12d8+12), Soul Gem",
+    "wiki": "https://icewinddale.fandom.com/wiki/Sea_of_Moving_Ice",
+    "notes": "Каноничная конверсия скелетного дракона Икасарахт (ICASA) под CR 17 в D&D 5e.",
+    "code": "ICASA",
+    "bam": "MWDRG11"
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659815802,
+  "modifiedTime": 1791659815802,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

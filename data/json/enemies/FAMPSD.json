@@ -1,0 +1,1328 @@
+{
+ "_id": "2b1d449390cfbe4f",
+ "name": "Псевдодракончик [Pseudo Dragon]",
+ "type": "npc",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/MWFMG1/sprites/token.avif",
+ "system": {
+  "abilities": {
+   "str": {
+    "value": 6,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "dex": {
+    "value": 15,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "con": {
+    "value": 13,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "int": {
+    "value": 10,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "wis": {
+    "value": 12,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "cha": {
+    "value": 10,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   }
+  },
+  "attributes": {
+   "ac": {
+    "flat": 13,
+    "calc": "natural",
+    "formula": ""
+   },
+   "hp": {
+    "value": 7,
+    "max": 7,
+    "temp": 0,
+    "tempmax": 0,
+    "formula": "2d4 + 2"
+   },
+   "init": {
+    "ability": "",
+    "bonus": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "movement": {
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0,
+    "walk": 15,
+    "units": "ft",
+    "hover": false
+   },
+   "attunement": {
+    "max": 3
+   },
+   "senses": {
+    "darkvision": 60,
+    "blindsight": 10,
+    "tremorsense": 0,
+    "truesight": 0,
+    "units": "ft",
+    "special": ""
+   },
+   "spellcasting": "",
+   "exhaustion": 0,
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "bonuses": {
+     "save": ""
+    },
+    "limit": 1
+   },
+   "death": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
+   },
+   "hd": {
+    "spent": 0
+   }
+  },
+  "details": {
+   "biography": {
+    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Псевдодракончик</strong> (англ. <em>Pseudo Dragon</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>FAMPSD</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>0 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 0</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 4</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 16</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>12 HP (HD 3)</td><td style='padding: 4px 8px; border: 1px solid'><strong>37 HP</strong> (5d10)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Large (кость d10) + CON мод (+2)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 19, 2 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+6 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>15 / 17 / 16 / 18 / 18</td><td style='padding: 4px 8px; border: 1px solid'>Базовые</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Кольцо</strong> (<em>Ring</em>) — <code>REGHP1</code></li><li><strong>IMMCLOUD</strong> (<em>IMMCLOUD</em>) — <code>IMMCLOUD</code></li><li><strong>Кольцо песчаного вора</strong> (<em>Sandthief's Ring</em>) — <code>FAMMY</code></li><li><strong>Атака</strong> (<em>Attack</em>) — <code>S1-3</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Иммунитет к состояниям:</strong> unconscious.</li><li><strong>Сопротивление магии (35% в 2e):</strong> Совершает с преимуществом спасброски от заклинаний и магических эффектов.</li><li><strong>Мультиатака:</strong> Существо совершает 2 атаки.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'> Заклинания</h3><ul><li><strong>Размытие</strong> (spell)</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Восточная Гавань (AR1000) — Пролог — Восточная Гавань.</p></div></div>",
+    "public": ""
+   },
+   "alignment": "нейтрально-добрый",
+   "race": null,
+   "type": {
+    "value": "dragon",
+    "subtype": "",
+    "swarm": "",
+    "custom": ""
+   },
+   "environment": "",
+   "cr": 0.25,
+   "spellLevel": 0,
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
+   "source": {
+    "custom": "Icewind Dale (2000)",
+    "rules": "2014",
+    "book": "IWD",
+    "page": "",
+    "license": "",
+    "revision": 1
+   },
+   "xp": {
+    "value": 50
+   }
+  },
+  "traits": {
+   "size": "tiny",
+   "di": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "ci": {
+    "value": [],
+    "custom": ""
+   },
+   "languages": {
+    "value": [],
+    "custom": "understands Common and Draconic but can't speak",
+    "communication": {}
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "important": false
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 0,
+   "ep": 0,
+   "sp": 0,
+   "cp": 0
+  },
+  "skills": {
+   "prc": {
+    "value": 1,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 1,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "tools": {},
+  "spells": {},
+  "bonuses": {},
+  "resources": {
+   "legact": {
+    "value": 0,
+    "max": 0
+   },
+   "legres": {
+    "value": 0,
+    "max": 0
+   },
+   "lair": {
+    "value": false,
+    "initiative": null
+   }
+  }
+ },
+ "prototypeToken": {
+  "name": "Псевдодракончик",
+  "displayName": 20,
+  "actorLink": false,
+  "width": 2,
+  "height": 2,
+  "flags": {
+   "isometric-perspective": {
+    "scale": 0.7
+   },
+   "dnd-icewind-dale-pc-game": {
+    "anim": null
+   }
+  },
+  "texture": {
+   "src": "modules/dnd-icewind-dale-pc-game/assets/MWFMG1/anim/S.webm",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "offsetX": 0,
+   "offsetY": 0,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "rotation": 0,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "disposition": 1,
+  "bar1": {
+   "attribute": "attributes.hp"
+  },
+  "sight": {
+   "enabled": false
+  }
+ },
+ "items": [
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 4 (1d4 + 2) колющего урона.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "4",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "stWLgigmkMdf3zkw": {
+      "_id": "stWLgigmkMdf3zkw",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "4",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "EGmm4gEevDuCA4pA",
+   "name": "Укус [Bite]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "icons/creatures/abilities/stinger-poison-green.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 4 (1d4 + 2) колющего урона, и цель должна успешно пройти спасбросок Телосложения Сл 11 или стать отравленной на 1 час. Если спасбросок провален на 5 или более единиц, цель теряет сознание на 1 час.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "4",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "kUJMTPsUiPJdF3Ri": {
+      "_id": "kUJMTPsUiPJdF3Ri",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "4",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     },
+     "JUILuWapeeh08F7p": {
+      "_id": "JUILuWapeeh08F7p",
+      "type": "save",
+      "name": "Спасбросок",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "special",
+       "value": null,
+       "condition": "при попадании",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "con"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "11"
+       }
+      },
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "TM6bW7fqDbPp947i",
+   "name": "Жало с усыпляющим ядом [Sting]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.JnLN0Rz60WHXk2Fr",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "cKRzZ1nuXw8ggcNo",
+   "name": "Чуткое восприятие [Keen Senses]",
+   "type": "feat",
+   "img": "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp",
+   "system": {
+    "description": {
+     "value": "<p>Псевдодракончик совершает с преимуществом проверки Мудрости (Внимательность), полагающиеся на зрение, слух или обоняние.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "mfKJI1Q6luh0hnvg": {
+      "_id": "mfKJI1Q6luh0hnvg",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Hc6MqLQhPTI1KOvm",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "725ntTH57rb9zarK",
+   "name": "Сопротивление магии [Magic Resistance]",
+   "type": "feat",
+   "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>Псевдодракончик совершает с преимуществом спасброски от заклинаний и прочих магических эффектов.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "t36xifqmzsFbkhU7": {
+      "_id": "t36xifqmzsFbkhU7",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.xna3UTd4EFLCZMt9",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "wlqefFcuH1qXAD5h",
+   "name": "Ограниченная телепатия [Limited Telepathy]",
+   "type": "feat",
+   "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Псевдодракончик может телепатически передавать простые идеи, эмоции и образы любому существу в пределах 100 футов, понимающему хотя бы один язык.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "drjHVQV1thxtqiPQ": {
+      "_id": "drjHVQV1thxtqiPQ",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "44W8o0IEdzdvDHaK",
+   "name": "Полет [Fly]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Псевдодракончик имеет скорость полета 60 футов.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "Pqe8cW2k0g3ItY8h": {
+      "_id": "Pqe8cW2k0g3ItY8h",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 700000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "RmlMwoFigJ830qTa",
+   "name": "Кольцо песчаного вора [Sandthief's Ring]",
+   "type": "equipment",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/IRING05.avif",
+   "system": {
+    "description": {
+     "value": "<p><em>Код ресурса IWD: FAMMY</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "ring",
+     "baseItem": ""
+    },
+    "armor": {
+     "value": null,
+     "magicalBonus": null,
+     "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "identifier": "",
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "cover": null
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "fc756a6eeabfbc24",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "dnd-icewind-dale-pc-game": {
+   "cre": "FAMPSD",
+   "areas": {
+    "AR1000": 1
+   },
+   "source": "generated",
+   "xp2e": 0,
+   "hp2e": 12,
+   "ac2e": 4,
+   "thac0": 19,
+   "sprite": "MWFMG1",
+   "anim": {
+    "dir": "MWFMG1",
+    "webm": "modules/dnd-icewind-dale-pc-game/assets/MWFMG1/anim/S.webm"
+   }
+  },
+  "world": {
+   "iwdConversion": {
+    "source2e": "HD 2, AC 5, THAC0 19, 1 attack sting/bite (1d3 + sleep poison), Fly 60, Magic Resistance, Telepathy",
+    "wiki": "https://icewinddale.fandom.com/wiki/Find_Familiar",
+    "notes": "Конверсия Псевдодракончика FAMPSD под CR 1/4 в D&D 5e.",
+    "code": "FAMPSD",
+    "bam": "MWFMG1"
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659815802,
+  "modifiedTime": 1791659815802,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

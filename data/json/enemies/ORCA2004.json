@@ -1,0 +1,1063 @@
+{
+ "_id": "63703505a0108b53",
+ "name": "Орк-лучник [Orc Archer]",
+ "type": "npc",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/sprites/token.avif",
+ "system": {
+  "abilities": {
+   "str": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "dex": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "con": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "int": {
+    "value": 7,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "wis": {
+    "value": 11,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "cha": {
+    "value": 10,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   }
+  },
+  "attributes": {
+   "ac": {
+    "flat": 13,
+    "calc": "natural",
+    "formula": ""
+   },
+   "hp": {
+    "value": 15,
+    "max": 15,
+    "temp": 0,
+    "tempmax": 0,
+    "formula": "2d8 + 6"
+   },
+   "init": {
+    "ability": "",
+    "bonus": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "movement": {
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0,
+    "walk": 30,
+    "units": "ft",
+    "hover": false
+   },
+   "attunement": {
+    "max": 3
+   },
+   "senses": {
+    "darkvision": 60,
+    "blindsight": 0,
+    "tremorsense": 0,
+    "truesight": 0,
+    "units": "ft",
+    "special": ""
+   },
+   "spellcasting": "",
+   "exhaustion": 0,
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "bonuses": {
+     "save": ""
+    },
+    "limit": 1
+   },
+   "death": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
+   },
+   "hd": {
+    "spent": 0
+   }
+  },
+  "details": {
+   "biography": {
+    "value": "<p><strong>Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.9859cc85f1cfb098]{Орк — разговор}</p><div class='iwd-actor-bio'><div class='iwd-bio-dialog' style='border-left: 4px solid; padding: 8px 12px; margin-bottom: 12px; border-radius: 4px'><strong> Диалог:</strong> @UUID[Compendium.dnd-icewind-dale-pc-game.dialogs.JournalEntry.9859cc85f1cfb098]{Орк — диалог}</div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Орк</strong> (англ. <em>Orc</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>ORCA2004</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>35 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 0.125</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 14</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>10 HP (HD 1)</td><td style='padding: 4px 8px; border: 1px solid'><strong>10 HP</strong> (2d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+-1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 19, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+1 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>14 / 16 / 15 / 17 / 17</td><td style='padding: 4px 8px; border: 1px solid'>Базовые</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Короткий лук</strong> (<em>Shortbow</em>) — <code>BOW05</code></li><li><strong>Стрела</strong> (<em>Arrow</em>) — <code>AROW01</code></li><li><strong>Короткий меч</strong> (<em>Short Sword </em>) — <code>SW1H07</code></li><li><strong>Золотой</strong> (<em>Gold Piece</em>) — <code>MISC07</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>AR2004 (AR2004) — Глава 1 — Кулдахарский перевал.</p></div></div>",
+    "public": ""
+   },
+   "alignment": "законно-злой",
+   "race": null,
+   "type": {
+    "value": "humanoid",
+    "subtype": "",
+    "swarm": "",
+    "custom": ""
+   },
+   "environment": "",
+   "cr": 0.5,
+   "spellLevel": 0,
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
+   "source": {
+    "custom": "Icewind Dale (2000)",
+    "rules": "2014",
+    "book": "IWD",
+    "page": "",
+    "license": "",
+    "revision": 1
+   },
+   "xp": {
+    "value": 100
+   }
+  },
+  "traits": {
+   "size": "med",
+   "di": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dr": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dv": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "ci": {
+    "value": [],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "common",
+     "orc"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "important": false
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 4,
+   "ep": 0,
+   "sp": 2,
+   "cp": 4
+  },
+  "skills": {
+   "prc": {
+    "value": 1,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 1,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "tools": {},
+  "spells": {},
+  "bonuses": {},
+  "resources": {
+   "legact": {
+    "value": 0,
+    "max": 0
+   },
+   "legres": {
+    "value": 0,
+    "max": 0
+   },
+   "lair": {
+    "value": false,
+    "initiative": null
+   }
+  }
+ },
+ "prototypeToken": {
+  "name": "Орк-лучник",
+  "displayName": 20,
+  "actorLink": false,
+  "width": 1,
+  "height": 1,
+  "flags": {
+   "isometric-perspective": {
+    "scale": 0.7
+   },
+   "dnd-icewind-dale-pc-game": {
+    "anim": {
+     "folder": "MOR2SD",
+     "bam": "MOR2SD",
+     "static": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/sprites/token.avif",
+     "dirs": {
+      "S": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/S.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "SW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/SW.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "W": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/W.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "NW": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/NW.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "N": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/N.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "SE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/SE.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "E": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/E.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      },
+      "NE": {
+       "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/NE.webm",
+       "frames": 10,
+       "size": [
+        50,
+        50
+       ]
+      }
+     }
+    }
+   }
+  },
+  "texture": {
+   "src": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/S.webm",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "offsetX": 0,
+   "offsetY": 0,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "rotation": 0,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "disposition": 0,
+  "bar1": {
+   "attribute": "attributes.hp"
+  },
+  "sight": {
+   "enabled": false
+  }
+ },
+ "items": [
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.7NML6SkyvOsZ17iq",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "ZgO8yizJOcSVWnKf",
+   "name": "Агрессивный [Aggressive]",
+   "type": "feat",
+   "img": "icons/creatures/abilities/mouth-teeth-tongue-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Бонусным действием орк может переместиться на расстояние до своей скорости к враждебному существу, которое он видит.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "_id": "CqQlooraL0bKB9hn",
+   "name": "Короткий лук [Shortbow]",
+   "type": "weapon",
+   "img": "icons/weapons/bows/shortbow-leather.webp",
+   "system": {
+    "description": {
+     "value": "<p>Дальнобойная атака оружием: +4 к попаданию, дистанция 80/320 фт., одна цель. Попадание: 5 (1d6 + 2) колющего урона.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 25,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 80,
+     "long": 320,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "two"
+    ],
+    "proficient": 1,
+    "type": {
+     "value": "simpleR",
+     "baseItem": "shortbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "activities": {
+     "XtEo1CPvnb2eECLO": {
+      "_id": "XtEo1CPvnb2eECLO",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "4",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "arrow"
+    },
+    "mastery": "",
+    "identifier": "shortbow"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.items.Item.GJv6WkD7D2J6rP6M",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "V8QQxpYzu8gmpH27",
+   "name": "Кинжал [Dagger]",
+   "type": "weapon",
+   "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная или дальнобойная атака оружием: +4 к попаданию, досягаемость 5 фт. или дистанция 20/60 фт., одна цель. Попадание: 4 (1d4 + 2) колющего урона.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 1,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "lgt",
+     "thr"
+    ],
+    "proficient": 1,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "dagger"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "activities": {
+     "kEAomlUMWHZkIT8Y": {
+      "_id": "kEAomlUMWHZkIT8Y",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "4",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": []
+      }
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "dagger",
+    "mastery": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.items.Item.0E565kQUBmndJ1a2",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "BIHgFKpWdcjkXzrX",
+   "name": "Стрела [Arrow]",
+   "type": "consumable",
+   "img": "icons/weapons/ammunition/arrows-broadhead-white.webp",
+   "system": {
+    "description": {
+     "value": "<p>Standard ammunition used for bows of all varieties. These mundane arrows are made of smooth wooden shafts with goose feather fletching and hammer metal bodkins.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 20,
+    "weight": {
+     "value": 0.05,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "cp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "autoDestroy": false,
+     "spent": 0
+    },
+    "damage": {
+     "base": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "replace": false
+    },
+    "type": {
+     "value": "ammo",
+     "subtype": "arrow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "arrow"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.items.Item.3c7JXOzsv55gqJS5",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "t6uNrmuoRlmMnnEw",
+   "name": "Золотой [Gold Piece]",
+   "type": "loot",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/IMISC07.avif",
+   "system": {
+    "description": {
+     "value": "<p>Золото — основа денежного обращения; по всем Королевствам такие монеты зовут «золотыми львами», хотя лишь на кормирских монетах действительно отчеканен лев (узоры сембийских золотых меняются из года в год, но всегда сохраняют пятиугольную форму). На юге чаще всего ходит амнский дантер, но есть и другие золотые монеты — из Тетира и Тэя, а также частной чеканки (в том числе некоторых отрядов приключенцев).</p><p>Золотой — стандартная валюта, которую в Королевствах обычно называют золотым львом, хотя это животное изображается только на монетах кормирской чеканки (а в Сембии, к примеру, ежегодно придумывают новые рисунки, зато монеты неизменно остаются пятиугольными). В южных землях широкое хождение получили дантеры Амна, наряду с ними распространены тетирские и тэйские монеты, а также золотые, отчеканенные частными монетными дворами (и отдельными отрядами искателей приключений).</p><p><em>Код ресурса IWD: MISC07</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "junk",
+     "subtype": ""
+    },
+    "properties": []
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "49df930ce059538b",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "dnd-icewind-dale-pc-game": {
+   "cre": "ORCA2004",
+   "areas": {
+    "AR2004": 1
+   },
+   "source": "generated",
+   "xp2e": 35,
+   "hp2e": 10,
+   "ac2e": 6,
+   "thac0": 19,
+   "sprite": "MOR2SD",
+   "anim": {
+    "folder": "MOR2SD",
+    "bam": "MOR2SD",
+    "static": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/sprites/token.avif",
+    "dirs": {
+     "S": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/S.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "SW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/SW.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "W": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/W.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "NW": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/NW.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "N": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/N.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "SE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/SE.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "E": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/E.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     },
+     "NE": {
+      "webm": "modules/dnd-icewind-dale-pc-game/assets/MOR2SD/anim/NE.webm",
+      "frames": 10,
+      "size": [
+       50,
+       50
+      ]
+     }
+    }
+   }
+  },
+  "world": {
+   "iwdConversion": {
+    "source2e": "HD 1+2, AC 6, THAC0 19, Shortbow 1d6, ORCA2004, MOR2SD",
+    "wiki": "https://icewinddale.fandom.com/wiki/Kuldahar_Pass",
+    "notes": "Каноничная конверсия орка-лучника под CR 1/2 в D&D 5e.",
+    "code": "ORCA2004",
+    "bam": "MOR2SD"
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659815802,
+  "modifiedTime": 1791659815802,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

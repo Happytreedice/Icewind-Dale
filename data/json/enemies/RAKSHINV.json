@@ -1,0 +1,1235 @@
+{
+ "_id": "53606274e0bbee99",
+ "name": "Ракшас [Rakshasa]",
+ "type": "npc",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/MRAKG1/sprites/token.avif",
+ "system": {
+  "abilities": {
+   "str": {
+    "value": 14,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "dex": {
+    "value": 18,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "con": {
+    "value": 18,
+    "proficient": 0,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "int": {
+    "value": 16,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "wis": {
+    "value": 16,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   },
+   "cha": {
+    "value": 20,
+    "proficient": 1,
+    "max": null,
+    "bonuses": {
+     "check": "",
+     "save": ""
+    }
+   }
+  },
+  "attributes": {
+   "ac": {
+    "flat": 16,
+    "calc": "natural",
+    "formula": ""
+   },
+   "hp": {
+    "value": 123,
+    "max": 123,
+    "temp": 0,
+    "tempmax": 0,
+    "formula": "13d8 + 65"
+   },
+   "init": {
+    "ability": "",
+    "bonus": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "movement": {
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0,
+    "walk": 40,
+    "units": "ft",
+    "hover": false
+   },
+   "attunement": {
+    "max": 3
+   },
+   "senses": {
+    "darkvision": 60,
+    "blindsight": 0,
+    "tremorsense": 0,
+    "truesight": 60,
+    "units": "ft",
+    "special": ""
+   },
+   "spellcasting": "",
+   "exhaustion": 0,
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "bonuses": {
+     "save": ""
+    },
+    "limit": 1
+   },
+   "death": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
+   },
+   "hd": {
+    "spent": 0
+   }
+  },
+  "details": {
+   "biography": {
+    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Ракшас</strong> (англ. <em>Rakshasa</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>RAKSHINV</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>7000 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 7</strong> (БМ +3)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC -7</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 23</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>88 HP (HD 11)</td><td style='padding: 4px 8px; border: 1px solid'><strong>88 HP</strong> (12d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+2)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 11, 3 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+7 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+3) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>7 / 9 / 8 / 8 / 10</td><td style='padding: 4px 8px; border: 1px solid'>CON, WIS, DEX</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Кольцо невидимости</strong> (<em>Ring of Invisibility </em>) — <code>CIRAKSH1</code></li><li><strong>Атака</strong> (<em>Attack</em>) — <code>S1-10M2</code></li><li><strong>Накидка Необнаружения</strong> (<em>Cloak of Non-Detection</em>) — <code>CLCK06</code></li><li><strong>Сломанный щит</strong> (<em>Broken Shield</em>) — <code>CIRAKSH</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Иммунитет к заклинанию:</strong> Облако-убийца (Cloudkill).</li><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li><li><strong>Мультиатака:</strong> Существо совершает 3 атаки.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'> Заклинания</h3><ul><li><strong>Развеять магию</strong> (spell)</li><li><strong>Опутать</strong> (spell)</li><li><strong>Кислотный шар</strong> (spell)</li><li><strong>Ледяная буря</strong> (spell)</li><li><strong>Замедление</strong> (spell)</li><li><strong>Разряд молнии</strong> (spell)</li><li><strong>Огненный шар</strong> (spell)</li><li><strong>Зловонное облако</strong> (spell)</li><li><strong>Зеркальный образ</strong> (spell)</li><li><strong>Цветная сфера</strong> (spell)</li><li><strong>Магический снаряд</strong> (spell)</li><li><strong>Пылающие руки</strong> (spell)</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>AR9711 (AR9711) — Испытания Мастера Приманок.</p></div></div>",
+    "public": ""
+   },
+   "alignment": "законно-злой",
+   "race": null,
+   "type": {
+    "value": "fiend",
+    "subtype": "",
+    "swarm": "",
+    "custom": ""
+   },
+   "environment": "",
+   "cr": 13.0,
+   "spellLevel": 0,
+   "ideal": "",
+   "bond": "",
+   "flaw": "",
+   "source": {
+    "custom": "Icewind Dale (2000)",
+    "rules": "2014",
+    "book": "IWD",
+    "page": "",
+    "license": "",
+    "revision": 1
+   },
+   "xp": {
+    "value": 10000
+   }
+  },
+  "traits": {
+   "size": "med",
+   "di": {
+    "value": [
+     "bludgeoning",
+     "piercing",
+     "slashing"
+    ],
+    "bypasses": [
+     "mgc"
+    ],
+    "custom": ""
+   },
+   "dr": {
+    "value": [],
+    "bypasses": [],
+    "custom": ""
+   },
+   "dv": {
+    "value": [
+     "piercing"
+    ],
+    "bypasses": [],
+    "custom": ""
+   },
+   "ci": {
+    "value": [
+     "charmed",
+     "frightened"
+    ],
+    "custom": ""
+   },
+   "languages": {
+    "value": [
+     "abyssal",
+     "common",
+     "infernal"
+    ],
+    "custom": "",
+    "communication": {}
+   },
+   "dm": {
+    "amount": {},
+    "bypasses": []
+   },
+   "important": false
+  },
+  "currency": {
+   "pp": 0,
+   "gp": 0,
+   "ep": 0,
+   "sp": 0,
+   "cp": 0
+  },
+  "skills": {
+   "arc": {
+    "value": 1,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "dec": {
+    "value": 2,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ins": {
+    "value": 1,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 2,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "tools": {},
+  "spells": {},
+  "bonuses": {},
+  "resources": {
+   "legact": {
+    "value": 0,
+    "max": 0
+   },
+   "legres": {
+    "value": 0,
+    "max": 0
+   },
+   "lair": {
+    "value": false,
+    "initiative": null
+   }
+  }
+ },
+ "prototypeToken": {
+  "name": "Ракшас",
+  "displayName": 20,
+  "actorLink": false,
+  "width": 1,
+  "height": 1,
+  "flags": {
+   "isometric-perspective": {
+    "scale": 0.7
+   },
+   "dnd-icewind-dale-pc-game": {
+    "anim": null
+   }
+  },
+  "texture": {
+   "src": "modules/dnd-icewind-dale-pc-game/assets/MRAKG1/anim/S.webm",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "offsetX": 0,
+   "offsetY": 0,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "rotation": 0,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "disposition": -1,
+  "bar1": {
+   "attribute": "attributes.hp"
+  },
+  "sight": {
+   "enabled": false
+  }
+ },
+ "items": [
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.MBOiQSnMr02wUpEN",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "ycL5i2AW6aY7pcf7",
+   "name": "Ограниченный иммунитет к магии [Limited Magic Immunity]",
+   "type": "feat",
+   "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>На ракшаса не действуют заклинания 6 уровня или ниже, и они же не могут его обнаружить, если только он сам не желает, чтобы они на него подействовали. Он совершает с преимуществом спасброски от всех остальных заклинаний и магических эффектов.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "4JhdFnpA4tvrT403",
+   "name": "Накидка необнаружения и Кольцо невидимости [Cloak of Non-Detection & Ring of Invisibility]",
+   "type": "feat",
+   "img": "systems/dnd5e/icons/svg/items/feature.svg",
+   "system": {
+    "description": {
+     "value": "<p>Ракшас находится под постоянным эффектом невидимости (может возобновлять её бонусным действием). Его нельзя обнаружить магией прорицания или следящими датчиками.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "SJ3wKdz7Vfzjzj3u",
+   "name": "Врождённое колдовство [Innate Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Базовой характеристикой ракшаса является Харизма (Сл спасброска 18, +10 к атакам заклинаниями). Ракшас может накладывать следующие заклинания, не нуждаясь в материальных компонентах:</p><p>Неограниченно: обнаружение мыслей [detect thoughts], маскировка [disguise self], невидимость [invisibility], волшебная рука [mage hand]</p><p>3/день каждое: огненный шар [fireball], удар молнии [lightning bolt], ледяная буря [ice storm], кислотная стрела Мельфа [melf's acid arrow]</p><p>1/день каждое: подчинение гуманоида [dominate person], полёт [fly], истинное зрение [true seeing]</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "3EZvqQIkl8H44JAX",
+   "name": "Мультиатака",
+   "type": "feat",
+   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>Ракшас совершает две атаки Проклятыми когтями сна или сотворяет заклинание.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "PSpG7jsLCRhRqsZV": {
+      "_id": "PSpG7jsLCRhRqsZV",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "type": "weapon",
+   "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+   "system": {
+    "description": {
+     "value": "<p>Рукопашная атака естественным оружием: +9 к попаданию, досягаемость 5 фт., одна цель. Попадание: 9 (2d4 + 4) рубящего урона плюс 10 (3d6) урона некротической энергией. Цель должна совершить спасбросок Телосложения Сл 18, иначе засыпает на 1 минуту и проклинается (не может восстанавливать хиты магией до снятия проклятия).</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "damage": {
+     "base": {
+      "number": 2,
+      "denomination": 4,
+      "bonus": "2",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "armor": {
+     "value": null
+    },
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {},
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "cover": null,
+    "identifier": "",
+    "activities": {
+     "uUK9hqgR6uiPZm2w": {
+      "_id": "uUK9hqgR6uiPZm2w",
+      "type": "attack",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "9",
+       "critical": {
+        "threshold": null
+       },
+       "flat": true,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "includeBase": true,
+       "critical": {
+        "bonus": ""
+       },
+       "parts": [
+        {
+         "number": 3,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "necrotic"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+         }
+        }
+       ]
+      }
+     },
+     "QXgCmnUWgEfnwEtX": {
+      "_id": "QXgCmnUWgEfnwEtX",
+      "type": "save",
+      "name": "Спасбросок",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "special",
+       "value": null,
+       "condition": "при попадании",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "save": {
+       "ability": [
+        "con"
+       ],
+       "dc": {
+        "calculation": "flat",
+        "formula": "18"
+       }
+      },
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      }
+     }
+    }
+   },
+   "_id": "NgCnsuhR1y3Femqx",
+   "name": "Проклятые когти сна [Cursed Claws of Slumber]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "I9vEBIHfSXDah8ju",
+   "name": "Накидка Необнаружения [Cloak of Non-Detection]",
+   "type": "equipment",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/ICLCK06.avif",
+   "system": {
+    "description": {
+     "value": "<p>Плащ ночных взломщиков, скрывающий владельца от магического взора.</p><p>Необнаружимость: Носителя невозможно засечь магическими средствами: против него не работают «Обнаружение невидимости», прорицания и магическое слежение (как заклинание @UUID[Compendium.dnd5e.spells.Item.aU62xVUBYkAQWIHv]{«Необнаружимость»}).</p><p>Накидка необнаружения: Шепот Тишины</p><p>Говорят, эту накидку создали для семейства лучших воров, когда-либо видевших ночную тьму. Очевидно, она прекрасно выполняла свои задачи. Данных о предыдущих хозяевах нет.</p><p><em>Код ресурса IWD: CLCK06</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3.0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1000,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "trinket",
+     "baseItem": ""
+    },
+    "armor": {
+     "value": null,
+     "magicalBonus": null,
+     "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "identifier": "",
+    "hp": {
+     "value": null,
+     "max": null,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "cover": null
+   }
+  },
+  {
+   "_id": "Oji9brTEwqVaMRz0",
+   "name": "Кольцо невидимости [Ring of Invisibility]",
+   "type": "equipment",
+   "img": "icons/equipment/finger/ring-faceted-silver-orange.webp",
+   "system": {
+    "description": {
+     "value": "<p><em>(Requires attunement)</em></p>\n<p>While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 200000,
+     "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": true,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "armor": {
+     "value": 0,
+     "dex": 0,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "ring",
+     "baseItem": ""
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [
+     "mgc"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "inst",
+       "special": "",
+       "override": false
+      },
+      "effects": [
+       {
+        "_id": "7KHJyEznWKJ8rc5s",
+        "level": {
+         "min": null,
+         "max": null
+        }
+       }
+      ],
+      "range": {
+       "units": "self",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "self",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": [],
+       "max": ""
+      },
+      "sort": 0,
+      "name": "Become Invisible",
+      "img": "",
+      "appliedEffects": [
+       "7KHJyEznWKJ8rc5s"
+      ],
+      "visibility": {
+       "requireMagic": true,
+       "level": {
+        "min": null,
+        "max": null
+       },
+       "identifier": "",
+       "requireIdentification": true
+      }
+     }
+    },
+    "attuned": false,
+    "identifier": "ring-of-invisibility"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 700000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.items.Item.1J0dsxyKRhVXYQf5",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 800000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791659815802,
+    "modifiedTime": 1791659815802,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "N8hcg86ZAlyWfgdl",
+   "name": "Сломанный щит [Broken Shield]",
+   "type": "loot",
+   "img": "systems/dnd5e/icons/svg/items/loot.svg",
+   "system": {
+    "description": {
+     "value": "<p><em>Код ресурса IWD: CIRAKSH</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 0,
+     "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "type": {
+     "value": "gear",
+     "subtype": ""
+    },
+    "properties": []
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "e064e7531d760c71",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "dnd-icewind-dale-pc-game": {
+   "cre": "RAKSHINV",
+   "areas": {
+    "AR9711": 1
+   },
+   "source": "generated",
+   "xp2e": 7000,
+   "hp2e": 88,
+   "ac2e": -7,
+   "thac0": 11,
+   "sprite": "MRAKG1",
+   "anim": {
+    "dir": "MRAKG1",
+    "webm": "modules/dnd-icewind-dale-pc-game/assets/MRAKG1/anim/S.webm"
+   }
+  },
+  "world": {
+   "iwdConversion": {
+    "source2e": "HD 8+20, AC -2, CIRAKSH1, CLCK06, Limited Magic Immunity, RAKSHINV, Castle Maluradek",
+    "wiki": "https://icewinddale.fandom.com/wiki/Trials_of_the_Luremaster",
+    "notes": "Каноничная конверсия невидимого ракшаса под CR 13 в D&D 5e.",
+    "code": "RAKSHINV",
+    "bam": "MRAKG1"
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659815802,
+  "modifiedTime": 1791659815802,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

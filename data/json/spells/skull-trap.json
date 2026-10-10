@@ -1,0 +1,182 @@
+{
+ "_id": "zSQWVSIS1cfPT5lg",
+ "name": "Череп-ловушка [Skull Trap]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI313B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы метаете призрачный череп в выбранную точку в пределах дистанции. Череп зависает в воздухе и остается там до 8 часов. Когда любое существо приближается к черепу ближе чем на 10 футов, череп детонирует, взрываясь костяными осколками и некротической энергией. Каждое существо в радиусе 15 футов от черепа должно совершить спасбросок Ловкости, получая 8к6 некротического урона при провале или половину урона при успехе.</p><p><em>Создаёт парящую череп-ловушку, которая детонирует при приближении существа на 10 футов, нанося 8к6 некротического урона в сфере 15 футов.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 3-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "skull-trap",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "8",
+   "units": "hour",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "15",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 3,
+  "school": "nec",
+  "materials": {
+   "value": "череп кобольда или гуманоида",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "s1bhac1daTEBmC6D": {
+    "_id": "s1bhac1daTEBmC6D",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "dex"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 8,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "necrotic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI313",
+    "refs": [
+     "SPWI313"
+    ],
+    "type2e": "wizard",
+    "level2e": 3,
+    "source2e": "3 круг, школа некромантии (necromancy), дальность 60 фт., детонирует при приближении врага на 8 фт., наносит 1к6 некротического урона за уровень заклинателя",
+    "classes": [
+     "sorcerer",
+     "warlock",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Skull_Trap",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

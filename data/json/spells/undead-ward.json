@@ -1,0 +1,165 @@
+{
+ "_id": "wphVUgmfTdXzThcV",
+ "name": "Оберег от нежити [Undead Ward]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR521B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы освящаете область радиусом 30 футов с центром в точке вашего нахождения в момент колдовства. Зона остаётся неподвижной. Любая нежить, впервые за ход входящая в область или начинающая там ход, должна совершить спасбросок Мудрости. При провале нежить становится изгнанной на 1 минуту и должна немедленно убегать за пределы зоны.</p><p><em>Создаёт неподвижную 30-футовую зону, которая изгоняет любую нежить, входящую в неё.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 6-го уровня или выше радиус зоны увеличивается на 10 футов за каждый уровень ячейки выше 5-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "undead-ward",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "hour",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "radius",
+    "size": "30",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "",
+   "units": "self",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 5,
+  "school": "nec",
+  "materials": {
+   "value": "священный символ и серебряный порошок",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "ritual",
+   "concentration"
+  ],
+  "activities": {
+   "a9jR5b1bhe3dcVNF": {
+    "_id": "a9jR5b1bhe3dcVNF",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "wis"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "none",
+     "parts": []
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPPR521",
+    "refs": [
+     "SPPR521"
+    ],
+    "type2e": "priest",
+    "level2e": 5,
+    "source2e": "5 круг, школа некромантии (necromancy), дальность на себя (неподвижная зона 30 фт.), длительность 1 час, изгоняет всю входящую нежить",
+    "classes": [
+     "cleric",
+     "paladin"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Undead_Ward",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

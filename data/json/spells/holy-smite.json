@@ -1,0 +1,181 @@
+{
+ "_id": "MutIPswcc7ogdfOA",
+ "name": "Святая кара [Holy Smite]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR313B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы призываете ослепительную энергию с Плана Сияния в 20-футовую сферу с центром в точке в пределах дистанции. Каждое злое существо в области должно совершить спасбросок Телосложения. При провале цель получает 4к8 урона излучением и становится ослеплённой до конца своего следующего хода, а при успехе получает половину урона и не слепнет. Нейтральные существа получают лишь половину урона (или четверть при успехе), а добрые существа не получают урона.</p><p><em>Наносит урон излучением злым существам и слепит их; нейтральные получают половину урона, добрые урон не получают.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 3-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "holy-smite",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "20",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "120",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 3,
+  "school": "nec",
+  "materials": {
+   "value": "священный символ",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "dQRlMbaZtNfU1Thg": {
+    "_id": "dQRlMbaZtNfU1Thg",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "con"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 4,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "radiant"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPPR313",
+    "refs": [
+     "SPPR313"
+    ],
+    "type2e": "priest",
+    "level2e": 3,
+    "source2e": "3 круг, школа некромантии (necromancy), дальность 120 фт., длительность мгновенная, 1к6 урона за 2 уровня заклинателя злым существам и ослепление",
+    "classes": [
+     "cleric",
+     "paladin"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Holy_Smite",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

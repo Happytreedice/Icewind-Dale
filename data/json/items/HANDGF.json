@@ -1,0 +1,122 @@
+{
+  "code": "HANDGF",
+  "id": "0dfc0b749985c67a",
+  "name": {
+    "ru": "Рука Ледника Мрака +4",
+    "en": "Hand of the Gloomfrost +4",
+    "official": "Рука Ледника Мрака +4"
+  },
+  "type": "weapon",
+  "subtype": "martialM",
+  "rarity": "veryRare",
+  "price": {
+    "value": 27000,
+    "denomination": "gp"
+  },
+  "weight_lbs": 10,
+  "quantity": 1,
+  "attunement": "required",
+  "equipped": false,
+  "identified": true,
+  "properties": [
+    "hvy",
+    "two",
+    "mgc"
+  ],
+  "damage": [
+    {
+      "formula": "2d6",
+      "type": "slashing"
+    }
+  ],
+  "activities": [
+    {
+      "id": "f754ff23376da3c5",
+      "name": "attack",
+      "type": "attack",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    },
+    {
+      "id": "124f9cd203c02b3b",
+      "name": "Штормовой панцирь",
+      "type": "utility",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [
+          {
+            "type": "activityUses",
+            "target": "",
+            "value": "1",
+            "scaling": {
+              "mode": "",
+              "formula": ""
+            }
+          }
+        ],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    }
+  ],
+  "magical_effects": [
+    {
+      "name": "Длань Мрачноморозья +4",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold"
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire"
+        }
+      ]
+    }
+  ],
+  "description": "Двуручный меч, выкованный из нетающего льда ледника Мрачноморозье.\nУдушающий холод: При провале спасброска СЛ 14 поражённая цель на 1 раунд начинает задыхаться: она получает [[/damage 2d4 force]], её скорость падает вдвое, а атаки совершаются с помехой; спасбросок Телосложения [[/save ability=con dc=15]] отменяет эффект.\nШтормовой панцирь (1/день): Действием вы окружаете себя штормовой оболочкой на 10 минут: вы получаете сопротивление урону огнём, холодом и электричеством.\nБыстрое: Когда вы совершаете дополнительную атаку, можете совершить её не Бонусным действием, а частью действия Атака. Вы можете совершить эту дополнительную атаку только один раз за ход.\nСопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону холодом (действует постоянно).\nСопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону огнём (действует постоянно).\nЭто оружие вы изготовили собственными руками под руководством дворфа Тиернона. Сделанный изо льда со стены Ледника Мрака, этот мощный клинок несет в себе частицу энергии ледника и вашей силы. Хоть оружие и состоит изо льда, оно лишь немного прохладное на ощупь и не тает даже рядом с самым жарким пламенем."
+}

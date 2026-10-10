@@ -1,0 +1,121 @@
+{
+  "code": "KISSGF",
+  "id": "17ec8c23e7bda6bc",
+  "name": {
+    "ru": "Поцелуй Ледника Мрака +4",
+    "en": "Kiss of the Gloomfrost +4",
+    "official": "Поцелуй Ледника Мрака +4"
+  },
+  "type": "weapon",
+  "subtype": "martialM",
+  "rarity": "veryRare",
+  "price": {
+    "value": 27000,
+    "denomination": "gp"
+  },
+  "weight_lbs": 3,
+  "quantity": 1,
+  "attunement": "required",
+  "equipped": false,
+  "identified": true,
+  "properties": [
+    "ver",
+    "mgc"
+  ],
+  "damage": [
+    {
+      "formula": "1d8",
+      "type": "slashing"
+    }
+  ],
+  "activities": [
+    {
+      "id": "bbb448504339054f",
+      "name": "attack",
+      "type": "attack",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    },
+    {
+      "id": "d43b3d7788dfd32e",
+      "name": "Штормовой панцирь",
+      "type": "utility",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [
+          {
+            "type": "activityUses",
+            "target": "",
+            "value": "1",
+            "scaling": {
+              "mode": "",
+              "formula": ""
+            }
+          }
+        ],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    }
+  ],
+  "magical_effects": [
+    {
+      "name": "Поцелуй Мрачноморозья +4",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold"
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire"
+        }
+      ]
+    }
+  ],
+  "description": "Длинный меч, выкованный из нетающего льда ледника Мрачноморозье.\nЛедяной поцелуй: При провале спасброска СЛ 14 удар обжигает стужей: дополнительно [[/damage 2d6 cold]].\nШтормовой панцирь (1/день): Действием вы окружаете себя штормовой оболочкой на 10 минут: вы получаете сопротивление урону огнём, холодом и электричеством.\nСопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону холодом (действует постоянно).\nСопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону огнём (действует постоянно).\nЭто оружие вы изготовили собственными руками под руководством дворфа Тиернона. Сделанная изо льда со стены Ледника Мрака, этот мощный клинок несет в себе частицу энергии ледника и вашей силы. Хоть оружие и состоит изо льда, оно лишь немного прохладное на ощупь и не тает даже рядом с самым жарким пламенем."
+}

@@ -1,0 +1,187 @@
+{
+ "_id": "q3LDbDGA1X5aI8bk",
+ "name": "Огненные зёрна [Fire Seeds]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR606B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы превращаете до четырех желудей или ягод в метательные огненные снаряды. Вы или любое существо, которому вы их передадите, можете бонусным действием метать одно зёрнышко на расстояние до 60 футов. При соприкосновении с поверхностью или целью зёрнышко взрывается. Каждое существо в радиусе 10 футов от взрыва должно совершить спасбросок Ловкости, получая 4к8 урона огнём при провале или половину урона при успехе.</p><p><em>Создаёт 4 заговоренных зёрнышка, которые можно метать; при попадании взрываются сферой 10 футов, нанося 4к8 урона огнём.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон каждого зёрнышка увеличивается на 1к8 за каждый уровень ячейки выше 6-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "fire-seeds",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "10",
+   "units": "minute",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "10",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 6,
+  "school": "con",
+  "materials": {
+   "value": "4 желудя или палочки святолиста",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "USPFpXXEk5RSopNG": {
+    "_id": "USPFpXXEk5RSopNG",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "attack",
+    "attack": {
+     "ability": "",
+     "bonus": "",
+     "flat": false,
+     "critical": {
+      "threshold": null
+     },
+     "type": {
+      "value": "ranged",
+      "classification": "spell"
+     }
+    },
+    "damage": {
+     "includeBase": false,
+     "critical": {
+      "bonus": ""
+     },
+     "parts": [
+      {
+       "number": 4,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "fire"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPPR606",
+    "refs": [
+     "SPPR606"
+    ],
+    "type2e": "priest",
+    "level2e": 6,
+    "source2e": "6 круг, школа сотворения (conjuration), дальность 60 фт., длительность 10 минут, создаёт 4 огненных взрывных зёрнышка, 2к8 урона огнём каждое",
+    "classes": [
+     "druid",
+     "cleric"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Fire_Seeds",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

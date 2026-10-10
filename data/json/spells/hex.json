@@ -1,0 +1,173 @@
+{
+ "_id": "SVgHllaWNoThjg2o",
+ "name": "Сглаз [Hex]",
+ "type": "spell",
+ "img": "icons/magic/symbols/star-yellow.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы проклинаете существо в пределах дистанции. Пока заклинание активно, вы наносите цели дополнительно 1к6 некротического урона каждый раз, когда попадаете по ней атакой. Кроме того, вы выбираете одну характеристику при сотворении; цель получает помеху на проверки этой характеристики. Если хиты цели опускаются до 0 до окончания заклинания, вы можете бонусным действием в свой последующий ход перенести проклятие на новое существо.</p><p><em>Добавляет 1к6 некротического урона при каждом попадании атак по цели и даёт ей помеху на проверки одной характеристики.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания ячейкой 3-го или 4-го уровня концентрацию можно удерживать до 8 часов; ячейкой 5-го уровня или выше — до 24 часов.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "hex",
+  "activation": {
+   "type": "bonus",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "hour",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "90",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 1,
+  "school": "nec",
+  "materials": {
+   "value": "окаменевший глаз омута",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "concentration"
+  ],
+  "activities": {
+   "5kAAfjzPxTdEhADw": {
+    "_id": "5kAAfjzPxTdEhADw",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "damage",
+    "damage": {
+     "critical": {
+      "allow": false,
+      "bonus": ""
+     },
+     "parts": [
+      {
+       "number": 1,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "necrotic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": null,
+    "refs": [],
+    "type2e": "phb",
+    "level2e": null,
+    "source2e": "1 круг (PHB), школа некромантии (necromancy), дальность 90 фт., длительность 1 час",
+    "classes": [
+     "warlock"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Hex",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

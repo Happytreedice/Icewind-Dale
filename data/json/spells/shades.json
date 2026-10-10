@@ -1,0 +1,183 @@
+{
+ "_id": "k0XQf1NhLRilxSsO",
+ "name": "Тени [Shades]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI629B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Высшая форма ткачества теневой магии. Вы призываете материю Теневого Плана, создавая до двух полуреальных теневых существ с показателем опасности 4 или ниже в незанятые пространства в пределах дистанции. Призванные тени подчиняются вашим командам и наносят 4к6 психического урона своими атаками. Существа, распознавшие иллюзию спасброском Мудрости, получают лишь половину урона.</p><p><em>Призывает до 2 высших теневых монстров (ПО 4 или ниже), наносящих психический урон и подчиняющихся вам.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше вы призываете 1 дополнительное теневое существо за каждый уровень ячейки выше 6-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "shades",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "hour",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "2",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 6,
+  "school": "ill",
+  "materials": {
+   "value": "теневая вуаль",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "concentration"
+  ],
+  "activities": {
+   "iVGmo8XiNKwdIE4x": {
+    "_id": "iVGmo8XiNKwdIE4x",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "wis"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 4,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "psychic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI629",
+    "refs": [
+     "SPWI629"
+    ],
+    "type2e": "wizard",
+    "level2e": 6,
+    "source2e": "6 круг, школа иллюзии (illusion), дальность 60 фт., длительность 1 час, призывает усиленных полуреальных теневых монстров",
+    "classes": [
+     "bard",
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Shades",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

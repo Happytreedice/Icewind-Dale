@@ -1,0 +1,164 @@
+{
+ "_id": "HzWzsb2D4vcpIQMN",
+ "name": "Наваждение [Spook]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI125B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы взываете к сокровенным страхам одного существа в пределах дистанции, предстая перед ним в виде ужасающего кошмара. Цель должна совершить спасбросок Мудрости. При провале цель становится испуганной на время длительности заклинания и должна использовать всё своё перемещение, чтобы удалиться от вас.</p><p><em>Испугает выбранную цель при провале спасброска Мудрости, заставляя её убегать от заклинателя.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 2-го уровня или выше вы можете выбрать одно дополнительное существо за каждый уровень ячейки выше 1-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "spook",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "minute",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "30",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 1,
+  "school": "ill",
+  "materials": {
+   "value": "",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "concentration"
+  ],
+  "activities": {
+   "66UrC4pT59h1mZBW": {
+    "_id": "66UrC4pT59h1mZBW",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "wis"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "none",
+     "parts": []
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI125",
+    "refs": [
+     "SPWI125"
+    ],
+    "type2e": "wizard",
+    "level2e": 1,
+    "source2e": "1 круг, школа иллюзии (illusion), дальность 30 фт., длительность 3 раунда, пугает цель при провале спасброска",
+    "classes": [
+     "bard",
+     "warlock",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Spook",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "_id": "7MYA9YY60us2WNmZ",
+ "name": "Духовный огонь [Spirit Fire]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR450B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы собираете духовные энергии мироздания в бледный лазурный шар и метаете его в точку в пределах дистанции, где он взрывается вспышкой призрачного синего пламени. Каждое существо в 20-футовой сфере должно совершить спасбросок Ловкости. При провале цель получает 4к8 урона холодом и 4к8 психического урона, а при успехе — половину этого урона.</p><p><em>Взрывается сферой призрачного лазурного пламени радиусом 20 футов, нанося урон холодом и психический урон.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше урон каждого типа увеличивается на 1к8 за каждый уровень ячейки выше 4-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "spirit-fire",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "20",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "90",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 4,
+  "school": "con",
+  "materials": {
+   "value": "призрачный фитиль",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "611UTQgrcP81DWaO": {
+    "_id": "611UTQgrcP81DWaO",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "dex"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 4,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "cold"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      },
+      {
+       "number": 4,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "psychic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPPR450",
+    "refs": [
+     "SPPR450"
+    ],
+    "type2e": "priest",
+    "level2e": 4,
+    "source2e": "4 круг (шаман), школа сотворения (conjuration), дальность 90 фт., длительность мгновенная, призрачное лазурное пламя 1к4 урона за уровень",
+    "classes": [
+     "cleric",
+     "druid"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Spirit_Fire",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

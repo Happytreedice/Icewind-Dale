@@ -1,0 +1,182 @@
+{
+ "_id": "hU5W8YxOeFC9bzeS",
+ "name": "Удушение [Suffocate]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI726B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы откачиваете весь воздух из сферы радиусом 15 футов с центром в точке в пределах дистанции. Каждое дышащее существо в области должно совершить спасбросок Телосложения. При провале цель получает 4к8 урона от удушья, становится недееспособной (incapacitated) и её скорость урезается вдвое. Цель повторяет спасбросок в конце каждого своего хода.</p><p><em>Высасывает воздух из существ в сфере 15 футов, нанося 4к8 урона и делая их недееспособными при провале спасброска.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 7-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "suffocate",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "minute",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "15",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 7,
+  "school": "trs",
+  "materials": {
+   "value": "пустой кожаный бурдюк",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "concentration"
+  ],
+  "activities": {
+   "4NsbJgSX1FdE8fDx": {
+    "_id": "4NsbJgSX1FdE8fDx",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "con"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 4,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "bludgeoning"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI726",
+    "refs": [
+     "SPWI726"
+    ],
+    "type2e": "wizard",
+    "level2e": 7,
+    "source2e": "7 круг, школа превращения (alteration), дальность 60 фт., длительность 1 минута, высасывает воздух, наносит 4к8 урона за раунд и накладывает тяжелые штрафы",
+    "classes": [
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Suffocate",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

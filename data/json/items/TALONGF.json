@@ -1,0 +1,122 @@
+{
+  "code": "TALONGF",
+  "id": "5cefedf2a6123eea",
+  "name": {
+    "ru": "Коготь Ледника Мрака +4",
+    "en": "Talon of the Gloomfrost +4",
+    "official": "Коготь Ледника Мрака +4"
+  },
+  "type": "weapon",
+  "subtype": "martialM",
+  "rarity": "veryRare",
+  "price": {
+    "value": 27000,
+    "denomination": "gp"
+  },
+  "weight_lbs": 3,
+  "quantity": 1,
+  "attunement": "required",
+  "equipped": false,
+  "identified": true,
+  "properties": [
+    "fin",
+    "lgt",
+    "mgc"
+  ],
+  "damage": [
+    {
+      "formula": "1d6",
+      "type": "slashing"
+    }
+  ],
+  "activities": [
+    {
+      "id": "29bd1aebb78443b5",
+      "name": "attack",
+      "type": "attack",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    },
+    {
+      "id": "ac73520af03ba23f",
+      "name": "Штормовой панцирь",
+      "type": "utility",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [
+          {
+            "type": "activityUses",
+            "target": "",
+            "value": "1",
+            "scaling": {
+              "mode": "",
+              "formula": ""
+            }
+          }
+        ],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    }
+  ],
+  "magical_effects": [
+    {
+      "name": "Коготь Мрачноморозья +4",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold"
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire"
+        }
+      ]
+    }
+  ],
+  "description": "Скимитар, выкованный из нетающего льда ледника Мрачноморозье.\nЛедяные путы: поражённая цель оплетается льдом: спасбросок Силы [[/save ability=str dc=15]], при провале она Опутана на 4 раунда (может повторять спасбросок действием).\nШтормовой панцирь (1/день): Действием вы окружаете себя штормовой оболочкой на 10 минут: вы получаете сопротивление урону огнём, холодом и электричеством.\nСопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону холодом (действует постоянно).\nСопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону огнём (действует постоянно).\nЭто оружие вы изготовили собственными руками под руководством дворфа Тиернона. Сделанный изо льда со стены Ледника Мрака, этот мощный клинок несет в себе частицу энергии ледника и вашей силы. Хоть оружие и состоит изо льда, оно лишь немного прохладное на ощупь и не тает даже рядом с самым жарким пламенем."
+}

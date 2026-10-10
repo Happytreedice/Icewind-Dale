@@ -1,0 +1,186 @@
+{
+ "_id": "RZd50qPtszzYLSED",
+ "name": "Солнечный ожог [Sunscorch]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR115B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Сияющий луч палящего солнечного света пронзает небо и разит цель в пределах дистанции. Совершите дальнобойную атаку заклинанием. При попадании цель получает 1к8 урона излучением и должна совершить спасбросок Телосложения; при провале она становится ослеплённой до конца своего следующего хода. Нежить и слизи совершают этот спасбросок с помехой.</p><p><em>При попадании цель должна совершить спасбросок Телосложения, иначе станет ослеплённой до конца своего следующего хода.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 2-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 1-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "sunscorch",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 1,
+  "school": "evo",
+  "materials": {
+   "value": "",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic"
+  ],
+  "activities": {
+   "sHeK3FdjtoTClqlh": {
+    "_id": "sHeK3FdjtoTClqlh",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "attack",
+    "attack": {
+     "ability": "",
+     "bonus": "",
+     "flat": false,
+     "critical": {
+      "threshold": null
+     },
+     "type": {
+      "value": "ranged",
+      "classification": "spell"
+     }
+    },
+    "damage": {
+     "includeBase": false,
+     "critical": {
+      "bonus": ""
+     },
+     "parts": [
+      {
+       "number": 1,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "radiant"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPPR115",
+    "refs": [
+     "SPPR115"
+    ],
+    "type2e": "priest",
+    "level2e": 1,
+    "source2e": "1 круг, школа воплощения (evocation), дальность 60 фт., длительность мгновенная, 1к6 + 1/уровень урона, ослепление при провале спасброска",
+    "classes": [
+     "cleric",
+     "druid"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Sunscorch",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

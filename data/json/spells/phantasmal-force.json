@@ -1,0 +1,182 @@
+{
+ "_id": "p9Vla2M1MJUWPPcx",
+ "name": "Сила фантазма [Phantasmal Force]",
+ "type": "spell",
+ "img": "icons/creatures/slimes/slime-giant-face-eyes.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы создаёте иллюзию, и она укореняется в разуме существа, которое вы видите в пределах дистанции. Цель должна пройти испытание Интеллекта. При провале вы создаёте фантазм объекта, существа или иного видимого явления на ваш выбор размером не более 10-футового куба. Его наблюдает только цель и только пока длится заклинание. Заклинание не действует на нежить и конструкции.</p><p>Фантазм также воспроизводит звуки, температуру и прочие признаки, которые воспринимает только цель</p><p>Цель может использовать действие, чтобы изучить образ, пройдя проверку Интеллекта (Расследование). СЛ проверки равна СЛ испытаний против ваших заклинаний. При успехе существо распознаёт иллюзию, и заклинание прекращает действовать.</p><p>Пока заклинание влияет на цель, та воспринимает фантазм как реальность. Цель находит объяснения странным результатам взаимодействия с образом. К примеру, если цель пытается пройти по иллюзорному мосту через провал, она упадёт, провалившись сквозь него. Если цель переживёт падение, она будет считать, что мост всё же реален, а упала она по другой причине — ее толкнули, она поскользнулась, сильный ветер сдул ее, и тому подобное.</p><p>Цель настолько убеждена в реальности фантазма, что может даже получать от него урон. Фантазм, созданный в виде существа, может атаковать цель. Аналогично, если фантазм выглядит как пламя, кислота или лава, он может обжечь цель. Каждый раунд в ваш ход фантазм может нанести цели [[/r 1d6]] психического урона, если она в области фантазма или в пределах 5 футов от него и если иллюзия выглядит как существо или опасность, которые наносят урон. Цель считает, что получила урон того типа, который соответствует иллюзии.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "PHB 2014 (перевод)",
+   "book": "PHB",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "activation": {
+   "type": "action",
+   "condition": "",
+   "value": 1
+  },
+  "duration": {
+   "value": "1",
+   "units": "minute"
+  },
+  "target": {
+   "affects": {
+    "choice": false
+   },
+   "template": {
+    "units": "ft",
+    "type": "cube",
+    "size": "10",
+    "contiguous": false
+   }
+  },
+  "range": {
+   "value": "60",
+   "units": "ft"
+  },
+  "uses": {
+   "max": "",
+   "spent": 0,
+   "recovery": []
+  },
+  "ability": "",
+  "level": 2,
+  "school": "ill",
+  "materials": {
+   "value": "клочок овечьей шерсти",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "concentration"
+  ],
+  "activities": {
+   "dnd5eactivity000": {
+    "_id": "dnd5eactivity000",
+    "type": "save",
+    "activation": {
+     "type": "action",
+     "value": null,
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "units": "inst",
+     "concentration": false,
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "prompt": true,
+     "template": {
+      "contiguous": false,
+      "units": "ft"
+     },
+     "affects": {
+      "choice": false
+     },
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 1,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "psychic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "",
+        "number": null,
+        "formula": ""
+       }
+      }
+     ]
+    },
+    "save": {
+     "ability": "int",
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "sort": 0
+   }
+  },
+  "identifier": "phantasmal-force",
+  "method": "spell",
+  "prepared": 0,
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "PHB007",
+    "refs": [
+     "PHB007"
+    ],
+    "type2e": "phb",
+    "level2e": 2,
+    "source2e": "PHB 2014, заклинание 2-го уровня школы иллюзии (не входит в SRD 5.1)",
+    "classes": [
+     "bard",
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "",
+    "notes": "Заклинание PHB 2014 вне SRD 5.1; русский текст — перевод из локальной библиотеки."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": 1791659654013,
+  "modifiedTime": 1791659654013,
+  "lastModifiedBy": null,
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

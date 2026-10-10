@@ -1,4 +1,5 @@
 import { ADVENTURE } from "./adventure.mjs";
+import { regenerateSceneWalls } from "./walls.mjs";
 
 /* -------------------------------------------- */
 /*  World Settings (without UI registration)    */
@@ -141,6 +142,7 @@ export async function onImport(adventure, formData) {
     }
   }
   await ensureSceneTokens(adventure);
+  await regenerateImportedWalls(adventure);
   await saveWorldSetting(`${ADVENTURE.moduleName}.importOptions`, importOptions);
   await saveWorldSetting(`${ADVENTURE.moduleName}.alreadyImported`, true);
   try {
@@ -151,6 +153,27 @@ export async function onImport(adventure, formData) {
   }
   ui.notifications.success(game.i18n.localize("IWD.IMPORT.Finished"));
   globalThis._iwdImportFinished = true;
+}
+
+/** Rebuild map collision/vision walls after the Adventure importer creates scenes. */
+async function regenerateImportedWalls(adventure) {
+  const importedScenes = adventure.scenes ?? [];
+  const codes = new Set(importedScenes.map(scene => scene.flags?.[ADVENTURE.moduleName]?.area).filter(Boolean));
+  if (!codes.size) return;
+  let updated = 0;
+  for (const scene of importedScenes) {
+    const area = scene.flags?.[ADVENTURE.moduleName]?.area;
+    if (!area || !codes.has(area) || !scene.id) continue;
+    const worldScene = game.scenes.get(scene.id);
+    if (!worldScene) continue;
+    try {
+      if (await regenerateSceneWalls(worldScene)) updated++;
+    } catch (err) {
+      console.error(`${ADVENTURE.moduleName} | Failed to regenerate mask walls for ${area}:`, err);
+      ui.notifications.warn(`IWD: не удалось создать стены карты ${area}; подробности в консоли.`);
+    }
+  }
+  console.log(`${ADVENTURE.moduleName} | Regenerated mask walls in ${updated} imported scenes.`);
 }
 
 /* -------------------------------------------- */
@@ -552,7 +575,9 @@ export async function ensureSceneTokens(adventure) {
     if ( cre ) actorsByCre.set(cre, actor);
   }
 
-  for ( const scene of game.scenes ) {
+  for ( const importedScene of (adventure.scenes ?? []) ) {
+    const scene = importedScene.id ? game.scenes.get(importedScene.id) : null;
+    if ( !scene ) continue;
     const specs = scene.flags?.[ADVENTURE.moduleName]?.tokens;
     if ( !specs || !specs.length ) continue;
     if ( scene.tokens.size > 0 ) continue; // Already has tokens!

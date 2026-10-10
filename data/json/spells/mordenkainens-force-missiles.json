@@ -1,0 +1,197 @@
+{
+ "_id": "i5clcfUJxuflcABX",
+ "name": "Силовые снаряды Морденкайнена [Mordenkainen's Force Missiles]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI430B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы создаёте три сияющих сферы концентрированной силовой энергии и направляете их в существ в пределах дистанции. Каждый снаряд попадает в выбранную цель автоматически, нанося 2к4 + 2 силового урона. Затем каждый снаряд детонирует: все существа в радиусе 5 футов от точки попадания снаряда должны совершить спасбросок Ловкости, получая 1к6 силового урона при провале или половину урона при успехе.</p><p><em>Выпускает 3 силовых снаряда (2к4+2 силового урона каждый), которые взрываются сферой 5 футов, нанося дополнительно 1к6 силового урона.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше вы создаёте 1 дополнительный снаряд за каждый уровень ячейки выше 4-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "mordenkainens-force-missiles",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "3",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "120",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 4,
+  "school": "evo",
+  "materials": {
+   "value": "",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic"
+  ],
+  "activities": {
+   "KObbFbDAEg1cPUPd": {
+    "_id": "KObbFbDAEg1cPUPd",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "dex"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 2,
+       "denomination": 4,
+       "bonus": "+2",
+       "types": [
+        "force"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      },
+      {
+       "number": 1,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "force"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI430",
+    "refs": [
+     "SPWI430"
+    ],
+    "type2e": "wizard",
+    "level2e": 4,
+    "source2e": "4 круг, школа воплощения (evocation), дальность 120 фт., длительность мгновенная, создаёт взрывающиеся силовые снаряды (авто-попадание + взрыв по области)",
+    "classes": [
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Mordenkainen's_Force_Missiles",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

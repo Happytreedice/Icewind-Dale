@@ -1,0 +1,181 @@
+{
+ "_id": "NDJQ3brinxP5SBct",
+ "name": "Жуткое увядание Аби-Дальцима [Abi-Dalzim's Horrid Wilting]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI812B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы высасываете влагу из всех существ в 30-футовом кубе в пределах дистанции. Каждое существо в этой области должно совершить спасбросок Телосложения. Растения и водяные элементали совершают этот спасбросок с помехой. При провале существо получает 12к8 некротического урона, или половину этого урона при успехе. Заклинание не оказывает эффекта на нежить и конструктов.</p><p><em>Высасывает влагу из всех живых существ в 30-футовом кубе, нанося 12к8 некротического урона (нежить и конструкты иммунны).</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "abi-dalzims-horrid-wilting",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "cube",
+    "size": "30",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "150",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 8,
+  "school": "nec",
+  "materials": {
+   "value": "кусочек сухой губки",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "B31S7bRTjVVh3UFD": {
+    "_id": "B31S7bRTjVVh3UFD",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "con"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "half",
+     "parts": [
+      {
+       "number": 12,
+       "denomination": 8,
+       "bonus": "",
+       "types": [
+        "necrotic"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "",
+        "number": null,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI812",
+    "refs": [
+     "SPWI812"
+    ],
+    "type2e": "wizard",
+    "level2e": 8,
+    "source2e": "8 круг, школа некромантии (necromancy), дальность в пределах видимости, мгновенно, 1к8 урона за уровень заклинателя в радиусе 17 фт.",
+    "classes": [
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Abi-Dalzim's_Horrid_Wilting",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

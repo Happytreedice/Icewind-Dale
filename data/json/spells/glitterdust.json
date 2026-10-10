@@ -1,0 +1,165 @@
+{
+ "_id": "CTf6mSnudVtMODas",
+ "name": "Сверкающая пыль [Glitterdust]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI224B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Облако сверкающих золотых частиц покрывает всё в 15-футовой сфере с центром в точке в пределах дистанции. Все невидимые существа и объекты в области становятся видимыми и не могут пользоваться преимуществами невидимости. Кроме того, каждое существо в области должно совершить спасбросок Телосложения; при провале цель становится ослеплённой на время длительности заклинания. Цель может совершать повторный спасбросок Телосложения в конце каждого своего хода.</p><p><em>Проявляет невидимых существ и ослепляет врагов в области 15 футов при провале спасброска Телосложения.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше радиус сферы увеличивается на 5 футов за каждый уровень ячейки выше 2-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000), конверсия AD&D 2e → 5e",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "glitterdust",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "1",
+   "units": "minute",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "1",
+    "contiguous": false,
+    "stationary": false,
+    "type": "sphere",
+    "size": "15",
+    "width": "",
+    "height": "",
+    "units": "ft"
+   }
+  },
+  "range": {
+   "value": "30",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 2,
+  "school": "con",
+  "materials": {
+   "value": "порошок из слюды",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material",
+   "concentration"
+  ],
+  "activities": {
+   "NrmMKV6vcSs13HyE": {
+    "_id": "NrmMKV6vcSs13HyE",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "save",
+    "save": {
+     "ability": [
+      "con"
+     ],
+     "dc": {
+      "calculation": "spellcasting",
+      "formula": ""
+     }
+    },
+    "damage": {
+     "onSave": "none",
+     "parts": []
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI224",
+    "refs": [
+     "SPWI224"
+    ],
+    "type2e": "wizard",
+    "level2e": 2,
+    "source2e": "2 круг, школа вызова (conjuration), дальность 30 фт., длительность 4 раунда, облако золотой пыльцы ослепляет и сбрасывает невидимость",
+    "classes": [
+     "bard",
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Glitterdust",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

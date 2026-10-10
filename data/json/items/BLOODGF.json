@@ -1,0 +1,121 @@
+{
+  "code": "BLOODGF",
+  "id": "2f0959b9dc65301d",
+  "name": {
+    "ru": "Кровь Ледника Мрака +4",
+    "en": "Blood of the Gloomfrost +4",
+    "official": "Кровь Ледника Мрака +4"
+  },
+  "type": "weapon",
+  "subtype": "martialM",
+  "rarity": "veryRare",
+  "price": {
+    "value": 27000,
+    "denomination": "gp"
+  },
+  "weight_lbs": 3,
+  "quantity": 1,
+  "attunement": "required",
+  "equipped": false,
+  "identified": true,
+  "properties": [
+    "ver",
+    "mgc"
+  ],
+  "damage": [
+    {
+      "formula": "1d8",
+      "type": "bludgeoning"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1cbbbbae2bc94fbc",
+      "name": "attack",
+      "type": "attack",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    },
+    {
+      "id": "60400d9e261a5304",
+      "name": "Штормовой панцирь",
+      "type": "utility",
+      "target": {
+        "template": {
+          "contiguous": false,
+          "units": ""
+        },
+        "affects": {
+          "choice": false
+        },
+        "prompt": false,
+        "override": false
+      },
+      "activation": {
+        "type": "action",
+        "value": 1,
+        "condition": "",
+        "override": false
+      },
+      "consumption": {
+        "targets": [
+          {
+            "type": "activityUses",
+            "target": "",
+            "value": "1",
+            "scaling": {
+              "mode": "",
+              "formula": ""
+            }
+          }
+        ],
+        "scaling": {
+          "allowed": false,
+          "max": ""
+        },
+        "spellSlot": true
+      }
+    }
+  ],
+  "magical_effects": [
+    {
+      "name": "Кровь Мрачноморозья +4",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold"
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire"
+        }
+      ]
+    }
+  ],
+  "description": "Боевой молот, выкованный из нетающего льда ледника Мрачноморозье.\nЛедяная закалка: Изредка удар молота затягивает раны владельца: восстановите [[/heal 2d6]] хитов (при провале спасброска СЛ 14, не чаще раза в бой).\nШтормовой панцирь (1/день): Действием вы окружаете себя штормовой оболочкой на 10 минут: вы получаете сопротивление урону огнём, холодом и электричеством.\nСопротивление холоду: Пока это оружие у вас в руках, вы имеете сопротивление урону холодом (действует постоянно).\nСопротивление огню: Пока это оружие у вас в руках, вы имеете сопротивление урону огнём (действует постоянно).\nЭто оружие вы изготовили собственными руками под руководством дворфа Тиернона. Сделанный изо льда со стены Ледника Мрака, этот мощный клинок несет в себе частицу энергии ледника и вашей силы. Хоть оружие и состоит изо льда, оно лишь немного прохладное на ощупь и не тает даже рядом с самым жарким пламенем."
+}
