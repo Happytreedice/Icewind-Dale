@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "",
+   "spellcasting": "cha",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 2.0,
-   "spellLevel": 0,
+   "spellLevel": 5,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -257,7 +257,12 @@
    }
   },
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell3": {
+    "value": 7,
+    "override": 7
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -392,8 +397,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.nUVFUgyKK7fmQaFh",
     "duplicateSource": null,
@@ -451,8 +456,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.LUHmtIDD1VTreFqI",
     "duplicateSource": null,
@@ -510,8 +515,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
     "duplicateSource": null,
@@ -617,8 +622,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -789,6 +794,226 @@
    },
    "_id": "lLvbItodiSjkpzfI",
    "name": "Высасывание Силы [Strength Drain]"
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "2nxaolrhgqH9BjFw",
+   "name": "Врождённые способности [Innate Abilities]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Врождённые способности по данным игры (CRE):</p><ul><li>Теневой договор [Shadow Pact] — 10/день</li></ul>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "_id": "OmKFgZypz29FPE5X",
+   "name": "Теневой договор [Shadow Pact]",
+   "type": "spell",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR103B.avif",
+   "system": {
+    "description": {
+     "value": "<p>Существо заключает мгновенный союз с тенями. Пока вы находитесь в области тусклого света или темноты, вы получаете сопротивление дробящему, колючему и рубящему урону от немагических атак, а также преимущество на все спасброски.</p><p><em>Находясь в тусклом свете или темноте, вы получаете сопротивление дробящему, колючему, рубящему урону и преимущество на спасброски.</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "shadow-pact",
+    "activation": {
+     "type": "bonus",
+     "value": 1,
+     "condition": ""
+    },
+    "duration": {
+     "value": "1",
+     "units": "minute",
+     "special": ""
+    },
+    "target": {
+     "affects": {
+      "count": "",
+      "type": "self",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "stationary": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     }
+    },
+    "range": {
+     "value": "",
+     "units": "self",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "10",
+     "recovery": [
+      {
+       "period": "day",
+       "type": "recoverAll"
+      }
+     ]
+    },
+    "level": 2,
+    "school": "abj",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "method": "innate",
+    "prepared": 0,
+    "properties": [
+     "somatic",
+     "concentration"
+    ],
+    "activities": {
+     "b8B3mB1fIFQOa1A8": {
+      "_id": "b8B3mB1fIFQOa1A8",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "",
+       "value": null,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "type": "utility",
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "sourceItem": null
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdConversion": {
+      "ref": "SPIN195",
+      "refs": [
+       "SPIN195"
+      ],
+      "type2e": "innate",
+      "level2e": 1,
+      "source2e": "Врождённая способность, дальность на себя, длительность 1 минута, сопротивление урону и преимущество на спасброски в тени/темноте",
+      "classes": [],
+      "wiki": "https://icewinddale.fandom.com/wiki/Shadow_Pact",
+      "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+     },
+     "iwdSpl": "SPIN195"
+    }
+   },
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
   }
  ],
  "effects": [],
@@ -895,8 +1120,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

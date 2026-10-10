@@ -1,0 +1,204 @@
+{
+ "_id": "TmmLBK8QkVvmluuO",
+ "name": "Огненная стрела [Flame Arrow]",
+ "type": "spell",
+ "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI303B.avif",
+ "system": {
+  "description": {
+   "value": "<p>Вы метаете пылающий снаряд из пламени и магии в выбранное существо в пределах дистанции. Совершите дальнобойную атаку заклинанием. При попадании цель получает 1к6 колющего урона и 4к6 урона огнём. Цель может совершить спасбросок Ловкости, чтобы уменьшить урон огнём вдвое.</p><p><em>Выпускает пылающий снаряд в одну цель: 1к6 колющего урона и 4к6 урона огнём (спасбросок Ловкости делит урон огнём пополам).</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше вы создаёте 1 дополнительный огненный снаряд за каждый уровень ячейки выше 3-го.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Icewind Dale (2000)",
+   "book": "",
+   "page": "",
+   "license": "",
+   "revision": 1,
+   "rules": "2014"
+  },
+  "identifier": "flame-arrow",
+  "activation": {
+   "type": "action",
+   "value": 1,
+   "condition": ""
+  },
+  "duration": {
+   "value": "",
+   "units": "inst",
+   "special": ""
+  },
+  "target": {
+   "affects": {
+    "count": "",
+    "type": "creature",
+    "choice": false,
+    "special": ""
+   },
+   "template": {
+    "count": "",
+    "contiguous": false,
+    "stationary": false,
+    "type": "",
+    "size": "",
+    "width": "",
+    "height": "",
+    "units": ""
+   }
+  },
+  "range": {
+   "value": "90",
+   "units": "ft",
+   "special": ""
+  },
+  "uses": {
+   "spent": 0,
+   "max": "",
+   "recovery": []
+  },
+  "level": 3,
+  "school": "con",
+  "materials": {
+   "value": "стрела и капля смолы",
+   "consumed": false,
+   "cost": 0,
+   "supply": 0
+  },
+  "method": "spell",
+  "prepared": 0,
+  "properties": [
+   "vocal",
+   "somatic",
+   "material"
+  ],
+  "activities": {
+   "k8CvF9hAY7N6TnUK": {
+    "_id": "k8CvF9hAY7N6TnUK",
+    "name": "",
+    "img": "",
+    "sort": 0,
+    "activation": {
+     "type": "",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": true
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "override": false
+    },
+    "target": {
+     "override": false,
+     "prompt": true
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "type": "attack",
+    "attack": {
+     "ability": "",
+     "bonus": "",
+     "flat": false,
+     "critical": {
+      "threshold": null
+     },
+     "type": {
+      "value": "ranged",
+      "classification": "spell"
+     }
+    },
+    "damage": {
+     "includeBase": false,
+     "critical": {
+      "bonus": ""
+     },
+     "parts": [
+      {
+       "number": 1,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "piercing"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      },
+      {
+       "number": 4,
+       "denomination": 6,
+       "bonus": "",
+       "types": [
+        "fire"
+       ],
+       "custom": {
+        "enabled": false,
+        "formula": ""
+       },
+       "scaling": {
+        "mode": "whole",
+        "number": 1,
+        "formula": ""
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sourceItem": null
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "world": {
+   "iwdConversion": {
+    "ref": "SPWI303",
+    "refs": [
+     "SPWI303"
+    ],
+    "type2e": "wizard",
+    "level2e": 3,
+    "source2e": "3 круг, школа вызова (conjuration), дальность 90 фт., мгновенно, 1к6 колющего + 4к6 огненного урона по 1 цели",
+    "classes": [
+     "sorcerer",
+     "wizard"
+    ],
+    "wiki": "https://icewinddale.fandom.com/wiki/Flame_Arrow",
+    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+   }
+  }
+ },
+ "_stats": {
+  "coreVersion": "14.368",
+  "systemId": "dnd5e",
+  "systemVersion": "5.3.3",
+  "createdTime": null,
+  "modifiedTime": null,
+  "lastModifiedBy": null
+ }
+}

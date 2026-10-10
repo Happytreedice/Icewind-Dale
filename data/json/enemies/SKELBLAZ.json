@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "",
+   "spellcasting": "int",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 3.0,
-   "spellLevel": 0,
+   "spellLevel": 5,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -225,7 +225,20 @@
    }
   },
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell1": {
+    "value": 3,
+    "override": 3
+   },
+   "spell2": {
+    "value": 1,
+    "override": 1
+   },
+   "spell3": {
+    "value": 3,
+    "override": 3
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -360,8 +373,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -419,67 +432,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "4AFhIu4iUxlmdbeQ",
-   "name": "Врождённое колдовство [Innate Spellcasting]",
-   "type": "feat",
-   "img": "icons/magic/light/projectiles-star-purple.webp",
-   "system": {
-    "description": {
-     "value": "<p>Врождённой колдовской характеристикой Пылающего скелета является Харизма (Сл спасброска от заклинаний 11). Он может иннатно сотворять следующее заклинание, не требуя материальных компонентов:</p><p>1/день: огненные ладони [burning hands] (1-й уровень)</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 300000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
     "duplicateSource": null,
@@ -576,7 +530,7 @@
   {
    "effects": [],
    "folder": null,
-   "sort": 400000,
+   "sort": 300000,
    "ownership": {
     "default": 0
    },
@@ -585,8 +539,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -777,15 +731,137 @@
    "name": "Огненные когти [Fiery Claws]"
   },
   {
-   "_id": "4aEtAxtKce2nSjH1",
-   "name": "Огненные ладони [Burning Hands]",
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "4Sqj2LL58cES7FGI",
+   "name": "Использование заклинаний [Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Заклинатель 5-го уровня, базовая характеристика — Интеллект (ячейки по данным игры).</p><ul><li><strong>3-й уровень (3 ячеек):</strong> Огненный шар [Fireball]</li></ul>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "8NyEmCWo6JCGo9ds": {
+      "_id": "8NyEmCWo6JCGo9ds",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "_id": "WHjOF8NZaeSpul9d",
+   "name": "Огненный шар [Fireball]",
    "ownership": {
     "default": 0
    },
    "type": "spell",
    "system": {
     "description": {
-     "value": "<p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p><p>The fire ignites any flammable objects in the area that aren't being worn or carried.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>",
+     "value": "<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p><p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>",
      "chat": ""
     },
     "source": {
@@ -806,37 +882,36 @@
     },
     "target": {
      "affects": {
-      "choice": false,
-      "type": ""
+      "choice": false
      },
      "template": {
       "units": "ft",
-      "type": "cone",
-      "size": "15",
-      "contiguous": false,
-      "count": ""
+      "type": "sphere",
+      "size": "20",
+      "contiguous": false
      }
     },
     "range": {
-     "units": "self",
-     "special": ""
+     "value": "150",
+     "units": "ft"
     },
     "uses": {
      "spent": 0,
      "max": "",
      "recovery": []
     },
-    "level": 1,
+    "level": 3,
     "school": "evo",
     "materials": {
-     "value": "",
+     "value": "A tiny ball of bat guano and sulfur",
      "consumed": false,
      "cost": 0,
      "supply": 0
     },
     "properties": [
      "vocal",
-     "somatic"
+     "somatic",
+     "material"
     ],
     "activities": {
      "dnd5eactivity000": {
@@ -882,7 +957,7 @@
        "onSave": "half",
        "parts": [
         {
-         "number": 3,
+         "number": 8,
          "denomination": 6,
          "bonus": "",
          "types": [
@@ -909,21 +984,12 @@
       },
       "uses": {
        "spent": 0,
-       "recovery": [],
-       "max": ""
+       "recovery": []
       },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
+      "sort": 0
      }
     },
-    "identifier": "burning-hands",
+    "identifier": "fireball",
     "method": "spell",
     "prepared": 1,
     "sourceItem": null
@@ -931,20 +997,21 @@
    "sort": 500000,
    "flags": {
     "world": {
-     "iwdSource": "SRD 5.1"
+     "iwdSource": "SRD 5.1",
+     "iwdSpl": "SPWI304"
     }
    },
-   "img": "icons/magic/fire/projectile-wave-arrow.webp",
+   "img": "icons/magic/fire/projectile-fireball-smoke-large-orange.webp",
    "effects": [],
    "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F",
+    "compendiumSource": "Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0",
     "duplicateSource": null,
     "exportSource": null
    }
@@ -1054,8 +1121,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

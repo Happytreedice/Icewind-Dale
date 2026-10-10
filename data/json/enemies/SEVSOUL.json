@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "",
+   "spellcasting": "int",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 3.0,
-   "spellLevel": 0,
+   "spellLevel": 5,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -237,7 +237,12 @@
    }
   },
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell3": {
+    "value": 21,
+    "override": 21
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -372,67 +377,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "DOHrqVo7QTGrTNuJ",
-   "name": "Врождённое колдовство [Innate Spellcasting]",
-   "type": "feat",
-   "img": "icons/magic/light/projectiles-star-purple.webp",
-   "system": {
-    "description": {
-     "value": "<p>Врождённой колдовской характеристикой Расчленённой души является Харизма (Сл спасброска от заклинаний 12). Она может иннатно сотворять следующее заклинание, не требуя материальных компонентов:</p><p>1/день: шёпот раздора [dissonant whispers]</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.LUHmtIDD1VTreFqI",
     "duplicateSource": null,
@@ -481,7 +427,7 @@
   {
    "effects": [],
    "folder": null,
-   "sort": 300000,
+   "sort": 200000,
    "ownership": {
     "default": 0
    },
@@ -490,8 +436,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -664,38 +610,390 @@
    "name": "Стенание души [Soul Wail]"
   },
   {
-   "_id": "7SaqZ3WaRDDFJYb6",
-   "name": "Диссонирующий шёпот [Dissonant Whispers]",
-   "type": "spell",
-   "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "VEP7s4wsCbtm3ZEd",
+   "name": "Использование заклинаний [Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>Вы шепчете разрывающую разум мелодию, которую слышит только одно выбранное существо в пределах дистанции. Цель должна совершить спасбросок Мудрости. При провале она получает 3к6 психического урона и должна немедленно использовать свою реакцию, чтобы переместиться как можно дальше от вас. При успехе цель получает половину урона и не перемещается.</p><p><em>Наносит 3к6 психического урона и заставляет цель немедленно использовать реакцию для бегства от вас при провале спасброска Мудрости.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 2-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 1-го.</p>",
+     "value": "<p>Заклинатель 5-го уровня, базовая характеристика — Интеллект (ячейки по данным игры).</p><ul><li><strong>3-й уровень (21 ячеек):</strong> Касание вампира [Vampiric Touch]</li></ul>",
      "chat": ""
     },
     "source": {
-     "custom": "PHB 2014",
+     "custom": "Icewind Dale (2000)",
      "book": "",
      "page": "",
      "license": "",
      "revision": 1,
      "rules": "2014"
     },
-    "identifier": "dissonant-whispers",
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {
+     "IQp2ZEg3RKfalluJ": {
+      "_id": "IQp2ZEg3RKfalluJ",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      }
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "cyd8QmUnJcCyFw8U",
+   "name": "Врождённые способности [Innate Abilities]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>Врождённые способности по данным игры (CRE):</p><ul><li>Теневой договор [Shadow Pact] — 20/день</li></ul>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "_id": "4Xs7cQ5Zeh6X26t8",
+   "name": "Касание вампира [Vampiric Touch]",
+   "ownership": {
+    "default": 0
+   },
+   "type": "spell",
+   "system": {
+    "description": {
+     "value": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
     "activation": {
      "type": "action",
+     "condition": "",
+     "value": 1
+    },
+    "duration": {
+     "value": "1",
+     "units": "minute"
+    },
+    "target": {
+     "affects": {
+      "type": "creature",
+      "count": "1",
+      "choice": false
+     },
+     "template": {
+      "units": "",
+      "contiguous": false
+     }
+    },
+    "range": {
+     "units": "self"
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "level": 3,
+    "school": "nec",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "properties": [
+     "vocal",
+     "somatic",
+     "concentration"
+    ],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": null,
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "units": "inst",
+       "concentration": false,
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "override": false
+      },
+      "target": {
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       },
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "spell"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": [
+        {
+         "number": 3,
+         "denomination": 6,
+         "bonus": "",
+         "types": [
+          "necrotic"
+         ],
+         "custom": {
+          "enabled": false,
+          "formula": ""
+         },
+         "scaling": {
+          "mode": "whole",
+          "number": 1,
+          "formula": ""
+         }
+        }
+       ]
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "identifier": "vampiric-touch",
+    "method": "spell",
+    "prepared": 1,
+    "sourceItem": null
+   },
+   "sort": 500000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1",
+     "iwdSpl": "SPWI314"
+    }
+   },
+   "img": "icons/magic/unholy/strike-beam-blood-red-gray.webp",
+   "effects": [],
+   "folder": null,
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.spells.Item.UfHQhA54M4323gVO",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "HrRH4fobfPEtpa1q",
+   "name": "Теневой договор [Shadow Pact]",
+   "type": "spell",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR103B.avif",
+   "system": {
+    "description": {
+     "value": "<p>Существо заключает мгновенный союз с тенями. Пока вы находитесь в области тусклого света или темноты, вы получаете сопротивление дробящему, колючему и рубящему урону от немагических атак, а также преимущество на все спасброски.</p><p><em>Находясь в тусклом свете или темноте, вы получаете сопротивление дробящему, колючему, рубящему урону и преимущество на спасброски.</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "shadow-pact",
+    "activation": {
+     "type": "bonus",
      "value": 1,
      "condition": ""
     },
     "duration": {
-     "value": "",
-     "units": "inst",
+     "value": "1",
+     "units": "minute",
      "special": ""
     },
     "target": {
      "affects": {
       "count": "",
-      "type": "creature",
+      "type": "self",
       "choice": false,
       "special": ""
      },
@@ -711,31 +1009,37 @@
      }
     },
     "range": {
-     "value": "60",
-     "units": "ft",
+     "value": "",
+     "units": "self",
      "special": ""
     },
     "uses": {
      "spent": 0,
-     "max": "",
-     "recovery": []
+     "max": "20",
+     "recovery": [
+      {
+       "period": "day",
+       "type": "recoverAll"
+      }
+     ]
     },
-    "level": 1,
-    "school": "enc",
+    "level": 2,
+    "school": "abj",
     "materials": {
      "value": "",
      "consumed": false,
      "cost": 0,
      "supply": 0
     },
-    "method": "spell",
-    "prepared": 1,
+    "method": "innate",
+    "prepared": 0,
     "properties": [
-     "vocal"
+     "somatic",
+     "concentration"
     ],
     "activities": {
-     "lYIuDFkjZVijtT4i": {
-      "_id": "lYIuDFkjZVijtT4i",
+     "b8B3mB1fIFQOa1A8": {
+      "_id": "b8B3mB1fIFQOa1A8",
       "name": "",
       "img": "",
       "sort": 0,
@@ -772,37 +1076,12 @@
        "max": "",
        "recovery": []
       },
-      "type": "save",
-      "save": {
-       "ability": [
-        "wis"
-       ],
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": [
-        {
-         "number": 3,
-         "denomination": 6,
-         "bonus": "",
-         "types": [
-          "psychic"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
+      "type": "utility",
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
       }
      }
     },
@@ -810,32 +1089,33 @@
    },
    "effects": [],
    "folder": null,
-   "sort": 400000,
+   "sort": 600000,
    "ownership": {
     "default": 0
    },
    "flags": {
     "world": {
      "iwdConversion": {
-      "ref": null,
-      "refs": [],
-      "type2e": "phb",
-      "level2e": null,
-      "source2e": "1 круг (PHB), школа очарования (enchantment), дальность 60 фт., длительность мгновенная",
-      "classes": [
-       "bard"
+      "ref": "SPIN195",
+      "refs": [
+       "SPIN195"
       ],
-      "wiki": "https://icewinddale.fandom.com/wiki/Dissonant_Whispers",
+      "type2e": "innate",
+      "level2e": 1,
+      "source2e": "Врождённая способность, дальность на себя, длительность 1 минута, сопротивление урону и преимущество на спасброски в тени/темноте",
+      "classes": [],
+      "wiki": "https://icewinddale.fandom.com/wiki/Shadow_Pact",
       "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-     }
+     },
+     "iwdSpl": "SPIN195"
     }
    },
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -947,8 +1227,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

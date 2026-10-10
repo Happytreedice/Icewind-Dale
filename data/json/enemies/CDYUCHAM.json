@@ -345,8 +345,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -623,8 +623,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.xMkP8BmFzElcsMaR",
     "duplicateSource": null,
@@ -643,8 +643,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -846,8 +846,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Hc6MqLQhPTI1KOvm",
     "duplicateSource": null,
@@ -968,8 +968,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.VhByyxHJN7MNQJRd",
     "duplicateSource": null,
@@ -1090,20 +1090,20 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
+    "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
    },
-   "_id": "TC3R7cIawYSKapKw",
-   "name": "Врождённое колдовство [Innate Spellcasting]",
+   "_id": "ObDvjH3xTFjcu9R4",
+   "name": "Врождённые способности [Innate Abilities]",
    "type": "feat",
    "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>Характеристикой врождённого колдовства воителя является Харизма (Сл спасброска от заклинаний 14). Он может врождённо накладывать следующие заклинания без материальных компонентов:</p><p>По желанию: дружба с животными (только на змей)</p><p>3/день каждое: внушение, брызги яда</p><p>1/день: тьма</p>",
+     "value": "<p>Врождённые способности по данным игры (CRE):</p><ul><li>Сила хамелеона [Chameleon Power] — 1/день</li><li>Родство с животными [Animal Affinity] — 1/день</li></ul>",
      "chat": ""
     },
     "source": {
@@ -1126,16 +1126,102 @@
      "max": "",
      "recovery": []
     },
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
+   }
+  },
+  {
+   "_id": "sHmBgXurjxoTiFfl",
+   "name": "Сила хамелеона [Chameleon Power]",
+   "type": "spell",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR103B.avif",
+   "system": {
+    "description": {
+     "value": "<p>Существо сливается с окружающим ландшафтом, меняя окраску кожи и одежды. На время длительности заклинания вы становитесь невидимым и получаете преимущество на проверки Ловкости (Скрытность). Действие невидимости прекращается, если вы совершаете атаку или сотворяете заклинание.</p><p><em>Дарует невидимость и преимущество на проверки Скрытности до совершения первой атаки или сотворения заклинания.</em></p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "Icewind Dale (2000)",
+     "book": "",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "identifier": "chameleon-power",
+    "activation": {
+     "type": "action",
+     "value": 1,
+     "condition": ""
+    },
+    "duration": {
+     "value": "1",
+     "units": "minute",
+     "special": ""
+    },
+    "target": {
+     "affects": {
+      "count": "",
+      "type": "self",
+      "choice": false,
+      "special": ""
+     },
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "stationary": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     }
+    },
+    "range": {
+     "value": "",
+     "units": "self",
+     "special": ""
+    },
+    "uses": {
+     "spent": 0,
+     "max": "1",
+     "recovery": [
+      {
+       "period": "day",
+       "type": "recoverAll"
+      }
+     ]
+    },
+    "level": 2,
+    "school": "ill",
+    "materials": {
+     "value": "",
+     "consumed": false,
+     "cost": 0,
+     "supply": 0
+    },
+    "method": "innate",
+    "prepared": 0,
+    "properties": [
+     "somatic",
+     "concentration"
+    ],
     "activities": {
-     "8CfzvKqEoou3jJeH": {
-      "_id": "8CfzvKqEoou3jJeH",
-      "type": "utility",
+     "lkhyxCXfOu0sBKVU": {
+      "_id": "lkhyxCXfOu0sBKVU",
       "name": "",
       "img": "",
       "sort": 0,
       "activation": {
-       "type": "action",
-       "value": 1,
+       "type": "",
+       "value": null,
        "condition": "",
        "override": false
       },
@@ -1151,7 +1237,6 @@
        "chatFlavor": ""
       },
       "duration": {
-       "units": "inst",
        "override": false
       },
       "effects": [],
@@ -1159,29 +1244,15 @@
        "override": false
       },
       "target": {
-       "template": {
-        "count": "",
-        "contiguous": false,
-        "type": "",
-        "size": "",
-        "width": "",
-        "height": "",
-        "units": ""
-       },
-       "affects": {
-        "count": "",
-        "type": "creature",
-        "choice": false,
-        "special": ""
-       },
-       "prompt": true,
-       "override": false
+       "override": false,
+       "prompt": true
       },
       "uses": {
        "spent": 0,
        "max": "",
        "recovery": []
       },
+      "type": "utility",
       "roll": {
        "formula": "",
        "name": "",
@@ -1190,596 +1261,92 @@
       }
      }
     },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
-   }
-  },
-  {
-   "_id": "160OdNbOKGTw1ckN",
-   "name": "Дружба с животными [Animal Friendship]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be &amp;reference[charmed apply=false] by you for the spell's duration. If you or one of your companions harms the target, the spell ends.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "24",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "enc",
-    "materials": {
-     "value": "A morsel of food.",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "nxfOXuxeCg02WVId",
-        "onSave": false,
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "none",
-       "parts": []
-      },
-      "save": {
-       "ability": "wis",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "animal-friendship",
-    "method": "atwill",
-    "prepared": 0,
     "sourceItem": null
    },
+   "effects": [],
+   "folder": null,
    "sort": 700000,
+   "ownership": {
+    "default": 0
+   },
    "flags": {
     "world": {
-     "iwdSource": "SRD 5.1"
+     "iwdConversion": {
+      "ref": "SPIN196",
+      "refs": [
+       "SPIN196"
+      ],
+      "type2e": "innate",
+      "level2e": 1,
+      "source2e": "Врождённая способность, дальность на себя, длительность 1 минута, слияние с окружением и невидимость до первой атаки",
+      "classes": [],
+      "wiki": "https://icewinddale.fandom.com/wiki/Chameleon_Power",
+      "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+     },
+     "iwdSpl": "SPIN196"
     }
    },
-   "img": "icons/creatures/abilities/paw-print-yellow.webp",
-   "effects": [
-    {
-     "name": "Animal Friendship",
-     "img": "icons/creatures/abilities/paw-print-yellow.webp",
-     "origin": "Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B",
-     "transfer": false,
-     "_id": "nxfOXuxeCg02WVId",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 86400,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>You are &amp;reference[charmed apply=false] by the caster for the duration of the spell. If the caster or one of their allies harms you, the spell ends.</p>",
-     "tint": "#ffffff",
-     "statuses": [
-      "charmed"
-     ],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772819953767,
-      "modifiedTime": 1772820008420,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "showIcon": 2,
-     "start": null,
-     "folder": null
-    }
-   ],
-   "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.hDOENzjuj5WpLq7B",
+    "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
    }
   },
   {
-   "_id": "6fiQL7fNJ6YsJ8an",
-   "name": "Внушение [Suggestion]",
-   "ownership": {
-    "default": 0
-   },
+   "_id": "oKX7S2EkBgg7lEaI",
+   "name": "Родство с животными [Animal Affinity]",
    "type": "spell",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR103B.avif",
    "system": {
     "description": {
-     "value": "<p>You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.</p><p>The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.</p><p>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.</p><p>If you or any of your companions damage the target, the spell ends.</p>",
+     "value": "<p>Существо вступает в телепатическую связь с миром природы. Вы можете успокоить одно зверь-существо (beast) в пределах 30 футов (спасбросок Мудрости при враждебности), сделав его нейтральным, либо призвать одного зверя-союзника (ПО 1/2 или ниже), который сражается на вашей стороне в течение 1 минуты.</p><p><em>Успокаивает враждебное животное или призывает зверя-союзника (ПО 1/2) на 1 минуту.</em></p>",
      "chat": ""
     },
     "source": {
-     "custom": "",
+     "custom": "Icewind Dale (2000)",
      "book": "",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
+    "identifier": "animal-affinity",
     "activation": {
      "type": "action",
-     "condition": "",
-     "value": 1
+     "value": 1,
+     "condition": ""
     },
     "duration": {
-     "value": "8",
-     "units": "hour"
+     "value": "1",
+     "units": "minute",
+     "special": ""
     },
     "target": {
      "affects": {
+      "count": "",
       "type": "creature",
-      "count": "1",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "3",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 2,
-    "school": "enc",
-    "materials": {
-     "value": "A snake's tongue and either a bit of honeycomb or a drop of sweet oil",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": []
-      },
-      "save": {
-       "ability": "wis",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "suggestion",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 800000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/air/air-burst-spiral-pink.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.zMAWdyc8UVb37BK4",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "juXOFLptW1TlhVh1",
-   "name": "Ядовитый брызг [Poison Spray]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p><p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
       "choice": false,
       "special": ""
      },
      "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "10",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 0,
-    "school": "con",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "none",
-       "parts": [
-        {
-         "number": 1,
-         "denomination": 12,
-         "bonus": "",
-         "types": [
-          "poison"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
-      },
-      "save": {
-       "ability": "con",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "poison-spray",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 900000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/skills/toxins/cauldron-bubbles-overflow-green.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.g2u9PYfqWQAyg9OI",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "B14fq0lmyqrb1ZoQ",
-   "name": "Тьма [Darkness]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.</p><p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p><p>If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false,
       "count": "",
-      "type": ""
-     },
-     "template": {
-      "units": "ft",
-      "type": "sphere",
-      "size": "15",
       "contiguous": false,
-      "count": ""
+      "stationary": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
      }
     },
     "range": {
-     "value": "60",
+     "value": "30",
      "units": "ft",
      "special": ""
     },
@@ -1794,25 +1361,30 @@
      ]
     },
     "level": 2,
-    "school": "evo",
+    "school": "enc",
     "materials": {
-     "value": "Bat fur and a drop of pitch or piece of coal",
+     "value": "",
      "consumed": false,
      "cost": 0,
      "supply": 0
     },
+    "method": "innate",
+    "prepared": 0,
     "properties": [
      "vocal",
-     "material",
+     "somatic",
      "concentration"
     ],
     "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
+     "ZAu9KGYSbbRUv7F8": {
+      "_id": "ZAu9KGYSbbRUv7F8",
+      "name": "",
+      "img": "",
+      "sort": 0,
       "activation": {
-       "type": "action",
+       "type": "",
        "value": null,
+       "condition": "",
        "override": false
       },
       "consumption": {
@@ -1827,8 +1399,6 @@
        "chatFlavor": ""
       },
       "duration": {
-       "units": "inst",
-       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -1836,51 +1406,63 @@
        "override": false
       },
       "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
+       "override": false,
+       "prompt": true
       },
       "uses": {
        "spent": 0,
+       "max": "",
        "recovery": []
       },
-      "sort": 0
+      "type": "save",
+      "save": {
+       "ability": [
+        "wis"
+       ],
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
+      },
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      }
      }
     },
-    "identifier": "darkness",
-    "method": "innate",
-    "prepared": 0,
     "sourceItem": null
    },
-   "sort": 1000000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
    "effects": [],
    "folder": null,
+   "sort": 800000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {
+    "world": {
+     "iwdConversion": {
+      "ref": "SPIN197",
+      "refs": [
+       "SPIN197"
+      ],
+      "type2e": "innate",
+      "level2e": 1,
+      "source2e": "Врождённая способность, дальность 30 фт., длительность 1 минута, успокаивает животных или призывает зверя-союзника",
+      "classes": [],
+      "wiki": "https://icewinddale.fandom.com/wiki/Animal_Affinity",
+      "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+     },
+     "iwdSpl": "SPIN197"
+    }
+   },
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.S7VbUetIfVT7B6Eq",
+    "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
    }
@@ -1990,8 +1572,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

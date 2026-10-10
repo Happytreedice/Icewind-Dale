@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "cha",
+   "spellcasting": "wis",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 11.0,
-   "spellLevel": 0,
+   "spellLevel": 11,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -207,7 +207,12 @@
   },
   "skills": {},
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell6": {
+    "value": 1,
+    "override": 1
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -272,8 +277,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
     "duplicateSource": null,
@@ -568,8 +573,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.fbC0Mg1a73wdFbqO",
     "duplicateSource": null,
@@ -588,8 +593,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.1XeF2VMMPw7QYffo",
     "duplicateSource": null,
@@ -717,8 +722,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.WbaKH3NLA3mvylfM",
     "duplicateSource": null,
@@ -839,20 +844,20 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
     "duplicateSource": null,
     "exportSource": null
    },
-   "_id": "0bGUoLd0fYKd3Rjo",
-   "name": "Врождённое колдовство [Innate Spellcasting]",
+   "_id": "FusJKPn9gNDfpcec",
+   "name": "Использование заклинаний [Spellcasting]",
    "type": "feat",
    "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>Заклинательной характеристикой джинна является Харизма (Сл спасброска от заклинаний 17, +9 к попаданию заклинаниями). Неограниченно: detect evil and good, detect magic, thunderwave. 3/день каждое: create food and water (вино вместо воды), tongues, wind walk. 1/день каждое: conjure elemental (только элементаль воздуха), creation, gaseous form, invisibility, major image, plane shift.</p>",
+     "value": "<p>Заклинатель 11-го уровня, базовая характеристика — Мудрость (ячейки по данным игры).</p><ul><li><strong>6-й уровень (1 ячеек):</strong> Вихрь [Whirlwind]</li></ul>",
      "chat": ""
     },
     "source": {
@@ -876,8 +881,8 @@
      "recovery": []
     },
     "activities": {
-     "0sMvD624SJTT7BaV": {
-      "_id": "0sMvD624SJTT7BaV",
+     "kgXgxK4NFBoLxfyI": {
+      "_id": "kgXgxK4NFBoLxfyI",
       "type": "utility",
       "name": "",
       "img": "",
@@ -950,48 +955,55 @@
    }
   },
   {
-   "_id": "1LzuYxhRw9ZQXrri",
-   "name": "Обнаружение добра и зла [Detect Evil and Good]",
-   "ownership": {
-    "default": 0
-   },
+   "_id": "kqX7bCPAqfhtpgAe",
+   "name": "Вихрь [Whirlwind]",
    "type": "spell",
+   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR617B.avif",
    "system": {
     "description": {
-     "value": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
+     "value": "<p>Вы призываете вихрь ветра радиусом 10 футов и высотой 30 футов с центром в точке в пределах дистанции. Каждое существо, впервые за ход входящее в вихрь или начинающее там ход, должно совершить спасбросок Силы. При провале цель получает 6к6 дробящего урона, сбивается с ног и подбрасывается в воздух. В свой ход вы можете действием переместить вихрь на 30 футов.</p><p><em>Призывает бушующий смерч, который перемещается, подбрасывает существ и наносит урон дробящим ударом.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 6-го.</p>",
      "chat": ""
     },
     "source": {
-     "custom": "",
+     "custom": "Icewind Dale (2000)",
      "book": "",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
+    "identifier": "whirlwind",
     "activation": {
      "type": "action",
-     "condition": "",
-     "value": 1
+     "value": 1,
+     "condition": ""
     },
     "duration": {
-     "value": "10",
-     "units": "minute"
+     "value": "1",
+     "units": "minute",
+     "special": ""
     },
     "target": {
      "affects": {
+      "count": "",
+      "type": "",
       "choice": false,
-      "type": ""
+      "special": ""
      },
      "template": {
-      "units": "ft",
-      "type": "radius",
-      "size": "30",
+      "count": "1",
       "contiguous": false,
-      "count": ""
+      "stationary": false,
+      "type": "cylinder",
+      "size": "10",
+      "width": "",
+      "height": "",
+      "units": "ft"
      }
     },
     "range": {
-     "units": "self",
+     "value": "120",
+     "units": "ft",
      "special": ""
     },
     "uses": {
@@ -999,424 +1011,32 @@
      "max": "",
      "recovery": []
     },
-    "level": 1,
-    "school": "div",
+    "level": 6,
+    "school": "evo",
     "materials": {
-     "value": "",
+     "value": "перо и капля воды",
      "consumed": false,
      "cost": 0,
      "supply": 0
     },
+    "method": "spell",
+    "prepared": 1,
     "properties": [
      "vocal",
      "somatic",
+     "material",
      "concentration"
     ],
     "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "FEls4EgTzNFVfue0"
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
+     "HI4ANWhQcwBCWQRP": {
+      "_id": "HI4ANWhQcwBCWQRP",
+      "name": "",
       "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "detect-evil-and-good",
-    "method": "atwill",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 600000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/creatures/unholy/demon-hairy-winged-pink.webp",
-   "effects": [
-    {
-     "name": "Detect Evil and Good",
-     "img": "icons/creatures/unholy/demon-hairy-winged-pink.webp",
-     "origin": "Compendium.dnd5e.spells.Item.Mzh95utKDPIrjiH8",
-     "transfer": false,
-     "_id": "FEls4EgTzNFVfue0",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 600,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
-     "tint": "#ffffff",
-     "statuses": [],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772820740346,
-      "modifiedTime": 1772820745402,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.Mzh95utKDPIrjiH8",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "l5g8FzFLzBhVLA8M",
-   "name": "Обнаружение магии [Detect Magic]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false,
-      "type": ""
-     },
-     "template": {
-      "units": "ft",
-      "type": "radius",
-      "size": "30",
-      "contiguous": false,
-      "count": ""
-     }
-    },
-    "range": {
-     "units": "self",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "div",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "concentration",
-     "ritual"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "aECXb2lVtpxEieFy"
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
       "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "detect-magic",
-    "method": "atwill",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 700000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
-   "effects": [
-    {
-     "name": "Detect Magic",
-     "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
-     "origin": "Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8",
-     "transfer": false,
-     "_id": "aECXb2lVtpxEieFy",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 600,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
-     "tint": "#ffffff",
-     "statuses": [],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772820702763,
-      "modifiedTime": 1772820708942,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "80fxExfHZzdSYLr4",
-   "name": "Громовой удар [Thunderwave]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p><p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "choice": false,
-      "type": ""
-     },
-     "template": {
-      "units": "ft",
-      "type": "cube",
-      "size": "15",
-      "contiguous": false,
-      "count": ""
-     }
-    },
-    "range": {
-     "units": "self",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
       "activation": {
-       "type": "action",
+       "type": "",
        "value": null,
+       "condition": "",
        "override": false
       },
       "consumption": {
@@ -1431,8 +1051,6 @@
        "chatFlavor": ""
       },
       "duration": {
-       "units": "inst",
-       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -1440,25 +1058,33 @@
        "override": false
       },
       "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
+       "override": false,
+       "prompt": true
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "type": "save",
+      "save": {
+       "ability": [
+        "str"
+       ],
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
       },
       "damage": {
        "onSave": "half",
        "parts": [
         {
-         "number": 2,
-         "denomination": 8,
+         "number": 6,
+         "denomination": 6,
          "bonus": "",
          "types": [
-          "thunder"
+          "bludgeoning"
          ],
          "custom": {
           "enabled": false,
@@ -1471,1505 +1097,45 @@
          }
         }
        ]
-      },
-      "save": {
-       "ability": "con",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
       }
      }
     },
-    "identifier": "thunderwave",
-    "method": "atwill",
-    "prepared": 0,
     "sourceItem": null
    },
-   "sort": 800000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
    "effects": [],
    "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.WTbOQBsarsL1LuXJ",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "E3OcYuyFpics9Esz",
-   "name": "Сотворение пищи и воды [Create Food and Water]",
+   "sort": 600000,
    "ownership": {
     "default": 0
    },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "space",
-      "choice": false
-     },
-     "template": {
-      "units": "any",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "3",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 3,
-    "school": "con",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "create-food-and-water",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 900000,
    "flags": {
     "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/nature/leaf-glow-teal.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.BV0mpbHh29IbbIj5",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "HFwgNK4SPhUbhksj",
-   "name": "Полиглот [Tongues]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "units": "touch"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "3",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 3,
-    "school": "div",
-    "materials": {
-     "value": "A small clay model of a ziggurat",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "material"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "tongues",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1000000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.gopnZvS0c2jD5FP8",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "Tfg6SYzZ9oyyMKV8",
-   "name": "Прогулка по ветру [Wind Walk]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You and up to ten willing creatures you can see within range assume a gaseous form for the Duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only Actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is Incapacitated and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.</p>\n        <p>If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "minute",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "8",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "11",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "3",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 6,
-    "school": "trs",
-    "materials": {
-     "value": "Fire and holy water",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "wind-walk",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1100000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/air/wind-swirl-gray-blue.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.8PJAsHmbu6UgDHC0",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "owDkhcHyc3k28NGT",
-   "name": "Призыв элементаля [Conjure Elemental]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.</p><p>The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.</p><p>If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "minute",
-     "condition": "an area of air, earth, fire, or water that fills a 10-foot cube within range",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "space",
-      "count": "1",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "90",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 5,
-    "school": "con",
-    "materials": {
-     "value": "Burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water.",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "summon",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "bonuses": {
-       "ac": "",
-       "hd": "",
-       "hp": "",
-       "attackDamage": "",
-       "saveDamage": "",
-       "healing": ""
-      },
-      "creatureSizes": [],
-      "creatureTypes": [],
-      "match": {
-       "attacks": false,
-       "disposition": true,
-       "proficiency": false,
-       "saves": false,
-       "ability": ""
-      },
-      "profiles": [
-       {
-        "count": "1",
-        "cr": "@item.level",
-        "name": "",
-        "_id": "BFnNfSl7Ojcw4Rm2",
-        "uuid": "",
-        "types": [
-         "elemental"
-        ],
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
+     "iwdConversion": {
+      "ref": "SPPR617",
+      "refs": [
+       "SPPR617"
       ],
-      "summon": {
-       "identifier": "",
-       "mode": "cr",
-       "prompt": true
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "",
-      "img": "",
-      "appliedEffects": []
-     }
-    },
-    "identifier": "conjure-elemental",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1200000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/symbols/runes-star-pentagon-orange.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.1LkZvINag7KqBmDR",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "anqnRdkDI7Z6oB17",
-   "name": "Творение [Creation]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within 'range': soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p><p>The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.</p>\n<ul>\n<li>Vegetable matter - 1 day</li>\n<li>Stone or crystal - 12 hours</li>\n<li>Precious metals - 1 hour</li>\n<li>Gems - 10 minutes</li>\n<li>Adamantine or mithral - 1 minute</li>\n</ul>\n<p>Using any material created by this spell as another spell's material component causes that spell to fail.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "minute",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "spec"
-    },
-    "target": {
-     "affects": {
-      "choice": false
-     },
-     "template": {
-      "units": "ft",
-      "type": "cube",
-      "size": "5",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 5,
-    "school": "ill",
-    "materials": {
-     "value": "A tiny piece of matter of the same type of the item you plan to create.",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "creation",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1300000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/nature/vines-thorned-entwined-glow-teal-purple.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.lnaGnxMzpYnbw1uU",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "VopUwFuYuVSExfQA",
-   "name": "Газообразная форма [Gaseous Form]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.</p><p>While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.</p><p>While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "units": "touch"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 3,
-    "school": "trs",
-    "materials": {
-     "value": "A bit of gauze and a wisp of smoke",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "gaseous-form",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1400000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.2IWiZAJtOGDoKjiz",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "bx91YZHnObTrXRpB",
-   "name": "Невидимость [Invisibility]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "hour"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "units": "touch",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 2,
-    "school": "ill",
-    "materials": {
-     "value": "An eyelash encased in gum arabic",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "TeFxBRKYKIXtg6pS"
-       }
+      "type2e": "priest",
+      "level2e": 6,
+      "source2e": "6 круг, школа воплощения (evocation), дальность 120 фт., длительность 1 минута, создаёт хаотичный вихрь, подбрасывающий и травмирующий врагов",
+      "classes": [
+       "druid",
+       "cleric"
       ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "invisibility",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1500000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
+      "wiki": "https://icewinddale.fandom.com/wiki/Whirlwind",
+      "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+     },
+     "iwdSpl": "SPPR617"
     }
    },
-   "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
-   "effects": [
-    {
-     "name": "Invisibility",
-     "origin": "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
-     "duration": {
-      "value": 3600,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "disabled": true,
-     "_id": "TeFxBRKYKIXtg6pS",
-     "description": "<p>The target becomes Invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>",
-     "transfer": false,
-     "statuses": [
-      "invisible"
-     ],
-     "flags": {},
-     "tint": "#ffffff",
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "4.0.0",
-      "createdTime": null,
-      "modifiedTime": null,
-      "lastModifiedBy": null,
-      "exportSource": null
-     },
-     "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "sort": 0,
-     "showIcon": 2,
-     "start": null,
-     "folder": null
-    }
-   ],
-   "folder": null,
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "mnjYqW6f4bN2J2HX",
-   "name": "Полноценный образ [Major Image]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte's stench).</p><p>As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.</p><p>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "10",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false
-     },
-     "template": {
-      "units": "ft",
-      "type": "cube",
-      "size": "20",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "120",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 3,
-    "school": "ill",
-    "materials": {
-     "value": "A bit of fleece",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material",
-     "concentration"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "utility",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "major-image",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1600000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/control/debuff-energy-hold-levitate-pink.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.nslx2nT3p4lNkmdp",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "ymCJxD1fafo7t14h",
-   "name": "Планарный переход [Plane Shift]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</p><p>Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</p><p>You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "8",
-      "choice": false
-     },
-     "template": {
-      "units": "",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "units": "touch"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "1",
-     "recovery": [
-      {
-       "period": "day",
-       "type": "recoverAll"
-      }
-     ]
-    },
-    "level": 7,
-    "school": "con",
-    "materials": {
-     "value": "A forked, metal rod worth at least 250 gp, attuned to a particular plane of existence",
-     "consumed": false,
-     "cost": 250,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic",
-     "material"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "attack",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "attack": {
-       "ability": "",
-       "bonus": "",
-       "critical": {
-        "threshold": null
-       },
-       "flat": false,
-       "type": {
-        "value": "melee",
-        "classification": "spell"
-       }
-      },
-      "damage": {
-       "critical": {
-        "bonus": ""
-       },
-       "includeBase": true,
-       "parts": []
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     },
-     "dnd5eactivity100": {
-      "_id": "dnd5eactivity100",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "half",
-       "parts": []
-      },
-      "save": {
-       "ability": "cha",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "plane-shift",
-    "method": "innate",
-    "prepared": 0,
-    "sourceItem": null
-   },
-   "sort": 1700000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/symbols/runes-star-pentagon-orange-purple.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz",
+    "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
    }
@@ -3012,8 +1178,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

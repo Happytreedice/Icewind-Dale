@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "",
+   "spellcasting": "wis",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 2.0,
-   "spellLevel": 0,
+   "spellLevel": 3,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -205,7 +205,16 @@
   },
   "skills": {},
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell1": {
+    "value": 1,
+    "override": 1
+   },
+   "spell2": {
+    "value": 1,
+    "override": 1
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -340,8 +349,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.7NML6SkyvOsZ17iq",
     "duplicateSource": null,
@@ -462,8 +471,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -755,8 +764,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.OG4nBBydvmfWYXIk",
     "duplicateSource": null,
@@ -764,246 +773,64 @@
    }
   },
   {
-   "_id": "SyGWImrtYSqdeHi0",
-   "name": "Священное пламя [Sacred Flame]",
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
    "ownership": {
     "default": 0
    },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from &amp;reference[cover] for this saving throw.</p><p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "60",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 0,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "save",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "damage": {
-       "onSave": "none",
-       "parts": [
-        {
-         "number": 1,
-         "denomination": 8,
-         "bonus": "",
-         "types": [
-          "radiant"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
-      },
-      "save": {
-       "ability": "dex",
-       "dc": {
-        "calculation": "spellcasting",
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "sacred-flame",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 400000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/light/beam-strike-village-yellow.webp",
-   "effects": [],
-   "folder": null,
+   "flags": {},
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.n9pJzTDsAwQxJVRl",
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
     "duplicateSource": null,
     "exportSource": null
-   }
-  },
-  {
-   "_id": "oXicMEpclBf8PeGz",
-   "name": "Тауматургия [Thaumaturgy]",
-   "ownership": {
-    "default": 0
    },
-   "type": "spell",
+   "_id": "b6WQFcQFdFz8IQQ8",
+   "name": "Использование заклинаний [Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>You create one of the following magical effects within range:</p><ul><li>Your voice booms up to three times as loud as normal for 1 minute.</li><li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li>You cause harmless tremors in the ground for 1 minute.</li><li>You create a sound that originates from a point of your choice within range.</li><li>You cause an unlocked door or window to fly open or slam shut.</li><li>You alter the appearance of your eyes for 1 minute.</li></ul><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>",
+     "value": "<p>Заклинатель 3-го уровня, базовая характеристика — Мудрость (ячейки по данным игры).</p><ul><li><strong>1-й уровень (1 ячеек):</strong> Порча [Bane]</li><li><strong>2-й уровень (1 ячеек):</strong> Паралич гуманоида [Hold Person]</li></ul>",
      "chat": ""
     },
     "source": {
-     "custom": "",
+     "custom": "Icewind Dale (2000)",
      "book": "",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
     },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false,
-      "type": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "30",
-     "units": "ft",
-     "special": ""
-    },
+    "requirements": "",
+    "properties": [],
     "uses": {
      "spent": 0,
      "max": "",
      "recovery": []
     },
-    "level": 0,
-    "school": "trs",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal"
-    ],
     "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
+     "BwXuesxnYkeQcI6r": {
+      "_id": "BwXuesxnYkeQcI6r",
       "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
       "activation": {
        "type": "action",
-       "value": null,
+       "value": 1,
+       "condition": "",
        "override": false
       },
       "consumption": {
@@ -1019,7 +846,6 @@
       },
       "duration": {
        "units": "inst",
-       "concentration": false,
        "override": false
       },
       "effects": [],
@@ -1027,72 +853,57 @@
        "override": false
       },
       "target": {
-       "prompt": true,
        "template": {
+        "count": "",
         "contiguous": false,
-        "units": "ft"
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
        },
        "affects": {
-        "choice": false
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
        },
+       "prompt": true,
        "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
       },
       "roll": {
        "formula": "",
        "name": "",
        "prompt": false,
        "visible": false
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
       }
      }
     },
-    "identifier": "thaumaturgy",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 500000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/light/torch-fire-hand-orange.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.MUO1uYN7JR1hm4dR",
-    "duplicateSource": null,
-    "exportSource": null
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
    }
   },
   {
-   "_id": "fl9gR3Ad1Jst10nL",
-   "name": "Благословение [Bless]",
+   "_id": "pxwXVmMYjed3ncOj",
+   "name": "Порча [Bane]",
+   "ownership": {
+    "default": 0
+   },
    "type": "spell",
-   "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
    "system": {
     "description": {
-     "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>\n<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
+     "value": "<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>\n<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
      "chat": ""
     },
     "source": {
@@ -1137,7 +948,7 @@
     "level": 1,
     "school": "enc",
     "materials": {
-     "value": "A sprinkling of holy water",
+     "value": "A drop of blood",
      "consumed": false,
      "cost": 0,
      "supply": 0
@@ -1151,7 +962,7 @@
     "activities": {
      "dnd5eactivity000": {
       "_id": "dnd5eactivity000",
-      "type": "utility",
+      "type": "save",
       "activation": {
        "type": "action",
        "value": null,
@@ -1175,7 +986,8 @@
       },
       "effects": [
        {
-        "_id": "8rP3gwmXVTgZqYZE",
+        "_id": "potjmpJPeUA1U4oe",
+        "onSave": false,
         "level": {
          "min": null,
          "max": null
@@ -1196,11 +1008,16 @@
        },
        "override": false
       },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
+      "damage": {
+       "onSave": "none",
+       "parts": []
+      },
+      "save": {
+       "ability": "cha",
+       "dc": {
+        "calculation": "spellcasting",
+        "formula": ""
+       }
       },
       "uses": {
        "spent": 0,
@@ -1218,14 +1035,22 @@
       }
      }
     },
-    "identifier": "bless",
+    "identifier": "bane",
     "method": "spell",
     "prepared": 1,
     "sourceItem": null
    },
+   "sort": 500000,
+   "flags": {
+    "world": {
+     "iwdSource": "SRD 5.1",
+     "iwdSpl": "SPPR112"
+    }
+   },
+   "img": "icons/magic/symbols/rune-sigil-white-pink.webp",
    "effects": [
     {
-     "_id": "8rP3gwmXVTgZqYZE",
+     "_id": "potjmpJPeUA1U4oe",
      "flags": {
       "dnd5e": {
        "riders": {
@@ -1240,11 +1065,11 @@
       "expiry": "turnStart",
       "expired": false
      },
-     "origin": "Item.kZZAZ6kp9YzgPQEe",
+     "origin": "Item.KkaQm4OQJxc6z3to",
      "tint": "#ffffff",
      "transfer": false,
-     "name": "Bless",
-     "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you can roll 1d4 and add the number rolled to the attack roll or saving throw.</p>",
+     "name": "Bane",
+     "description": "<p>Whenever you make an attack roll or a saving throw before the spell ends, you must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>",
      "statuses": [],
      "_stats": {
       "compendiumSource": null,
@@ -1253,41 +1078,41 @@
       "systemId": "dnd5e",
       "systemVersion": "5.3.0",
       "createdTime": null,
-      "modifiedTime": 1772827553614,
+      "modifiedTime": 1772827465482,
       "lastModifiedBy": "dnd5ebuilder0000",
       "exportSource": null
      },
-     "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
+     "img": "icons/magic/symbols/rune-sigil-white-pink.webp",
      "type": "base",
      "system": {
       "changes": [
        {
         "key": "system.bonuses.abilities.save",
-        "value": "1d4",
+        "value": "-1d4",
         "priority": null,
         "type": "add"
        },
        {
         "key": "system.bonuses.mwak.attack",
-        "value": "1d4",
+        "value": "-1d4",
         "priority": null,
         "type": "add"
        },
        {
         "key": "system.bonuses.msak.attack",
-        "value": "1d4",
+        "value": "-1d4",
         "priority": null,
         "type": "add"
        },
        {
         "key": "system.bonuses.rsak.attack",
-        "value": "1d4",
+        "value": "-1d4",
         "priority": null,
         "type": "add"
        },
        {
         "key": "system.bonuses.rwak.attack",
-        "value": "1d4",
+        "value": "-1d4",
         "priority": null,
         "type": "add"
        }
@@ -1300,591 +1125,21 @@
     }
    ],
    "folder": null,
-   "sort": 600000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.8dzaICjGy6mTUaUr",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "IhtBy8IrNJA4HU3f",
-   "name": "Лечение ран [Cure Wounds]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "",
-     "units": "inst"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "units": "touch",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "heal",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "healing": {
-       "number": 1,
-       "denomination": 8,
-       "bonus": "@mod",
-       "types": [
-        "healing"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "cure-wounds",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 700000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/life/cross-explosion-burst-green.webp",
-   "effects": [],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "2aNlIAUqOLt1wQKc",
-   "name": "Направляющий луч [Guiding Bolt]",
-   "ownership": {
-    "default": 0
-   },
-   "type": "spell",
-   "system": {
-    "description": {
-     "value": "<p>A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p><p><strong>Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "round"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "120",
-     "units": "ft",
-     "special": ""
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 1,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "attack",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [
-       {
-        "_id": "hf1g2XNPqQFMw35j"
-       }
-      ],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "attack": {
-       "ability": "",
-       "bonus": "",
-       "critical": {
-        "threshold": null
-       },
-       "flat": false,
-       "type": {
-        "value": "ranged",
-        "classification": ""
-       }
-      },
-      "damage": {
-       "critical": {
-        "bonus": ""
-       },
-       "includeBase": true,
-       "parts": [
-        {
-         "number": 4,
-         "denomination": 6,
-         "bonus": "",
-         "types": [
-          "radiant"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": [],
-       "max": ""
-      },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
-      }
-     }
-    },
-    "identifier": "guiding-bolt",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 800000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/light/projectile-flare-expliosion-yellow.webp",
-   "effects": [
-    {
-     "name": "Guiding Bolt",
-     "img": "icons/magic/light/projectile-flare-expliosion-yellow.webp",
-     "origin": "Compendium.dnd5e.spells.Item.7buEm5KhI5lP8m1z",
-     "transfer": false,
-     "_id": "hf1g2XNPqQFMw35j",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 6,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>The next attack roll made against you before the end of the caster's next turn has advantage thanks to the mystical dim light glittering on you.</p>",
-     "tint": "#ffffff",
-     "statuses": [],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772820147280,
-      "modifiedTime": 1772820189168,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.7buEm5KhI5lP8m1z",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "SpBLOZ5ncYEKwvWJ",
-   "name": "Духовное оружие [Spiritual Weapon]",
-   "type": "spell",
-   "img": "icons/magic/fire/dagger-rune-enchant-flame-purple.webp",
-   "system": {
-    "description": {
-     "value": "<p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.</p><p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p>The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "activation": {
-     "type": "bonus",
-     "condition": "",
-     "value": 1
-    },
-    "duration": {
-     "value": "1",
-     "units": "minute"
-    },
-    "target": {
-     "affects": {
-      "choice": false
-     },
-     "template": {
-      "units": "ft",
-      "type": "square",
-      "size": "5",
-      "contiguous": false
-     }
-    },
-    "range": {
-     "value": "60",
-     "units": "ft"
-    },
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "level": 2,
-    "school": "evo",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
-    "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "attack",
-      "activation": {
-       "type": "action",
-       "value": null,
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "concentration": false,
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "prompt": true,
-       "template": {
-        "contiguous": false,
-        "units": "ft"
-       },
-       "affects": {
-        "choice": false
-       },
-       "override": false
-      },
-      "attack": {
-       "ability": "",
-       "bonus": "",
-       "critical": {
-        "threshold": null
-       },
-       "flat": false,
-       "type": {
-        "value": "melee",
-        "classification": "spell"
-       }
-      },
-      "damage": {
-       "critical": {
-        "bonus": ""
-       },
-       "includeBase": true,
-       "parts": [
-        {
-         "number": null,
-         "denomination": null,
-         "bonus": "",
-         "types": [
-          "force"
-         ],
-         "custom": {
-          "enabled": true,
-          "formula": "(floor(@item.level / 2))d8 + @mod"
-         },
-         "scaling": {
-          "mode": "",
-          "number": null,
-          "formula": ""
-         }
-        }
-       ]
-      },
-      "uses": {
-       "spent": 0,
-       "recovery": []
-      },
-      "sort": 0
-     }
-    },
-    "identifier": "spiritual-weapon",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "effects": [],
-   "folder": null,
-   "sort": 900000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.JbxsYXxSOTZbf9I0",
+    "compendiumSource": "Compendium.dnd5e.spells.Item.95K2aUhAGV9qXjnf",
     "duplicateSource": null,
     "exportSource": null
    }
   },
   {
    "_id": "fenTcyt0uGuiqomM",
-   "name": "Удержание личности [Hold Person]",
+   "name": "Паралич гуманоида [Hold Person]",
    "ownership": {
     "default": 0
    },
@@ -2012,10 +1267,11 @@
     "prepared": 1,
     "sourceItem": null
    },
-   "sort": 1000000,
+   "sort": 600000,
    "flags": {
     "world": {
-     "iwdSource": "SRD 5.1"
+     "iwdSource": "SRD 5.1",
+     "iwdSpl": "SPPR208"
     }
    },
    "img": "icons/magic/control/debuff-chains-ropes-purple.webp",
@@ -2066,8 +1322,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4",
     "duplicateSource": null,
@@ -2142,7 +1398,7 @@
    },
    "effects": [],
    "folder": null,
-   "sort": 1100000,
+   "sort": 700000,
    "ownership": {
     "default": 0
    },
@@ -2155,8 +1411,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.n1V07puo0RQxPGuF",
     "duplicateSource": null,
@@ -2231,7 +1487,7 @@
    },
    "effects": [],
    "folder": null,
-   "sort": 1200000,
+   "sort": 800000,
    "ownership": {
     "default": 0
    },
@@ -2244,8 +1500,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.items.Item.sSs3hSzkKBMNBgTs",
     "duplicateSource": null,
@@ -2357,8 +1613,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

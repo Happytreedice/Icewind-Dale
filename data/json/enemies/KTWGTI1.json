@@ -102,7 +102,7 @@
     "units": "ft",
     "special": ""
    },
-   "spellcasting": "",
+   "spellcasting": "int",
    "exhaustion": 0,
    "concentration": {
     "ability": "",
@@ -145,7 +145,7 @@
    },
    "environment": "",
    "cr": 4.0,
-   "spellLevel": 0,
+   "spellLevel": 1,
    "ideal": "",
    "bond": "",
    "flaw": "",
@@ -257,7 +257,12 @@
    }
   },
   "tools": {},
-  "spells": {},
+  "spells": {
+   "spell1": {
+    "value": 1,
+    "override": 1
+   }
+  },
   "bonuses": {},
   "resources": {
    "legact": {
@@ -392,67 +397,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.hkmTEk6klT6QL4K4",
-    "duplicateSource": null,
-    "exportSource": null
-   },
-   "_id": "eFwMab1XJMtdyHBI",
-   "name": "Врождённое колдовство [Innate Spellcasting]",
-   "type": "feat",
-   "img": "icons/magic/light/projectiles-star-purple.webp",
-   "system": {
-    "description": {
-     "value": "<p>Характеристикой врождённого колдовства Наполненного умертвия является Интеллект (Сл спасброска от заклинаний 13, +5 к атакам заклинаниями). Оно может врождённо сотворять следующие заклинания, не требуя материальных компонентов:</p><p>Заговоры (неограниченно): леденящее прикосновение [chill touch];</p><p>3/день: волшебная стрела [magic missile] (как заклинание 3-го уровня: 5 стрел, наносящих по 1d4+1 силового урона каждая).</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
-   }
-  },
-  {
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.F14aW2Ke3I5ZtSg4",
     "duplicateSource": null,
@@ -501,7 +447,7 @@
   {
    "effects": [],
    "folder": null,
-   "sort": 300000,
+   "sort": 200000,
    "ownership": {
     "default": 0
    },
@@ -510,8 +456,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
     "duplicateSource": null,
@@ -608,7 +554,7 @@
   {
    "effects": [],
    "folder": null,
-   "sort": 400000,
+   "sort": 300000,
    "ownership": {
     "default": 0
    },
@@ -617,8 +563,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -863,75 +809,64 @@
    "name": "Вытягивание жизни [Life Drain]"
   },
   {
-   "_id": "fqjaBbSFyU94g9tb",
-   "name": "Леденящее прикосновение [Chill Touch]",
+   "effects": [],
+   "folder": null,
+   "sort": 400000,
    "ownership": {
     "default": 0
    },
-   "type": "spell",
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.fdmzHw875EzpXM2a",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "_id": "j4pmh3igZeZQziI3",
+   "name": "Использование заклинаний [Spellcasting]",
+   "type": "feat",
+   "img": "icons/magic/light/projectiles-star-purple.webp",
    "system": {
     "description": {
-     "value": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 Necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+     "value": "<p>Заклинатель 1-го уровня, базовая характеристика — Интеллект (ячейки по данным игры).</p><ul><li><strong>1-й уровень (1 ячеек):</strong> Волшебная стрела [Magic Missile]</li></ul>",
      "chat": ""
     },
     "source": {
-     "custom": "",
+     "custom": "Icewind Dale (2000)",
      "book": "",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
-    "activation": {
-     "type": "action",
-     "condition": "",
-     "value": 1
+    "identifier": "",
+    "type": {
+     "value": "monster",
+     "subtype": ""
     },
-    "duration": {
-     "value": "1",
-     "units": "round"
-    },
-    "target": {
-     "affects": {
-      "type": "creature",
-      "count": "1",
-      "choice": false,
-      "special": ""
-     },
-     "template": {
-      "units": "",
-      "contiguous": false,
-      "type": ""
-     }
-    },
-    "range": {
-     "value": "120",
-     "units": "ft",
-     "special": ""
-    },
+    "requirements": "",
+    "properties": [],
     "uses": {
      "spent": 0,
      "max": "",
      "recovery": []
     },
-    "level": 0,
-    "school": "nec",
-    "materials": {
-     "value": "",
-     "consumed": false,
-     "cost": 0,
-     "supply": 0
-    },
-    "properties": [
-     "vocal",
-     "somatic"
-    ],
     "activities": {
-     "dnd5eactivity000": {
-      "_id": "dnd5eactivity000",
-      "type": "attack",
+     "uvastiatrM3W9HcR": {
+      "_id": "uvastiatrM3W9HcR",
+      "type": "utility",
+      "name": "",
+      "img": "",
+      "sort": 0,
       "activation": {
        "type": "action",
-       "value": null,
+       "value": 1,
+       "condition": "",
        "override": false
       },
       "consumption": {
@@ -947,153 +882,52 @@
       },
       "duration": {
        "units": "inst",
-       "concentration": false,
        "override": false
       },
-      "effects": [
-       {
-        "_id": "6Hdp1jf98UcJrEkD",
-        "level": {
-         "min": null,
-         "max": null
-        }
-       }
-      ],
+      "effects": [],
       "range": {
        "override": false
       },
       "target": {
-       "prompt": true,
        "template": {
+        "count": "",
         "contiguous": false,
-        "units": "ft"
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
        },
        "affects": {
-        "choice": false
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
        },
+       "prompt": true,
        "override": false
-      },
-      "attack": {
-       "ability": "",
-       "bonus": "",
-       "critical": {
-        "threshold": null
-       },
-       "flat": false,
-       "type": {
-        "value": "ranged",
-        "classification": ""
-       }
-      },
-      "damage": {
-       "critical": {
-        "bonus": ""
-       },
-       "includeBase": true,
-       "parts": [
-        {
-         "number": 1,
-         "denomination": 8,
-         "bonus": "",
-         "types": [
-          "necrotic"
-         ],
-         "custom": {
-          "enabled": false,
-          "formula": ""
-         },
-         "scaling": {
-          "mode": "whole",
-          "number": 1,
-          "formula": ""
-         }
-        }
-       ]
       },
       "uses": {
        "spent": 0,
-       "recovery": [],
-       "max": ""
+       "max": "",
+       "recovery": []
       },
-      "sort": 0,
-      "name": "Cast",
-      "img": "",
-      "visibility": {
-       "level": {
-        "min": null,
-        "max": null
-       }
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
       }
      }
     },
-    "identifier": "chill-touch",
-    "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
-   },
-   "sort": 500000,
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
-   "effects": [
-    {
-     "name": "Chill Touch",
-     "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
-     "origin": "Compendium.dnd5e.spells.Item.vrN18tbTw7io5MWd",
-     "transfer": false,
-     "_id": "6Hdp1jf98UcJrEkD",
-     "type": "base",
-     "system": {
-      "changes": []
-     },
-     "disabled": false,
-     "duration": {
-      "value": 6,
-      "units": "seconds",
-      "expiry": "turnStart",
-      "expired": false
-     },
-     "description": "<p>You cannot regain hit points until the start of the caster's next turn.</p>",
-     "tint": "#ffffff",
-     "statuses": [],
-     "sort": 0,
-     "flags": {
-      "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
-      }
-     },
-     "_stats": {
-      "compendiumSource": null,
-      "duplicateSource": null,
-      "exportSource": null,
-      "coreVersion": "14.367",
-      "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
-      "createdTime": 1772660185086,
-      "modifiedTime": 1772660203990,
-      "lastModifiedBy": "dnd5ebuilder0000"
-     },
-     "start": null,
-     "showIcon": 1,
-     "folder": null
-    }
-   ],
-   "folder": null,
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.spells.Item.vrN18tbTw7io5MWd",
-    "duplicateSource": null,
-    "exportSource": null
+    "enchant": {},
+    "prerequisites": {
+     "level": null,
+     "repeatable": false
+    },
+    "advancement": [],
+    "crewed": false,
+    "cover": null
    }
   },
   {
@@ -1246,10 +1080,11 @@
     "prepared": 1,
     "sourceItem": null
    },
-   "sort": 600000,
+   "sort": 500000,
    "flags": {
     "world": {
-     "iwdSource": "SRD 5.1"
+     "iwdSource": "SRD 5.1",
+     "iwdSpl": "SPWI112"
     }
    },
    "img": "icons/magic/lightning/projectiles-tendril-salvo-pink.webp",
@@ -1259,8 +1094,8 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791663431525,
-    "modifiedTime": 1791663431525,
+    "createdTime": 1791669866136,
+    "modifiedTime": 1791669866136,
     "lastModifiedBy": null,
     "compendiumSource": "Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs",
     "duplicateSource": null,
@@ -1374,8 +1209,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791663431525,
-  "modifiedTime": 1791663431525,
+  "createdTime": 1791669866136,
+  "modifiedTime": 1791669866136,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,
