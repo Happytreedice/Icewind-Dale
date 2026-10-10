@@ -8,62 +8,62 @@
    "str": {
     "value": 16,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "dex": {
     "value": 12,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "con": {
     "value": 16,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "int": {
     "value": 7,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "wis": {
     "value": 11,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "cha": {
     "value": 10,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    }
   },
   "attributes": {
    "ac": {
-    "flat": 13,
-    "calc": "natural",
+    "flat": null,
+    "calc": "default",
     "formula": ""
    },
    "hp": {
@@ -75,7 +75,7 @@
    },
    "init": {
     "ability": "",
-    "bonus": "",
+    "bonus": "0",
     "roll": {
      "min": null,
      "max": null,
@@ -95,10 +95,9 @@
     "max": 3
    },
    "senses": {
-    "darkvision": 60,
-    "blindsight": 0,
-    "tremorsense": 0,
-    "truesight": 0,
+    "ranges": {
+     "darkvision": 60
+    },
     "units": "ft",
     "special": ""
    },
@@ -116,8 +115,10 @@
     },
     "limit": 1
    },
+   "hd": {
+    "spent": 0
+   },
    "death": {
-    "ability": "",
     "roll": {
      "min": null,
      "max": null,
@@ -126,40 +127,27 @@
     "success": 0,
     "failure": 0
    },
-   "hd": {
-    "spent": 0
+   "spell": {
+    "level": 0
    }
   },
   "details": {
    "biography": {
-    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Орк</strong> (англ. <em>Orc</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>ORCWAXE</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>15 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 0.125</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 14</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>10 HP (HD 1)</td><td style='padding: 4px 8px; border: 1px solid'><strong>10 HP</strong> (2d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+-1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 19, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+1 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>14 / 16 / 15 / 17 / 17</td><td style='padding: 4px 8px; border: 1px solid'>Базовые</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Боевой топор</strong> (<em>Battle Axe</em>) — <code>AX1H01</code></li><li><strong>Золотой</strong> (<em>Gold Piece</em>) — <code>MISC07</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>AR1200 (AR1200) — Пролог — Восточная Гавань; AR1201 (AR1201) — Пролог — Восточная Гавань.</p></div></div>",
+    "value": "<p><strong>Характеристики и способности:</strong> официальный статблок «Orc» (SRD 5.1); существо Icewind Dale (2000), код CRE <code>ORCWAXE</code>.</p><div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Орк</strong> (англ. <em>Orc</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>ORCWAXE</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>15 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 0.125</strong> (БМ +2)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 6</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 14</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>10 HP (HD 1)</td><td style='padding: 4px 8px; border: 1px solid'><strong>10 HP</strong> (2d8)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Medium (кость d8) + CON мод (+-1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 19, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+1 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+2) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>14 / 16 / 15 / 17 / 17</td><td style='padding: 4px 8px; border: 1px solid'>Базовые</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Боевой топор</strong> (<em>Battle Axe</em>) — <code>AX1H01</code></li><li><strong>Золотой</strong> (<em>Gold Piece</em>) — <code>MISC07</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>AR1200 (AR1200) — Пролог — Восточная Гавань; AR1201 (AR1201) — Пролог — Восточная Гавань.</p></div></div>",
     "public": ""
    },
-   "alignment": "законно-злой",
+   "alignment": "Chaotic Evil",
    "race": null,
    "type": {
     "value": "humanoid",
-    "subtype": "",
+    "subtype": "Orc",
     "swarm": "",
     "custom": ""
    },
-   "environment": "",
    "cr": 0.5,
-   "spellLevel": 0,
    "ideal": "",
    "bond": "",
-   "flaw": "",
-   "source": {
-    "custom": "Icewind Dale (2000)",
-    "rules": "2014",
-    "book": "IWD",
-    "page": "",
-    "license": "",
-    "revision": 1
-   },
-   "xp": {
-    "value": 100
-   }
+   "flaw": ""
   },
   "traits": {
    "size": "med",
@@ -193,8 +181,7 @@
    "dm": {
     "amount": {},
     "bypasses": []
-   },
-   "important": false
+   }
   },
   "currency": {
    "pp": 0,
@@ -204,6 +191,97 @@
    "cp": 3
   },
   "skills": {
+   "acr": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ani": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "arc": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ath": {
+    "value": 0,
+    "ability": "str",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "dec": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "his": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ins": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
    "itm": {
     "value": 1,
     "ability": "cha",
@@ -216,24 +294,233 @@
      "max": null,
      "mode": 0
     }
+   },
+   "inv": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "med": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "nat": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "prc": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "prf": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "per": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "rel": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "slt": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "sur": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
    }
   },
-  "tools": {},
-  "spells": {},
-  "bonuses": {},
+  "spells": {
+   "spell1": {
+    "value": 0,
+    "override": null
+   },
+   "spell2": {
+    "value": 0,
+    "override": null
+   },
+   "spell3": {
+    "value": 0,
+    "override": null
+   },
+   "spell4": {
+    "value": 0,
+    "override": null
+   },
+   "spell5": {
+    "value": 0,
+    "override": null
+   },
+   "spell6": {
+    "value": 0,
+    "override": null
+   },
+   "spell7": {
+    "value": 0,
+    "override": null
+   },
+   "spell8": {
+    "value": 0,
+    "override": null
+   },
+   "spell9": {
+    "value": 0,
+    "override": null
+   },
+   "pact": {
+    "value": 0,
+    "override": null
+   },
+   "spell0": {
+    "value": 0,
+    "override": null
+   }
+  },
+  "bonuses": {
+   "mwak": {
+    "attack": "",
+    "damage": ""
+   },
+   "rwak": {
+    "attack": "",
+    "damage": ""
+   },
+   "msak": {
+    "attack": "",
+    "damage": ""
+   },
+   "rsak": {
+    "attack": "",
+    "damage": ""
+   },
+   "abilities": {
+    "check": "",
+    "save": "",
+    "skill": ""
+   },
+   "spell": {
+    "dc": ""
+   }
+  },
   "resources": {
    "legact": {
-    "value": 0,
-    "max": 0
+    "max": 0,
+    "spent": 0
    },
    "legres": {
-    "value": 0,
-    "max": 0
+    "max": 0,
+    "spent": 0
    },
    "lair": {
     "value": false,
-    "initiative": null
+    "initiative": null,
+    "inside": false
    }
+  },
+  "tools": {},
+  "source": {
+   "custom": "SRD 5.1; Icewind Dale (2000)",
+   "book": "SRD 5.1",
+   "page": "",
+   "license": "CC-BY-4.0",
+   "revision": 1,
+   "rules": "2014"
   }
  },
  "prototypeToken": {
@@ -343,6 +630,107 @@
  },
  "items": [
   {
+   "_id": "Go8ESMzuWcYaFcqE",
+   "name": "Aggressive",
+   "type": "feat",
+   "img": "icons/creatures/abilities/mouth-teeth-tongue-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "type": {
+     "value": "",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "bonus",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "sort": 0
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null
+    },
+    "identifier": "aggressive"
+   },
    "effects": [],
    "folder": null,
    "sort": 100000,
@@ -354,68 +742,321 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.7NML6SkyvOsZ17iq",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.HB49mCOVBXwWeKWQ.Item.Go8ESMzuWcYaFcqE",
     "duplicateSource": null,
     "exportSource": null
-   },
-   "_id": "0VuQ8Jjnh0nmboXs",
-   "name": "Агрессивный [Aggressive]",
-   "type": "feat",
-   "img": "icons/creatures/abilities/mouth-teeth-tongue-purple.webp",
+   }
+  },
+  {
+   "_id": "MY9hQkOnh2onjZEh",
+   "name": "Hide Armor",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-scale-leather.webp",
    "system": {
     "description": {
-     "value": "<p>Бонусным действием орк может переместиться на расстояние до своей скорости к враждебному существу, которое он видит.</p>",
+     "value": "<p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p>",
      "chat": ""
     },
     "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
      "page": "",
      "license": "",
      "revision": 1,
      "rules": "2014"
     },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
+    "quantity": 1,
+    "weight": {
+     "value": 12,
+     "units": "lb"
     },
-    "requirements": "",
-    "properties": [],
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
     "uses": {
-     "spent": 0,
      "max": "",
+     "spent": 0,
      "recovery": []
     },
-    "activities": {},
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
+    "armor": {
+     "value": 12,
+     "dex": null,
+     "magicalBonus": null
     },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "unidentified": {
+     "description": ""
+    },
+    "type": {
+     "value": "light",
+     "baseItem": "hide"
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "hide-armor"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.HB49mCOVBXwWeKWQ.Item.MY9hQkOnh2onjZEh",
+    "duplicateSource": null,
+    "exportSource": null
    }
   },
   {
-   "_id": "JUaBtd47vNUelK8O",
-   "name": "Секира [Greataxe]",
+   "_id": "SrRZ2hBUcaXZiRab",
+   "name": "Javelin",
    "type": "weapon",
-   "img": "icons/weapons/axes/axe-double-black.webp",
+   "img": "icons/weapons/ammunition/arrows-bodkin-yellow-red.webp",
    "system": {
     "description": {
-     "value": "<p>Рукопашная атака оружием: +5 к попаданию, досягаемость 5 фт., одна цель. Попадание: 9 (1d12 + 3) рубящего урона.</p>",
-     "chat": ""
+     "value": "<p>[[/attack extended]]. [[/damage extended]].</p>",
+     "chat": "<p>The Orc attacks with its Javelin.</p>"
     },
     "source": {
-     "custom": "",
-     "book": "",
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
      "page": "",
-     "license": "CC-BY-4.0",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 30,
+     "long": 120,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "thr",
+     "ver"
+    ],
+    "proficient": 1,
+    "unidentified": {
+     "description": ""
+    },
+    "type": {
+     "value": "simpleM",
+     "baseItem": "javelin"
+    },
+    "container": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "30",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "attack": {
+       "ability": "str",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "magicalBonus": null,
+    "identifier": "javelin",
+    "mastery": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 300000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.HB49mCOVBXwWeKWQ.Item.SrRZ2hBUcaXZiRab",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "_id": "bGmBlXrvTBQgPMBJ",
+   "name": "Greataxe",
+   "type": "weapon",
+   "img": "icons/weapons/axes/axe-double.webp",
+   "system": {
+    "description": {
+     "value": "<p>[[/attack extended]]. [[/damage extended]].</p>",
+     "chat": "<p>The Orc attacks with its Greataxe.</p>"
+    },
+    "source": {
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
+     "page": "",
+     "license": "",
+     "revision": 1,
      "rules": "2014"
     },
     "quantity": 1,
@@ -444,13 +1085,11 @@
      "spent": 0
     },
     "damage": {
-     "base": {
-      "number": 1,
-      "denomination": 12,
+     "versatile": {
+      "number": null,
+      "denomination": null,
       "bonus": "",
-      "types": [
-       "slashing"
-      ],
+      "types": [],
       "custom": {
        "enabled": false,
        "formula": ""
@@ -461,9 +1100,9 @@
        "formula": ""
       }
      },
-     "versatile": {
-      "number": null,
-      "denomination": 0,
+     "base": {
+      "number": 1,
+      "denomination": 12,
       "bonus": "",
       "types": [
        "slashing"
@@ -493,22 +1132,18 @@
      "two"
     ],
     "proficient": 1,
+    "unidentified": {
+     "description": ""
+    },
     "type": {
      "value": "martialM",
      "baseItem": "greataxe"
     },
-    "unidentified": {
-     "description": ""
-    },
     "container": null,
-    "magicalBonus": null,
     "activities": {
-     "0JZdBKmsebLfTclU": {
-      "_id": "0JZdBKmsebLfTclU",
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
       "type": "attack",
-      "name": "",
-      "img": "",
-      "sort": 0,
       "activation": {
        "type": "action",
        "value": 1,
@@ -527,16 +1162,37 @@
        "chatFlavor": ""
       },
       "duration": {
-       "units": "inst",
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
        "override": false
       },
       "effects": [],
       "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
        "override": false
       },
       "target": {
-       "override": false,
-       "prompt": true
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
       },
       "uses": {
        "spent": 0,
@@ -544,245 +1200,33 @@
        "recovery": []
       },
       "attack": {
-       "ability": "",
-       "bonus": "5",
+       "ability": "str",
+       "bonus": "",
        "critical": {
         "threshold": null
        },
-       "flat": true,
+       "flat": false,
        "type": {
         "value": "melee",
         "classification": "weapon"
        }
       },
       "damage": {
-       "includeBase": true,
        "critical": {
         "bonus": ""
        },
+       "includeBase": true,
        "parts": []
-      }
+      },
+      "sort": 0
      }
     },
     "attuned": false,
     "ammunition": {},
+    "magicalBonus": null,
     "identifier": "greataxe",
     "mastery": ""
    },
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.items.Item.1Lxk6kmoRhG8qQ0u",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
-   "_id": "iBQGMMUgTzsPiVvB",
-   "name": "Метательное копьё [Javelin]",
-   "type": "weapon",
-   "img": "icons/weapons/polearms/javelin-flared.webp",
-   "system": {
-    "description": {
-     "value": "<p>Рукопашная или дальнобойная атака оружием: +5 к попаданию, досягаемость 5 фт. или дистанция 30/120 фт., одна цель. Попадание: 6 (1d6 + 3) колющего урона.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "",
-     "book": "",
-     "page": "",
-     "license": "CC-BY-4.0",
-     "rules": "2014"
-    },
-    "quantity": 1,
-    "weight": {
-     "value": 2,
-     "units": "lb"
-    },
-    "price": {
-     "value": 5,
-     "denomination": "sp"
-    },
-    "attunement": "",
-    "equipped": true,
-    "rarity": "",
-    "identified": true,
-    "cover": null,
-    "range": {
-     "value": 30,
-     "long": 120,
-     "units": "ft",
-     "reach": null
-    },
-    "uses": {
-     "max": "",
-     "recovery": [],
-     "spent": 0
-    },
-    "damage": {
-     "base": {
-      "number": 1,
-      "denomination": 6,
-      "bonus": "2",
-      "types": [
-       "piercing"
-      ],
-      "custom": {
-       "enabled": false,
-       "formula": ""
-      },
-      "scaling": {
-       "mode": "",
-       "number": null,
-       "formula": ""
-      }
-     },
-     "versatile": {
-      "number": null,
-      "denomination": 0,
-      "bonus": "",
-      "types": [
-       "piercing"
-      ],
-      "custom": {
-       "enabled": false,
-       "formula": ""
-      },
-      "scaling": {
-       "mode": "",
-       "number": null,
-       "formula": ""
-      }
-     }
-    },
-    "armor": {
-     "value": 10
-    },
-    "hp": {
-     "value": 0,
-     "max": 0,
-     "dt": null,
-     "conditions": ""
-    },
-    "properties": [
-     "thr"
-    ],
-    "proficient": 1,
-    "type": {
-     "value": "simpleM",
-     "baseItem": "javelin"
-    },
-    "unidentified": {
-     "description": ""
-    },
-    "container": null,
-    "magicalBonus": null,
-    "activities": {
-     "oXUcNaiMzKhdccVy": {
-      "_id": "oXUcNaiMzKhdccVy",
-      "type": "attack",
-      "name": "",
-      "img": "",
-      "sort": 0,
-      "activation": {
-       "type": "action",
-       "value": 1,
-       "condition": "",
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "override": false,
-       "prompt": true
-      },
-      "uses": {
-       "spent": 0,
-       "max": "",
-       "recovery": []
-      },
-      "attack": {
-       "ability": "",
-       "bonus": "5",
-       "critical": {
-        "threshold": null
-       },
-       "flat": true,
-       "type": {
-        "value": "ranged",
-        "classification": "weapon"
-       }
-      },
-      "damage": {
-       "includeBase": true,
-       "critical": {
-        "bonus": ""
-       },
-       "parts": []
-      }
-     }
-    },
-    "attuned": false,
-    "ammunition": {},
-    "mastery": "",
-    "identifier": "javelin"
-   },
-   "effects": [],
-   "folder": null,
-   "sort": 300000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {
-    "world": {
-     "iwdSource": "SRD 5.1"
-    }
-   },
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.items.Item.DWLMnODrnHn8IbAG",
-    "duplicateSource": null,
-    "exportSource": null
-   }
-  },
-  {
    "effects": [],
    "folder": null,
    "sort": 400000,
@@ -794,8 +1238,28 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.HB49mCOVBXwWeKWQ.Item.bGmBlXrvTBQgPMBJ",
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "effects": [],
+   "folder": null,
+   "sort": 500000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null,
@@ -938,7 +1402,14 @@
     "wiki": "https://icewinddale.fandom.com/wiki/Kuldahar_Pass",
     "notes": "Каноничный статблок орка под CR 1/2 в D&D 5e.",
     "code": "ORCWAXE",
-    "bam": "MOR1SD"
+    "bam": "MOR1SD",
+    "officialStatblock": {
+     "source": "srd51",
+     "book": "srd51",
+     "label": "SRD 5.1",
+     "id": "HB49mCOVBXwWeKWQ",
+     "name": "Orc"
+    }
    }
   }
  },
@@ -946,8 +1417,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791669866136,
-  "modifiedTime": 1791669866136,
+  "createdTime": 1791672765329,
+  "modifiedTime": 1791672765329,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,

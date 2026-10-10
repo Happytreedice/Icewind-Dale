@@ -8,56 +8,56 @@
    "str": {
     "value": 20,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "dex": {
     "value": 8,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "con": {
     "value": 20,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "int": {
     "value": 5,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "wis": {
     "value": 10,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    },
    "cha": {
     "value": 5,
     "proficient": 0,
-    "max": null,
     "bonuses": {
      "check": "",
      "save": ""
-    }
+    },
+    "max": null
    }
   },
   "attributes": {
@@ -69,13 +69,13 @@
    "hp": {
     "value": 126,
     "max": 126,
-    "temp": 0,
+    "temp": null,
     "tempmax": 0,
     "formula": "12d10 + 60"
    },
    "init": {
     "ability": "",
-    "bonus": "",
+    "bonus": "0",
     "roll": {
      "min": null,
      "max": null,
@@ -95,10 +95,10 @@
     "max": 3
    },
    "senses": {
-    "darkvision": 60,
-    "blindsight": 0,
-    "tremorsense": 60,
-    "truesight": 0,
+    "ranges": {
+     "darkvision": 60,
+     "tremorsense": 60
+    },
     "units": "ft",
     "special": ""
    },
@@ -116,8 +116,10 @@
     },
     "limit": 1
    },
+   "hd": {
+    "spent": 0
+   },
    "death": {
-    "ability": "",
     "roll": {
      "min": null,
      "max": null,
@@ -126,16 +128,16 @@
     "success": 0,
     "failure": 0
    },
-   "hd": {
-    "spent": 0
+   "spell": {
+    "level": 0
    }
   },
   "details": {
    "biography": {
-    "value": "<div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Земляной элементаль</strong> (англ. <em>Earth Elemental</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>CYEARTHE</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>10000 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 7</strong> (БМ +3)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 2</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 18</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>128 HP (HD 16)</td><td style='padding: 4px 8px; border: 1px solid'><strong>128 HP</strong> (18d10)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Large (кость d10) + CON мод (+-1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 5, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+8 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+3) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>4 / 6 / 5 / 4 / 7</td><td style='padding: 4px 8px; border: 1px solid'>CON, WIS, DEX</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Атака</strong> (<em>Attack</em>) — <code>EELEM</code></li><li><strong>IMMUNE2</strong> (<em>IMMUNE2</em>) — <code>IMMUNE2</code></li><li><strong>Жезл призывания монстров</strong> (<em>Wand of Monster Summoning</em>) — <code>SPAWN</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Восточная Гавань (AR1000) — Пролог — Восточная Гавань.</p></div></div>",
+    "value": "<p><strong>Характеристики и способности:</strong> официальный статблок «Earth Elemental» (SRD 5.1); существо Icewind Dale (2000), код CRE <code>CYEARTHE</code>.</p><div class='iwd-actor-bio'><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Описание и контекст</h3><p><strong>Земляной элементаль</strong> (англ. <em>Earth Elemental</em>) — существо из кампании <em>Icewind Dale (2000)</em>. Код ресурса CRE: <code>CYEARTHE</code>.</p></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Характеристики (AD&D 2e → D&D 5e)</h3><table style='width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 4px'><tr style='text-align: left'><th style='padding: 4px 8px; border: 1px solid'>Параметр</th><th style='padding: 4px 8px; border: 1px solid'>Оригинал (2e)</th><th style='padding: 4px 8px; border: 1px solid'>Адаптация (5e)</th><th style='padding: 4px 8px; border: 1px solid'>Математическое обоснование</th></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Опасность / CR</strong></td><td style='padding: 4px 8px; border: 1px solid'>10000 XP</td><td style='padding: 4px 8px; border: 1px solid'><strong>CR 7</strong> (БМ +3)</td><td style='padding: 4px 8px; border: 1px solid'>Конверсия XP и таблицы DMG</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Класс Доспеха (AC)</strong></td><td style='padding: 4px 8px; border: 1px solid'>AC 2</td><td style='padding: 4px 8px; border: 1px solid'><strong>КД 18</strong></td><td style='padding: 4px 8px; border: 1px solid'>Природный КД с DEX и калибровкой Bounded Accuracy</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Хиты (HP)</strong></td><td style='padding: 4px 8px; border: 1px solid'>128 HP (HD 16)</td><td style='padding: 4px 8px; border: 1px solid'><strong>128 HP</strong> (18d10)</td><td style='padding: 4px 8px; border: 1px solid'>Размер Large (кость d10) + CON мод (+-1)</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Атака / THAC0</strong></td><td style='padding: 4px 8px; border: 1px solid'>THAC0 5, 1 ат/р</td><td style='padding: 4px 8px; border: 1px solid'><strong>+8 к попад.</strong></td><td style='padding: 4px 8px; border: 1px solid'>Бонус мастерства (+3) + характеристика</td></tr><tr><td style='padding: 4px 8px; border: 1px solid'><strong>Спасброски (2e)</strong></td><td style='padding: 4px 8px; border: 1px solid'>4 / 6 / 5 / 4 / 7</td><td style='padding: 4px 8px; border: 1px solid'>CON, WIS, DEX</td><td style='padding: 4px 8px; border: 1px solid'>Спасброски &le; 10 в 2e конвертированы в спасброски с мастерством</td></tr></table></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Снаряжение и предметы</h3><ul><li><strong>Атака</strong> (<em>Attack</em>) — <code>EELEM</code></li><li><strong>IMMUNE2</strong> (<em>IMMUNE2</em>) — <code>IMMUNE2</code></li><li><strong>Жезл призывания монстров</strong> (<em>Wand of Monster Summoning</em>) — <code>SPAWN</code></li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Особенности и способности</h3><ul><li><strong>Невосприимчивость к немагическому оружию:</strong> Существо не получает урон от немагических атак.</li><li><strong>Сопротивление к урону:</strong> bludgeoning, piercing, slashing.</li></ul></div><div class='iwd-bio-section' style='margin-bottom: 12px'><h3 style='border-bottom: 1px solid; margin-bottom: 6px'>Локации появления</h3><p>Восточная Гавань (AR1000) — Пролог — Восточная Гавань.</p></div></div>",
     "public": ""
    },
-   "alignment": "истинно нейтральный",
+   "alignment": "Neutral",
    "race": null,
    "type": {
     "value": "elemental",
@@ -143,23 +145,10 @@
     "swarm": "",
     "custom": ""
    },
-   "environment": "",
-   "cr": 5.0,
-   "spellLevel": 0,
+   "cr": 5,
    "ideal": "",
    "bond": "",
-   "flaw": "",
-   "source": {
-    "custom": "Icewind Dale (2000)",
-    "rules": "2014",
-    "book": "IWD",
-    "page": "",
-    "license": "",
-    "revision": 1
-   },
-   "xp": {
-    "value": 1800
-   }
+   "flaw": ""
   },
   "traits": {
    "size": "lg",
@@ -190,11 +179,11 @@
    },
    "ci": {
     "value": [
-     "exhaustion",
      "paralyzed",
      "petrified",
      "poisoned",
-     "unconscious"
+     "unconscious",
+     "exhaustion"
     ],
     "custom": ""
    },
@@ -208,8 +197,7 @@
    "dm": {
     "amount": {},
     "bypasses": []
-   },
-   "important": false
+   }
   },
   "currency": {
    "pp": 0,
@@ -218,23 +206,337 @@
    "sp": 0,
    "cp": 0
   },
-  "skills": {},
-  "tools": {},
-  "spells": {},
-  "bonuses": {},
+  "skills": {
+   "acr": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ani": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "arc": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ath": {
+    "value": 0,
+    "ability": "str",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "dec": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "his": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ins": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "itm": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "inv": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "med": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "nat": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "prc": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "prf": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "per": {
+    "value": 0,
+    "ability": "cha",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "rel": {
+    "value": 0,
+    "ability": "int",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "slt": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "ste": {
+    "value": 0,
+    "ability": "dex",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   },
+   "sur": {
+    "value": 0,
+    "ability": "wis",
+    "bonuses": {
+     "check": "",
+     "passive": ""
+    },
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    }
+   }
+  },
+  "spells": {
+   "spell1": {
+    "value": 0,
+    "override": null
+   },
+   "spell2": {
+    "value": 0,
+    "override": null
+   },
+   "spell3": {
+    "value": 0,
+    "override": null
+   },
+   "spell4": {
+    "value": 0,
+    "override": null
+   },
+   "spell5": {
+    "value": 0,
+    "override": null
+   },
+   "spell6": {
+    "value": 0,
+    "override": null
+   },
+   "spell7": {
+    "value": 0,
+    "override": null
+   },
+   "spell8": {
+    "value": 0,
+    "override": null
+   },
+   "spell9": {
+    "value": 0,
+    "override": null
+   },
+   "pact": {
+    "value": 0,
+    "override": null
+   },
+   "spell0": {
+    "value": 0,
+    "override": null
+   }
+  },
+  "bonuses": {
+   "mwak": {
+    "attack": "",
+    "damage": ""
+   },
+   "rwak": {
+    "attack": "",
+    "damage": ""
+   },
+   "msak": {
+    "attack": "",
+    "damage": ""
+   },
+   "rsak": {
+    "attack": "",
+    "damage": ""
+   },
+   "abilities": {
+    "check": "",
+    "save": "",
+    "skill": ""
+   },
+   "spell": {
+    "dc": ""
+   }
+  },
   "resources": {
    "legact": {
-    "value": 0,
-    "max": 0
+    "max": 0,
+    "spent": 0
    },
    "legres": {
-    "value": 0,
-    "max": 0
+    "max": 0,
+    "spent": 0
    },
    "lair": {
     "value": false,
-    "initiative": null
+    "initiative": null,
+    "inside": false
    }
+  },
+  "tools": {},
+  "source": {
+   "custom": "SRD 5.1; Icewind Dale (2000)",
+   "book": "SRD 5.1",
+   "page": "",
+   "license": "CC-BY-4.0",
+   "revision": 1,
+   "rules": "2014"
   }
  },
  "prototypeToken": {
@@ -344,6 +646,41 @@
  },
  "items": [
   {
+   "_id": "1fGoFeub69Dueemk",
+   "name": "Siege Monster",
+   "type": "feat",
+   "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+   "system": {
+    "description": {
+     "value": "<p>The elemental deals double damage to objects and structures.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "type": {
+     "value": "",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+     "level": null
+    },
+    "identifier": "siege-monster"
+   },
    "effects": [],
    "folder": null,
    "sort": 100000,
@@ -355,130 +692,27 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.EqoLg8T8EHvhJgKE",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.sApYLZj9PTZ40wJr.Item.1fGoFeub69Dueemk",
     "duplicateSource": null,
     "exportSource": null
-   },
-   "_id": "RF9Hl4h4zQvUNAog",
-   "name": "Мультиатака [Multiattack]",
-   "type": "feat",
-   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
-   "system": {
-    "description": {
-     "value": "<p>Земляной элементаль совершает две атаки Ударом.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {
-     "3Rsp8rbistLiavgB": {
-      "_id": "3Rsp8rbistLiavgB",
-      "type": "utility",
-      "name": "",
-      "img": "",
-      "sort": 0,
-      "activation": {
-       "type": "action",
-       "value": 1,
-       "condition": "",
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "override": false,
-       "prompt": true
-      },
-      "uses": {
-       "spent": 0,
-       "max": "",
-       "recovery": []
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      }
-     }
-    },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
    }
   },
   {
-   "effects": [],
-   "folder": null,
-   "sort": 200000,
-   "ownership": {
-    "default": 0
-   },
-   "flags": {},
-   "_stats": {
-    "coreVersion": "14.368",
-    "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   },
+   "_id": "2AD5aTLMPDmQFhGZ",
+   "name": "Slam",
    "type": "weapon",
-   "img": "icons/magic/sonic/explosion-impact-shock-wave.webp",
+   "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
    "system": {
     "description": {
-     "value": "<p>Рукопашная атака оружием: +8 к попаданию, досягаемость 10 фт., одна цель. Попадание: 14 (2d8 + 5) дробящего урона.</p>",
-     "chat": ""
+     "value": "<p>[[/attack extended]]. [[/damage extended]].</p>",
+     "chat": "<p>The Earth Elemental attacks with its Slam.</p>"
     },
     "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
      "page": "",
      "license": "",
      "revision": 1,
@@ -494,19 +728,37 @@
      "denomination": "gp"
     },
     "attunement": "",
-    "attuned": false,
     "equipped": true,
     "rarity": "",
     "identified": true,
-    "unidentified": {
-     "description": ""
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
     },
-    "container": null,
-    "type": {
-     "value": "natural",
-     "baseItem": ""
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
     },
     "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
      "base": {
       "number": 2,
       "denomination": 8,
@@ -523,61 +775,33 @@
        "number": null,
        "formula": ""
       }
-     },
-     "versatile": {
-      "number": null,
-      "denomination": 0,
-      "bonus": "",
-      "types": [
-       "bludgeoning"
-      ],
-      "custom": {
-       "enabled": false,
-       "formula": ""
-      },
-      "scaling": {
-       "mode": "",
-       "number": null,
-       "formula": ""
-      }
      }
     },
-    "range": {
-     "value": null,
-     "long": null,
-     "units": "ft",
-     "reach": 10
-    },
     "armor": {
-     "value": null
+     "value": 10
     },
     "hp": {
-     "value": null,
-     "max": null,
+     "value": 0,
+     "max": 0,
      "dt": null,
      "conditions": ""
     },
-    "magicalBonus": null,
     "properties": [
      "rch"
     ],
     "proficient": 1,
-    "mastery": "",
-    "ammunition": {},
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+    "unidentified": {
+     "description": ""
     },
-    "cover": null,
-    "identifier": "",
+    "type": {
+     "value": "natural",
+     "baseItem": ""
+    },
+    "container": null,
     "activities": {
-     "Af0iRqmQcrKXRcxM": {
-      "_id": "Af0iRqmQcrKXRcxM",
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
       "type": "attack",
-      "name": "",
-      "img": "",
-      "sort": 0,
       "activation": {
        "type": "action",
        "value": 1,
@@ -596,16 +820,37 @@
        "chatFlavor": ""
       },
       "duration": {
-       "units": "inst",
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
        "override": false
       },
       "effects": [],
       "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
        "override": false
       },
       "target": {
-       "override": false,
-       "prompt": true
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
       },
       "uses": {
        "spent": 0,
@@ -613,31 +858,154 @@
        "recovery": []
       },
       "attack": {
-       "ability": "",
-       "bonus": "8",
+       "ability": "str",
+       "bonus": "",
        "critical": {
         "threshold": null
        },
-       "flat": true,
+       "flat": false,
        "type": {
         "value": "melee",
         "classification": "weapon"
        }
       },
       "damage": {
-       "includeBase": true,
        "critical": {
         "bonus": ""
        },
+       "includeBase": true,
        "parts": []
-      }
+      },
+      "sort": 0
      }
-    }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "magicalBonus": null,
+    "identifier": "slam",
+    "mastery": ""
    },
-   "_id": "zMVLstNbXAHinXdu",
-   "name": "Удар [Slam]"
+   "effects": [],
+   "folder": null,
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.sApYLZj9PTZ40wJr.Item.2AD5aTLMPDmQFhGZ",
+    "duplicateSource": null,
+    "exportSource": null
+   }
   },
   {
+   "_id": "A8nxS57cG2yZpu1m",
+   "name": "Multiattack",
+   "type": "feat",
+   "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>The elemental makes two [[/item .2AD5aTLMPDmQFhGZ]]{slam} attacks.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
+     "page": "",
+     "license": "",
+     "revision": 1,
+     "rules": "2014"
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "type": {
+     "value": "",
+     "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "utility",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "uses": {
+       "spent": 0,
+       "max": "",
+       "recovery": []
+      },
+      "roll": {
+       "formula": "",
+       "name": "",
+       "prompt": false,
+       "visible": false
+      },
+      "sort": 0
+     }
+    },
+    "enchant": {},
+    "prerequisites": {
+     "level": null
+    },
+    "identifier": "multiattack"
+   },
    "effects": [],
    "folder": null,
    "sort": 300000,
@@ -649,117 +1017,50 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.yrpqazOHqI4BrYW4",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.sApYLZj9PTZ40wJr.Item.A8nxS57cG2yZpu1m",
     "duplicateSource": null,
     "exportSource": null
-   },
-   "_id": "2UtqbkMwbZmqGeUT",
-   "name": "Скольжение сквозь землю [Earth Glide]",
+   }
+  },
+  {
+   "_id": "Ctnlm397G5vkwWA4",
+   "name": "Earth Glide",
    "type": "feat",
    "img": "icons/environment/wilderness/cave-entrance-mountain-blue.webp",
    "system": {
     "description": {
-     "value": "<p>Элементаль может прорываться сквозь немагическую необработанную землю и камень. При этом элементаль не нарушает целостность материала, через который перемещается.</p>",
+     "value": "<p>The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.</p>",
      "chat": ""
     },
     "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
+     "custom": "SRD 5.1",
+     "book": "SRD 5.1",
      "page": "",
      "license": "",
      "revision": 1,
      "rules": "2014"
     },
-    "identifier": "",
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
     "type": {
-     "value": "monster",
+     "value": "",
      "subtype": ""
     },
     "requirements": "",
     "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {
-     "sgISS6pzCW18R7UA": {
-      "_id": "sgISS6pzCW18R7UA",
-      "type": "utility",
-      "name": "",
-      "img": "",
-      "sort": 0,
-      "activation": {
-       "type": "action",
-       "value": 1,
-       "condition": "",
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "template": {
-        "count": "",
-        "contiguous": false,
-        "type": "",
-        "size": "",
-        "width": "",
-        "height": "",
-        "units": ""
-       },
-       "affects": {
-        "count": "",
-        "type": "creature",
-        "choice": false,
-        "special": ""
-       },
-       "prompt": true,
-       "override": false
-      },
-      "uses": {
-       "spent": 0,
-       "max": "",
-       "recovery": []
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      }
-     }
-    },
+    "activities": {},
     "enchant": {},
     "prerequisites": {
-     "level": null,
-     "repeatable": false
+     "level": null
     },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
-   }
-  },
-  {
+    "identifier": "earth-glide"
+   },
    "effects": [],
    "folder": null,
    "sort": 400000,
@@ -771,114 +1072,12 @@
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791669866136,
-    "modifiedTime": 1791669866136,
+    "createdTime": 1791672765329,
+    "modifiedTime": 1791672765329,
     "lastModifiedBy": null,
-    "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.cSA0EbjlxCbst4gJ",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.sApYLZj9PTZ40wJr.Item.Ctnlm397G5vkwWA4",
     "duplicateSource": null,
     "exportSource": null
-   },
-   "_id": "GSIVJRF5BfYThMb4",
-   "name": "Осадное чудовище [Siege Monster]",
-   "type": "feat",
-   "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
-   "system": {
-    "description": {
-     "value": "<p>Элементаль наносит двойной урон предметам и сооружениям.</p>",
-     "chat": ""
-    },
-    "source": {
-     "custom": "Icewind Dale (2000)",
-     "book": "",
-     "page": "",
-     "license": "",
-     "revision": 1,
-     "rules": "2014"
-    },
-    "identifier": "",
-    "type": {
-     "value": "monster",
-     "subtype": ""
-    },
-    "requirements": "",
-    "properties": [],
-    "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
-    },
-    "activities": {
-     "tqSORwgTvDaisCDN": {
-      "_id": "tqSORwgTvDaisCDN",
-      "type": "utility",
-      "name": "",
-      "img": "",
-      "sort": 0,
-      "activation": {
-       "type": "action",
-       "value": 1,
-       "condition": "",
-       "override": false
-      },
-      "consumption": {
-       "targets": [],
-       "scaling": {
-        "allowed": false,
-        "max": ""
-       },
-       "spellSlot": true
-      },
-      "description": {
-       "chatFlavor": ""
-      },
-      "duration": {
-       "units": "inst",
-       "override": false
-      },
-      "effects": [],
-      "range": {
-       "override": false
-      },
-      "target": {
-       "template": {
-        "count": "",
-        "contiguous": false,
-        "type": "",
-        "size": "",
-        "width": "",
-        "height": "",
-        "units": ""
-       },
-       "affects": {
-        "count": "",
-        "type": "creature",
-        "choice": false,
-        "special": ""
-       },
-       "prompt": true,
-       "override": false
-      },
-      "uses": {
-       "spent": 0,
-       "max": "",
-       "recovery": []
-      },
-      "roll": {
-       "formula": "",
-       "name": "",
-       "prompt": false,
-       "visible": false
-      }
-     }
-    },
-    "enchant": {},
-    "prerequisites": {
-     "level": null,
-     "repeatable": false
-    },
-    "advancement": [],
-    "crewed": false,
-    "cover": null
    }
   }
  ],
@@ -978,7 +1177,14 @@
     "wiki": "https://icewinddale.fandom.com/wiki/Earth_Elemental",
     "notes": "Прямая конверсия Земляного элементаля (CYEARTHE) под каноничный статблок Earth Elemental (CR 5) из SRD/MM 2014.",
     "code": "CYEARTHE",
-    "bam": "MELESD"
+    "bam": "MELESD",
+    "officialStatblock": {
+     "source": "srd51",
+     "book": "srd51",
+     "label": "SRD 5.1",
+     "id": "sApYLZj9PTZ40wJr",
+     "name": "Earth Elemental"
+    }
    }
   }
  },
@@ -986,8 +1192,8 @@
   "coreVersion": "14.368",
   "systemId": "dnd5e",
   "systemVersion": "5.3.3",
-  "createdTime": 1791669866136,
-  "modifiedTime": 1791669866136,
+  "createdTime": 1791672765329,
+  "modifiedTime": 1791672765329,
   "lastModifiedBy": null,
   "compendiumSource": null,
   "duplicateSource": null,
