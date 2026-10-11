@@ -1,175 +1,175 @@
 {
- "_id": "roxxsjfL8ys3D9Bu",
- "name": "Стрела славы [Bolt of Glory]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR612B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы направляете сокрушительный луч чистого божественного света в цель в пределах дистанции. Атака попадает автоматически. Цель получает урон излучением, зависящий от её природы: исчадия получают 10к6 урона, нежить — 8к6 урона, элементали — 4к6 урона, а остальные существа — 6к6 урона.</p><p><em>Автоматически разит цель святой энергией, нанося урон излучением: 6к6 обычным существам, 8к6 нежити и 10к6 исчадиям.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон излучением увеличивается на 1к6 за каждый уровень ячейки выше 6-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "bolt-of-glory",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "60",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 6,
-  "school": "evo",
-  "materials": {
-   "value": "священный символ",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material"
-  ],
-  "activities": {
-   "b8p6kwzDnQs8PHBi": {
-    "_id": "b8p6kwzDnQs8PHBi",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "roxxsjfL8ys3D9Bu",
+  "name": "Стрела славы [Bolt of Glory]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR612B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы направляете сокрушительный луч чистого божественного света в цель в пределах дистанции. Атака попадает автоматически. Цель получает урон излучением, зависящий от её природы: исчадия получают [[/damage 10d6]]{10к6 урона}, нежить — [[/damage 8d6]]{8к6 урона}, элементали — [[/damage 4d6]]{4к6 урона}, а остальные существа — [[/damage 6d6]]{6к6 урона}.</p><p><em>Автоматически разит цель святой энергией, нанося урон излучением: [[/r 6d6]]{6к6} обычным существам, [[/r 8d6]]{8к6} нежити и [[/r 10d6]]{10к6} исчадиям.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон излучением увеличивается на 1к6 за каждый уровень ячейки выше 6-го.</p>",
+      "chat": "Выпускает луч божественного света, наносящий сокрушительный урон излучением."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "bolt-of-glory",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "damage",
-    "damage": {
-     "critical": {
-      "allow": false,
-      "bonus": ""
-     },
-     "parts": [
-      {
-       "number": 6,
-       "denomination": 6,
-       "bonus": "",
-       "types": [
-        "radiant"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "level": 6,
+    "school": "evo",
+    "materials": {
+      "value": "священный символ",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "b8p6kwzDnQs8PHBi": {
+        "_id": "b8p6kwzDnQs8PHBi",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "damage",
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR612",
-    "refs": [
-     "SPPR612"
-    ],
-    "type2e": "priest",
-    "level2e": 6,
-    "source2e": "6 круг, школа воплощения (evocation), дальность 60 фт., длительность мгновенная, молния божественной энергии без броска атаки (урон зависит от типа: нежить 8к6, исчадия 10к6)",
-    "classes": [
-     "cleric",
-     "paladin"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Bolt_of_Glory",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR612",
+        "refs": [
+          "SPPR612"
+        ],
+        "type2e": "priest",
+        "level2e": 6,
+        "source2e": "6 круг, школа воплощения (evocation), дальность 60 фт., длительность мгновенная, молния божественной энергии без броска атаки (урон зависит от типа: нежить 8к6, исчадия 10к6)",
+        "classes": [
+          "cleric",
+          "paladin"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Bolt_of_Glory",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

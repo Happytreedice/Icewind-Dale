@@ -1,197 +1,197 @@
 {
- "_id": "TRY0qrZWiIUqol43",
- "name": "Небесный Ад [Heavenly Inferno]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR503B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы призываете с небес столб священного очищающего пламени цилиндром радиусом 20 футов и высотой 60 футов с центром в точке в пределах дистанции. Каждое существо в области должно совершить спасбросок Ловкости. При провале цель получает 6к10 урона огнём и 6к10 урона излучением, или половину этого урона при успехе.</p><p><em>Низвергает гигантский столб небесного огня в цилиндре 20 футов, нанося урон огнём и излучением.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон огнём и урон излучением увеличиваются на 1к10 каждый за каждый уровень ячейки выше 7-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "heavenly-inferno",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "cylinder",
-    "size": "20",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "120",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 7,
-  "school": "evo",
-  "materials": {
-   "value": "золотое кадило",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material"
-  ],
-  "activities": {
-   "Nd0swoyott2RoaWI": {
-    "_id": "Nd0swoyott2RoaWI",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "TRY0qrZWiIUqol43",
+  "name": "Небесный Ад [Heavenly Inferno]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR503B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы призываете с небес столб священного очищающего пламени цилиндром радиусом 20 футов и высотой 60 футов с центром в точке в пределах дистанции. Каждое существо в области должно совершить [[/save dex]]{спасбросок Ловкости}. При провале цель получает [[/damage 6d10 fire]]{6к10 урона огнём} и [[/damage 6d10 radiant]]{6к10 урона излучением}, или половину этого урона при успехе.</p><p><em>Низвергает гигантский столб небесного огня в цилиндре 20 футов, нанося урон огнём и излучением.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон огнём и урон излучением увеличиваются на 1к10 каждый за каждый уровень ячейки выше 7-го.</p>",
+      "chat": "Обрушивает столб священного пламени, наносящий урон излучением и огнём врагам в области."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "heavenly-inferno",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "cylinder",
+        "size": "20",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "dex"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 7,
+    "school": "evo",
+    "materials": {
+      "value": "золотое кадило",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 6,
-       "denomination": 10,
-       "bonus": "",
-       "types": [
-        "fire"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
-      },
-      {
-       "number": 6,
-       "denomination": 10,
-       "bonus": "",
-       "types": [
-        "radiant"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "Nd0swoyott2RoaWI": {
+        "_id": "Nd0swoyott2RoaWI",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 6,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            },
+            {
+              "number": 6,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR738",
-    "refs": [
-     "SPPR738"
-    ],
-    "type2e": "priest",
-    "level2e": 7,
-    "source2e": "7 круг, школа воплощения (evocation), дальность 120 фт., длительность мгновенная, столб небесного огня, наносящий урон огнём и излучением [адаптация TotL]",
-    "classes": [
-     "cleric"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Heavenly_Inferno",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR738",
+        "refs": [
+          "SPPR738"
+        ],
+        "type2e": "priest",
+        "level2e": 7,
+        "source2e": "7 круг, школа воплощения (evocation), дальность 120 фт., длительность мгновенная, столб небесного огня, наносящий урон огнём и излучением [адаптация TotL]",
+        "classes": [
+          "cleric"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Heavenly_Inferno",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

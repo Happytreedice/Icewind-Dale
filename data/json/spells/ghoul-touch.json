@@ -1,212 +1,212 @@
 {
- "_id": "hlbTb4fFMpr7hpnq",
- "name": "Прикосновение упыря [Ghoul Touch]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI218B.avif",
- "system": {
-  "description": {
-   "value": "<p>Ваша рука окружается зелёным гнилостным свечением. Совершите рукопашную атаку заклинанием по гуманоиду. При попадании цель должна совершить спасбросок Телосложения. При провале цель становится парализованной на 1 минуту и источает трупное зловоние, из-за которого существа в пределах 5 футов от неё становятся отравленными. Цель может совершать повторный спасбросок Телосложения в конце каждого своего хода.</p><p><em>При попадании парализует гуманоида и заставляет его источать тошнотворную вонь, отравляющую существ рядом.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше вы можете совершить дополнительную атаку касанием в следующий ход.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "ghoul-touch",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "touch",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 2,
-  "school": "nec",
-  "materials": {
-   "value": "кусочек ткани из савана",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "SYh7ybv3dM6GR3gu": {
-    "_id": "SYh7ybv3dM6GR3gu",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "hlbTb4fFMpr7hpnq",
+  "name": "Прикосновение упыря [Ghoul Touch]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI218B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Ваша рука окружается зелёным гнилостным свечением. Совершите [[/attack]]{рукопашную атаку заклинанием} по гуманоиду. При попадании цель должна совершить [[/save con]]{спасбросок Телосложения}. При провале цель становится &Reference[condition=paralyzed]{парализованной} на 1 минуту и источает трупное зловоние, из-за которого существа в пределах 5 футов от неё становятся &Reference[condition=poisoned]{отравленными}. Цель может совершать повторный [[/save con]]{спасбросок Телосложения} в конце каждого своего хода.</p><p><em>При попадании парализует гуманоида и заставляет его источать тошнотворную вонь, отравляющую существ рядом.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше вы можете совершить дополнительную атаку касанием в следующий ход.</p>",
+      "chat": "Парализует гуманоида касанием и заставляет его источать зловоние, отравляющее врагов вокруг."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "ghoul-touch",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "jj3hiCXdtYrtkPzu"
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "attack",
-    "attack": {
-     "ability": "",
-     "bonus": "",
-     "flat": false,
-     "critical": {
-      "threshold": null
-     },
-     "type": {
-      "value": "melee",
-      "classification": "spell"
-     }
+    "level": 2,
+    "school": "nec",
+    "materials": {
+      "value": "кусочек ткани из савана",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "includeBase": false,
-     "critical": {
-      "bonus": ""
-     },
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "SYh7ybv3dM6GR3gu": {
+        "_id": "SYh7ybv3dM6GR3gu",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "jj3hiCXdtYrtkPzu"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "attack",
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "flat": false,
+          "critical": {
+            "threshold": null
+          },
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "includeBase": false,
+          "critical": {
+            "bonus": ""
+          },
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "jj3hiCXdtYrtkPzu",
-   "name": "Прикосновение упыря (паралич)",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI218B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "paralyzed"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "jj3hiCXdtYrtkPzu",
+      "name": "Прикосновение упыря (паралич)",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI218B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "paralyzed"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674724692,
+        "modifiedTime": 1791674724692,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI218",
+        "refs": [
+          "SPWI218"
+        ],
+        "type2e": "wizard",
+        "level2e": 2,
+        "source2e": "2 круг, школа некромантии (necromancy), дальность касание, длительность 6 раундов, парализует гуманоида и излучает зловоние",
+        "classes": [
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Ghoul_Touch",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674724692,
-    "modifiedTime": 1791674724692,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI218",
-    "refs": [
-     "SPWI218"
-    ],
-    "type2e": "wizard",
-    "level2e": 2,
-    "source2e": "2 круг, школа некромантии (necromancy), дальность касание, длительность 6 раундов, парализует гуманоида и излучает зловоние",
-    "classes": [
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Ghoul_Touch",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

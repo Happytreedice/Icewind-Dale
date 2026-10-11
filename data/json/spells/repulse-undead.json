@@ -1,226 +1,226 @@
 {
- "_id": "AGhpL7BGhjBvG2lw",
- "name": "Оттолкнуть нежить [Repulse Undead]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR515B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы излучаете непрерывные импульсы положительной энергии, отталкивающие подбирающуюся нежить. В начале каждого вашего хода любая нежить в пределах 30 футов от вас должна совершить спасбросок Мудрости. При провале цель получает 4к8 урона излучением, отталкивается на 15 футов от вас и становится испуганной до начала вашего следующего хода. При успехе она получает половину урона и не отталкивается.</p><p><em>Испугает и отталкивает нежить волнами святой энергии каждый раунд.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 6-го уровня или выше урон излучением увеличивается на 1к8 за каждый уровень ячейки выше 5-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "repulse-undead",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "radius",
-    "size": "30",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 5,
-  "school": "abj",
-  "materials": {
-   "value": "священный символ",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "6RJZYFfbRZeRBjAg": {
-    "_id": "6RJZYFfbRZeRBjAg",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "AGhpL7BGhjBvG2lw",
+  "name": "Оттолкнуть нежить [Repulse Undead]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR515B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы излучаете непрерывные импульсы положительной энергии, отталкивающие подбирающуюся нежить. В начале каждого вашего хода любая нежить в пределах 30 футов от вас должна совершить [[/save wis]]{спасбросок Мудрости}. При провале цель получает [[/damage 4d8 radiant]]{4к8 урона излучением}, отталкивается на 15 футов от вас и становится &Reference[condition=frightened]{испуганной} до начала вашего следующего хода. При успехе она получает половину урона и не отталкивается.</p><p><em>Испугает и отталкивает нежить волнами святой энергии каждый раунд.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 6-го уровня или выше урон излучением увеличивается на 1к8 за каждый уровень ячейки выше 5-го.</p>",
+      "chat": "Излучает импульсы положительной энергии, отталкивающие нежить от заклинателя."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "repulse-undead",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "EILoWHZhmHpdXR34",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "radius",
+        "size": "30",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 5,
+    "school": "abj",
+    "materials": {
+      "value": "священный символ",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 4,
-       "denomination": 8,
-       "bonus": "",
-       "types": [
-        "radiant"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "6RJZYFfbRZeRBjAg": {
+        "_id": "6RJZYFfbRZeRBjAg",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "EILoWHZhmHpdXR34",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 4,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "EILoWHZhmHpdXR34",
-   "name": "Оттолкнуть нежить (испуг)",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR515B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "frightened"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "EILoWHZhmHpdXR34",
+      "name": "Оттолкнуть нежить (испуг)",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR515B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "frightened"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791675480592,
+        "modifiedTime": 1791675480592,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR515",
+        "refs": [
+          "SPPR515"
+        ],
+        "type2e": "priest",
+        "level2e": 5,
+        "source2e": "5 круг, школа ограждения (abjuration), дальность на себя (аура 30 фт.), длительность 1 минута, волны энергии отталкивают нежить каждый раунд",
+        "classes": [
+          "cleric",
+          "paladin"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Repulse_Undead",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791675480592,
-    "modifiedTime": 1791675480592,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR515",
-    "refs": [
-     "SPPR515"
-    ],
-    "type2e": "priest",
-    "level2e": 5,
-    "source2e": "5 круг, школа ограждения (abjuration), дальность на себя (аура 30 фт.), длительность 1 минута, волны энергии отталкивают нежить каждый раунд",
-    "classes": [
-     "cleric",
-     "paladin"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Repulse_Undead",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

@@ -1,207 +1,207 @@
 {
- "_id": "G9pgmAz0dcMMFRWb",
- "name": "Природная красота [Nature's Beauty]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR704B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы принимаете иллюзорный облик совершенной природной красоты, сравнимой с чистейшей нимфой. Все гуманоиды в радиусе 30 футов от вас, видящие вас, должны совершить спасбросок Мудрости. При провале цель становится постоянно ослеплённой. Если спасбросок провален на 5 или более, цель погибает от сокрушительного эстетического шока.</p><p><em>Придает заклинателю облик идеальной красоты нимфы, навсегда ослепляя гуманоидов вокруг при провале спасброска; при провале на 5 и более цель погибает от шока.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше радиус воздействия увеличивается на 10 футов за каждый уровень ячейки выше 7-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "natures-beauty",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "radius",
-    "size": "30",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 7,
-  "school": "ill",
-  "materials": {
-   "value": "лепесток редкого цветка",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material"
-  ],
-  "activities": {
-   "gTglT2AEvsDCzoPg": {
-    "_id": "gTglT2AEvsDCzoPg",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "G9pgmAz0dcMMFRWb",
+  "name": "Природная красота [Nature's Beauty]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR704B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы принимаете иллюзорный облик совершенной природной красоты, сравнимой с чистейшей нимфой. Все гуманоиды в радиусе 30 футов от вас, видящие вас, должны совершить [[/save wis]]{спасбросок Мудрости}. При провале цель становится постоянно &Reference[condition=blinded]{ослеплённой}. Если спасбросок провален на 5 или более, цель погибает от сокрушительного эстетического шока.</p><p><em>Придает заклинателю облик идеальной красоты нимфы, навсегда ослепляя гуманоидов вокруг при провале спасброска; при провале на 5 и более цель погибает от шока.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше радиус воздействия увеличивается на 10 футов за каждый уровень ячейки выше 7-го.</p>",
+      "chat": "Придаёт заклинателю иллюзорную красоту, ослепляющую и очаровывающую окружающих гуманоидов."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "natures-beauty",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "4EWxKLHksVTzPxHP",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "radius",
+        "size": "30",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 7,
+    "school": "ill",
+    "materials": {
+      "value": "лепесток редкого цветка",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "none",
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "gTglT2AEvsDCzoPg": {
+        "_id": "gTglT2AEvsDCzoPg",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4EWxKLHksVTzPxHP",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "4EWxKLHksVTzPxHP",
-   "name": "Природная красота (ослепление)",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR704B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": null,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "blinded"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "4EWxKLHksVTzPxHP",
+      "name": "Природная красота (ослепление)",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR704B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "blinded"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791675290779,
+        "modifiedTime": 1791675290779,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR704",
+        "refs": [
+          "SPPR704"
+        ],
+        "type2e": "priest",
+        "level2e": 7,
+        "source2e": "7 круг, школа иллюзии (illusion), дальность на себя (радиус 30 фт.), длительность мгновенная, ослепляет гуманоидов навсегда, при сильном провале вызывает смерть",
+        "classes": [
+          "druid",
+          "cleric"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Nature's_Beauty",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791675290779,
-    "modifiedTime": 1791675290779,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR704",
-    "refs": [
-     "SPPR704"
-    ],
-    "type2e": "priest",
-    "level2e": 7,
-    "source2e": "7 круг, школа иллюзии (illusion), дальность на себя (радиус 30 фт.), длительность мгновенная, ослепляет гуманоидов навсегда, при сильном провале вызывает смерть",
-    "classes": [
-     "druid",
-     "cleric"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Nature's_Beauty",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

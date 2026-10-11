@@ -1,215 +1,215 @@
 {
- "_id": "qujjbR3q4g39ekT5",
- "name": "Великая порча [Greater Malison]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI412B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы посылаете пагубное проклятие неудачи в область сферы радиусом 30 футов в пределах дистанции. Каждое вражеское существо в области должно совершить спасбросок Мудрости. При провале цель получает штраф -2 ко всем своим спасброскам на время длительности заклинания.</p><p><em>Накладывает проклятие на врагов в сфере 30 футов, дающее штраф -2 ко всем спасброскам.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше вы можете увеличить радиус сферы на 10 футов за каждый уровень ячейки выше 4-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "greater-malison",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "sphere",
-    "size": "30",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "60",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 4,
-  "school": "enc",
-  "materials": {
-   "value": "засушенная лапа жабы",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "FNjM3fIE5SVrjMz6": {
-    "_id": "FNjM3fIE5SVrjMz6",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "qujjbR3q4g39ekT5",
+  "name": "Великая порча [Greater Malison]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI412B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы посылаете пагубное проклятие неудачи в область сферы радиусом 30 футов в пределах дистанции. Каждое вражеское существо в области должно совершить [[/save wis]]{спасбросок Мудрости}. При провале цель получает штраф -2 ко всем своим спасброскам на время длительности заклинания.</p><p><em>Накладывает проклятие на врагов в сфере 30 футов, дающее штраф -2 ко всем спасброскам.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше вы можете увеличить радиус сферы на 10 футов за каждый уровень ячейки выше 4-го.</p>",
+      "chat": "Накладывает проклятие на область, ухудшая спасброски всех находящихся там врагов."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "greater-malison",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "zO7M3hgYeIuaUcj5",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "sphere",
+        "size": "30",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 4,
+    "school": "enc",
+    "materials": {
+      "value": "засушенная лапа жабы",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "none",
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "FNjM3fIE5SVrjMz6": {
+        "_id": "FNjM3fIE5SVrjMz6",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "zO7M3hgYeIuaUcj5",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "zO7M3hgYeIuaUcj5",
-   "name": "Великая порча",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI412B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [
+  "effects": [
     {
-     "key": "system.bonuses.abilities.save",
-     "mode": 2,
-     "value": "-2",
-     "priority": null
+      "_id": "zO7M3hgYeIuaUcj5",
+      "name": "Великая порча",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI412B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [
+        {
+          "key": "system.bonuses.abilities.save",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "statuses": [],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674725787,
+        "modifiedTime": 1791674725787,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
     }
-   ],
-   "statuses": [],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI412",
+        "refs": [
+          "SPWI412"
+        ],
+        "type2e": "wizard",
+        "level2e": 4,
+        "source2e": "4 круг, школа чародейства (enchantment), дальность 60 фт., длительность 1 минута, даёт -2 ко всем спасброскам врагов в области",
+        "classes": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Greater_Malison",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674725787,
-    "modifiedTime": 1791674725787,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI412",
-    "refs": [
-     "SPWI412"
-    ],
-    "type2e": "wizard",
-    "level2e": 4,
-    "source2e": "4 круг, школа чародейства (enchantment), дальность 60 фт., длительность 1 минута, даёт -2 ко всем спасброскам врагов в области",
-    "classes": [
-     "bard",
-     "sorcerer",
-     "warlock",
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Greater_Malison",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

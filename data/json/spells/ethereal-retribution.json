@@ -1,226 +1,226 @@
 {
- "_id": "xWwkK8jgSU7mxghh",
- "name": "Призрачное возмездие [Ethereal Retribution]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR751B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы призываете рой стенающих призраков из мира духов, которые кружатся по полю боя вокруг вас в радиусе 30 футов. На протяжении 3 раундов в начале каждого вашего хода все враги в области получают 3к8 силового урона (без спасброска). Кроме того, все живые враги должны совершить спасбросок Мудрости или стать испуганными на время действия заклинания.</p><p><em>Призывает рой призрачных фигур на 3 раунда, которые наносят 3к8 силового урона врагам в радиусе 30 футов каждый раунд и испугивают живых существ.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 7-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "ethereal-retribution",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "3",
-   "units": "round",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "radius",
-    "size": "30",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 7,
-  "school": "con",
-  "materials": {
-   "value": "тотем призрака",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "8CYuCeUDmJ3cPFEP": {
-    "_id": "8CYuCeUDmJ3cPFEP",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "xWwkK8jgSU7mxghh",
+  "name": "Призрачное возмездие [Ethereal Retribution]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR751B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы призываете рой стенающих призраков из мира духов, которые кружатся по полю боя вокруг вас в радиусе 30 футов. На протяжении 3 раундов в начале каждого вашего хода все враги в области получают [[/damage 3d8 force]]{3к8 силового урона} (без спасброска). Кроме того, все живые враги должны совершить [[/save wis]]{спасбросок Мудрости} или стать &Reference[condition=frightened]{испуганными} на время действия заклинания.</p><p><em>Призывает рой призрачных фигур на 3 раунда, которые наносят [[/damage 3d8 force]]{3к8 силового урона} врагам в радиусе 30 футов каждый раунд и испугивают живых существ.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 7-го.</p>",
+      "chat": "Призывает рой духов вокруг заклинателя, наносящих урон всем врагам в области."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "ethereal-retribution",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "uiEqrRZtYrcCka4r",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "3",
+      "units": "round",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "radius",
+        "size": "30",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 7,
+    "school": "con",
+    "materials": {
+      "value": "тотем призрака",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 3,
-       "denomination": 8,
-       "bonus": "",
-       "types": [
-        "force"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "8CYuCeUDmJ3cPFEP": {
+        "_id": "8CYuCeUDmJ3cPFEP",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "uiEqrRZtYrcCka4r",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "uiEqrRZtYrcCka4r",
-   "name": "Призрачное возмездие",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR751B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": null,
-    "combat": null,
-    "rounds": 3,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "frightened"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "uiEqrRZtYrcCka4r",
+      "name": "Призрачное возмездие",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR751B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 3,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "frightened"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674554938,
+        "modifiedTime": 1791674554938,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR751",
+        "refs": [
+          "SPPR751"
+        ],
+        "type2e": "priest",
+        "level2e": 7,
+        "source2e": "7 круг (шаман), школа сотворения (conjuration), дальность на себя (радиус 30 фт.), длительность 3 раунда, 3к8 урона магией каждый раунд всем врагам и испуг живых врагов",
+        "classes": [
+          "cleric",
+          "druid"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Ethereal_Retribution",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674554938,
-    "modifiedTime": 1791674554938,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR751",
-    "refs": [
-     "SPPR751"
-    ],
-    "type2e": "priest",
-    "level2e": 7,
-    "source2e": "7 круг (шаман), школа сотворения (conjuration), дальность на себя (радиус 30 фт.), длительность 3 раунда, 3к8 урона магией каждый раунд всем врагам и испуг живых врагов",
-    "classes": [
-     "cleric",
-     "druid"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Ethereal_Retribution",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

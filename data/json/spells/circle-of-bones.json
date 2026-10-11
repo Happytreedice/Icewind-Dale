@@ -1,247 +1,247 @@
 {
- "_id": "i95zKHDvU2yy6y3C",
- "name": "Костяной круг [Circle of Bones]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR323B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы призываете вихрь острых человеческих костей, быстро вращающихся вокруг вас в радиусе 5 футов. Заклинатель не может перемещаться во время действия заклинания. Любое другое существо, впервые за ход входящее в область или начинающее там ход, должно совершить спасбросок Ловкости, получая 1к6 дробящего и 1к6 рубящего урона при провале или половину этого урона при успехе.</p><p><em>Создаёт вращающийся барьер из костей. Вы не можете перемещаться, а враги в области получают урон.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон каждого типа увеличивается на 1к6 за каждые два уровня ячейки выше 3-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "circle-of-bones",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "radius",
-    "size": "5",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 3,
-  "school": "nec",
-  "materials": {
-   "value": "костяная пыль",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "MFUdQP7t1lkV8a30": {
-    "_id": "MFUdQP7t1lkV8a30",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "i95zKHDvU2yy6y3C",
+  "name": "Костяной круг [Circle of Bones]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR323B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы призываете вихрь острых человеческих костей, быстро вращающихся вокруг вас в радиусе 5 футов. Заклинатель не может перемещаться во время действия заклинания. Любое другое существо, впервые за ход входящее в область или начинающее там ход, должно совершить [[/save dex]]{спасбросок Ловкости}, получая [[/damage 1d6 bludgeoning]]{1к6 дробящего} и [[/damage 1d6 slashing]]{1к6 рубящего урона} при провале или половину этого урона при успехе.</p><p><em>Создаёт вращающийся барьер из костей. Вы не можете перемещаться, а враги в области получают урон.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон каждого типа увеличивается на 1к6 за каждые два уровня ячейки выше 3-го.</p>",
+      "chat": "Создаёт вокруг заклинателя защитный вихрь из останков, наносящий урон врагам."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "circle-of-bones",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "8VmcwyAC7m9bR4Sw",
-      "onSave": true
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "radius",
+        "size": "5",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "dex"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 3,
+    "school": "nec",
+    "materials": {
+      "value": "костяная пыль",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 1,
-       "denomination": 6,
-       "bonus": "",
-       "types": [
-        "bludgeoning"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
-      },
-      {
-       "number": 1,
-       "denomination": 6,
-       "bonus": "",
-       "types": [
-        "slashing"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "MFUdQP7t1lkV8a30": {
+        "_id": "MFUdQP7t1lkV8a30",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "8VmcwyAC7m9bR4Sw",
+            "onSave": true
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            },
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "8VmcwyAC7m9bR4Sw",
-   "name": "Костяной круг",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR323B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [
+  "effects": [
     {
-     "key": "system.attributes.movement.walk",
-     "mode": 5,
-     "value": "0",
-     "priority": null
+      "_id": "8VmcwyAC7m9bR4Sw",
+      "name": "Костяной круг",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR323B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "0",
+          "priority": null
+        }
+      ],
+      "statuses": [],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674550138,
+        "modifiedTime": 1791674550138,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
     }
-   ],
-   "statuses": [],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR323",
+        "refs": [
+          "SPPR323"
+        ],
+        "type2e": "priest",
+        "level2e": 3,
+        "source2e": "3 круг, школа некромантии (necromancy), дальность на себя, длительность 1 минута, 1к6 дробящего и 1к6 рубящего урона врагам в области",
+        "classes": [
+          "cleric"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Circle_of_Bones",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674550138,
-    "modifiedTime": 1791674550138,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR323",
-    "refs": [
-     "SPPR323"
-    ],
-    "type2e": "priest",
-    "level2e": 3,
-    "source2e": "3 круг, школа некромантии (necromancy), дальность на себя, длительность 1 минута, 1к6 дробящего и 1к6 рубящего урона врагам в области",
-    "classes": [
-     "cleric"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Circle_of_Bones",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

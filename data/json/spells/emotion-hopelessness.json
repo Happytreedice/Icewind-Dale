@@ -1,209 +1,209 @@
 {
- "_id": "EDRwTmeBZPYfe6Nq",
- "name": "Эмоция: Безнадёжность [Emotion, Hopelessness]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI411B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы внушаете сокрушительное чувство безнадёжности всем врагам в 15-футовой сфере с центром в точке в пределах дистанции. Каждое вражеское существо в области должно совершить спасбросок Мудрости. При провале цель становится недееспособной (incapacitated), опускает оружие и отказывается совершать какие-либо действия или перемещения из-за глубокой апатии. Заклинание также рассеивает все эффекты вдохновения, ярости и боевого духа.</p><p><em>Наполняет врагов в сфере 15 футов глубоким отчаянием, делая их недееспособными при провале спасброска Мудрости.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше радиус сферы увеличивается на 5 футов за каждый уровень ячейки выше 4-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "emotion-hopelessness",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "sphere",
-    "size": "15",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "60",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 4,
-  "school": "enc",
-  "materials": {
-   "value": "слеза фей",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "HXWdPZDwXlUPW2aM": {
-    "_id": "HXWdPZDwXlUPW2aM",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "EDRwTmeBZPYfe6Nq",
+  "name": "Эмоция: Безнадёжность [Emotion, Hopelessness]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI411B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы внушаете сокрушительное чувство безнадёжности всем врагам в 15-футовой сфере с центром в точке в пределах дистанции. Каждое вражеское существо в области должно совершить [[/save wis]]{спасбросок Мудрости}. При провале цель становится &Reference[condition=incapacitated]{недееспособной} (incapacitated), опускает оружие и отказывается совершать какие-либо действия или перемещения из-за глубокой апатии. Заклинание также рассеивает все эффекты вдохновения, ярости и боевого духа.</p><p><em>Наполняет врагов в сфере 15 футов глубоким отчаянием, делая их &Reference[condition=incapacitated]{недееспособными} при провале [[/save wis]]{спасброска Мудрости}.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 5-го уровня или выше радиус сферы увеличивается на 5 футов за каждый уровень ячейки выше 4-го.</p>",
+      "chat": "Внушает врагам безнадёжность, заставляя их сложить оружие или бежать с поля боя."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "emotion-hopelessness",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "Q2pmCMdiMQuFyY5d",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "sphere",
+        "size": "15",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 4,
+    "school": "enc",
+    "materials": {
+      "value": "слеза фей",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "none",
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "HXWdPZDwXlUPW2aM": {
+        "_id": "HXWdPZDwXlUPW2aM",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Q2pmCMdiMQuFyY5d",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "Q2pmCMdiMQuFyY5d",
-   "name": "Эмоция: Безнадёжность",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI411B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "incapacitated"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "Q2pmCMdiMQuFyY5d",
+      "name": "Эмоция: Безнадёжность",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI411B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "incapacitated"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674554020,
+        "modifiedTime": 1791674554020,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI411",
+        "refs": [
+          "SPWI411"
+        ],
+        "type2e": "wizard",
+        "level2e": 4,
+        "source2e": "4 круг, школа чародейства (enchantment), дальность в пределах видимости, длительность 1 минута, вызывание безнадёжности, враги бездействуют",
+        "classes": [
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Emotion,_Hopelessness",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674554020,
-    "modifiedTime": 1791674554020,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI411",
-    "refs": [
-     "SPWI411"
-    ],
-    "type2e": "wizard",
-    "level2e": 4,
-    "source2e": "4 круг, школа чародейства (enchantment), дальность в пределах видимости, длительность 1 минута, вызывание безнадёжности, враги бездействуют",
-    "classes": [
-     "bard",
-     "sorcerer",
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Emotion,_Hopelessness",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

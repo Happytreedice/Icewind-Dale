@@ -1,231 +1,231 @@
 {
- "_id": "bXz3euLwOTsbkAeq",
- "name": "Едкий туман Малавона [Malavon's Corrosive Fog]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI904B.avif",
- "system": {
-  "description": {
-   "value": "<p>Известное заклинание тёмноэльфийского мага Малавона. Вы создаёте клубящееся облако смертоносного едкого тумана в сфере радиусом 20 футов с центром в точке в пределах дистанции. Облако делает область сильно заслонённой, а перемещение сквозь него стоит вдвое больше движения. Каждое существо, начинающее ход в тумане или входящее в него впервые за ход, совершает спасбросок Телосложения, получая 10к8 урона кислотой при провале или половину при успехе.</p><p><em>Создаёт облако кислотного тумана в сфере 20 футов, режущее скорость вдвое и наносящее 10к8 урона кислотой каждый раунд.</em></p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "malavons-corrosive-fog",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "sphere",
-    "size": "20",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "120",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 9,
-  "school": "evo",
-  "materials": {
-   "value": "желчь чёрного дракона",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "hFxIJN5RlE6RZfrN": {
-    "_id": "hFxIJN5RlE6RZfrN",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "bXz3euLwOTsbkAeq",
+  "name": "Едкий туман Малавона [Malavon's Corrosive Fog]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI904B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Известное заклинание тёмноэльфийского мага Малавона. Вы создаёте клубящееся облако смертоносного едкого тумана в сфере радиусом 20 футов с центром в точке в пределах дистанции. Облако делает область сильно заслонённой, а перемещение сквозь него стоит вдвое больше движения. Каждое существо, начинающее ход в тумане или входящее в него впервые за ход, совершает [[/save con]]{спасбросок Телосложения}, получая [[/damage 10d8 acid]]{10к8 урона кислотой} при провале или половину при успехе.</p><p><em>Создаёт облако кислотного тумана в сфере 20 футов, режущее скорость вдвое и наносящее [[/damage 10d8 acid]]{10к8 урона кислотой} каждый раунд.</em></p>",
+      "chat": "Создаёт облако едкого тумана, наносящее урон кислотой всем находящимся внутри."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "malavons-corrosive-fog",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "aRrM1zPr45NDp1kR",
-      "onSave": true
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "sphere",
+        "size": "20",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "con"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 9,
+    "school": "evo",
+    "materials": {
+      "value": "желчь чёрного дракона",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 10,
-       "denomination": 8,
-       "bonus": "",
-       "types": [
-        "acid"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "",
-        "number": null,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "hFxIJN5RlE6RZfrN": {
+        "_id": "hFxIJN5RlE6RZfrN",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "aRrM1zPr45NDp1kR",
+            "onSave": true
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 10,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "aRrM1zPr45NDp1kR",
-   "name": "Едкий туман Малавона (замедление)",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI904B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [
+  "effects": [
     {
-     "key": "system.attributes.movement.walk",
-     "mode": 1,
-     "value": "0.5",
-     "priority": null
+      "_id": "aRrM1zPr45NDp1kR",
+      "name": "Едкий туман Малавона (замедление)",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI904B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 1,
+          "value": "0.5",
+          "priority": null
+        }
+      ],
+      "statuses": [],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674860606,
+        "modifiedTime": 1791674860606,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
     }
-   ],
-   "statuses": [],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI904",
+        "refs": [
+          "SPWI904"
+        ],
+        "type2e": "wizard",
+        "level2e": 9,
+        "source2e": "9 круг, школа воплощения (evocation), дальность в пределах видимости, длительность 1 минута, режет скорость на 50%, наносит нарастающий урон кислотой каждый раунд",
+        "classes": [
+          "sorcerer",
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Malavon's_Corrosive_Fog",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674860606,
-    "modifiedTime": 1791674860606,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI904",
-    "refs": [
-     "SPWI904"
-    ],
-    "type2e": "wizard",
-    "level2e": 9,
-    "source2e": "9 круг, школа воплощения (evocation), дальность в пределах видимости, длительность 1 минута, режет скорость на 50%, наносит нарастающий урон кислотой каждый раунд",
-    "classes": [
-     "sorcerer",
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Malavon's_Corrosive_Fog",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

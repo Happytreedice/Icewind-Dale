@@ -1,163 +1,163 @@
 {
- "_id": "v5EALseocOGCPMfo",
- "name": "Неверная магия [Miscast Magic]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR310B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы искажаете магические потоки вокруг вражеского заклинателя. Выбранное существо в пределах дистанции должно совершить спасбросок Мудрости. При провале каждый раз, когда цель пытается сотворить заклинание во время длительности заклинания, она должна совершить спасбросок характеристикой колдовства против вашей Сл спасброска. При провале сотворение заклинания проваливается, а ячейка заклинания теряется.</p><p><em>При провале спасброска цель при каждой попытке сотворения заклинания должна делать спасбросок, иначе её заклинание проваливается.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше вы можете выбрать одно дополнительное существо за каждый уровень ячейки выше 3-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "miscast-magic",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "60",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 3,
-  "school": "enc",
-  "materials": {
-   "value": "",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "concentration"
-  ],
-  "activities": {
-   "ZZrqkDdku2DL9Om9": {
-    "_id": "ZZrqkDdku2DL9Om9",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "v5EALseocOGCPMfo",
+  "name": "Неверная магия [Miscast Magic]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR310B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы искажаете магические потоки вокруг вражеского заклинателя. Выбранное существо в пределах дистанции должно совершить [[/save wis]]{спасбросок Мудрости}. При провале каждый раз, когда цель пытается сотворить заклинание во время длительности заклинания, она должна совершить спасбросок характеристикой колдовства против вашей Сл спасброска. При провале сотворение заклинания проваливается, а ячейка заклинания теряется.</p><p><em>При провале спасброска цель при каждой попытке сотворения заклинания должна делать спасбросок, иначе её заклинание проваливается.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше вы можете выбрать одно дополнительное существо за каждый уровень ячейки выше 3-го.</p>",
+      "chat": "Искажает магические потоки вокруг врага, повышая шанс провала его заклинаний."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "miscast-magic",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 3,
+    "school": "enc",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "none",
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "ZZrqkDdku2DL9Om9": {
+        "_id": "ZZrqkDdku2DL9Om9",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR310",
-    "refs": [
-     "SPPR310"
-    ],
-    "type2e": "priest",
-    "level2e": 3,
-    "source2e": "3 круг, школа чародейства (enchantment), дальность 60 фт., длительность 1 минута, 80% шанс провала колдовства при провале спасброска",
-    "classes": [
-     "cleric",
-     "druid"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Miscast_Magic",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR310",
+        "refs": [
+          "SPPR310"
+        ],
+        "type2e": "priest",
+        "level2e": 3,
+        "source2e": "3 круг, школа чародейства (enchantment), дальность 60 фт., длительность 1 минута, 80% шанс провала колдовства при провале спасброска",
+        "classes": [
+          "cleric",
+          "druid"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Miscast_Magic",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

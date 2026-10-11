@@ -1,179 +1,179 @@
 {
- "_id": "AD3sDlbHA2maCivQ",
- "name": "Нанести множественные лёгкие раны [Mass Cause Light Wounds]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR523B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы излучаете волну губительной некротической энергии в радиусе 15 футов от себя. Каждое живое вражеское существо в этой области должно совершить спасбросок Телосложения. При провале цель получает 3к8 некротического урона, или половину этого урона при успехе. На нежить и конструктов это заклинание не оказывает никакого эффекта.</p><p><em>Наносит 3к8 некротического урона всем вражеским живым существам в радиусе 15 футов (спасбросок Телосложения на половину); не действует на нежить.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 6-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 5-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "mass-cause-light-wounds",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "radius",
-    "size": "15",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 5,
-  "school": "nec",
-  "materials": {
-   "value": "",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic"
-  ],
-  "activities": {
-   "KhGG3878tfnol3ha": {
-    "_id": "KhGG3878tfnol3ha",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "AD3sDlbHA2maCivQ",
+  "name": "Нанести множественные лёгкие раны [Mass Cause Light Wounds]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR523B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы излучаете волну губительной некротической энергии в радиусе 15 футов от себя. Каждое живое вражеское существо в этой области должно совершить [[/save con]]{спасбросок Телосложения}. При провале цель получает [[/damage 3d8 necrotic]]{3к8 некротического урона}, или половину этого урона при успехе. На нежить и конструктов это заклинание не оказывает никакого эффекта.</p><p><em>Наносит [[/damage 3d8 necrotic]]{3к8 некротического урона} всем вражеским живым существам в радиусе 15 футов ([[/save con]]{спасбросок Телосложения} на половину); не действует на нежить.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 6-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 5-го.</p>",
+      "chat": "Излучает волну некротической энергии, наносящую урон всем вражеским существам вокруг."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "mass-cause-light-wounds",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "radius",
+        "size": "15",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "con"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 5,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 3,
-       "denomination": 8,
-       "bonus": "",
-       "types": [
-        "necrotic"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activities": {
+      "KhGG3878tfnol3ha": {
+        "_id": "KhGG3878tfnol3ha",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR523",
-    "refs": [
-     "SPPR523"
-    ],
-    "type2e": "priest",
-    "level2e": 5,
-    "source2e": "5 круг, школа некромантии (necromancy), дальность на себя (радиус 15 фт.), длительность мгновенная, 1к8 + 1/уровень урона врагам в области",
-    "classes": [
-     "cleric"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Mass_Cause_Light_Wounds",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR523",
+        "refs": [
+          "SPPR523"
+        ],
+        "type2e": "priest",
+        "level2e": 5,
+        "source2e": "5 круг, школа некромантии (necromancy), дальность на себя (радиус 15 фт.), длительность мгновенная, 1к8 + 1/уровень урона врагам в области",
+        "classes": [
+          "cleric"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Mass_Cause_Light_Wounds",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

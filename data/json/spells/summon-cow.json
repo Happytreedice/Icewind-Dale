@@ -1,225 +1,225 @@
 {
- "_id": "FYZPOgZh0ZUdETmY",
- "name": "Призвать корову [Summon Cow]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI101B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы открываете короткий портал над точкой в пределах дистанции, из которого с неба на цель падает упитанная корова. Цель должна совершить спасбросок Ловкости. При провале цель получает 3к10 дробящего урона и сбивается с ног. При успехе цель получает половину урона и не сбивается с ног. Корова мгновенно исчезает после падения.</p><p><em>Обрушивает корову с неба на цель, нанося 3к10 дробящего урона и сбивая с ног при провале спасброска Ловкости.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше урон увеличивается на 1к10 за каждый уровень ячейки выше 2-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "summon-cow",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "60",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 2,
-  "school": "con",
-  "materials": {
-   "value": "колокольчик для скота",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material"
-  ],
-  "activities": {
-   "uecl9KoZt55tpz6Y": {
-    "_id": "uecl9KoZt55tpz6Y",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "FYZPOgZh0ZUdETmY",
+  "name": "Призвать корову [Summon Cow]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI101B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы открываете короткий портал над точкой в пределах дистанции, из которого с неба на цель падает упитанная корова. Цель должна совершить [[/save dex]]{спасбросок Ловкости}. При провале цель получает [[/damage 3d10 bludgeoning]]{3к10 дробящего урона} и сбивается с ног. При успехе цель получает половину урона и не сбивается с ног. Корова мгновенно исчезает после падения.</p><p><em>Обрушивает корову с неба на цель, нанося [[/damage 3d10 bludgeoning]]{3к10 дробящего урона} и сбивая с ног при провале [[/save dex]]{спасброска Ловкости}.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 3-го уровня или выше урон увеличивается на 1к10 за каждый уровень ячейки выше 2-го.</p>",
+      "chat": "Сбрасывает корову с неба на цель, нанося урон и сбивая её с ног при падении."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "summon-cow",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "t7vzquIQSGgSKGrT",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "dex"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 2,
+    "school": "con",
+    "materials": {
+      "value": "колокольчик для скота",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 3,
-       "denomination": 10,
-       "bonus": "",
-       "types": [
-        "bludgeoning"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "uecl9KoZt55tpz6Y": {
+        "_id": "uecl9KoZt55tpz6Y",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "t7vzquIQSGgSKGrT",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "t7vzquIQSGgSKGrT",
-   "name": "Сбивание с ног",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI101B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": null,
-    "combat": null,
-    "rounds": 1,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "prone"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "t7vzquIQSGgSKGrT",
+      "name": "Сбивание с ног",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI101B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "prone"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791675696453,
+        "modifiedTime": 1791675696453,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI299",
+        "refs": [
+          "SPWI299"
+        ],
+        "type2e": "wizard",
+        "level2e": 2,
+        "source2e": "2 круг, школа вызова (conjuration), дальность 60 фт., длительность мгновенная, сбрасывает корову на цель",
+        "classes": [
+          "sorcerer",
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Summon_Cow",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791675696453,
-    "modifiedTime": 1791675696453,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI299",
-    "refs": [
-     "SPWI299"
-    ],
-    "type2e": "wizard",
-    "level2e": 2,
-    "source2e": "2 круг, школа вызова (conjuration), дальность 60 фт., длительность мгновенная, сбрасывает корову на цель",
-    "classes": [
-     "sorcerer",
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Summon_Cow",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

@@ -1,182 +1,182 @@
 {
- "_id": "mBkyMuxM4af6eUBV",
- "name": "Духовный гнев [Spiritual Wrath]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR616B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы становитесь фокусом духовной энергии, которая вырывается из вас в четырёх взаимно перпендикулярных направлениях (крестом) линиями длиной 60 футов и шириной 5 футов каждая. Каждое существо на пути любой из линий должно совершить спасбросок Ловкости. При провале цель получает 8к8 урона излучением, или половину этого урона при успехе.</p><p><em>Выпускает 4 луча божественной энергии во взаимно перпендикулярных направлениях, нанося урон излучением всем на пути.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 6-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "spiritual-wrath",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "",
-   "units": "inst",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "line",
-    "size": "60",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 6,
-  "school": "evo",
-  "materials": {
-   "value": "священный символ",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material"
-  ],
-  "activities": {
-   "gu2P5xe8GFu5TOcM": {
-    "_id": "gu2P5xe8GFu5TOcM",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "mBkyMuxM4af6eUBV",
+  "name": "Духовный гнев [Spiritual Wrath]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR616B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы становитесь фокусом духовной энергии, которая вырывается из вас в четырёх взаимно перпендикулярных направлениях (крестом) линиями длиной 60 футов и шириной 5 футов каждая. Каждое существо на пути любой из линий должно совершить [[/save dex]]{спасбросок Ловкости}. При провале цель получает [[/damage 8d8 radiant]]{8к8 урона излучением}, или половину этого урона при успехе.</p><p><em>Выпускает 4 луча божественной энергии во взаимно перпендикулярных направлениях, нанося урон излучением всем на пути.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 7-го уровня или выше урон увеличивается на 1к8 за каждый уровень ячейки выше 6-го.</p>",
+      "chat": "Выпускает духовную энергию в четырёх направлениях, нанося урон всем врагам на её пути."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "spiritual-wrath",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "line",
+        "size": "60",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "dex"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 6,
+    "school": "evo",
+    "materials": {
+      "value": "священный символ",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 8,
-       "denomination": 8,
-       "bonus": "",
-       "types": [
-        "radiant"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "gu2P5xe8GFu5TOcM": {
+        "_id": "gu2P5xe8GFu5TOcM",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 8,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR616",
-    "refs": [
-     "SPPR616",
-     "SPPR618",
-     "SPPR619"
-    ],
-    "type2e": "priest",
-    "level2e": 6,
-    "source2e": "6 круг, школа воплощения (evocation), дальность на себя, длительность мгновенная, 4 молниеподобных луча духовной энергии во всех направлениях",
-    "classes": [
-     "cleric"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Spiritual_Wrath",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR616",
+        "refs": [
+          "SPPR616",
+          "SPPR618",
+          "SPPR619"
+        ],
+        "type2e": "priest",
+        "level2e": 6,
+        "source2e": "6 круг, школа воплощения (evocation), дальность на себя, длительность мгновенная, 4 молниеподобных луча духовной энергии во всех направлениях",
+        "classes": [
+          "cleric"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Spiritual_Wrath",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

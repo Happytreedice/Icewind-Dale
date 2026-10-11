@@ -1,187 +1,187 @@
 {
- "_id": "ZkyjN7kDncLG4m9L",
- "name": "Прикосновение плесени [Mold Touch]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR326B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы заражаете затронутое существо спорами агрессивной бурой плесени. Совершите рукопашную атаку заклинанием. При попадании цель должна совершить спасбросок Телосложения. При провале она получает 4к6 некротического урона в первый раунд, 3к6 некротического урона во второй раунд и 2к6 некротического урона в третий раунд. Успешный спасбросок уменьшает урон каждого раунда вдвое.</p><p><em>Заражает цель спорами бурой плесени. Наносит 4к6 урона в 1-й раунд, 3к6 во 2-й и 2к6 в 3-й раунд при провале спасброска.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше начальный урон увеличивается на 1к6 за каждый уровень ячейки выше 3-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "mold-touch",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "3",
-   "units": "round",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "touch",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 3,
-  "school": "trs",
-  "materials": {
-   "value": "споры бурой плесени",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "ta40KNS29XKOPZVq": {
-    "_id": "ta40KNS29XKOPZVq",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "ZkyjN7kDncLG4m9L",
+  "name": "Прикосновение плесени [Mold Touch]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR326B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы заражаете затронутое существо спорами агрессивной бурой плесени. Совершите [[/attack]]{рукопашную атаку заклинанием}. При попадании цель должна совершить [[/save con]]{спасбросок Телосложения}. При провале она получает [[/damage 4d6 necrotic]]{4к6 некротического урона} в первый раунд, [[/damage 3d6 necrotic]]{3к6 некротического урона} во второй раунд и [[/damage 2d6 necrotic]]{2к6 некротического урона} в третий раунд. Успешный спасбросок уменьшает урон каждого раунда вдвое.</p><p><em>Заражает цель спорами бурой плесени. Наносит [[/damage 4d6]]{4к6 урона} в 1-й раунд, [[/r 3d6]]{3к6} во 2-й и [[/r 2d6]]{2к6} в 3-й раунд при провале спасброска.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше начальный урон увеличивается на 1к6 за каждый уровень ячейки выше 3-го.</p>",
+      "chat": "Заражает врага спорами плесени при касании, нанося урон и распространяясь на соседей."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "mold-touch",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "3",
+      "units": "round",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "attack",
-    "attack": {
-     "ability": "",
-     "bonus": "",
-     "flat": false,
-     "critical": {
-      "threshold": null
-     },
-     "type": {
-      "value": "melee",
-      "classification": "spell"
-     }
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "споры бурой плесени",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "includeBase": false,
-     "critical": {
-      "bonus": ""
-     },
-     "parts": [
-      {
-       "number": 4,
-       "denomination": 6,
-       "bonus": "",
-       "types": [
-        "necrotic"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "ta40KNS29XKOPZVq": {
+        "_id": "ta40KNS29XKOPZVq",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "attack",
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "flat": false,
+          "critical": {
+            "threshold": null
+          },
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "includeBase": false,
+          "critical": {
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 4,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR326",
-    "refs": [
-     "SPPR326"
-    ],
-    "type2e": "priest",
-    "level2e": 3,
-    "source2e": "3 круг, школа превращения (transformation), дальность касание, длительность 3 раунда, 4к6 / 3к6 / 2к6 урона за раунды",
-    "classes": [
-     "druid"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Mold_Touch",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR326",
+        "refs": [
+          "SPPR326"
+        ],
+        "type2e": "priest",
+        "level2e": 3,
+        "source2e": "3 круг, школа превращения (transformation), дальность касание, длительность 3 раунда, 4к6 / 3к6 / 2к6 урона за раунды",
+        "classes": [
+          "druid"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Mold_Touch",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

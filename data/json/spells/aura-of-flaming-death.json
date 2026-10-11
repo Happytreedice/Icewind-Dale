@@ -1,230 +1,230 @@
 {
- "_id": "ICZh68FkDChURHe5",
- "name": "Аура пламенной смерти [Aura of Flaming Death]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR730B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы окутываете себя интенсивной пожирающей аурой пламени. На время длительности заклинания вы получаете иммунитет к урону огнём и бонус +4 к Классу Доспеха. Кроме того, каждый раз, когда существо в пределах 5 футов от вас попадает по вам атакой ближнего боя, аура вспыхивает, нанося атакующему 3к10 урона огнём.</p><p><em>Окутывает заклинателя яркой пламенной аурой: дарует +4 к КД, иммунитет к огню и наносит 3к10 урона огнём нападающим в ближнем бою.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон огнём нападающим увеличивается на 1к10 за каждый уровень ячейки выше 7-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "aura-of-flaming-death",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "self",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "",
-   "units": "self",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 7,
-  "school": "evo",
-  "materials": {
-   "value": "уголь из инфернального пламени",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "G2czPVoehFcEWL9c": {
-    "_id": "G2czPVoehFcEWL9c",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "ICZh68FkDChURHe5",
+  "name": "Аура пламенной смерти [Aura of Flaming Death]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR730B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы окутываете себя интенсивной пожирающей аурой пламени. На время длительности заклинания вы получаете иммунитет к урону огнём и бонус +4 к Классу Доспеха. Кроме того, каждый раз, когда существо в пределах 5 футов от вас попадает по вам атакой ближнего боя, аура вспыхивает, нанося атакующему [[/damage 3d10 fire]]{3к10 урона огнём}.</p><p><em>Окутывает заклинателя яркой пламенной аурой: дарует +4 к КД, иммунитет к огню и наносит [[/damage 3d10 fire]]{3к10 урона огнём} нападающим в ближнем бою.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 8-го уровня или выше урон огнём нападающим увеличивается на 1к10 за каждый уровень ячейки выше 7-го.</p>",
+      "chat": "Окутывает заклинателя огненной аурой, дающей иммунитет к огню и повреждающей врагов."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "aura-of-flaming-death",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "GkgyeaF68CjhNNam"
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "damage",
-    "damage": {
-     "critical": {
-      "allow": false,
-      "bonus": ""
-     },
-     "parts": [
-      {
-       "number": 3,
-       "denomination": 10,
-       "bonus": "",
-       "types": [
-        "fire"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "level": 7,
+    "school": "evo",
+    "materials": {
+      "value": "уголь из инфернального пламени",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "G2czPVoehFcEWL9c": {
+        "_id": "G2czPVoehFcEWL9c",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "GkgyeaF68CjhNNam"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "damage",
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
-  },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "GkgyeaF68CjhNNam",
-   "name": "Аура пламенной смерти",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR730B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [
-    {
-     "key": "system.attributes.ac.bonus",
-     "mode": 2,
-     "value": "4",
-     "priority": null
     },
+    "sourceItem": null
+  },
+  "effects": [
     {
-     "key": "system.traits.di.value",
-     "mode": 2,
-     "value": "fire",
-     "priority": null
+      "_id": "GkgyeaF68CjhNNam",
+      "name": "Аура пламенной смерти",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR730B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "4",
+          "priority": null
+        },
+        {
+          "key": "system.traits.di.value",
+          "mode": 2,
+          "value": "fire",
+          "priority": null
+        }
+      ],
+      "statuses": [],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791674368523,
+        "modifiedTime": 1791674368523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
     }
-   ],
-   "statuses": [],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR730",
+        "refs": [
+          "SPPR730"
+        ],
+        "type2e": "priest",
+        "level2e": 7,
+        "source2e": "7 круг, школа воплощения (evocation), дальность на себя, длительность 1 минута, 90% сопротивление огню, +4 к КД и урон огнём нападающим в ближнем бою",
+        "classes": [
+          "cleric",
+          "druid"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Aura_of_Flaming_Death",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791674368523,
-    "modifiedTime": 1791674368523,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR730",
-    "refs": [
-     "SPPR730"
-    ],
-    "type2e": "priest",
-    "level2e": 7,
-    "source2e": "7 круг, школа воплощения (evocation), дальность на себя, длительность 1 минута, 90% сопротивление огню, +4 к КД и урон огнём нападающим в ближнем бою",
-    "classes": [
-     "cleric",
-     "druid"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Aura_of_Flaming_Death",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

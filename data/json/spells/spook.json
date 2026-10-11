@@ -1,208 +1,208 @@
 {
- "_id": "HzWzsb2D4vcpIQMN",
- "name": "Наваждение [Spook]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI125B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы взываете к сокровенным страхам одного существа в пределах дистанции, предстая перед ним в виде ужасающего кошмара. Цель должна совершить спасбросок Мудрости. При провале цель становится испуганной на время длительности заклинания и должна использовать всё своё перемещение, чтобы удалиться от вас.</p><p><em>Испугает выбранную цель при провале спасброска Мудрости, заставляя её убегать от заклинателя.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 2-го уровня или выше вы можете выбрать одно дополнительное существо за каждый уровень ячейки выше 1-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "spook",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "creature",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "",
-    "contiguous": false,
-    "stationary": false,
-    "type": "",
-    "size": "",
-    "width": "",
-    "height": "",
-    "units": ""
-   }
-  },
-  "range": {
-   "value": "30",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 1,
-  "school": "ill",
-  "materials": {
-   "value": "",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "concentration"
-  ],
-  "activities": {
-   "66UrC4pT59h1mZBW": {
-    "_id": "66UrC4pT59h1mZBW",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "HzWzsb2D4vcpIQMN",
+  "name": "Наваждение [Spook]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI125B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы взываете к сокровенным страхам одного существа в пределах дистанции, предстая перед ним в виде ужасающего кошмара. Цель должна совершить [[/save wis]]{спасбросок Мудрости}. При провале цель становится &Reference[condition=frightened]{испуганной} на время длительности заклинания и должна использовать всё своё перемещение, чтобы удалиться от вас.</p><p><em>Испугает выбранную цель при провале [[/save wis]]{спасброска Мудрости}, заставляя её убегать от заклинателя.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 2-го уровня или выше вы можете выбрать одно дополнительное существо за каждый уровень ячейки выше 1-го.</p>",
+      "chat": "Взывает к сокровенным страхам цели, заставляя её паниковать и спасаться бегством."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "spook",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [
-     {
-      "_id": "Utf9ANbAtvcBlNbI",
-      "onSave": false
-     }
-    ],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "wis"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 1,
+    "school": "ill",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "none",
-     "parts": []
-    }
-   }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "66UrC4pT59h1mZBW": {
+        "_id": "66UrC4pT59h1mZBW",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Utf9ANbAtvcBlNbI",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [
-  {
-   "_id": "Utf9ANbAtvcBlNbI",
-   "name": "Наваждение",
-   "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI125B.avif",
-   "type": "base",
-   "disabled": false,
-   "transfer": false,
-   "origin": null,
-   "duration": {
-    "startTime": null,
-    "seconds": 60,
-    "combat": null,
-    "rounds": null,
-    "turns": null,
-    "startRound": null,
-    "startTurn": null
-   },
-   "changes": [],
-   "statuses": [
-    "frightened"
-   ],
-   "description": "",
-   "tint": "#ffffff",
-   "flags": {},
-   "system": {},
-   "sort": 0,
-   "_stats": {
+  "effects": [
+    {
+      "_id": "Utf9ANbAtvcBlNbI",
+      "name": "Наваждение",
+      "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPWI125B.avif",
+      "type": "base",
+      "disabled": false,
+      "transfer": false,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "changes": [],
+      "statuses": [
+        "frightened"
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "flags": {},
+      "system": {},
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791675601651,
+        "modifiedTime": 1791675601651,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPWI125",
+        "refs": [
+          "SPWI125"
+        ],
+        "type2e": "wizard",
+        "level2e": 1,
+        "source2e": "1 круг, школа иллюзии (illusion), дальность 30 фт., длительность 3 раунда, пугает цель при провале спасброска",
+        "classes": [
+          "bard",
+          "warlock",
+          "wizard"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Spook",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
-    "createdTime": 1791675601651,
-    "modifiedTime": 1791675601651,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-   }
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- ],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPWI125",
-    "refs": [
-     "SPWI125"
-    ],
-    "type2e": "wizard",
-    "level2e": 1,
-    "source2e": "1 круг, школа иллюзии (illusion), дальность 30 фт., длительность 3 раунда, пугает цель при провале спасброска",
-    "classes": [
-     "bard",
-     "warlock",
-     "wizard"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Spook",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
-  }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }

@@ -1,182 +1,182 @@
 {
- "_id": "XaDo3dAGnZj1PQUT",
- "name": "Ливень [Cloudburst]",
- "type": "spell",
- "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR325B.avif",
- "system": {
-  "description": {
-   "value": "<p>Вы призываете магический проливной дождь в цилиндре радиусом 30 футов и высотой 40 футов с центром в точке в пределах дистанции. Ливень мгновенно тушит любое открытое немагическое пламя. Огненные и хладные существа в области должны совершать спасбросок Телосложения в начале каждого своего хода, получая 2к6 урона холодом при провале или половину урона при успехе.</p><p><em>Призывает ледяной ливень, который тушит немагический огонь и наносит урон огненным и хладным существам.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 3-го.</p>",
-   "chat": ""
-  },
-  "source": {
-   "custom": "Icewind Dale (2000)",
-   "book": "",
-   "page": "",
-   "license": "",
-   "revision": 1,
-   "rules": "2014"
-  },
-  "identifier": "cloudburst",
-  "activation": {
-   "type": "action",
-   "value": 1,
-   "condition": ""
-  },
-  "duration": {
-   "value": "1",
-   "units": "minute",
-   "special": ""
-  },
-  "target": {
-   "affects": {
-    "count": "",
-    "type": "",
-    "choice": false,
-    "special": ""
-   },
-   "template": {
-    "count": "1",
-    "contiguous": false,
-    "stationary": false,
-    "type": "cylinder",
-    "size": "30",
-    "width": "",
-    "height": "",
-    "units": "ft"
-   }
-  },
-  "range": {
-   "value": "120",
-   "units": "ft",
-   "special": ""
-  },
-  "uses": {
-   "spent": 0,
-   "max": "",
-   "recovery": []
-  },
-  "level": 3,
-  "school": "evo",
-  "materials": {
-   "value": "капля воды",
-   "consumed": false,
-   "cost": 0,
-   "supply": 0
-  },
-  "method": "spell",
-  "prepared": 0,
-  "properties": [
-   "vocal",
-   "somatic",
-   "material",
-   "concentration"
-  ],
-  "activities": {
-   "Du9CiszMlUY6TGPR": {
-    "_id": "Du9CiszMlUY6TGPR",
-    "name": "",
-    "img": "",
-    "sort": 0,
-    "activation": {
-     "type": "",
-     "value": null,
-     "condition": "",
-     "override": false
-    },
-    "consumption": {
-     "targets": [],
-     "scaling": {
-      "allowed": false,
-      "max": ""
-     },
-     "spellSlot": true
-    },
+  "_id": "XaDo3dAGnZj1PQUT",
+  "name": "Ливень [Cloudburst]",
+  "type": "spell",
+  "img": "modules/dnd-icewind-dale-pc-game/assets/icons/SPPR325B.avif",
+  "system": {
     "description": {
-     "chatFlavor": ""
+      "value": "<p>Вы призываете магический проливной дождь в цилиндре радиусом 30 футов и высотой 40 футов с центром в точке в пределах дистанции. Ливень мгновенно тушит любое открытое немагическое пламя. Огненные и хладные существа в области должны совершать [[/save con]]{спасбросок Телосложения} в начале каждого своего хода, получая [[/damage 2d6 cold]]{2к6 урона холодом} при провале или половину урона при успехе.</p><p><em>Призывает ледяной ливень, который тушит немагический огонь и наносит урон огненным и хладным существам.</em></p><p><strong>На более высоких уровнях.</strong> При сотворении этого заклинания с использованием ячейки 4-го уровня или выше урон увеличивается на 1к6 за каждый уровень ячейки выше 3-го.</p>",
+      "chat": "Призывает проливной дождь в указанной области, тушащий огонь и ухудшающий видимость."
+    },
+    "source": {
+      "custom": "Icewind Dale (2000)",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identifier": "cloudburst",
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
     },
     "duration": {
-     "override": false
-    },
-    "effects": [],
-    "range": {
-     "override": false
+      "value": "1",
+      "units": "minute",
+      "special": ""
     },
     "target": {
-     "override": false,
-     "prompt": true
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "1",
+        "contiguous": false,
+        "stationary": false,
+        "type": "cylinder",
+        "size": "30",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-     "spent": 0,
-     "max": "",
-     "recovery": []
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "type": "save",
-    "save": {
-     "ability": [
-      "con"
-     ],
-     "dc": {
-      "calculation": "spellcasting",
-      "formula": ""
-     }
+    "level": 3,
+    "school": "evo",
+    "materials": {
+      "value": "капля воды",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "damage": {
-     "onSave": "half",
-     "parts": [
-      {
-       "number": 2,
-       "denomination": 6,
-       "bonus": "",
-       "types": [
-        "cold"
-       ],
-       "custom": {
-        "enabled": false,
-        "formula": ""
-       },
-       "scaling": {
-        "mode": "whole",
-        "number": 1,
-        "formula": ""
-       }
+    "method": "spell",
+    "prepared": 0,
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "Du9CiszMlUY6TGPR": {
+        "_id": "Du9CiszMlUY6TGPR",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": "save",
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
-     ]
-    }
-   }
+    },
+    "sourceItem": null
   },
-  "sourceItem": null
- },
- "effects": [],
- "folder": null,
- "sort": 0,
- "ownership": {
-  "default": 0
- },
- "flags": {
-  "world": {
-   "iwdConversion": {
-    "ref": "SPPR325",
-    "refs": [
-     "SPPR325"
-    ],
-    "type2e": "priest",
-    "level2e": 3,
-    "source2e": "3 круг, школа воплощения (evocation), дальность 120 фт., длительность 1 минута, магический ливень, наносящий урон огненным и хладным существам",
-    "classes": [
-     "cleric",
-     "druid"
-    ],
-    "wiki": "https://icewinddale.fandom.com/wiki/Cloudburst",
-    "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
-   }
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "world": {
+      "iwdConversion": {
+        "ref": "SPPR325",
+        "refs": [
+          "SPPR325"
+        ],
+        "type2e": "priest",
+        "level2e": 3,
+        "source2e": "3 круг, школа воплощения (evocation), дальность 120 фт., длительность 1 минута, магический ливень, наносящий урон огненным и хладным существам",
+        "classes": [
+          "cleric",
+          "druid"
+        ],
+        "wiki": "https://icewinddale.fandom.com/wiki/Cloudburst",
+        "notes": "Конверсия AD&D 2e → D&D 5e (2014) через NotebookLM 870b991f; заклинания нет в SRD 5.1."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
   }
- },
- "_stats": {
-  "coreVersion": "14.368",
-  "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
-  "createdTime": null,
-  "modifiedTime": null,
-  "lastModifiedBy": null
- }
 }
