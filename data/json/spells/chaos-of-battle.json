@@ -99,7 +99,8 @@
         "effects": [
           {
             "_id": "W5fxNLKtlW4dikut",
-            "onSave": false
+            "onSave": false,
+            "level": {}
           }
         ],
         "range": {
@@ -107,7 +108,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -127,10 +136,15 @@
         "damage": {
           "onSave": "none",
           "parts": []
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -142,38 +156,50 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.attributes.ac.bonus",
-          "mode": 2,
-          "value": "-1d4",
-          "priority": null
-        },
-        {
-          "key": "system.bonuses.abilities.save",
-          "mode": 2,
-          "value": "-1d4",
-          "priority": null
-        }
-      ],
       "statuses": [],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "-1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "de70xwXEF4rxm6Ox",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
+            "value": "-1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "j7Vr7PsUE7uE8mcn",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791674370896,
         "modifiedTime": 1791674370896,
         "lastModifiedBy": null,
@@ -209,7 +235,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

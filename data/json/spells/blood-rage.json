@@ -42,7 +42,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
       }
     },
     "range": {
@@ -99,7 +99,8 @@
         },
         "effects": [
           {
-            "_id": "QoaKQ3tWHgiSde2V"
+            "_id": "QoaKQ3tWHgiSde2V",
+            "level": {}
           }
         ],
         "range": {
@@ -107,7 +108,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -120,10 +129,15 @@
           "name": "",
           "prompt": false,
           "visible": false
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -135,44 +149,60 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.traits.ci.value",
-          "mode": 2,
-          "value": "frightened",
-          "priority": null
-        },
-        {
-          "key": "system.traits.ci.value",
-          "mode": 2,
-          "value": "charmed",
-          "priority": null
-        },
-        {
-          "key": "system.bonuses.mwak.damage",
-          "mode": 2,
-          "value": "4",
-          "priority": null
-        }
-      ],
       "statuses": [],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "value": "frightened",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ikaYTm5IZrFIwrdP",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "charmed",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "mopueqv6xyvgomG4",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.damage.mwak.bonus",
+            "value": 4,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ANh8UFQ8DllcqG7g",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791674369318,
         "modifiedTime": 1791674369318,
         "lastModifiedBy": null,
@@ -209,7 +239,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

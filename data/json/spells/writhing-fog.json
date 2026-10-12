@@ -99,7 +99,8 @@
         "effects": [
           {
             "_id": "Fwubt9teWZG5ovW6",
-            "onSave": false
+            "onSave": false,
+            "level": {}
           }
         ],
         "range": {
@@ -107,7 +108,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -142,13 +151,19 @@
                 "mode": "whole",
                 "number": 1,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -160,32 +175,40 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.attributes.movement.walk",
-          "mode": 1,
-          "value": "0.5",
-          "priority": null
-        }
-      ],
       "statuses": [],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": 0.5,
+            "priority": null,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "sEKHi64KCHkg8kd4",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791675701040,
         "modifiedTime": 1791675701040,
         "lastModifiedBy": null,
@@ -222,7 +245,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

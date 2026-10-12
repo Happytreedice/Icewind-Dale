@@ -42,7 +42,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
       }
     },
     "range": {
@@ -97,7 +97,8 @@
         },
         "effects": [
           {
-            "_id": "35PKH7faOGuVKwvN"
+            "_id": "35PKH7faOGuVKwvN",
+            "level": {}
           }
         ],
         "range": {
@@ -105,7 +106,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -118,10 +127,15 @@
           "name": "",
           "prompt": false,
           "visible": false
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -133,34 +147,42 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.skills.ste.bonuses.check",
-          "mode": 2,
-          "value": "2",
-          "priority": null
-        }
-      ],
       "statuses": [
         "invisible"
       ],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ste.roll.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "02fppq4k6v6SSNLY",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791674370532,
         "modifiedTime": 1791674370532,
         "lastModifiedBy": null,
@@ -194,7 +216,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

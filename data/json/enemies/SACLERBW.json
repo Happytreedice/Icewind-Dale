@@ -9,62 +9,165 @@
     "value": 13,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "dex": {
     "value": 14,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "con": {
     "value": 14,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "int": {
     "value": 12,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "wis": {
     "value": 16,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "cha": {
     "value": 11,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    }
   },
   "attributes": {
    "ac": {
     "flat": 13,
-    "calc": "natural",
-    "formula": ""
+    "calcs": [
+     "natural"
+    ]
    },
    "hp": {
     "value": 52,
@@ -75,7 +178,6 @@
    },
    "init": {
     "ability": "",
-    "bonus": "",
     "roll": {
      "min": null,
      "max": null,
@@ -83,13 +185,15 @@
     }
    },
    "movement": {
-    "burrow": 0,
-    "climb": 0,
-    "fly": 0,
-    "swim": 40,
-    "walk": 30,
     "units": "ft",
-    "hover": false
+    "hover": false,
+    "speeds": {
+     "walk": "30",
+     "burrow": "0",
+     "climb": "0",
+     "fly": "0",
+     "swim": "40"
+    }
    },
    "attunement": {
     "max": 3
@@ -110,9 +214,6 @@
      "max": null,
      "mode": 0
     },
-    "bonuses": {
-     "save": ""
-    },
     "limit": 1
    },
    "death": {
@@ -129,7 +230,8 @@
    },
    "spell": {
     "level": 5
-   }
+   },
+   "loyalty": {}
   },
   "details": {
    "biography": {
@@ -144,7 +246,7 @@
     "swarm": "",
     "custom": ""
    },
-   "cr": 3.0,
+   "cr": 3,
    "ideal": "",
    "bond": "",
    "flaw": ""
@@ -195,7 +297,6 @@
     "value": 1,
     "ability": "wis",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -208,7 +309,6 @@
     "value": 1,
     "ability": "int",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -252,7 +352,8 @@
    "license": "",
    "revision": 1,
    "rules": "2014"
-  }
+  },
+  "rolls": {}
  },
  "prototypeToken": {
   "name": "Сахуагин",
@@ -342,12 +443,9 @@
    "src": "modules/dnd-icewind-dale-pc-game/assets/MSAHSD/anim/S.webm",
    "anchorX": 0.5,
    "anchorY": 0.5,
-   "offsetX": 0,
-   "offsetY": 0,
    "fit": "contain",
    "scaleX": 1,
    "scaleY": 1,
-   "rotation": 0,
    "tint": "#ffffff",
    "alphaThreshold": 0.75
   },
@@ -371,7 +469,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -427,7 +525,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -483,7 +581,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -554,7 +652,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -566,6 +672,12 @@
        "name": "",
        "prompt": false,
        "visible": false
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -587,7 +699,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -622,7 +734,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -683,7 +794,6 @@
      "dt": null,
      "conditions": ""
     },
-    "magicalBonus": null,
     "properties": [],
     "proficient": 1,
     "mastery": "",
@@ -729,7 +839,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -754,8 +872,17 @@
         "bonus": ""
        },
        "parts": []
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
+    },
+    "crew": {
+     "value": []
     }
    },
    "_id": "pk6xhPY7gdTFlPlw",
@@ -772,7 +899,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -807,7 +934,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -868,7 +994,6 @@
      "dt": null,
      "conditions": ""
     },
-    "magicalBonus": null,
     "properties": [],
     "proficient": 1,
     "mastery": "",
@@ -914,7 +1039,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -939,8 +1072,17 @@
         "bonus": ""
        },
        "parts": []
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
+    },
+    "crew": {
+     "value": []
     }
    },
    "_id": "oPnClvXmuJGdStud",
@@ -957,7 +1099,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -992,7 +1134,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -1053,7 +1194,6 @@
      "dt": null,
      "conditions": ""
     },
-    "magicalBonus": null,
     "properties": [],
     "proficient": 1,
     "mastery": "",
@@ -1099,7 +1239,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -1139,11 +1287,21 @@
           "mode": "",
           "number": null,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
+    },
+    "crew": {
+     "value": []
     }
    },
    "_id": "cqE5fHOZIuXKV539",
@@ -1160,7 +1318,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1237,7 +1395,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -1258,6 +1416,12 @@
        "name": "",
        "prompt": false,
        "visible": false
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -1304,7 +1468,7 @@
       "special": ""
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false,
       "type": ""
      }
@@ -1405,8 +1569,7 @@
     },
     "identifier": "cure-wounds",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 800000,
    "flags": {
@@ -1421,7 +1584,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1466,7 +1629,7 @@
       "special": ""
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false,
       "type": ""
      }
@@ -1549,7 +1712,9 @@
        "parts": []
       },
       "save": {
-       "ability": "cha",
+       "ability": [
+        "cha"
+       ],
        "dc": {
         "calculation": "spellcasting",
         "formula": ""
@@ -1573,8 +1738,7 @@
     },
     "identifier": "bane",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 900000,
    "flags": {
@@ -1589,9 +1753,7 @@
      "_id": "potjmpJPeUA1U4oe",
      "flags": {
       "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
+       "riders": {}
       }
      },
      "disabled": true,
@@ -1601,7 +1763,7 @@
       "expiry": "turnStart",
       "expired": false
      },
-     "origin": "Item.KkaQm4OQJxc6z3to",
+     "origin": null,
      "tint": "#ffffff",
      "transfer": false,
      "name": "Bane",
@@ -1612,7 +1774,7 @@
       "duplicateSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
+      "systemVersion": "6.0.6",
       "createdTime": null,
       "modifiedTime": 1772827465482,
       "lastModifiedBy": "dnd5ebuilder0000",
@@ -1623,36 +1785,64 @@
      "system": {
       "changes": [
        {
-        "key": "system.bonuses.abilities.save",
+        "key": "system.rolls.ability.save.bonus",
         "value": "-1d4",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "LfjT3jFPHETyeh1J",
+        "conditions": "{}",
+        "replacement": ""
        },
        {
-        "key": "system.bonuses.mwak.attack",
+        "key": "system.rolls.attack.mwak.bonus",
         "value": "-1d4",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "nrc0mBs1ZaJtO2SQ",
+        "conditions": "{}",
+        "replacement": ""
        },
        {
-        "key": "system.bonuses.msak.attack",
+        "key": "system.rolls.attack.msak.bonus",
         "value": "-1d4",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "H0DiwVufLBie22qo",
+        "conditions": "{}",
+        "replacement": ""
        },
        {
-        "key": "system.bonuses.rsak.attack",
+        "key": "system.rolls.attack.rsak.bonus",
         "value": "-1d4",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "JuaO5UeUKaFzcXrP",
+        "conditions": "{}",
+        "replacement": ""
        },
        {
-        "key": "system.bonuses.rwak.attack",
+        "key": "system.rolls.attack.rwak.bonus",
         "value": "-1d4",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "iGMlW2CrCwzEdvAi",
+        "conditions": "{}",
+        "replacement": ""
        }
-      ]
+      ],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": "Item.KkaQm4OQJxc6z3to",
+       "message": null
+      },
+      "magical": true
      },
      "sort": 0,
      "start": null,
@@ -1664,7 +1854,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1792,12 +1982,15 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
       },
       "save": {
-       "ability": "dex",
+       "ability": [
+        "dex"
+       ],
        "dc": {
         "calculation": "spellcasting",
         "formula": ""
@@ -1807,7 +2000,13 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      },
      "dnd5eactivity200": {
       "_id": "dnd5eactivity200",
@@ -1867,7 +2066,8 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
       },
@@ -1875,13 +2075,18 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "call-lightning",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 1000000,
    "flags": {
@@ -1896,7 +2101,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1949,7 +2154,7 @@
       "size": "",
       "width": "",
       "height": "",
-      "units": ""
+      "units": "ft"
      }
     },
     "range": {
@@ -2009,7 +2214,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -2029,10 +2242,15 @@
       "damage": {
        "onSave": "none",
        "parts": []
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
-    },
-    "sourceItem": null
+    }
    },
    "effects": [],
    "folder": null,
@@ -2063,7 +2281,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2100,7 +2318,6 @@
     },
     "attunement": "",
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "cover": null,
     "range": {
@@ -2172,7 +2389,6 @@
      "description": ""
     },
     "container": null,
-    "magicalBonus": null,
     "activities": {
      "dnd5eactivity000": {
       "_id": "dnd5eactivity000",
@@ -2197,7 +2413,7 @@
       "duration": {
        "concentration": false,
        "value": "",
-       "units": "",
+       "units": "inst",
        "special": "",
        "override": false
       },
@@ -2216,7 +2432,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -2250,7 +2466,13 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "attuned": false,
@@ -2258,7 +2480,10 @@
      "type": "crossbowBolt"
     },
     "mastery": "",
-    "identifier": "heavy-crossbow"
+    "identifier": "heavy-crossbow",
+    "crew": {
+     "value": []
+    }
    },
    "effects": [],
    "folder": null,
@@ -2274,7 +2499,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2387,7 +2612,7 @@
  "_stats": {
   "coreVersion": "14.368",
   "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
+  "systemVersion": "6.0.6",
   "createdTime": 1791686542211,
   "modifiedTime": 1791686542211,
   "lastModifiedBy": null,

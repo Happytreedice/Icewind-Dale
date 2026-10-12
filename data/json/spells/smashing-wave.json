@@ -99,7 +99,8 @@
         "effects": [
           {
             "_id": "myekp17OamL9sHPX",
-            "onSave": false
+            "onSave": false,
+            "level": {}
           }
         ],
         "range": {
@@ -107,7 +108,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -142,13 +151,19 @@
                 "mode": "whole",
                 "number": 1,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -160,15 +175,10 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": 1,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart"
       },
-      "changes": [],
       "statuses": [
         "prone",
         "stunned"
@@ -176,12 +186,21 @@
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791675598518,
         "modifiedTime": 1791675598518,
         "lastModifiedBy": null,
@@ -218,7 +237,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

@@ -42,7 +42,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
       }
     },
     "range": {
@@ -99,7 +99,8 @@
         },
         "effects": [
           {
-            "_id": "eJjwCKNgCOSrEYsi"
+            "_id": "eJjwCKNgCOSrEYsi",
+            "level": {}
           }
         ],
         "range": {
@@ -107,7 +108,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -120,10 +129,15 @@
           "name": "",
           "prompt": false,
           "visible": false
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -135,110 +149,171 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": 3,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 3,
+        "units": "rounds",
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "bludgeoning",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "piercing",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "slashing",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "fire",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "cold",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "acid",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "lightning",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "poison",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "necrotic",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "radiant",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "thunder",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "force",
-          "priority": null
-        },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "psychic",
-          "priority": null
-        },
-        {
-          "key": "system.bonuses.abilities.save",
-          "mode": 2,
-          "value": "2",
-          "priority": null
-        }
-      ],
       "statuses": [],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "CQuErcmTEUwdeMnA",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "seBBIKMKb3AulXQJ",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rGAj1a9jtccVYcNC",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "wm1EQgZyA53tnqJr",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "E4UTMqsEPNf20gSc",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "acid",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "pKhFn4fOmII5xqYR",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "a8y2OiOLXw80Am0M",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "N43okXdOcizWryfk",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "e1li95p34IAzw63N",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "vddc0EtC8gSWaL0P",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "thunder",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "y1XH9IqoiEvNfHPi",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "force",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aPpiUBP1ip1UCTAZ",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xUe0NM3O9aGrhl7J",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "c4vow2ddzMA8avj2",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791674725987,
         "modifiedTime": 1791674725987,
         "lastModifiedBy": null,
@@ -275,7 +350,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

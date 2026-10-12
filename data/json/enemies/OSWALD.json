@@ -9,62 +9,165 @@
     "value": 8,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "dex": {
     "value": 16,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "con": {
     "value": 14,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "int": {
     "value": 18,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "wis": {
     "value": 12,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    },
    "cha": {
     "value": 14,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "check": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    }
   },
   "attributes": {
    "ac": {
     "flat": 15,
-    "calc": "natural",
-    "formula": ""
+    "calcs": [
+     "natural"
+    ]
    },
    "hp": {
     "value": 66,
@@ -75,7 +178,6 @@
    },
    "init": {
     "ability": "",
-    "bonus": "",
     "roll": {
      "min": null,
      "max": null,
@@ -83,13 +185,15 @@
     }
    },
    "movement": {
-    "burrow": 0,
-    "climb": 0,
-    "fly": 0,
-    "swim": 0,
-    "walk": 25,
     "units": "ft",
-    "hover": false
+    "hover": false,
+    "speeds": {
+     "walk": "25",
+     "burrow": "0",
+     "climb": "0",
+     "fly": "0",
+     "swim": "0"
+    }
    },
    "attunement": {
     "max": 3
@@ -110,9 +214,6 @@
      "max": null,
      "mode": 0
     },
-    "bonuses": {
-     "save": ""
-    },
     "limit": 1
    },
    "death": {
@@ -129,7 +230,8 @@
    },
    "spell": {
     "level": 9
-   }
+   },
+   "loyalty": {}
   },
   "details": {
    "biography": {
@@ -144,7 +246,7 @@
     "swarm": "",
     "custom": ""
    },
-   "cr": 6.0,
+   "cr": 6,
    "ideal": "",
    "bond": "",
    "flaw": ""
@@ -196,7 +298,6 @@
     "value": 1,
     "ability": "int",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -209,7 +310,6 @@
     "value": 1,
     "ability": "int",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -222,7 +322,6 @@
     "value": 1,
     "ability": "int",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -235,7 +334,6 @@
     "value": 1,
     "ability": "dex",
     "bonuses": {
-     "check": "",
      "passive": ""
     },
     "roll": {
@@ -291,7 +389,8 @@
    "license": "",
    "revision": 1,
    "rules": "2014"
-  }
+  },
+  "rolls": {}
  },
  "prototypeToken": {
   "name": "Освальд Скрипкогиб",
@@ -375,18 +474,18 @@
       }
      }
     }
+   },
+   "dnd5e": {
+    "lockScale": true
    }
   },
   "texture": {
    "src": "modules/dnd-icewind-dale-pc-game/assets/CDMB1G1_c1e33380a171c00/anim/S.webm",
    "anchorX": 0.5,
    "anchorY": 0.5,
-   "offsetX": 0,
-   "offsetY": 0,
    "fit": "contain",
    "scaleX": 0.7,
    "scaleY": 0.7,
-   "rotation": 0,
    "tint": "#ffffff",
    "alphaThreshold": 0.75
   },
@@ -410,7 +509,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -466,7 +565,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -543,7 +642,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -564,13 +663,19 @@
         "dex"
        ],
        "dc": {
-        "calculation": "flat",
+        "calculation": "",
         "formula": "15"
        }
       },
       "damage": {
        "onSave": "half",
        "parts": []
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -592,7 +697,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -669,7 +774,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -690,7 +795,7 @@
         "dex"
        ],
        "dc": {
-        "calculation": "flat",
+        "calculation": "",
         "formula": "14"
        }
       },
@@ -712,9 +817,16 @@
           "mode": "",
           "number": null,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -736,7 +848,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -813,7 +925,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -850,9 +962,16 @@
           "mode": "",
           "number": null,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -874,7 +993,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -951,7 +1070,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "",
@@ -972,6 +1091,12 @@
        "name": "",
        "prompt": false,
        "visible": false
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -1091,7 +1216,9 @@
        "parts": []
       },
       "save": {
-       "ability": "dex",
+       "ability": [
+        "dex"
+       ],
        "dc": {
         "calculation": "spellcasting",
         "formula": ""
@@ -1192,8 +1319,7 @@
     },
     "identifier": "grease",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 600000,
    "flags": {
@@ -1208,7 +1334,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1358,19 +1484,26 @@
     },
     "identifier": "color-spray",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "effects": [
     {
      "name": "Color Spray",
      "img": "icons/magic/light/projectile-beams-salvo-yellow.webp",
-     "origin": "Compendium.dnd5e.spells.Item.LWTUqKkUQdMAmOe0",
+     "origin": null,
      "transfer": false,
      "_id": "eDXjhC3F3I0x2fUd",
      "type": "base",
      "system": {
-      "changes": []
+      "changes": [],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": "Compendium.dnd5e.spells.Item.LWTUqKkUQdMAmOe0",
+       "message": null
+      },
+      "magical": true
      },
      "disabled": false,
      "duration": {
@@ -1387,9 +1520,7 @@
      "sort": 0,
      "flags": {
       "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
+       "riders": {}
       }
      },
      "_stats": {
@@ -1398,7 +1529,7 @@
       "exportSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
+      "systemVersion": "6.0.6",
       "createdTime": 1772825813074,
       "modifiedTime": 1772825848818,
       "lastModifiedBy": "dnd5ebuilder0000"
@@ -1422,7 +1553,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1467,7 +1598,7 @@
       "special": ""
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false,
       "type": ""
      }
@@ -1574,7 +1705,8 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
       },
@@ -1596,8 +1728,7 @@
     },
     "identifier": "shocking-grasp",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 800000,
    "flags": {
@@ -1611,12 +1742,20 @@
     {
      "name": "Shocking Grasp",
      "img": "icons/magic/lightning/projectile-orb-blue.webp",
-     "origin": "Compendium.dnd5e.spells.Item.XvbiNhNqXXIFisIy",
+     "origin": null,
      "transfer": false,
      "_id": "nmcuBi3UW1cZJqut",
      "type": "base",
      "system": {
-      "changes": []
+      "changes": [],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": "Compendium.dnd5e.spells.Item.XvbiNhNqXXIFisIy",
+       "message": null
+      },
+      "magical": true
      },
      "disabled": false,
      "duration": {
@@ -1631,9 +1770,7 @@
      "sort": 0,
      "flags": {
       "dnd5e": {
-       "riders": {
-        "statuses": []
-       }
+       "riders": {}
       }
      },
      "_stats": {
@@ -1642,7 +1779,7 @@
       "exportSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "5.3.0",
+      "systemVersion": "6.0.6",
       "createdTime": 1772661549478,
       "modifiedTime": 1772661585465,
       "lastModifiedBy": "dnd5ebuilder0000"
@@ -1656,7 +1793,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1696,7 +1833,7 @@
       "type": ""
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false,
       "type": ""
      }
@@ -1786,7 +1923,7 @@
           "formula": ""
          },
          "number": 3,
-         "denomination": "8",
+         "denomination": 8,
          "bonus": "",
          "types": [
           "acid",
@@ -1800,7 +1937,8 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
       },
@@ -1812,7 +1950,12 @@
       "sort": 0,
       "name": "",
       "img": "",
-      "appliedEffects": []
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "chromatic-orb",
@@ -1837,7 +1980,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -1880,7 +2023,7 @@
       "choice": false
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false
      }
     },
@@ -1954,13 +2097,18 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "blur",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 1000000,
    "flags": {
@@ -1975,7 +2123,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2020,7 +2168,7 @@
       "special": ""
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false,
       "type": ""
      }
@@ -2075,7 +2223,8 @@
       },
       "effects": [
        {
-        "_id": "TeFxBRKYKIXtg6pS"
+        "_id": "TeFxBRKYKIXtg6pS",
+        "level": {}
        }
       ],
       "range": {
@@ -2102,13 +2251,18 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "invisibility",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 1100000,
    "flags": {
@@ -2121,7 +2275,7 @@
    "effects": [
     {
      "name": "Invisibility",
-     "origin": "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
+     "origin": null,
      "duration": {
       "value": 3600,
       "units": "seconds",
@@ -2142,7 +2296,7 @@
       "duplicateSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "4.0.0",
+      "systemVersion": "6.0.6",
       "createdTime": null,
       "modifiedTime": null,
       "lastModifiedBy": null,
@@ -2151,7 +2305,15 @@
      "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
      "type": "base",
      "system": {
-      "changes": []
+      "changes": [],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
+       "message": null
+      },
+      "magical": true
      },
      "sort": 0,
      "showIcon": 2,
@@ -2163,7 +2325,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2276,7 +2438,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -2311,13 +2481,19 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
-    },
-    "sourceItem": null
+    }
    },
    "effects": [],
    "folder": null,
@@ -2348,7 +2524,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2392,7 +2568,7 @@
       "choice": false
      },
      "template": {
-      "units": "",
+      "units": "ft",
       "contiguous": false
      }
     },
@@ -2467,13 +2643,18 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "dispel-magic",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 1300000,
    "flags": {
@@ -2488,7 +2669,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2616,12 +2797,15 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
       },
       "save": {
-       "ability": "dex",
+       "ability": [
+        "dex"
+       ],
        "dc": {
         "calculation": "spellcasting",
         "formula": ""
@@ -2631,13 +2815,18 @@
        "spent": 0,
        "recovery": []
       },
-      "sort": 0
+      "sort": 0,
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
+      }
      }
     },
     "identifier": "fireball",
     "method": "spell",
-    "prepared": 1,
-    "sourceItem": null
+    "prepared": 1
    },
    "sort": 1400000,
    "flags": {
@@ -2652,7 +2841,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2705,7 +2894,7 @@
       "size": "",
       "width": "",
       "height": "",
-      "units": ""
+      "units": "ft"
      }
     },
     "range": {
@@ -2766,7 +2955,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -2801,13 +2998,19 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
-    },
-    "sourceItem": null
+    }
    },
    "effects": [],
    "folder": null,
@@ -2839,7 +3042,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2892,7 +3095,7 @@
       "size": "",
       "width": "",
       "height": "",
-      "units": ""
+      "units": "ft"
      }
     },
     "range": {
@@ -2953,7 +3156,15 @@
       },
       "target": {
        "override": false,
-       "prompt": true
+       "prompt": true,
+       "template": {
+        "contiguous": false,
+        "stationary": false,
+        "units": "ft"
+       },
+       "affects": {
+        "choice": false
+       }
       },
       "uses": {
        "spent": 0,
@@ -2988,13 +3199,19 @@
           "mode": "whole",
           "number": 1,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
-    },
-    "sourceItem": null
+    }
    },
    "effects": [],
    "folder": null,
@@ -3025,7 +3242,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3045,7 +3262,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3072,7 +3289,7 @@
     },
     "quantity": 1,
     "weight": {
-     "value": 1.0,
+     "value": 1,
      "units": "lb"
     },
     "price": {
@@ -3082,7 +3299,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -3094,7 +3310,6 @@
     },
     "armor": {
      "value": null,
-     "magicalBonus": null,
      "dex": null
     },
     "strength": null,
@@ -3117,7 +3332,10 @@
      "value": null,
      "conditions": ""
     },
-    "cover": null
+    "cover": null,
+    "crew": {
+     "value": []
+    }
    }
   },
   {
@@ -3148,7 +3366,6 @@
     },
     "attunement": "required",
     "equipped": true,
-    "rarity": "rare",
     "identified": true,
     "cover": null,
     "uses": {
@@ -3158,8 +3375,7 @@
     },
     "armor": {
      "value": 0,
-     "dex": 0,
-     "magicalBonus": null
+     "dex": 0
     },
     "hp": {
      "value": 0,
@@ -3186,7 +3402,13 @@
     ],
     "activities": {},
     "attuned": false,
-    "identifier": "ring-of-fire-resistance"
+    "identifier": "ring-of-fire-resistance",
+    "rarities": [
+     "rare"
+    ],
+    "crew": {
+     "value": []
+    }
    },
    "effects": [
     {
@@ -3200,9 +3422,21 @@
         "key": "system.traits.dr.value",
         "value": "fire",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "j6pRgFsqpZFndoGR",
+        "conditions": "{}",
+        "replacement": ""
        }
-      ]
+      ],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": null,
+       "message": null
+      },
+      "magical": true
      },
      "disabled": false,
      "duration": {
@@ -3223,7 +3457,7 @@
       "duplicateSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "4.1.0",
+      "systemVersion": "6.0.6",
       "createdTime": 1731017824351,
       "modifiedTime": 1731017889676,
       "lastModifiedBy": "dnd5ebuilder0000",
@@ -3247,7 +3481,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3267,7 +3501,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3294,7 +3528,7 @@
     },
     "quantity": 3,
     "weight": {
-     "value": 1.0,
+     "value": 1,
      "units": "lb"
     },
     "price": {
@@ -3303,8 +3537,7 @@
     },
     "attunement": "",
     "attuned": false,
-    "equipped": false,
-    "rarity": "",
+    "equipped": true,
     "identified": true,
     "unidentified": {
      "description": ""
@@ -3342,8 +3575,7 @@
       }
      },
      "replace": false
-    },
-    "magicalBonus": null
+    }
    }
   },
   {
@@ -3373,8 +3605,7 @@
      "denomination": "gp"
     },
     "attunement": "",
-    "equipped": false,
-    "rarity": "uncommon",
+    "equipped": true,
     "identified": true,
     "uses": {
      "max": "1",
@@ -3407,7 +3638,6 @@
     "properties": [
      "mgc"
     ],
-    "magicalBonus": null,
     "activities": {
      "dnd5eactivity000": {
       "_id": "dnd5eactivity000",
@@ -3423,7 +3653,8 @@
         {
          "type": "itemUses",
          "value": "1",
-         "target": ""
+         "target": "",
+         "scaling": {}
         }
        ],
        "scaling": {
@@ -3456,7 +3687,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
        },
        "affects": {
         "count": "1",
@@ -3488,12 +3719,14 @@
         "max": null
        },
        "identifier": ""
-      },
-      "appliedEffects": []
+      }
      }
     },
     "attuned": false,
-    "identifier": "potion-of-fire-resistance"
+    "identifier": "potion-of-fire-resistance",
+    "rarities": [
+     "uncommon"
+    ]
    },
    "effects": [],
    "folder": null,
@@ -3509,7 +3742,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3546,7 +3779,6 @@
     },
     "attunement": "required",
     "equipped": true,
-    "rarity": "veryRare",
     "identified": true,
     "cover": null,
     "uses": {
@@ -3557,7 +3789,7 @@
     "armor": {
      "value": 0,
      "dex": 0,
-     "magicalBonus": 2
+     "magicalBonus": "2"
     },
     "hp": {
      "value": 0,
@@ -3584,7 +3816,13 @@
     ],
     "activities": {},
     "attuned": false,
-    "identifier": "ring-of-protection"
+    "identifier": "ring-of-protection",
+    "rarities": [
+     "veryRare"
+    ],
+    "crew": {
+     "value": []
+    }
    },
    "effects": [
     {
@@ -3608,7 +3846,7 @@
       "duplicateSource": null,
       "coreVersion": "14.367",
       "systemId": "dnd5e",
-      "systemVersion": "4.0.0",
+      "systemVersion": "6.0.6",
       "createdTime": null,
       "modifiedTime": 1731017996752,
       "lastModifiedBy": "dnd5ebuilder0000",
@@ -3622,15 +3860,31 @@
         "key": "system.attributes.ac.bonus",
         "value": "+1",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "PVnroCD4M9WVgl2G",
+        "conditions": "{}",
+        "replacement": ""
        },
        {
-        "key": "system.bonuses.abilities.save",
+        "key": "system.rolls.ability.save.bonus",
         "value": "+1",
         "priority": null,
-        "type": "add"
+        "type": "add",
+        "phase": "initial",
+        "_id": "g2AzXF4xP0KWh3ub",
+        "conditions": "{}",
+        "replacement": ""
        }
-      ]
+      ],
+      "origin": {
+       "actor": null,
+       "behavior": null,
+       "effect": null,
+       "item": null,
+       "message": null
+      },
+      "magical": true
      },
      "sort": 0,
      "start": null,
@@ -3651,7 +3905,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3671,7 +3925,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3698,7 +3952,7 @@
     },
     "quantity": 1,
     "weight": {
-     "value": 4.0,
+     "value": 4,
      "units": "lb"
     },
     "price": {
@@ -3708,7 +3962,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -3720,7 +3973,6 @@
     },
     "armor": {
      "value": null,
-     "magicalBonus": null,
      "dex": null
     },
     "strength": null,
@@ -3745,7 +3997,10 @@
      "value": null,
      "conditions": ""
     },
-    "cover": null
+    "cover": null,
+    "crew": {
+     "value": []
+    }
    }
   },
   {
@@ -3759,7 +4014,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3786,7 +4041,7 @@
     },
     "quantity": 1,
     "weight": {
-     "value": 1.0,
+     "value": 1,
      "units": "lb"
     },
     "price": {
@@ -3795,8 +4050,7 @@
     },
     "attunement": "",
     "attuned": false,
-    "equipped": false,
-    "rarity": "",
+    "equipped": true,
     "identified": true,
     "unidentified": {
      "description": ""
@@ -3834,8 +4088,7 @@
       }
      },
      "replace": false
-    },
-    "magicalBonus": null
+    }
    }
   },
   {
@@ -3849,7 +4102,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3876,7 +4129,7 @@
     },
     "quantity": 1,
     "weight": {
-     "value": 2.0,
+     "value": 2,
      "units": "lb"
     },
     "price": {
@@ -3886,7 +4139,6 @@
     "attunement": "",
     "attuned": false,
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "unidentified": {
      "description": ""
@@ -3898,7 +4150,6 @@
     },
     "armor": {
      "value": null,
-     "magicalBonus": null,
      "dex": null
     },
     "strength": null,
@@ -3923,7 +4174,10 @@
      "value": null,
      "conditions": ""
     },
-    "cover": null
+    "cover": null,
+    "crew": {
+     "value": []
+    }
    }
   },
   {
@@ -3937,7 +4191,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -3964,7 +4218,7 @@
     },
     "quantity": 1,
     "weight": {
-     "value": 1.0,
+     "value": 1,
      "units": "lb"
     },
     "price": {
@@ -3973,8 +4227,7 @@
     },
     "attunement": "",
     "attuned": false,
-    "equipped": false,
-    "rarity": "",
+    "equipped": true,
     "identified": true,
     "unidentified": {
      "description": ""
@@ -4012,8 +4265,7 @@
       }
      },
      "replace": false
-    },
-    "magicalBonus": null
+    }
    }
   }
  ],
@@ -4120,7 +4372,7 @@
  "_stats": {
   "coreVersion": "14.368",
   "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
+  "systemVersion": "6.0.6",
   "createdTime": 1791686542211,
   "modifiedTime": 1791686542211,
   "lastModifiedBy": null,

@@ -42,7 +42,7 @@
         "size": "",
         "width": "",
         "height": "",
-        "units": ""
+        "units": "ft"
       }
     },
     "range": {
@@ -98,7 +98,8 @@
         },
         "effects": [
           {
-            "_id": "fuzwHKw5jb3Dyer5"
+            "_id": "fuzwHKw5jb3Dyer5",
+            "level": {}
           }
         ],
         "range": {
@@ -106,7 +107,15 @@
         },
         "target": {
           "override": false,
-          "prompt": true
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          }
         },
         "uses": {
           "spent": 0,
@@ -132,10 +141,15 @@
             "bonus": ""
           },
           "parts": []
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         }
       }
-    },
-    "sourceItem": null
+    }
   },
   "effects": [
     {
@@ -147,34 +161,42 @@
       "transfer": false,
       "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 28800,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 28800,
+        "expiry": "turnStart"
       },
-      "changes": [
-        {
-          "key": "system.abilities.str.value",
-          "mode": 2,
-          "value": "-4",
-          "priority": null
-        }
-      ],
       "statuses": [
         "poisoned"
       ],
       "description": "",
       "tint": "#ffffff",
       "flags": {},
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.value",
+            "value": -4,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Lo6FzcFbqaKYVJtl",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "sort": 0,
       "_stats": {
         "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.6",
         "createdTime": 1791674370324,
         "modifiedTime": 1791674370324,
         "lastModifiedBy": null,
@@ -211,7 +233,7 @@
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null

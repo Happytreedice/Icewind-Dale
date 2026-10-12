@@ -9,10 +9,6 @@
     "value": 12,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -21,6 +17,13 @@
      }
     },
     "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "attack": {
      "roll": {
       "min": null,
       "max": null,
@@ -32,10 +35,6 @@
     "value": 13,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -44,6 +43,13 @@
      }
     },
     "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "attack": {
      "roll": {
       "min": null,
       "max": null,
@@ -55,10 +61,6 @@
     "value": 16,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -67,6 +69,13 @@
      }
     },
     "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "attack": {
      "roll": {
       "min": null,
       "max": null,
@@ -78,10 +87,6 @@
     "value": 10,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -90,6 +95,13 @@
      }
     },
     "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "attack": {
      "roll": {
       "min": null,
       "max": null,
@@ -101,10 +113,6 @@
     "value": 16,
     "proficient": 1,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -113,6 +121,13 @@
      }
     },
     "save": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
+    },
+    "attack": {
      "roll": {
       "min": null,
       "max": null,
@@ -124,10 +139,6 @@
     "value": 9,
     "proficient": 0,
     "max": null,
-    "bonuses": {
-     "check": "",
-     "save": ""
-    },
     "check": {
      "roll": {
       "min": null,
@@ -141,14 +152,26 @@
       "max": null,
       "mode": 0
      }
+    },
+    "attack": {
+     "roll": {
+      "min": null,
+      "max": null,
+      "mode": 0
+     }
     }
    }
   },
   "attributes": {
    "ac": {
-    "calc": "custom",
     "flat": 16,
-    "formula": "16 + @attributes.ac.shield"
+    "formulas": [
+     {
+      "formula": "16 + @attributes.ac.shield",
+      "armored": null,
+      "shielded": null
+     }
+    ]
    },
    "hp": {
     "value": 67,
@@ -159,7 +182,6 @@
    },
    "init": {
     "ability": "",
-    "bonus": "",
     "roll": {
      "min": null,
      "max": null,
@@ -169,11 +191,13 @@
    "movement": {
     "units": null,
     "hover": false,
-    "walk": "40",
-    "burrow": "5",
-    "climb": "30",
-    "fly": "60",
-    "special": "wolf form only; burrow fox form only; climb goat form only; fly owl form only"
+    "special": "wolf form only; burrow fox form only; climb goat form only; fly owl form only",
+    "speeds": {
+     "walk": "40",
+     "burrow": "5",
+     "climb": "30",
+     "fly": "60"
+    }
    },
    "senses": {
     "ranges": {
@@ -185,6 +209,25 @@
    "spellcasting": "wis",
    "spell": {
     "level": 9
+   },
+   "concentration": {
+    "ability": "",
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "limit": 1
+   },
+   "loyalty": {},
+   "death": {
+    "roll": {
+     "min": null,
+     "max": null,
+     "mode": 0
+    },
+    "success": 0,
+    "failure": 0
    }
   },
   "details": {
@@ -237,7 +280,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -250,7 +292,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -263,7 +304,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -276,7 +316,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -289,7 +328,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -302,7 +340,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -315,7 +352,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -328,7 +364,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -341,7 +376,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -354,7 +388,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -367,7 +400,6 @@
     },
     "value": 1,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -380,7 +412,6 @@
     },
     "value": 1,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -393,7 +424,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -406,7 +436,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -419,7 +448,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -432,7 +460,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -445,7 +472,6 @@
     },
     "value": 0,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    },
@@ -458,7 +484,6 @@
     },
     "value": 1,
     "bonuses": {
-     "check": "",
      "passive": ""
     }
    }
@@ -556,7 +581,8 @@
    "ep": 0,
    "sp": 0,
    "cp": 0
-  }
+  },
+  "rolls": {}
  },
  "prototypeToken": {
   "name": "Лизан",
@@ -646,12 +672,9 @@
    "src": "modules/dnd-icewind-dale-pc-game/assets/NSIWHG1_c1e25390c171c00/anim/S.webm",
    "anchorX": 0.5,
    "anchorY": 0.5,
-   "offsetX": 0,
-   "offsetY": 0,
    "fit": "contain",
    "scaleX": 1,
    "scaleY": 1,
-   "rotation": 0,
    "tint": "#ffffff",
    "alphaThreshold": 0.75
   },
@@ -731,6 +754,12 @@
        "name": "",
        "prompt": false,
        "visible": false
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -749,7 +778,12 @@
      "revision": 1,
      "rules": "2014"
     },
-    "requirements": ""
+    "requirements": "",
+    "enchant": {},
+    "prerequisites": {
+     "items": [],
+     "repeatable": false
+    }
    },
    "effects": [],
    "folder": null,
@@ -761,7 +795,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -913,9 +947,16 @@
           "mode": "",
           "number": null,
           "formula": ""
-         }
+         },
+         "modifiers": []
         }
        ]
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -929,7 +970,15 @@
      "recovery": []
     },
     "equipped": true,
-    "mastery": ""
+    "mastery": "",
+    "unidentified": {
+     "description": ""
+    },
+    "crew": {
+     "value": []
+    },
+    "ammunition": {},
+    "armor": {}
    },
    "effects": [],
    "folder": null,
@@ -941,7 +990,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -992,7 +1041,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1019,10 +1067,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "VW7HS74IpY1Y81pR": {
@@ -1052,7 +1104,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1079,10 +1130,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "UL0B15G7e35kBTwY": {
@@ -1112,7 +1167,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1139,10 +1193,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "YLOBZtCnp65ZZLWi": {
@@ -1182,7 +1240,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1209,10 +1266,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "UtRJs6SQp3dWMyVW": {
@@ -1252,7 +1313,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1279,10 +1339,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "1iF3cCTSacje7NV8": {
@@ -1322,7 +1386,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1349,10 +1412,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "2ETJE2aJCP2O2Ob3": {
@@ -1392,7 +1459,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1419,10 +1485,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "2agogZHs6jSF8RB8": {
@@ -1462,7 +1532,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1489,10 +1558,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "aNrzdV52Yt3UK0AG": {
@@ -1532,7 +1605,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1559,10 +1631,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "7uOkMtvq42O88Ntm": {
@@ -1602,7 +1678,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1629,10 +1704,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "YfVM04NQSz9190B6": {
@@ -1672,7 +1751,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1699,10 +1777,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "XHo9Ss2pF06KYjke": {
@@ -1742,7 +1824,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1769,10 +1850,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "BxE3KC2z1ZPIaB3y": {
@@ -1812,7 +1897,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1839,10 +1923,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "5ALedU3Seor3GA5l": {
@@ -1882,7 +1970,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1909,10 +1996,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      },
      "SrW1P9RvEkTA2EnQ": {
@@ -1952,7 +2043,6 @@
        "concentration": false,
        "override": false
       },
-      "effects": [],
       "range": {
        "override": false
       },
@@ -1979,10 +2069,14 @@
        "spellbook": true,
        "ability": "",
        "challenge": {
-        "attack": null,
-        "save": null,
         "override": false
        }
+      },
+      "visibility": {
+       "level": {},
+       "requireAttunement": false,
+       "requireIdentification": false,
+       "requireMagic": false
       }
      }
     },
@@ -2003,7 +2097,12 @@
      "revision": 1,
      "rules": "2014"
     },
-    "requirements": ""
+    "requirements": "",
+    "enchant": {},
+    "prerequisites": {
+     "items": [],
+     "repeatable": false
+    }
    },
    "effects": [],
    "folder": null,
@@ -2015,7 +2114,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2052,7 +2151,6 @@
     },
     "attunement": "",
     "equipped": true,
-    "rarity": "",
     "identified": true,
     "cover": null,
     "uses": {
@@ -2062,8 +2160,7 @@
     },
     "armor": {
      "value": 2,
-     "dex": null,
-     "magicalBonus": null
+     "dex": null
     },
     "hp": {
      "value": 0,
@@ -2088,7 +2185,10 @@
     "properties": [],
     "activities": {},
     "attuned": false,
-    "identifier": "shield"
+    "identifier": "shield",
+    "crew": {
+     "value": []
+    }
    },
    "effects": [],
    "folder": null,
@@ -2104,7 +2204,7 @@
    "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "5.3.3",
+    "systemVersion": "6.0.6",
     "createdTime": 1791686542211,
     "modifiedTime": 1791686542211,
     "lastModifiedBy": null,
@@ -2224,7 +2324,7 @@
  "_stats": {
   "coreVersion": "14.368",
   "systemId": "dnd5e",
-  "systemVersion": "5.3.3",
+  "systemVersion": "6.0.6",
   "createdTime": 1791686542211,
   "modifiedTime": 1791686542211,
   "lastModifiedBy": null,
